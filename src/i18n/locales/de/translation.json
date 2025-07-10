@@ -1,0 +1,434 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "menu": "Speisekarte",
+    "foods": "Essen",
+    "drinks": "Getränke",
+    "orders": "Meine Liste",
+    "signIn": "Anmelden",
+    "signUp": "Registrieren",
+    "signOut": "Abmelden",
+    "reservation": "Reservierung",
+    "gift": "Ein Geschenk machen",
+    "rewards": "Kundenkarte",
+    "personal": "Persönlicher Bereich",
+    "contact": "Kontakt uns!"
+  },
+  "footer": {
+    "legal": "Impressum",
+    "privacy": "Datenschutzrichtlinie",
+    "cookies": "Cookie-Richtlinie",
+    "copyright": "Erstellt von Diego Pérez, 2025"
+  },
+  "restaurant": {
+    "info": {
+      "name": "Restaurantname",
+      "description": "Absatz/Slogan, um das Restaurant zu beschreiben.",
+      "timeTable": {
+        "title": "Öffnungszeiten",
+        "monTitle": "Montag:",
+        "tueTitle": "Dienstag:",
+        "wedTitle": "Mittwoch:",
+        "thuTitle": "Donnerstag:",
+        "friTitle": "Freitag:",
+        "satTitle": "Samstag:",
+        "sunTitle": "Sonntag:",
+        "monTime": "Geschlossen",
+        "tueTime": "12:00 - 22:00",
+        "wedTime": "12:00 - 22:00",
+        "thuTime": "12:00 - 22:00",
+        "friTime": "12:00 - 01:30",
+        "satTime": "12:00 - 01:30",
+        "sunTime": "12:00 - 22:00"
+      }
+    }
+  },
+  "section": {
+    "carousel": {
+      "content": "Werfen Sie einen Blick in unser gemütliches Restaurant, wo gutes Essen auf eine einladende Atmosphäre trifft. Genießen Sie eine Mischung aus Kunst, Design und köstlichen Gerichten, die mit Liebe und Sorgfalt zubereitet werden – alles in einer entspannten und freundlichen Umgebung."
+    },
+    "review": {
+      "content": "Wir lieben es, von unseren Gästen zu hören! Wenn Sie eine schöne Zeit bei uns hatten, würden wir uns freuen, wenn Sie Ihre Gedanken in einer kurzen Bewertung auf Google teilen. Ihr Feedback hilft uns, uns weiter zu verbessern und motiviert unser Team, das bestmögliche Erlebnis zu bieten.",
+      "button": "Teilen Sie jetzt Ihre Gedanken"
+    },
+    "deals": {
+      "title": "Was Sie nicht verpassen sollten:",
+      "offerHappyHour": {
+        "title": "Happy Hour!",
+        "content-1": "Jeden Freitag",
+        "content-2": "Von 17:00 bis 19:00"
+      },
+      "eventNewYear": {
+        "title": "Silvesterparty",
+        "content-1": "Wir planen ein fantastisches Dinner und eine Party, um uns von diesem großartigen Jahr zu verabschieden.",
+        "content-2": "Wenn Sie die Freude mit uns an einem so besonderen Abend teilen möchten, empfehlen wir Ihnen, uns zu kontaktieren, um Ihren Platz zu reservieren.",
+        "button": "Weitere Informationen"
+      }
+    },
+    "newsletter": {
+      "title": "Lust, etwas Leckeres zu kochen?",
+      "content-1": "Dann kommen Sie zu unserem praktischen Workshop! Wir treffen uns jeden ersten Dienstag im Monat und würden uns freuen, Sie dabei zu haben.",
+      "content-2": "Abonnieren Sie unseren Newsletter, um auf unserer Prioritätenliste für Veranstaltungen zu stehen.",
+      "content-3": "Darüber hinaus erhalten Sie Rezepte, Sonderangebote und sind natürlich der Erste, der von Neuigkeiten und Events erfährt.",
+      "button": "Abonnieren"
+    },
+    "aboutUs": {
+      "title": "Erfahren Sie mehr über uns",
+      "content-1": "Gegründet im Jahr [Jahr], ist [Restaurantname] darauf ausgerichtet, köstliche, hausgemachte Gerichte in einer freundlichen und einladenden Umgebung zu servieren. Ob Sie für eine lockere Mahlzeit oder einen besonderen Anlass hier sind – unser Team ist bestrebt, jedes kulinarische Erlebnis unvergesslich zu machen.",
+      "content-2": "Im Laufe der Jahre wurden wir mit mehreren Auszeichnungen geehrt, die unser Engagement für Qualität, Service und kulinarische Exzellenz anerkennen. Wir sind stolz auf die Auszeichnungen, die wir erhalten haben, und streben weiterhin nach Exzellenz in jedem Gericht, das wir servieren.",
+      "content-3": "Bleiben Sie mit uns in Verbindung und erhalten Sie einen Einblick in das, was bei [Restaurantname] passiert, indem Sie uns in den sozialen Medien folgen. Wir lieben es, unsere neuesten Kreationen, besondere Events und mehr zu teilen!"
+    },
+    "orders": {
+      "intro": {
+        "title": "Meine Auswahl:",
+        "content": "Erstellen Sie Ihre Produktliste, um Ihre Bestellung zu vereinfachen, wenn der Kellner kommt",
+        "clearOrder": "Liste löschen"
+      }
+    }
+  },
+  "product": {
+    "action": {
+      "add": "Auf meine Liste setzen",
+      "addMore": "Ein Extra hinzufügen",
+      "changeView": "Ansicht ändern"
+    },
+    "category": {
+      "breakfast": "Frühstück",
+      "brunch": "Sonntagsbrunch",
+      "snack": "Kleine Snacks",
+      "lunch": "Mittagessen",
+      "dinner": "Abendessen",
+      "cold": "Kaltgetränke",
+      "hot": "Kaffees und Tees",
+      "fresh": "Frische Säfte und Smoothies",
+      "alcohol": "Weine und Biere",
+      "cocktail": "Cocktails"
+    },
+    "allergen": {
+      "almond": {
+        "name": "Mandel",
+        "description": "Enthält Mandeln oder Mandelprodukte"
+      },
+      "avocado": {
+        "name": "Avocado",
+        "description": "Enthält Avocado"
+      },
+      "blueberries": {
+        "name": "Heidelbeeren",
+        "description": "Enthält Heidelbeeren"
+      },
+      "celery": {
+        "name": "Sellerie",
+        "description": "Enthält Sellerie oder Knollensellerie"
+      },
+      "color": {
+        "name": "Künstliche Farbstoffe",
+        "description": "Enthält künstliche Farbstoffe"
+      },
+      "corn": {
+        "name": "Mais",
+        "description": "Enthält Mais oder Maisprodukte"
+      },
+      "crustaceans": {
+        "name": "Krebstiere",
+        "description": "Enthält Schalentiere (Krabben, Hummer, Garnelen)"
+      },
+      "eggs": {
+        "name": "Eier",
+        "description": "Enthält Eier oder Eiprodukte"
+      },
+      "fish": {
+        "name": "Fisch",
+        "description": "Enthält Fisch oder Fischprodukte"
+      },
+      "gluten": {
+        "name": "Gluten",
+        "description": "Enthält Gluten (Weizen, Gerste, Roggen)"
+      },
+      "kiwi": {
+        "name": "Kiwi",
+        "description": "Enthält Kiwi"
+      },
+      "lemon": {
+        "name": "Zitrone",
+        "description": "Enthält Zitrone oder Zitronenprodukte"
+      },
+      "lupin": {
+        "name": "Lupine",
+        "description": "Enthält Lupinenbohnen oder -mehl"
+      },
+      "meat": {
+        "name": "Fleisch",
+        "description": "Enthält Fleischprodukte"
+      },
+      "lactose": {
+        "name": "Laktose",
+        "description": "Enthält Milch oder Milchprodukte"
+      },
+      "molluscs": {
+        "name": "Weichtiere",
+        "description": "Enthält Weichtiere (Muscheln, Austern)"
+      },
+      "mustard": {
+        "name": "Senf",
+        "description": "Enthält Senf oder Senfsamen"
+      },
+      "nut": {
+        "name": "Nüsse",
+        "description": "Enthält Baumnüsse"
+      },
+      "peach": {
+        "name": "Pfirsich",
+        "description": "Enthält Pfirsich"
+      },
+      "peanut": {
+        "name": "Erdnüsse",
+        "description": "Enthält Erdnüsse oder Erdnussprodukte"
+      },
+      "salmon": {
+        "name": "Lachs",
+        "description": "Enthält Lachs"
+      },
+      "sesame": {
+        "name": "Sesam",
+        "description": "Enthält Sesamsamen"
+      },
+      "soy": {
+        "name": "Soja",
+        "description": "Enthält Soja oder Sojaprodukte"
+      },
+      "strawberry": {
+        "name": "Erdbeere",
+        "description": "Enthält Erdbeeren"
+      },
+      "sugar": {
+        "name": "Zucker",
+        "description": "Enthält zugesetzten Zucker"
+      },
+      "sulphite": {
+        "name": "Sulfite",
+        "description": "Enthält Sulfite (Konservierungsstoffe)"
+      },
+      "trans-fat": {
+        "name": "Transfette",
+        "description": "Enthält Transfette"
+      },
+      "yogurt": {
+        "name": "Joghurt",
+        "description": "Enthält Joghurt"
+      },
+      "vegetarian": {
+        "name": "Vegetarisch",
+        "description": " - Geeignet für Vegetarier"
+      }
+    },
+    "nav": {
+      "breakfast": {
+        "title": "Frühstück",
+        "description": "Do - Sa von 06:00 bis 11:00"
+      },
+      "brunch": {
+        "title": "Sonntagsbrunch",
+        "description": "Sonntags von 10:00 bis 15:00"
+      },
+      "snack": {
+        "title": "Lil'Snacks",
+        "description": "Do - So von 11:00 bis 18:30"
+      },
+      "lunch": {
+        "title": "Mittagessen",
+        "description": "Do - So von 18:30 bis 22:00"
+      },
+      "dinner": {
+        "title": "Abendessen",
+        "description": "Do - So von 18:30 bis 22:00"
+      },
+      "cold": {
+        "title": "Kalte Getränke",
+        "description": "Beschreibung Kalte Getränke"
+      },
+      "hot": {
+        "title": "Kaffees und Tees",
+        "description": "Beschreibung Kaffees und Tees"
+      },
+      "fresh": {
+        "title": "Natürliche Säfte und Smoothies",
+        "description": "Beschreibung Natürliche Säfte und Smoothies"
+      },
+      "alcohol": {
+        "title": "Weine und Biere",
+        "description": "Beschreibung Weine und Biere"
+      },
+      "cocktail": {
+        "title": "Cocktails",
+        "description": "Beschreibung Cocktails"
+      }
+    },
+    "crossSelling": {
+      "food": {
+        "title": "Hast du Lust auf etwas zu essen?",
+        "button": "Zu den Speisen gehen"
+      },
+      "drink": {
+        "title": "Hast du Lust auf etwas zu trinken?",
+        "button": "Zu den Getränken gehen"
+      }
+    },
+    "modal": {
+      "like": {
+        "line1": "Gefällt dir ",
+        "line2": "Melde dich an, um zu teilen, was dir gefällt!",
+        "line3": "Neu hier?",
+        "line4": "Erstelle in Sekunden ein Konto."
+      }
+    }
+  },
+  "crud": {
+    "title": {
+      "user": "Benutzer",
+      "product": "Produkte"
+    },
+    "buttonCreate": {
+      "user": "Benutzer registrieren",
+      "product": "Produkt erstellen"
+    },
+    "filter": {
+      "bar": "Zum Suchen tippen...",
+      "all": "Alle anzeigen",
+      "role": {
+        "employee": "Mitarbeiter",
+        "client": "Kunde"
+      }
+    },
+    "form": {
+      "language": "Wechsle die Sprache mit den Flaggen. Alle Namen und Beschreibungen sind in allen aktiven Sprachen erforderlich.",
+      "or" : "Oder vielleicht",
+      "button": {
+        "create": "Erstellen",
+        "delete": "Löschen",
+        "update": "Bearbeiten",
+        "cancel": "Abbrechen",
+        "send": "Senden",
+        "signinGoogle": "Mit Google anmelden",
+        "passwordForgot": "Passwort zurücksetzen"
+      },
+      "user": {
+        "title": {
+          "create": "Benutzer registrieren",
+          "delete": "Benutzer löschen",
+          "update": "Benutzer bearbeiten",
+          "signin": "Anmelden",
+          "passwordForgot": "Passwort vergessen",
+          "passwordReset": "Setze dein Passwort zurück"
+        },
+        "question": {
+          "delete": "Möchten Sie den folgenden Benutzer wirklich löschen?",
+          "signup": "Hast du kein Konto?",
+          "google": "Oder mit Google anmelden",
+          "passwordForgot": "Passwort vergessen?",
+          "passwordRemember": "Passwort wieder eingefallen?"
+        },
+        "label": {
+          "id": "Benutzer-ID:",
+          "name": "Benutzername",
+          "email": "Kontoname",
+          "password": "Passwort",
+          "confirmPasswordLabel": "Passwort bestätigen",
+          "role": "Benutzerrolle"
+        },
+        "placeholder": {
+          "id": "Benutzer-ID:",
+          "name": "Geben Sie den Benutzernamen ein",
+          "email": "Geben Sie den Kontonamen ein",
+          "password": "Hier können Sie das Passwort ändern",
+          "confirmPasswordError": "Passwörter müssen übereinstimmen",
+          "signinPassword": "Geben Sie das Passwort ein",
+          "role": "Benutzerrolle"
+        }
+      },
+      "product": {
+        "title": {
+          "create": "Produkt erstellen",
+          "delete": "Produkt löschen",
+          "update": "Produkt bearbeiten"
+        },
+        "question": {
+          "delete": "Möchten Sie das folgende Produkt wirklich löschen?"
+        },
+        "label": {
+          "id": "Produkt-ID:",
+          "name": {
+            "en": "Name auf Englisch:",
+            "es": "Name auf Spanisch:",
+            "de": "Name auf Deutsch:"
+          },
+          "description": {
+            "en": "Beschreibung auf Englisch:",
+            "es": "Beschreibung auf Spanisch:",
+            "de": "Beschreibung auf Deutsch:"
+          },
+          "category": "Kategorie:",
+          "price": "Preis:",
+          "ingredients": "Zutaten:",
+          "vegetarian": "Ist es vegetarisch?",
+          "image": "Bild:",
+          "video": "Video:",
+          "yes": "Ja",
+          "no": "Nein"
+        },
+        "placeholder": {
+          "id": "Produkt-ID:",
+          "name": {
+            "en": "Produktname auf Englisch",
+            "es": "Produktname auf Spanisch",
+            "de": "Produktname auf Deutsch"
+          },
+          "description": {
+            "en": "Produktbeschreibung auf Englisch",
+            "es": "Produktbeschreibung auf Spanisch",
+            "de": "Produktbeschreibung auf Deutsch"
+          },
+          "category": "Produktkategorie",
+          "price": "Produktpreis",
+          "ingredients": "Produktzutaten",
+          "vegetarian": "Ist es vegetarisch?",
+          "image": "Produktbild",
+          "video": "Produktvideo",
+          "yes": "Ja",
+          "no": "Nein"
+        }
+      },
+      "select": {
+        "selectDefault": "Wähle eine Option",
+        "selectAll": "Alle auswählen"
+      },
+      "error": {
+        "name": {
+          "en": "Der Name auf Englisch ist erforderlich.",
+          "es": "Der Name auf Spanisch ist erforderlich.",
+          "de": "Der Name auf Deutsch ist erforderlich."
+        },
+        "description": {
+          "en": "Die Beschreibung auf Englisch ist erforderlich.",
+          "es": "Die Beschreibung auf Spanisch ist erforderlich.",
+          "de": "Die Beschreibung auf Deutsch ist erforderlich."
+        },
+        "price": "Der Preis ist erforderlich.",
+        "ingredients": "Die Zutaten sind erforderlich.",
+        "category": "Die Kategorie ist erforderlich."
+      }
+    }
+  },
+  "foods": {
+    "intro": {
+      "title": "Speisekarte",
+      "paragraph": "Absatz auf der Speisekartenseite"
+    }
+  },
+  "drinks": {
+    "intro": {
+      "title": "Getränkekarte",
+      "paragraph": "Absatz auf der Getränkeseite"
+    }
+  }
+}

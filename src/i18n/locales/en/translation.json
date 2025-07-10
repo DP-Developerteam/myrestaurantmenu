@@ -1,0 +1,45 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "pricing": "Pricing",
+    "demo": "Demos",
+    "contact": "Contact us",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "signOut": "Sign Out",
+    "about": "About us",
+    "status": "Status",
+    "partners": "Partners",
+    "privacy": "Privacy policy",
+    "legal": "Terms of service",
+    "cookies": "Cookie policy",
+    "academy": "Menu Academy",
+    "faq": "FAQs",
+    "blog": "Blogs",
+    "sales": "AI Sales Consultant",
+    "demoPizza": "Pizzeria DEMO",
+    "demoMarket": "Market food DEMO",
+    "addsOn": "Adds on",
+    "qrCodes": "QR Codes",
+    "smartMarket": "Smart Market"
+  },
+  "section": {
+    "hero": {
+      "welcome": "Welcome to <1>my restaurant menu</1>",
+      "welcomePrefix": "Welcome to ",
+      "welcomeHighlight": "my restaurant menu",
+      "homepage": {
+        "title": "Digital & interactive",
+        "subtitle": "menu for your restaurant",
+        "claimer": "<1>Designed</1> to <2>increase</2> your sales & engagement"
+      }
+    }
+  },
+  "ui": {
+    "buttons": {
+      "liveDemo": "Check live Demo now",
+      "promo": "Start trial of 30 days for free"
+    }
+  }
+}
