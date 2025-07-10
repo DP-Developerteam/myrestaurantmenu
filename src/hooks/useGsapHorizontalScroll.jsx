@@ -2,7 +2,7 @@
 import { useLayoutEffect, useRef, useState, useEffect } from 'react';
 // Import GSAP and pluggings
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/scrolltrigger';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Register GSAP pluggings
 gsap.registerPlugin(ScrollTrigger);
 
