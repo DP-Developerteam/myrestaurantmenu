@@ -103,7 +103,7 @@ const useGsapHorizontalScroll = (options = {}) => {
                     trigger: sectionRef.current,
                     pin: true,
                     pinSpacing: true,
-                    scrub: 1,
+                    scrub: 5,
                     start: startTrigger,
                     end: () => `+=${scrollWrapper.offsetWidth + extraScrollAmount}`,
                     invalidateOnRefresh: true,
