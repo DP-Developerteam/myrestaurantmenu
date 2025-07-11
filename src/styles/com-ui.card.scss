@@ -10,7 +10,10 @@
 .pin-spacer {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to bottom, $COLORS-base-100 0%,  $COLORS-base-300 25%, $COLORS-base-400 50%,  $COLORS-base-300 75%, $COLORS-base-100 100%);
+    background: $COLORS-base-100;
+    background: -moz-radial-gradient(center, $COLORS-base-300 0%, $COLORS-base-100 75%);
+    background: -webkit-radial-gradient(center, $COLORS-base-300 0%, $COLORS-base-100 75%);
+    background: radial-gradient(ellipse at center, $COLORS-base-300 0%, $COLORS-base-100 75%);
 }
 
 .section-cards {
@@ -134,6 +137,12 @@
     align-items: center;
     .cards-scroll-wrapper {
         width: fit-content;
+    }
+}
+
+.section-cards.scroll-active {
+    .cards-scroll-wrapper {
+        overflow-x: auto;
     }
 }
 

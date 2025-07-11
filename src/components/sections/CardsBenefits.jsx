@@ -2,6 +2,7 @@
 import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 // Import hooks
+import useMediaQuery from '../../hooks/useMediaQuery';
 import useGsapHorizontalScroll from '../../hooks/useGsapHorizontalScroll';
 // Import components
 import Card from '../ui/Card';
@@ -13,6 +14,9 @@ const CardsBenefits = ({ text, cardsData, cssClass = '' }) => {
 
     // State for card active
     const [openId, setOpenId] = useState(null);
+
+    // Declare state for responsive design using custom hook
+    const isDesktop = useMediaQuery('(min-width: 786px)');
 
     // Declare scroll horizontal hook
     const scrollHorizontalHook = useGsapHorizontalScroll({
@@ -27,14 +31,13 @@ const CardsBenefits = ({ text, cardsData, cssClass = '' }) => {
     const fallbackRef = useRef(null);
 
     // Use the hook's ref if no cssClass, otherwise use fallbackRef
-    const sectionRef = cssClass === '' ? scrollHorizontalHook.sectionRef : fallbackRef;
-    const isCentered = cssClass === '' ? scrollHorizontalHook.isCentered : false;
+    const sectionRef = cssClass === '' && isDesktop ? scrollHorizontalHook.sectionRef : fallbackRef;
+    const isCentered = cssClass === '' && isDesktop ? scrollHorizontalHook.isCentered : false;
 
 
     return (
         <section
-            // className={`section section-cards ${isCentered ? 'centered-cards' : ''}`}
-            className={`section section-cards ${isCentered ? 'centered-cards' : ''} ${cssClass}`}
+            className={`section section-cards ${isCentered ? 'centered-cards' : ''} ${cssClass} ${cssClass === '' && !isDesktop ? 'scroll-active' : ''}`}
             ref={sectionRef}
         >
             {text &&
