@@ -52,7 +52,9 @@
             .bullets-container {
                 @include displayFlex(column nowrap, flex-start, flex-start);
                 gap: 1rem;
-                .bullet {}
+                .bullet {
+                    @include fontSans(1.1rem, 400, inherit);
+                }
             }
             .buttons-container {
                 @include displayFlex(column nowrap, flex-start, flex-start);
@@ -60,6 +62,7 @@
         }
         .image-container {
             @include displayFlex(row wrap, center, center);
+            background-color: $COLORS-base-100;
             box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25);
             padding: 2rem 1rem;
             border-radius: 2rem;
@@ -78,6 +81,9 @@
         margin: 80px 0;
         .content-container {
             @include displayFlex(row wrap, center, flex-start);
+            .text-container {
+                max-width: 500px;
+            }
             .text-container, .image-container {
                 width: calc((100dvw - 5rem) / 2);
             }
@@ -93,6 +99,42 @@
         .content-container {
             div {
                 width: calc((1480px - 7.8rem) / 2);
+            }
+        }
+    }
+}
+
+// Section text image with red background
+.section-tabs.text-image-red {
+    background-image: $COLORS-gradient-red;
+    padding: 1.2rem;
+    border-radius: 2rem;
+    // border-radius: 2rem 2rem 3.2rem 3.2rem;
+    width: fit-content;
+    color: $COLORS-base-100;
+
+    .content-container {
+        .text-container {
+            .title {
+                @include fontSans(1.8rem, 700, inherit);
+            }
+        }
+        .image-container {
+            border-radius: 1rem;
+        }
+    }
+
+    @media (min-width: 720px) {
+        padding: 2rem;
+        .content-container {
+            .text-container {
+                max-width: 350px;
+            }
+            .image-container {
+                border-radius: 2rem;
+            }
+            .text-container, .image-container {
+                width: calc((100dvw - 9rem) / 2);
             }
         }
     }

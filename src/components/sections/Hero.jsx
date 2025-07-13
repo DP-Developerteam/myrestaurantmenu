@@ -68,7 +68,7 @@ const Hero = () => {
             <div className='section-content carousel-container'>
                 {isDesktop ? <Carousel slides={heroSlides} /> : null}
                 <div className='buttons-container'>
-                    <Button text='ui.buttons.liveDemo' cssClass='btn-inner-shadow' type= 'submit'/>
+                    <Button text='ui.buttons.liveDemo' cssClass='btn-solid-light btn-inner-shadow' type= 'submit'/>
                     <Button text='ui.buttons.promo' cssClass='btn-solid-red' />
                 </div>
             </div>

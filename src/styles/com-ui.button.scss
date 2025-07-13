@@ -10,6 +10,12 @@ button:disabled {
     cursor: not-allowed;
     position: relative;
 }
+button:hover {
+    border-color: transparent;
+}
+button:focus, button:focus-visible {
+    outline: 0;
+}
 .disabled {
     cursor: not-allowed;
     position: relative;
@@ -82,7 +88,8 @@ button:disabled {
 // Style button always inner shadow
 .btn-inner-shadow {
     box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.25);
-    @include buttonBorder(transparent, $COLORS-base-900, transparent);
+    @include buttonBorder($COLORS-base-100, $COLORS-base-900, transparent);
+    border: none;
 }
 
 .btn-full-width {

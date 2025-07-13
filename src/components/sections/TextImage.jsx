@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
-const TextImage = ({title, tabs, tabsContent}) => {
+const TextImage = ({title, tabs, cssClass, tabsContent}) => {
     // States for translations
     const { t } = useTranslation();
 
@@ -39,8 +39,13 @@ const TextImage = ({title, tabs, tabsContent}) => {
 
     // Render bullets
     const renderBullets = () => {
+        console.log(tabsContent);
         return (
             <>
+                {cssClass === 'text-image-red' ?
+                    <h3 className='title'>{t(tabsContent[0].title)}</h3>
+                    : null
+                }
                 <ul className='bullets-container'>
                     {Object.entries(activeContent.bullets).map(([key, bullet]) => (
                         <li className='bullet' key={key}>
@@ -81,7 +86,7 @@ const TextImage = ({title, tabs, tabsContent}) => {
 
 
     return (
-        <section className='section section-tabs'>
+        <section className={`section section-tabs ${cssClass}`} >
             {title && <h3 className='title'>{t(title)}</h3> }
             {tabs && tabsContent && renderTabs()}
             <div className='content-container'>
