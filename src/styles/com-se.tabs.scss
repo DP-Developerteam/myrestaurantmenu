@@ -105,11 +105,10 @@
 }
 
 // Section text image with red background
-.section-tabs.text-image-red {
+.section-tabs.section-tab-red {
     background-image: $COLORS-gradient-red;
     padding: 1.2rem;
     border-radius: 2rem;
-    // border-radius: 2rem 2rem 3.2rem 3.2rem;
     width: fit-content;
     color: $COLORS-base-100;
 
@@ -121,6 +120,7 @@
         }
         .image-container {
             border-radius: 1rem;
+            max-width: 525px;
         }
     }
 

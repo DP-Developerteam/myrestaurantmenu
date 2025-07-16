@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
-const TextImage = ({title, tabs, cssClass, tabsContent}) => {
+const Tabs = ({title, tabs, cssClass, tabsContent}) => {
     // States for translations
     const { t } = useTranslation();
 
@@ -42,7 +42,7 @@ const TextImage = ({title, tabs, cssClass, tabsContent}) => {
         console.log(tabsContent);
         return (
             <>
-                {cssClass === 'text-image-red' ?
+                {cssClass === 'section-tab-red' ?
                     <h3 className='title'>{t(tabsContent[0].title)}</h3>
                     : null
                 }
@@ -100,4 +100,4 @@ const TextImage = ({title, tabs, cssClass, tabsContent}) => {
     )
 }
 
-export default TextImage
+export default Tabs

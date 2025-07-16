@@ -8,7 +8,7 @@ import useGsapHorizontalScroll from '../../hooks/useGsapHorizontalScroll';
 import Card from '../ui/Card';
 
 
-const CardsBenefits = ({ text, cardsData, cssClass = '' }) => {
+const Cards = ({ text, cardsData, cssClass = '' }) => {
     // States for translations
     const { t } = useTranslation();
 
@@ -60,4 +60,4 @@ const CardsBenefits = ({ text, cardsData, cssClass = '' }) => {
     );
 };
 
-export default CardsBenefits;
+export default Cards;
