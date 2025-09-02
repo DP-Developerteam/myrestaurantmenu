@@ -9,6 +9,10 @@
 
 @use './styles/com-ui.card.scss' as *;
 
+:root {
+    background-color: $COLORS-base-100;
+}
+
 html {
     scroll-behavior: smooth;
     -ms-overflow-style: none;
