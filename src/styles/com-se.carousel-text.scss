@@ -6,13 +6,13 @@
 
 
 // ### Styles for ./components/section/CarouselText.jsx
+
 .section-carousel-text {
     position: relative;
     @include displayFlex(column wrap, center, center);
     gap: 0;
-    padding: 40px 20px;
+    padding: 40px 0;
     width: 100%;
-    // min-height: 600px;
 
     .section-title {
         font-size: 2rem;
@@ -27,12 +27,14 @@
         width: 100%;
         height: 100%;
         max-width: 1502px;
+        overflow: hidden;
+        padding-bottom: 3rem;
 
         .carousel-content {
             position: relative;
-            @include displayFlex(row nowrap, center, center);
-            width: 100%;
-            // perspective: 1200px;
+            @include displayFlex(row nowrap, center, flex-start);
+            gap: 0;
+            // width: 100%;
 
             .carousel-content-item {
                 // position: absolute;
@@ -41,9 +43,20 @@
                 background: #fff;
                 border-radius: 16px;
                 box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-                max-width: 320px;
+                width: 100%;
+                cursor: pointer;
+                overflow: hidden;
+
+                .content-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
 
                 &.center {
+                    flex-shrink: 0;
+                    max-width: 90%;
+                    min-width: 330px;
                     box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
                     margin: 0 -100px;
                     z-index: 10;
@@ -51,6 +64,9 @@
 
                 &.left, &.right {
                     transform: scale(0.7);
+                    max-height: 300px;
+                    overflow: hidden;
+                    // margin-top: -2.5rem;
                 }
 
                 .content-title {
@@ -129,12 +145,28 @@
 
         .carousel-container {
             .carousel-content {
-                // height: 500px;
 
                 .carousel-content-item {
                     max-width: 400px;
                     // min-height: 450px;
                     padding: 2rem;
+
+                    &.center {
+                        flex-shrink: 1;
+                        box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+                        margin: 0 -100px;
+                        z-index: 10;
+                    }
+
+                    &.left, &.right {
+                        transform: scale(0.7);
+                        max-height: 400px;
+                        overflow: hidden;
+                    }
+
+                    // &.center, &.left, &.right {
+                    //     flex-shrink: 1;
+                    // }
 
                     // &.left {
                     //     transform: translateX(-60%) scale(0.9);
@@ -226,3 +258,25 @@
         }
     }
 }
+
+/* === Fade-in animation for the center card on slide change — ADDED === */ // ADDED
+@keyframes carousel-fade-in { /* ADDED */ // ADDED
+  from { opacity: 0; transform: translateY(6px); } /* ADDED */ // ADDED
+  to   { opacity: 1; transform: translateY(0); }   /* ADDED */ // ADDED
+} /* ADDED */ // ADDED
+
+.section-carousel-text { /* ADDED */ // ADDED
+  .carousel-container { /* ADDED */ // ADDED
+    .carousel-content .carousel-content-item.center.fade-in-on-mount { /* ADDED */ // ADDED
+      animation: carousel-fade-in 620ms ease-out both; /* ADDED */ // ADDED
+      will-change: opacity, transform; /* ADDED */ // ADDED
+    } /* ADDED */ // ADDED
+  } /* ADDED */ // ADDED
+
+  /* Accessibility: honor reduced motion */ /* ADDED */ // ADDED
+  @media (prefers-reduced-motion: reduce) { /* ADDED */ // ADDED
+    .carousel-container .carousel-content .carousel-content-item.center.fade-in-on-mount { /* ADDED */ // ADDED
+      animation: none; /* ADDED */ // ADDED
+    } /* ADDED */ // ADDED
+  } /* ADDED */ // ADDED
+} /* ADDED */ // ADDED
