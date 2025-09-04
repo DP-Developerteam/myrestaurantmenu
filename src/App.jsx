@@ -6,6 +6,8 @@ import RootLayout from './layout/RootLayout.jsx';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { store, persistor } from './store/store';
+// Hooks
+import useDisableMediaInteractions from './hooks/useDisableMediaInteractions';
 
 // Pages
 import Homepage from './pages/public/Home.jsx';
@@ -27,6 +29,9 @@ const router = createBrowserRouter(
 )
 
 function App() {
+  // Call hook to avoid media download
+  useDisableMediaInteractions();
+
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>

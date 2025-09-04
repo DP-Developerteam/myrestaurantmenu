@@ -67,7 +67,7 @@ const Header = () => {
         return (
             <>
                 <button className='buttonMenu' onClick={toggleMenu} aria-expanded={isMenuOpen} aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} >
-                    {isMenuOpen ? <IconBurgerMenuExpanded className='icon' aria-hidden="true" /> : <IconBurgerMenu className='icon' aria-hidden="true" />}
+                    {isMenuOpen ? <IconBurgerMenuExpanded className='icon'  /> : <IconBurgerMenu className='icon' />}
                 </button>
             </>
         )

@@ -10,6 +10,7 @@ export const IconArrow = ({ size = 24, filled = true, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -28,6 +29,7 @@ export const IconBurgerMenu = ({ size = 24, filled = true, fillColor = 'currentC
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 28 18.7"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -45,6 +47,7 @@ export const IconBurgerMenuExpanded = ({ size = 24, filled = true, fillColor = '
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 28 18.7"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -63,6 +66,7 @@ export const IconChains = ({ size = 24, filled = false, fillColor = 'none', stro
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -94,7 +98,6 @@ export const IconChains = ({ size = 24, filled = false, fillColor = 'none', stro
     <path d="M463.45,276.34v-97.57h-71.83M120.35,178.77H48.55v97.57" />
   </svg>
 );
-
 export const IconChampagne = ({ size = 24, filled = true, fillColor = 'currentColor', strokeColor = 'currentColor', strokeWidth = 0, ...props }) => (
   <svg
     width={size}
@@ -104,6 +107,7 @@ export const IconChampagne = ({ size = 24, filled = true, fillColor = 'currentCo
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 54.7 60"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -119,7 +123,28 @@ export const IconChampagne = ({ size = 24, filled = true, fillColor = 'currentCo
     <circle cx="38.8" cy="9.8" r="1.2"/>
   </svg>
 );
-// Icon Cutlery - it is a cutlery/food menu symbol
+export const IconCheck = ({ size = 24, filled = true, fillColor = 'currentColor', strokeColor = 'currentColor', strokeWidth = 0, ...props }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 20 20"
+    fill={filled ? fillColor : 'none'}
+    stroke={strokeColor}
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M500.1,83.68c-15.84-15.86-41.57-15.85-57.43,0L184.21,342.16l-114.88-114.88c-15.86-15.86-41.58-15.86-57.44,0-15.86,15.86-15.86,41.58,0,57.44l143.59,143.59c7.93,7.93,18.32,11.9,28.71,11.9s20.8-3.96,28.72-11.9L500.1,141.12c15.86-15.85,15.86-41.58,0-57.44h0Z"
+      transform="scale(0.0390625)"
+      vectorEffect="non-scaling-stroke"
+    />
+  </svg>
+);
+
 export const IconCutlery = ({ size = 24, filled = true, fillColor = 'currentColor', strokeColor = 'currentColor', strokeWidth = 0, ...props }) => (
   <svg
     width={size}
@@ -129,6 +154,7 @@ export const IconCutlery = ({ size = 24, filled = true, fillColor = 'currentColo
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 30.1 40"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -149,6 +175,7 @@ export const IconCross = ({ size = 18, filled = true, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 30 30"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -168,6 +195,7 @@ export const IconExpand = ({ size = 24, filled = true, fillColor = 'currentColor
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -186,6 +214,7 @@ export const IconEye = ({ size = 24, filled = true, fillColor = 'currentColor', 
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 511.999 511.999"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -204,6 +233,7 @@ export const IconEyeCrossed = ({ size = 24, filled = true, fillColor = 'currentC
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 128 128"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -217,6 +247,7 @@ export const IconFlagUK = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
+    aria-hidden="true"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -252,6 +283,7 @@ export const IconFlagES = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
+    aria-hidden="true"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -265,6 +297,7 @@ export const IconFlagDE = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
+    aria-hidden="true"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -279,6 +312,7 @@ export const IconFlagFR = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
+    aria-hidden="true"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -293,6 +327,7 @@ export const IconFlagIT = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
+    aria-hidden="true"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -311,6 +346,7 @@ export const IconGlass = ({ size = 24, filled = true, fillColor = 'currentColor'
     fill={filled ? fillColor : 'none'}
     stroke={strokeColor}
     strokeWidth={strokeWidth}
+    aria-hidden="true"
     viewBox="0 0 30.3 40"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -327,6 +363,7 @@ export const IconGoogle = ({ size = 28, ...props }) => (
   <svg
     width={size}
     height={size}
+    aria-hidden="true"
     viewBox="1 1 22 22"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -349,6 +386,7 @@ export const IconHouse = ({ size = 24, filled = true, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 40 40"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -367,6 +405,7 @@ export const IconLike = ({ size = 24, filled = false, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -383,6 +422,7 @@ export const IconLanguage = ({ size = 24, filled = true, fillColor = 'currentCol
     fill={filled ? fillColor : 'none'}
     stroke={strokeColor}
     strokeWidth={strokeWidth}
+    aria-hidden="true"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -402,6 +442,7 @@ export const IconLoupe = ({ size = 24, filled = true, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 30 30"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -420,6 +461,7 @@ export const IconMegaphone = ({ size = 24, filled = true, fillColor = 'currentCo
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 56.9 60"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -446,6 +488,7 @@ export const IconMinus = ({ size = 24, filled = true, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -464,6 +507,7 @@ export const IconNotebook = ({ size = 24, filled = true, fillColor = 'currentCol
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 30.6 40"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -484,6 +528,7 @@ export const IconPlus = ({ size = 24, filled = true, fillColor = 'currentColor',
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -502,6 +547,7 @@ export const IconPencil = ({ size = 24, filled = true, fillColor = 'currentColor
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 30 30"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -520,6 +566,7 @@ export const IconTrash = ({ size = 24, filled = true, fillColor = 'currentColor'
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -539,6 +586,7 @@ export const IconUser = ({ size = 24, filled = true, fillColor = 'currentColor',
     strokeWidth={strokeWidth}
     strokeLinecap="round"
     strokeLinejoin="round"
+    aria-hidden="true"
     viewBox="0 0 512 512"
     xmlns="http://www.w3.org/2000/svg"
     {...props}

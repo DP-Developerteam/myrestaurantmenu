@@ -220,6 +220,7 @@ const Home = () => {
         ]
     };
     const SectionCarouselText01 = {
+        'cssClass': 'section-carousel-bullet-icon',
         'title': 'The Benefits at a Glance',
         'content': [
             {
@@ -288,19 +289,19 @@ const Home = () => {
             {
                 'title': '2 Name of the business owner',
                 'content': {
-                    '02': 'Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                    '01': 'Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 }
             },
             {
                 'title': '3 Name of the business owner',
                 'content': {
-                    '03': 'Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                    '01': 'Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 }
             },
             {
                 'title': '4 Name of the business owner',
                 'content': {
-                    '04': 'Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                    '01': 'Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
                 }
             },
         ]
@@ -374,7 +375,7 @@ const Home = () => {
             <Tabs title={SectionSingleTab.title} tabs={SectionSingleTab.tabs} tabsContent={SectionSingleTab.tabsContent} />
             <SectionCards cardsData={SectionCardsFeatures02.cardsData} />
             <Tabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} />
-            <SectionCarouselText title={SectionCarouselText01.title} content={SectionCarouselText01.content} />
+            <SectionCarouselText title={SectionCarouselText01.title} content={SectionCarouselText01.content} cssClass={SectionCarouselText01.cssClass} />
             <SectionCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
             <Tabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
             <SectionCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} />

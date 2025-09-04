@@ -1,9 +1,12 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import './../../styles/com-se.carousel-text.scss';
-import useDragToSlide from '../../hooks/useDragToSlide'; // ADDED
+// Hooks
+import useDragToSlide from '../../hooks/useDragToSlide';
+// Images and icons
+import { IconCheck } from '../../components/ui/Icons';
 
-const CarouselText = ({ content, title, cssClass, autoScrollInterval = 4000 }) => {
+const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) => {
     const { t } = useTranslation();
     const [activeIndex, setActiveIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
@@ -61,7 +64,8 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 4000 }) =
             <ul className='bullets-container'>
                 {Object.entries(contentData.content).map(([key, bullet]) => (
                     <li className='bullet' key={key}>
-                        <span className='icon'>•</span> {t(bullet)}
+                        {/* <span className='icon'>•</span> {t(bullet)} */}
+                        <IconCheck className='icon' /> {t(bullet)}
                     </li>
                 ))}
             </ul>
@@ -71,12 +75,8 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 4000 }) =
     // Render single content item
     const renderContentItem = (contentData, position, index) => {
         return (
-            // <div
-            //     className={`carousel-content-item ${position}`}
-            //     onClick={() => position !== 'center' && handleNavigation(index)}
-            // >
             <div
-                className={`carousel-content-item ${position} ${position === 'center' ? 'fade-in-on-mount' : ''}`}
+                className={`carousel-content-item ${position}`}
                 onClick={() => position !== 'center' && handleNavigation(index)}
                 key={`${position}-${index}`}
             >
@@ -128,8 +128,8 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 4000 }) =
             {title && <h3 className='section-title'>{t(title)}</h3>}
 
             <div className='carousel-container'>
-                {/* // <div className='carousel-content'> // commented out to add drag bindings // ADDED */}
-                <div className='carousel-content' {...dragBind} style={{ transform: `translateX(${offset}px)` }}> {/* ADDED */}
+                {/* <div className='carousel-content'> */}
+                <div className='carousel-content' {...dragBind} style={{ transform: `translateX(${offset}px)` }}>
                     {content.length > 1 && renderContentItem(content[left], 'left', left)}
                     {renderContentItem(content[center], 'center', center)}
                     {content.length > 1 && renderContentItem(content[right], 'right', right)}

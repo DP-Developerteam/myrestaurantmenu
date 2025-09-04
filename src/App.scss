@@ -27,3 +27,26 @@ body {
     width: 100dvw;
     overflow-x: hidden;
 }
+
+// Helpers to improve UX
+html {
+    // avoid blue highlight on phones click
+    -webkit-tap-highlight-color: transparent;
+
+    // avoid text/images selection
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+    img, picture, video, svg, canvas {
+        user-select: none;
+        -webkit-user-select: none;    /* Safari */
+        -moz-user-select: none;
+        -ms-user-select: none;
+
+        -webkit-user-drag: none;      /* Safari: stop drag ghost */
+        -webkit-touch-callout: none;  /* iOS: disable long-press save/open */
+    }
+}

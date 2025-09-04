@@ -39,7 +39,6 @@ const Tabs = ({title, tabs, cssClass, tabsContent}) => {
 
     // Render bullets
     const renderBullets = () => {
-        console.log(tabsContent);
         return (
             <>
                 {cssClass === 'section-tab-red' ?
