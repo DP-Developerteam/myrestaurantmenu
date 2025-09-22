@@ -145,24 +145,3 @@
         }
     }
 }
-
-// Section tabs with overflow background
-// .section-tabs.section-tab-overflow-background {
-//     .background-base-200 {
-//         display: block;
-//         position: absolute;
-//         left: -10rem;
-//         background-color: $COLORS-base-200;
-//         opacity: 0.4;
-//         width: 200%;
-//         height: calc(100% + 6rem);
-//         border-radius: 2rem;
-//         z-index: 1;
-//     }
-//     .content-container {
-//         // color: $COLORS-base-100;
-//     }
-//     .tabs-container, .content-container {
-//         z-index: 2;
-//     }
-// }

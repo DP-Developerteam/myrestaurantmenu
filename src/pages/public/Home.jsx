@@ -5,6 +5,8 @@ import SectionHero from '../../components/sections/Hero';
 import SectionCards from '../../components/sections/Cards';
 import Tabs from '../../components/sections/Tabs';
 import SectionCarouselText from '../../components/sections/CarouselText';
+import SectionContactCTA from '../../components/sections/ContactCTA';
+import SectionFaq from '../../components/sections/Faq';
 // Import icons & images
 import ImgCommission from '../../assets/img/commission.webp';
 import ImgGiftCart from '../../assets/img/gift-card.webp';
@@ -219,7 +221,7 @@ const Home = () => {
             },
         ],
         'cssClass': 'section-overflow-background',
-        'background': 'background-base-200'
+        'backgroundOverflow': 'background-base-200'
     };
     const SectionCarouselText01 = {
         'cssClass': 'section-carousel-bullet-icon',
@@ -376,11 +378,14 @@ const Home = () => {
             <SectionCards text={SectionIndustries.text} cardsData={SectionIndustries.cardsData} cssClass={SectionIndustries.cssClass} />
             <Tabs title={SectionSingleTab.title} tabs={SectionSingleTab.tabs} tabsContent={SectionSingleTab.tabsContent} />
             <SectionCards cardsData={SectionCardsFeatures02.cardsData} />
-            <Tabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} background={SectionMultiTabs.background} />
+            <Tabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} backgroundOverflow={SectionMultiTabs.backgroundOverflow} />
             <SectionCarouselText title={SectionCarouselText01.title} content={SectionCarouselText01.content} cssClass={SectionCarouselText01.cssClass} />
+            <SectionContactCTA />
             <SectionCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
             <Tabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
             <SectionCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} />
+            <SectionFaq />
+            <SectionContactCTA />
         </div>
     )
 }

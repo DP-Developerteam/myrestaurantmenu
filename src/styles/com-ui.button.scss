@@ -70,11 +70,12 @@ button:focus, button:focus-visible {
 .btn-solid-red {
     @include button($COLORS-red-900, $COLORS-base-100);
 }
-
-// Style button hover
-.btn-hover-gradient-red:hover {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
+.btn-solid-red:hover {
+    background-color: transparent;
+    background-image: $COLORS-gradient-red-diagonal;
 }
+
+
 
 // Style button with gradient color background
 .btn-gradient-red {

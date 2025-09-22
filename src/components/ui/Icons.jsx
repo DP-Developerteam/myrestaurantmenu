@@ -247,7 +247,7 @@ export const IconFlagUK = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
-    aria-hidden="true"
+    aria-label="english"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -283,7 +283,7 @@ export const IconFlagES = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
-    aria-hidden="true"
+    aria-label="español"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -297,7 +297,7 @@ export const IconFlagDE = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
-    aria-hidden="true"
+    aria-label="deutsch"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -312,7 +312,7 @@ export const IconFlagFR = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
-    aria-hidden="true"
+    aria-label="français"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -327,7 +327,7 @@ export const IconFlagIT = ({ size = 24, ...props }) => (
   <svg
     width={size}
     height={size}
-    aria-hidden="true"
+    aria-label="italiano"
     viewBox="0 0 24 16"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
@@ -422,7 +422,7 @@ export const IconLanguage = ({ size = 24, filled = true, fillColor = 'currentCol
     fill={filled ? fillColor : 'none'}
     stroke={strokeColor}
     strokeWidth={strokeWidth}
-    aria-hidden="true"
+    aria-label="Change language"
     viewBox="0 0 100 100"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
