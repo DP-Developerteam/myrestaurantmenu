@@ -1,8 +1,9 @@
 // Import styles and libraries
 import '../../styles/com-ui.card.scss';
+import { forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const Card = ({
+const Card = forwardRef (({
     id,
     cssClass = '',
     description,
@@ -12,7 +13,7 @@ const Card = ({
     text,
     currentOpenId,
     setOpenId,
-}) => {
+}, ref) => {
     // States for translations
     const { t } = useTranslation();
 
@@ -32,7 +33,7 @@ const Card = ({
 
 
     return (
-        <div className={`card ${cssClass} ${cardClass} ${size}`} onClick={handleOnClick}>
+        <div className={`card ${cssClass} ${cardClass} ${size}`} onClick={handleOnClick} ref={ref} >
             <div className="flip-inner">
                 <div className="flip-front">
                     <h3>{t(text)}</h3>
@@ -45,6 +46,6 @@ const Card = ({
             </div>
         </div>
     );
-};
+});
 
 export default Card;

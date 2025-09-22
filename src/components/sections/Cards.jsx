@@ -1,5 +1,5 @@
 // Import styles and libraries
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 // Import hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -34,6 +34,48 @@ const Cards = ({ text, cardsData, cssClass = '' }) => {
     const sectionRef = cssClass === '' && isDesktop ? scrollHorizontalHook.sectionRef : fallbackRef;
     const isCentered = cssClass === '' && isDesktop ? scrollHorizontalHook.isCentered : false;
 
+    // useRef to check first card
+    const firstCardRef = useRef(null);
+    const hasAutoFlippedRef = useRef(false);
+    const flipBackTimeoutRef = useRef(null);
+    // useEffect to autoflip first card
+    useEffect(() => {
+        const firstId = cardsData?.[0]?.id;
+        const node = firstCardRef.current;
+        if (!node || !firstId || hasAutoFlippedRef.current) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting && !hasAutoFlippedRef.current) {
+                    hasAutoFlippedRef.current = true;
+
+                    // Flip to back
+                    setOpenId(firstId);
+
+                    // Flip back after ~1.5s
+                    flipBackTimeoutRef.current = setTimeout(() => {
+                        // Only close if user hasn't changed to a different card
+                        setOpenId((prev) => (prev === firstId ? null : prev));
+                    }, 1500);
+
+                    // We only want this once
+                    observer.unobserve(node);
+                }
+            },
+            {
+                threshold: 0.6 // adjust sensitivity if needed
+            }
+        );
+
+        observer.observe(node);
+
+        return () => {
+            observer.disconnect();
+            if (flipBackTimeoutRef.current) {
+                clearTimeout(flipBackTimeoutRef.current);
+            }
+        };
+    }, [cardsData, setOpenId]);
 
     return (
         <section
@@ -47,8 +89,9 @@ const Cards = ({ text, cardsData, cssClass = '' }) => {
                 </div>
             }
             <div className="cards-scroll-wrapper">
-                {cardsData.map((card) => (
+                {cardsData.map((card, idx) => (
                     <Card
+                        ref={idx === 0 ? firstCardRef : null}
                         key={card.id}
                         {...card}
                         currentOpenId={openId}
