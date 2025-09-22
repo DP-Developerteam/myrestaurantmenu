@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 
-const Tabs = ({title, tabs, cssClass, tabsContent}) => {
+const Tabs = ({title, tabs, cssClass, tabsContent, background}) => {
     // States for translations
     const { t } = useTranslation();
 
@@ -83,9 +83,17 @@ const Tabs = ({title, tabs, cssClass, tabsContent}) => {
         )
     }
 
+    // Render background
+    const renderBackgroundd = () => {
+        return (
+            <div className={`${background}`}></div>
+        )
+    }
+
 
     return (
         <section className={`section section-tabs ${cssClass}`} >
+            {background && renderBackgroundd()}
             {title && <h3 className='title'>{t(title)}</h3> }
             {tabs && tabsContent && renderTabs()}
             <div className='content-container'>

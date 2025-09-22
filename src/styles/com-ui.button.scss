@@ -70,8 +70,16 @@ button:focus, button:focus-visible {
 .btn-solid-red {
     @include button($COLORS-red-900, $COLORS-base-100);
 }
-.btn-solid-red:hover {
+
+// Style button hover
+.btn-hover-gradient-red:hover {
     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
+}
+
+// Style button with gradient color background
+.btn-gradient-red {
+    background-color: transparent;
+    background-image: $COLORS-gradient-red-diagonal;
 }
 
 // Styles button with border
@@ -97,6 +105,7 @@ button:focus, button:focus-visible {
     padding: 0.3rem 0;
     max-width: 700px;
 }
+
 // Style button with 2 lines
 .btn-subtitel {
     flex-flow: column nowrap;

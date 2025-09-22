@@ -156,7 +156,8 @@
 
 // Section with 4 cards and a red background
 .section-cards.section-red-4-cards {
-    background-color: $COLORS-red-900;
+    // background-color: $COLORS-red-900;
+    background-image: $COLORS-gradient-red-diagonal;
     width: fit-content;
     max-width: calc(100dvw - 40px);
     padding: 0.75rem;

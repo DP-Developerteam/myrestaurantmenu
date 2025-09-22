@@ -27,6 +27,7 @@
 // ### LAYOUT SECTION
 .section {
     @include displayFlex(column nowrap, flex-start, flex-start);
+    position: relative;
     gap: 2rem;
     width: 100dvw;
     max-width: 1502px;
