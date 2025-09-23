@@ -2,6 +2,8 @@
 import '../../styles/com-se.tabs.scss';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+// Images and icons
+import { IconCheck } from '../../components/ui/Icons';
 
 
 const Tabs = ({title, tabs, cssClass, tabsContent, backgroundOverflow}) => {
@@ -48,7 +50,7 @@ const Tabs = ({title, tabs, cssClass, tabsContent, backgroundOverflow}) => {
                 <ul className='bullets-container'>
                     {Object.entries(activeContent.bullets).map(([key, bullet]) => (
                         <li className='bullet' key={key}>
-                            <span className='icon'>o</span> {t(bullet)}
+                            <IconCheck className='icon' /> {t(bullet)}
                         </li>
                     ))}
                 </ul>

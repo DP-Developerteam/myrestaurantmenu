@@ -16,13 +16,13 @@
 
     &:hover {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
     }
 
     .accordion-header {
         @include displayFlex(row nowrap, space-between, center);
         gap: 1rem;
         width: 100%;
-        cursor: pointer;
 
         .icon {
             transition: transform 0.5s ease-out;

@@ -64,7 +64,6 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
             <ul className='bullets-container'>
                 {Object.entries(contentData.content).map(([key, bullet]) => (
                     <li className='bullet' key={key}>
-                        {/* <span className='icon'>•</span> {t(bullet)} */}
                         <IconCheck className='icon' /> {t(bullet)}
                     </li>
                 ))}

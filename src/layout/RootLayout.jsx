@@ -6,6 +6,7 @@ import ScrollToTopButton from '../utils/ScrollToTopButton';
 // Import components
 import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
+import ChatBadge from '../components/layout/ChatBadge';
 
 function RootLayout() {
 
@@ -14,6 +15,7 @@ function RootLayout() {
             <ScrollToTopAuto />
             <ScrollToTopButton />
             <Header />
+            <ChatBadge />
             <div className='dp-content'>
                 <Outlet />
             </div>

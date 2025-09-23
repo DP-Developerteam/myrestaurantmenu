@@ -112,10 +112,7 @@
                     width: 100%;
 
                     .bullet {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: flex-start;
+                        @include displayFlex(row nowrap, flex-start, center);
                         margin-bottom: 12px;
                         font-size: 0.9rem;
                         line-height: 1.5;
@@ -145,7 +142,7 @@
                 background: rgba(0, 0, 0, 0.2);
                 cursor: pointer;
                 transition: transform 0.3s ease, background 0.3s ease;
-                margin: 0.6rem 0.8rem;
+                margin: 0.4rem;
 
                 &:hover {
                 background: rgba(0, 0, 0, 0.4);

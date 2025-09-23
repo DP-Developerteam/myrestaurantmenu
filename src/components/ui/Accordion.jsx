@@ -23,12 +23,8 @@ const Accordion = ({question, answer}) => {
 
 
     return (
-        <div className={`accordion ${isOpen ? 'open' : ''}`}>
-            <button
-                className="accordion-header"
-                onClick={handleClick}
-                aria-expanded={isOpen}
-            >
+        <div className={`accordion ${isOpen ? 'open' : ''}`} onClick={handleClick} >
+            <button className="accordion-header" aria-expanded={isOpen} >
                 <p className='font-bold'>{question}</p>
                 <IconArrow className={`icon ${isOpen ? 'rotated' : ''}`} />
             </button>

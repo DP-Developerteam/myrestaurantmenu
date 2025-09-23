@@ -1,0 +1,193 @@
+// src/styles/com-la.chat-badge.scss
+
+
+@use './_base.variables.scss' as *;
+@use './_base.mixins.scss' as *;
+
+
+// ### Styles for ./components/layout/header
+
+.chat-badge {
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 100%;
+    background-color: $COLORS-base-200;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
+        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
+        z-index: 10;
+    box-sizing: border-box;
+    cursor: pointer;
+    // hover bounce
+    &:hover {
+        animation: bounce 0.6s ease;
+    }
+    img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+
+    @media (min-width: 650px) {
+        right: 30px;
+        bottom: 15px;
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
+    }
+}
+
+.chat-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    .chat-overlay-bg {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: url("data:image/svg+xml;utf8,\
+            <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'>\
+                <line x1='6' y1='6' x2='18' y2='18' stroke='%23E52336' stroke-width='3.5' stroke-linecap='round'/>\
+                <line x1='18' y1='6' x2='6' y2='18' stroke='%23E52336' stroke-width='3.5' stroke-linecap='round'/>\
+            </svg>") 12 12, pointer;
+    }
+    .chatbox {
+        position: absolute;
+        @include displayFlex(column nowrap, flex-start, stretch);
+        right: 10px;
+        bottom: 70px;
+        width: calc(100dvw - 20px);
+        height: 60dvh;
+        // height: 400px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        animation: fadeInUp 0.3s ease;
+        overflow: hidden;
+        z-index: 10000;
+
+        .chatbox-header {
+            @include displayFlex(row nowrap, space-between, center);
+            background: $COLORS-base-200;
+            padding: 0.5rem 1rem;
+            .chatbox-close {
+                cursor: pointer;
+            }
+        }
+
+        .chatbox-messages {
+            @include displayFlex(column nowrap, flex-start, flex-start);
+            flex: 1 1 auto;
+            padding: 1rem;
+            font-size: 0.9rem;
+            overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+                -ms-overflow-style: none;  /* IE and Edge */
+
+            .message {
+                padding: 0.5rem 0.8rem;
+                margin: 0.4rem 0;
+                border-radius: 8px;
+                max-width: 80%;
+            }
+
+            .message.bot {
+                background: $COLORS-base-200;
+                align-self: flex-start;
+            }
+
+            .message.user {
+                background: $COLORS-red-900;
+                color: $COLORS-base-100;
+                align-self: flex-end;
+            }
+
+            .chat-options {
+                @include displayFlex(column wrap, flex-start, stretch);
+                gap: 0.4rem;
+                width: 100%;
+                .chat-option {
+                    border: none;
+                    background: $COLORS-red-900;
+                    color: white;
+                    padding: 0.5rem;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    transition: background 0.2s;
+                    &:hover {
+                        background: transparent;
+                        background-image: $COLORS-gradient-red-diagonal
+                    }
+                }
+            }
+        }
+
+        .chatbox-terms {
+                @include displayFlex(column wrap, flex-end, flex-start);
+                flex-grow: 1;
+                gap: 1rem;
+                padding: 1rem;
+                text-align: center;
+            }
+
+        .chatbox-footer {
+            display: flex;
+            border-top: 1px solid #eee;
+
+            input {
+                flex: 1;
+                border: none;
+                padding: 0.8rem 0.5rem;
+                outline: none;
+                color: $COLORS-base-900;
+                background-color: $COLORS-base-200;
+            }
+
+            button {
+                border: none;
+                color: $COLORS-base-100;
+                background: $COLORS-red-900;
+                padding: 0 1rem;
+                cursor: pointer;
+            }
+        }
+
+        @media (min-width: 650px) {
+            right: 30px;
+            bottom: 130px;
+            width: 300px;
+            height: 400px;
+        }
+    }
+}
+
+// Styles to block page scroll
+body.chat-open {
+    overflow: hidden !important;
+}
+
+// Keyframes
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-8px) scale(1.05); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+}

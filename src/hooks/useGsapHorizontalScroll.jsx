@@ -70,7 +70,7 @@ const useGsapHorizontalScroll = (options = {}) => {
 
         return () => window.removeEventListener('resize', handleResize);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-}, [isMounted, contentLength, wrapperSelector]);
+    }, [isMounted, contentLength, wrapperSelector]);
 
     // Apply GSAP scroll when needed
     useLayoutEffect(() => {

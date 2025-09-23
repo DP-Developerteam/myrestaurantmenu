@@ -8,6 +8,11 @@ import useGsapHorizontalScroll from '../../hooks/useGsapHorizontalScroll';
 import Card from '../ui/Card';
 
 
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
 const Cards = ({ text, cardsData, cssClass = '' }) => {
     // States for translations
     const { t } = useTranslation();
@@ -76,6 +81,41 @@ const Cards = ({ text, cardsData, cssClass = '' }) => {
             }
         };
     }, [cardsData, setOpenId]);
+
+    // ####################
+    // ####################
+    // TODO DIEGO!! This moves all cards of the page at the same time.
+    // ####################
+    // ####################
+    useEffect(() => {
+        if (isDesktop) return; // only run on mobile
+        if (!fallbackRef.current) return;
+
+        const ctx = gsap.context(() => {
+            const wrapper = fallbackRef.current.querySelector(".cards-scroll-wrapper");
+            if (!wrapper) return;
+
+            gsap.fromTo(
+            wrapper,
+            { x: 0 },
+            {
+                x: -30,
+                duration: 0.4,
+                delay: 3,
+                yoyo: true,
+                repeat: 1,
+                ease: "power1.inOut",
+                scrollTrigger: {
+                trigger: fallbackRef.current,
+                start: "top 80%",
+                onLeave: () => gsap.killTweensOf(wrapper) // ensure once
+                }
+            }
+            );
+        }, fallbackRef);
+
+        return () => ctx.revert();
+    }, [isDesktop]);
 
     return (
         <section

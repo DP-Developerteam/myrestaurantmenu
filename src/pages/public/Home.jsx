@@ -220,7 +220,7 @@ const Home = () => {
                 }
             },
         ],
-        'cssClass': 'section-overflow-background',
+        'cssClass': 'section-overflow-background section-tabs-bullet-icon',
         'backgroundOverflow': 'background-base-200'
     };
     const SectionCarouselText01 = {
@@ -341,34 +341,35 @@ const Home = () => {
             {
                 'title': '01. Onboarding',
                 'content': {
-                    '01': '- Briefly introduce your company.',
-                    '02': '- Initial consultation at the time of your choice',
-                    '03': '- Personalized support',
-                    '04': '- Discussion of individual wishes',
-                    '05': '- No previous experience required',
+                    '01': 'Briefly introduce your company.',
+                    '02': 'Initial consultation at the time of your choice',
+                    '03': 'Personalized support',
+                    '04': 'Discussion of individual wishes',
+                    '05': 'No previous experience required',
                 }
             },
             {
                 'title': '02. Creation',
                 'content': {
-                    '01': '- Briefly introduce your company.',
-                    '02': '- Initial consultation at the time of your choice',
-                    '03': '- Personalized support',
-                    '04': '- Discussion of individual wishes',
-                    '05': '- No previous experience required',
+                    '01': 'Briefly introduce your company.',
+                    '02': 'Initial consultation at the time of your choice',
+                    '03': 'Personalized support',
+                    '04': 'Discussion of individual wishes',
+                    '05': 'No previous experience required',
                 }
             },
             {
                 'title': '03. Deployment',
                 'content': {
-                    '01': '- Briefly introduce your company.',
-                    '02': '- Initial consultation at the time of your choice',
-                    '03': '- Personalized support',
-                    '04': '- Discussion of individual wishes',
-                    '05': '- No previous experience required',
+                    '01': 'Briefly introduce your company.',
+                    '02': 'Initial consultation at the time of your choice',
+                    '03': 'Personalized support',
+                    '04': 'Discussion of individual wishes',
+                    '05': 'No previous experience required',
                 }
             },
-        ]
+        ],
+        'cssClass': 'section-carousel-bullet-icon'
     };
 
     return (
@@ -383,7 +384,7 @@ const Home = () => {
             <SectionContactCTA />
             <SectionCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
             <Tabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
-            <SectionCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} />
+            <SectionCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} cssClass={SectionCarouselText03.cssClass} />
             <SectionFaq />
             <SectionContactCTA />
         </div>
