@@ -6,9 +6,12 @@ import { createPortal } from 'react-dom';
 import ImgChatBadge from '../../assets/img/chat-badge.webp';
 
 
-const ChatBadge = () => {
-    // State to open chat
-    const [isOpen, setIsOpen] = useState(false);
+const ChatBadge = ({isOpen, setIsOpen}) => {
+    // // State to open chat
+    // const [isOpen, setIsOpen] = useState(false);
+    const [internalOpen, setInternalOpen] = useState(false);
+    const open = isOpen !== undefined ? isOpen : internalOpen;
+    const toggleOpen = setIsOpen || setInternalOpen;
     // State to accept terms
     const [accepted, setAccepted] = useState(false);
     // State to manage messages
@@ -130,7 +133,7 @@ const ChatBadge = () => {
 
     return (
         <>
-            <button className="chat-badge" aria-label="Open chat support" onClick={() => setIsOpen(!isOpen)}>
+            <button className="chat-badge" aria-label="Open chat support" onClick={() => toggleOpen(!open)}>
                 <img src={ImgChatBadge} alt="" aria-hidden="true" />
             </button>
             {isOpen && createPortal(renderChatBox(), document.body)}

@@ -1,4 +1,5 @@
 // Import libs
+import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 // Import utils
 import ScrollToTopAuto from '../utils/ScrollToTopAuto';
@@ -10,14 +11,18 @@ import ChatBadge from '../components/layout/ChatBadge';
 
 function RootLayout() {
 
+    // State to manage chat badge
+    const [isChatOpen, setIsChatOpen] = useState(false);
+
+
     return (
         <div className='dp-wrapper'>
             <ScrollToTopAuto />
             <ScrollToTopButton />
             <Header />
-            <ChatBadge />
+            <ChatBadge isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
             <div className='dp-content'>
-                <Outlet />
+                <Outlet context={{ setIsChatOpen }} />
             </div>
             <Footer />
         </div>
