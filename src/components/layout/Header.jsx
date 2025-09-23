@@ -100,8 +100,8 @@ const Header = () => {
 
     return (
         <header className='header' role='banner'>
-            <NavLink className='tab' onClick={closeMenu} to='/'>
-                <img className='logo' src={LogoRed} alt='logo My Restaurant Menu App' title='My Restaurant Menu logo in color red' width='' height='' />
+            <NavLink className='tab' to='/'>
+                <img className='logo' src={LogoRed} alt='logo My Restaurant Menu App' title='My Restaurant Menu logo in color red' width='103.7' height='30' />
             </NavLink>
             <div className='nav-group' role='navigation'>
                 {isDesktop ? renderNavigation() : null}

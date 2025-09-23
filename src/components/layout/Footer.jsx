@@ -72,7 +72,7 @@ const Footer = () => {
 
     return (
         <div className='footer' role='contentinfo'>
-            <NavLink className='tab' to='/'>
+            <NavLink className='tab'>
                 <img className='logo' src={LogoSymbol} alt='logo My Restaurant Menu App' title='My Restaurant Menu logo in color red' width='' height='' />
             </NavLink>
             <div className='nav-container'>

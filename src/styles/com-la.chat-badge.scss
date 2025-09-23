@@ -5,15 +5,15 @@
 @use './_base.mixins.scss' as *;
 
 
-// ### Styles for ./components/layout/header
+// ### Styles for ./components/layout/ChatBadge
 
 .chat-badge {
     display: block;
     position: fixed;
     right: 10px;
     bottom: 10px;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height:70px;
     padding: 0.6rem;
     border: none;
     border-radius: 100%;
@@ -61,11 +61,10 @@
         position: absolute;
         @include displayFlex(column nowrap, flex-start, stretch);
         right: 10px;
-        bottom: 70px;
+        bottom: 90px;
         width: calc(100dvw - 20px);
         height: fit-content;
         max-height: 100dvh;
-        // height: 400px;
         background: white;
         border-radius: 12px;
         box-shadow: 0 8px 20px rgba(0,0,0,0.2);

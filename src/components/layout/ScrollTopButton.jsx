@@ -1,14 +1,15 @@
-//Import styles and libraries
+// Import styles and libraries
+import '../../styles/com-la.scroll-top.scss';
 import { useEffect, useState } from 'react';
 //Import icons
-import { IconArrow } from '../components/ui/Icons';
+import { IconArrow } from '../ui/Icons';
 
 // ***************
 // ScrollToTopButton Component
 // Displays a button to scroll back to the top when the user scrolls down the page
 // ***************
 
-const ScrollToTopButton = () => {
+const ScrollTopButton = () => {
     // State to toggle button visibility
     const [showScrollButton, setShowScrollButton] = useState(false);
 
@@ -16,7 +17,7 @@ const ScrollToTopButton = () => {
         // Function to toggle visibility based on scroll position
         const handleScroll = () => {
             // Shows button when scrolled down more than 500px
-            setShowScrollButton(window.scrollY > 500);
+            setShowScrollButton(window.scrollY > 1200);
         };
 
         // Attach the scroll event listener when component mounts
@@ -34,7 +35,7 @@ const ScrollToTopButton = () => {
     return (
         <>
             {showScrollButton && (
-                <button onClick={scrollToTop} className="scrollTop">
+                <button onClick={scrollToTop} className="btn-scroll-top">
                     <IconArrow className="icon reversed" />
                 </button>
             )}
@@ -42,4 +43,4 @@ const ScrollToTopButton = () => {
     );
 }
 
-export default ScrollToTopButton
+export default ScrollTopButton
