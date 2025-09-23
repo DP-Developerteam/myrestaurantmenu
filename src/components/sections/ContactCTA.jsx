@@ -1,6 +1,8 @@
 // Import styles and libraries
 import '../../styles/com-se.contactcta.scss';
 // import { useTranslation } from 'react-i18next';
+// Images and icons
+import ImgContactCta from '../../assets/img/contact-cta.webp';
 
 const ContactCTA = () => {
     // States for translations
@@ -16,7 +18,7 @@ const ContactCTA = () => {
                 <p className='font-smaller'>We’ll contact you within 24 hours</p>
             </div>
             <div className='image-contact-info-container'>
-                <img src='' alt='' />
+                <img src={ImgContactCta} alt='' />
                 <div className='text-container'>
                     <p className='font-bold'>Diego Pérez</p>
                     <p className='font-smaller'>Founder of <span className='font-red font-bold'>MyRestaurantMenu</span></p>
