@@ -381,7 +381,7 @@ const Home = () => {
             <SectionCards cardsData={SectionCardsFeatures02.cardsData} />
             <Tabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} backgroundOverflow={SectionMultiTabs.backgroundOverflow} />
             <SectionCarouselText title={SectionCarouselText01.title} content={SectionCarouselText01.content} cssClass={SectionCarouselText01.cssClass} />
-            <SectionContactCTA />
+            <SectionContactCTA cssClass={'section-overflow-background'} backgroundOverflow={'background-red-200'}/>
             <SectionCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
             <Tabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
             <SectionCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} cssClass={SectionCarouselText03.cssClass} />

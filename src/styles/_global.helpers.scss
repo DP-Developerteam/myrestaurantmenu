@@ -43,4 +43,15 @@
         border-radius: 2rem;
         z-index: 1;
     }
+    .background-red-200 {
+        display: block;
+        position: absolute;
+        left: -10rem;
+        background-color: $COLORS-red-900;
+        opacity: 1;
+        width: 200%;
+        height: 100%;
+        border-radius: 2rem;
+        z-index: 1;
+    }
 }
