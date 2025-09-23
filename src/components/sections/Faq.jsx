@@ -1,9 +1,13 @@
 // Import styles and libraries
 import '../../styles/com-se.faq.scss';
+import { useOutletContext } from 'react-router-dom';
 // Import components
 import Accordion from '../ui/Accordion';
 
 const Faq = () => {
+
+    // State to manage chat badge
+    const { setIsChatOpen } = useOutletContext();
 
     const faqs = [
         {
@@ -46,7 +50,7 @@ const Faq = () => {
             <div className='text-container'>
                 <h4 className='title'>FAQ</h4>
                 <p className='font-normal'>You can either fill a formular so we come back to you with a tailored service for your requirements. Or you can direct call or contact our founder.</p>
-                <button className='btn-solid-red' >Chat live with Diego’s assistant</button>
+                <button className='btn-solid-red' onClick={() => setIsChatOpen(true)} >Chat live with Diego’s assistant</button>
             </div>
             <div className='accordion-container'>
                 {faqs.map((faq, index) => (

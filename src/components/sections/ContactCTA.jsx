@@ -37,7 +37,7 @@ const ContactCTA = ({cssClass, backgroundOverflow}) => {
                         <p className='font-normal'>+49 0176 62 67 69 49</p>
                         <p className='font-smaller'>Mon-Fri. 09:00 - 17:00</p>
                         <p className='font-normal'>contact@myrestaurantapp.com</p>
-                        <button className='btn-solid-red'onClick={() => setIsChatOpen(true)}  >Chat live with Diego’s assistant</button>
+                        <button className='btn-solid-red' onClick={() => setIsChatOpen(true)}  >Chat live with Diego’s assistant</button>
                     </div>
                 </div>
             </div>
