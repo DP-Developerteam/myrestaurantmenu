@@ -42,11 +42,11 @@ html {
     -webkit-touch-callout: none;
     img, picture, video, svg, canvas {
         user-select: none;
-        -webkit-user-select: none;    /* Safari */
+        -webkit-user-select: none;
         -moz-user-select: none;
         -ms-user-select: none;
 
-        -webkit-user-drag: none;      /* Safari: stop drag ghost */
-        -webkit-touch-callout: none;  /* iOS: disable long-press save/open */
+        -webkit-user-drag: none;
+        -webkit-touch-callout: none;
     }
 }

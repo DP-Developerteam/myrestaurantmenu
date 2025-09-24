@@ -41,5 +41,57 @@
       "liveDemo": "Check live Demo now",
       "promo": "Start trial of 30 days for free"
     }
+  },
+  "chatbot": {
+    "notUnderstood": "Sorry, I didn’t understand your question.",
+    "suspicious": "⚠️ Your messages look suspicious, so I can’t continue this conversation right now.",
+    "header": "Chat Support",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "export": "Export",
+
+    "responses": {
+      "intros": [
+        "Of course! ",
+        "Absolutely! ",
+        "Great question 👍 ",
+        "I'd be happy to explain: "
+      ],
+      "outros": [
+        " Would you like me to give you more details?",
+        " Would you like me to show you how it works in practice?",
+        " This is one of our most popular features 🚀",
+        " Does this answer your question?"
+      ],
+      "pricingOutro": " And remember, our plans are designed to grow with your restaurant 💡",
+      "supportOutro": " And don't worry, our team usually responds in less than 24 hours ⏱️"
+    },
+    "intents": {
+      "greeting": [
+        "Hello 👋! How can I help you today?",
+        "Welcome 🙌 Would you like to know more about Myrestaurantmenu?"
+      ],
+      "thanks": [
+        "You're welcome! 🙌",
+        "Glad to help! 😃",
+        "My pleasure — do you have any more questions?"
+      ],
+      "goodbye": [
+        "See you later! 🍽️",
+        "Goodbye, have a great day at your restaurant 🚀"
+      ],
+      "support": [
+        "No te preocupes, puedo conectarte con nuestro equipo. ¿Podrías compartir tus datos de contacto, por favor?",
+        "Me encantaría ayudarte. ¿Puedes dejar tu correo electrónico o teléfono para que podamos llamarte?"
+      ]
+    },
+    "leadForm": {
+      "name": "Your name",
+      "email": "Your email",
+      "phone": "Your phone number",
+      "submit": "Send",
+      "cancel": "Cancel",
+      "requireContact": "Please provide at least an email or phone number."
+    }
   }
 }

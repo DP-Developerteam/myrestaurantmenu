@@ -21,7 +21,7 @@
     box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
         -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
         -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
-        z-index: 10;
+    z-index: 10;
     box-sizing: border-box;
     cursor: pointer;
     // hover bounce
@@ -131,6 +131,37 @@
                         background: transparent;
                         background-image: $COLORS-gradient-red-diagonal
                     }
+                }
+            }
+
+            .lead-form {
+                @include displayFlex(column nowrap, flex-start, stretch);
+                background: $COLORS-base-200;
+                width: 100%;
+                label, input {
+                    all: unset;
+                    // width: 100%;
+                }
+                label {
+                    @include fontSans(0.75rem, 400, inherit);
+                }
+                input {
+                    background: $COLORS-base-100;
+                    padding: 0.5rem 0.8rem;
+                    margin: 0.4rem 0;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
+                        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
+                        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
+                    // avoid text-lines out of the message container
+                    word-wrap: break-word;
+                    overflow-wrap: break-word;
+                    word-break: break-word;
+                    max-width: 100%;
+                    white-space: pre-wrap;
+                }
+                input:last-of-type {
+                    margin-bottom: 2rem;
                 }
             }
         }

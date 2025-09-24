@@ -430,5 +430,53 @@
       "title": "Menú de bebidas",
       "paragraph": "Párrafo en la página de a bebidas"
     }
+  },
+  "chatbot": {
+    "notUnderstood": "Sorry, I didn’t understand your question.",
+    "suspicious": "⚠️ Your messages look suspicious, so I can’t continue this conversation right now.",
+    "header": "Chat de atención al cliente",
+    "placeholder": "Type your message...",
+    "send": "Enviar",
+    "export": "Export",
+
+    "responses": {
+      "intros": [
+        "¡Claro que sí! ",
+        "¡Por supuesto! ",
+        "Genial pregunta 👍 ",
+        "Con gusto te explico: "
+      ],
+      "outros": [
+        " ¿Quieres que te dé más detalles?",
+        " ¿Quieres que te muestre cómo funciona en la práctica?",
+        " Esta es una de nuestras funciones más populares 🚀",
+        " ¿Responde esto a tu pregunta?"
+      ],
+      "pricingOutro": " Y recuerda, nuestros planes están diseñados para crecer con tu restaurante 💡",
+      "supportOutro": " Y no te preocupes, nuestro equipo responde normalmente en menos de 24 horas ⏱️"
+    },
+    "intents": {
+      "greeting": [
+        "¡Hola 👋! ¿Cómo puedo ayudarte hoy?",
+        "Bienvenido 🙌 ¿Quieres saber más sobre Myrestaurantmenu?"
+      ],
+      "thanks": [
+        "¡De nada! 🙌",
+        "Encantado de ayudarte 😃",
+        "Con gusto — ¿quieres preguntar algo más?"
+      ],
+      "goodbye": [
+        "¡Hasta luego! 🍽️",
+        "Adiós, que tengas un gran día en tu restaurante 🚀"
+      ]
+    },
+    "leadForm": {
+      "name": "Tu nombre",
+      "email": "Tu correo electrónico",
+      "phone": "Tu número de teléfono",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "requireContact": "Por favor proporciona al menos un correo o un teléfono."
+    }
   }
 }
