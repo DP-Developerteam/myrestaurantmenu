@@ -13,6 +13,8 @@
     height: 300px;
     overflow: hidden;
     border-radius: 0.8rem;
+    will-change: transform;
+    cursor: grab;
 
     .carousel-image {
         object-fit: cover;

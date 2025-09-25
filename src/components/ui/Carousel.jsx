@@ -1,9 +1,11 @@
 // Import styles and libraries
 import '../../styles/com-ui.carousel.scss';
 import { useEffect, useState } from 'react';
-// import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+// Import hooks
+import useDragToSlide from '../../hooks/useDragToSlide';
+
 
 const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
     // States for translations
@@ -14,14 +16,35 @@ const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
     // State for current slide
     const currentSlide = slides[currentIndex];
 
+    // State for hovered items
+    const [isHovered, setIsHovered] = useState(false);
+
+    // Set use drag hook
+    const { bind: dragBind, offset, isDragging } = useDragToSlide({
+        // Horizontal-only dragging; the hook handles intent locking & a11y
+        fractionOfSize: 0.15,
+        velocityThreshold: 0.65,
+        onCommit: (dir) => {
+            setCurrentIndex(prev => {
+            const len = slides.length;
+            if (!len) return prev;
+            return (prev + (dir === 'next' ? 1 : -1) + len) % len;
+            });
+        },
+        onCancel: () => {},          // optional
+    });
+
     // Auto-slide
     useEffect(() => {
+        // Pause auto slide while hovered or dragging, and when there’s only one slide
+        if (isHovered || isDragging || slides.length <= 1) return;
+        // Set interval for auto scroll
         const interval = setInterval(() => {
-        setCurrentIndex((prev) => (prev + 1) % slides.length);
+            setCurrentIndex((prev) => (prev + 1) % slides.length);
         }, autoSlideInterval);
 
         return () => clearInterval(interval);
-    }, [slides.length, autoSlideInterval]);
+    }, [slides.length, autoSlideInterval, isHovered, isDragging]);
 
     // Manual navigation
     const goToSlide = (index) => setCurrentIndex(index);
@@ -63,7 +86,16 @@ const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
     }
 
     return (
-        <div className="carousel">
+        <div
+            className="carousel"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            {...dragBind}
+            style={{
+                transform: `translateX(${offset}px)`,
+                transition: isDragging ? 'none' : 'transform 200ms ease-out',
+            }}
+        >
             <img src={currentSlide.image} alt={currentSlide.alt} className="carousel-image" />
             {renderText()}
             {renderNavigationDots()}

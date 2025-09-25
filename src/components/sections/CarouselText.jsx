@@ -1,7 +1,8 @@
+// Import styles and libraries
+import './../../styles/com-se.carousel-text.scss';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import './../../styles/com-se.carousel-text.scss';
-// Hooks
+// Import hooks
 import useDragToSlide from '../../hooks/useDragToSlide';
 // Images and icons
 import { IconCheck } from '../../components/ui/Icons';
@@ -11,19 +12,19 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
     const [activeIndex, setActiveIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
-    // Drag-to-slide hook setup // ADDED
-    const { bind: dragBind, offset, isDragging } = useDragToSlide({ // ADDED
-        axis: 'x', // ADDED
-        fractionOfSize: 0.2, // ADDED
-        onCommit: (dir) => { // ADDED
-            setActiveIndex(prev => { // ADDED
-                const len = content?.length ?? 0; // ADDED
-                if (!len) return prev; // ADDED
-                return (prev + (dir === 'next' ? 1 : -1) + len) % len; // ADDED
-            }); // ADDED
-        }, // ADDED
-        onCancel: () => {}, // ADDED
-    }); // ADDED
+    // Set use drag hook
+    const { bind: dragBind, offset, isDragging } = useDragToSlide({
+        axis: 'x',
+        fractionOfSize: 0.2,
+        onCommit: (dir) => {
+            setActiveIndex(prev => {
+                const len = content?.length ?? 0;
+                if (!len) return prev;
+                return (prev + (dir === 'next' ? 1 : -1) + len) % len;
+            });
+        },
+        onCancel: () => {},
+    });
 
     // Pause auto-scroll while actively dragging // ADDED
     useEffect(() => { // ADDED

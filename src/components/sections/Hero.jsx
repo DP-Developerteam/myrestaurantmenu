@@ -1,4 +1,5 @@
 // Import styles and libraries
+import './../../styles/com-se.hero.scss';
 import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
