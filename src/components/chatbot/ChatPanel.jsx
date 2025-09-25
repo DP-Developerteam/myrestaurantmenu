@@ -163,7 +163,12 @@ export default function ChatPanel({ onClose }) {
         } else {
         // Try Gemini fallback
             try {
-                const geminiText = await paraphraseGemini(input);
+                // const geminiText = await paraphraseGemini(input);
+                const lastTwo = messages
+                    .filter(m => m.role !== 'system') // skip system/meta if any
+                    .slice(-4); // 2 user + 2 bot = 4 messages
+                const geminiText = await paraphraseGemini(input, lastTwo);
+
                 botReply = { role: 'bot', text: geminiText };
             } catch (e) {
                 console.error("Gemini fallback failed:", e);
