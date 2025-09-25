@@ -245,6 +245,11 @@
             max-height: 70dvh;
         }
     }
+    .chatbox.chatbox--touch {
+        bottom: auto;
+        top: 2rem;
+        max-height: 50dvh;
+    }
 }
 
 // Keyframes
