@@ -15,11 +15,34 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## FOLDER STRUCCTURE
 .
+├── public
+│   ├── faq
+│   │   ├── faq.en.json
+│   │   └── faq.es.json
+│   ├── apple-touch-icon.png
+│   ├── favicon-96x96.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── robots.txt
+│   ├── site.webmanifest
+│   ├── web-app-manifest-192x192.png
+│   ├── web-app-manifest-512x512.png
+│   └── styles
 ├── src
 │   ├── assets
 │   │   ├── fonts
 │   │   └── img
 │   ├── components
+│   │   ├── chatbot
+│   │   │   ├── analyticcs.js
+│   │   │   ├── antibot.js
+│   │   │   ├── ChatPanel.jsx
+│   │   │   ├── intents.js
+│   │   │   ├── LeadForm.jsx
+│   │   │   ├── retrieval.js
+│   │   │   ├── store.js
+│   │   │   ├── style.js
+│   │   │   └── TermsModal.jsx
 │   │   ├── layout
 │   │   │   ├── ChatBadge.jsx
 │   │   │   ├── Footer.jsx
@@ -46,7 +69,16 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   └── useScrollToTop.jsx
 │   ├── i18n
 │   │   ├── locales
-│   │   │   └── en.js
+│   │   │   ├── de
+│   │   │   │   └── translation.json
+│   │   │   ├── en
+│   │   │   │   └── translation.json
+│   │   │   ├── es
+│   │   │   │   └── translation.json
+│   │   │   ├── fr
+│   │   │   │   └── translation.json
+│   │   │   └── it
+│   │   │       └── translation.json
 │   │   └── i18n.js
 │   ├── layout
 │   │   └── RootLayout.jsx

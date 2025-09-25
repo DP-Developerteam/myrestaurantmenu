@@ -430,5 +430,86 @@
       "title": "Getränkekarte",
       "paragraph": "Absatz auf der Getränkeseite"
     }
+  },
+  "chatbot": {
+    "notUnderstood": "Entschuldigung, ich habe deine Frage nicht verstanden.",
+    "suspicious": "⚠️ Deine Nachrichten wirken verdächtig, deshalb kann ich dieses Gespräch gerade nicht fortsetzen.",
+    "header": "Chat-Support",
+    "placeholder": "Schreibe deine Nachricht...",
+    "send": "Senden",
+    "export": "Exportieren",
+
+    "responses": {
+      "intros": [
+        "Natürlich! ",
+        "Absolut! ",
+        "Gute Frage 👍 ",
+        "Gerne erkläre ich: ",
+        "Klar doch! ",
+        "Guter Punkt — schauen wir es uns an 👇 ",
+        "Kein Problem, so funktioniert es: ",
+        "Ich erkläre dir das gerne 🙂"
+      ],
+      "outros": [
+        " Möchtest du mehr Details dazu?",
+        " Soll ich dir zeigen, wie es in der Praxis funktioniert?",
+        " Das ist eines unserer beliebtesten Features 🚀",
+        " Beantwortet das deine Frage?",
+        " Soll ich dich Schritt für Schritt durch ein Beispiel führen?",
+        " Viele Restaurantbesitzer lieben dieses Feature 🙌",
+        " Soll ich es dir Schritt für Schritt erklären?",
+        " Darf ich dir einen Tipp geben, wie du das Beste daraus machst?"
+      ],
+      "pricingOutro": [
+        " Und denk daran: Unsere Tarife wachsen mit deinem Restaurant 💡",
+        " Außerdem sind unsere Preise flexibel – du zahlst nur, was du wirklich brauchst 💸",
+        " Das Schöne ist, du kannst klein anfangen und Funktionen nach Bedarf hinzufügen 🚀",
+        " Und nicht vergessen: Jahrespläne bringen zusätzliche Ersparnisse 😉"
+      ],
+      "supportOutro": [
+        " Keine Sorge, unser Team antwortet normalerweise in weniger als 24 Stunden ⏱️",
+        " Wenn du uns brauchst, sind wir nur eine E-Mail entfernt 📧",
+        " Unser Support ist freundlich, schnell und immer hilfsbereit 🙌",
+        " Die meisten Fragen werden am selben Tag beantwortet, oft innerhalb weniger Stunden ⚡"
+      ]
+    },
+    "intents": {
+      "greeting": [
+        "Hallo 👋! Wie kann ich dir heute helfen?",
+        "Willkommen 🙌 Möchtest du mehr über Myrestaurantmenu erfahren?",
+        "Hi 😊 Suchst du nach Infos zu Funktionen oder Preisen?",
+        "Hey! 👋 Interessiert, wie Myrestaurantmenu deinem Restaurant helfen kann?",
+        "Schön dich zu sehen! 🍽️ Was möchtest du zuerst erkunden?"
+      ],
+      "thanks": [
+        "Gern geschehen! 🙌",
+        "Freut mich, dass ich helfen konnte 😃",
+        "Sehr gerne — hast du noch weitere Fragen?",
+        "Jederzeit! 🤗",
+        "Schön, dass ich helfen konnte — gibt es noch etwas, das du wissen möchtest?",
+        "Ich bin immer für dich da! 👌"
+      ],
+      "goodbye": [
+        "Bis später! 🍽️",
+        "Auf Wiedersehen, hab einen tollen Tag in deinem Restaurant 🚀",
+        "Mach’s gut, bis bald 👋",
+        "Tschüss — ich wünsche dir viele glückliche Gäste 🌟",
+        "Wir sehen uns! 👌"
+      ],
+      "support": [
+        "Kein Problem, ich verbinde dich mit unserem Team. Könntest du bitte deine Kontaktdaten angeben?",
+        "Ich helfe dir gerne. Kannst du deine E-Mail oder Telefonnummer hinterlassen?",
+        "Wenn du möchtest, leite ich das direkt an unser Support-Team weiter 📩 — kannst du uns deinen Kontakt geben?",
+        "Unser Team meldet sich schnell zurück, wenn du uns deine E-Mail oder Nummer gibst 👌"
+      ]
+    },
+    "leadForm": {
+      "name": "Dein Name",
+      "email": "Deine E-Mail",
+      "phone": "Deine Telefonnummer",
+      "submit": "Senden",
+      "cancel": "Abbrechen",
+      "requireContact": "Bitte gib mindestens eine E-Mail-Adresse oder Telefonnummer an."
+    }
   }
 }

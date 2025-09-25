@@ -21,10 +21,12 @@ export function useStyler() {
 
         // Personalización por intent
         if (intent === "pricing") {
-            outro = t("chatbot.responses.pricingOutro");
+            const pricingOutros = t("chatbot.responses.pricingOutro", { returnObjects: true });
+            outro = Array.isArray(pricingOutros) ? pick(pricingOutros) : pricingOutros || "";
         }
         if (intent === "support") {
-            outro = t("chatbot.responses.supportOutro");
+            const supportOutros = t("chatbot.responses.supportOutro", { returnObjects: true });
+            outro = Array.isArray(supportOutros) ? pick(supportOutros) : supportOutros || "";
         }
 
         return `${intro} ${answer} ${outro}`;

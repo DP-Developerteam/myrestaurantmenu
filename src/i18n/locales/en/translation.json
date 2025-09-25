@@ -55,34 +55,63 @@
         "Of course! ",
         "Absolutely! ",
         "Great question 👍 ",
-        "I'd be happy to explain: "
+        "I'd be happy to explain: ",
+        "Sure thing! ",
+        "Good point — let’s go over it 👇 ",
+        "No problem, here’s how it works: ",
+        "Happy to clarify this for you 🙂"
       ],
       "outros": [
         " Would you like me to give you more details?",
         " Would you like me to show you how it works in practice?",
         " This is one of our most popular features 🚀",
-        " Does this answer your question?"
+        " Does this answer your question?",
+        " Would you like me to walk you through an example?",
+        " Many restaurant owners love using this feature 🙌",
+        " Would you like me to break it down step by step?",
+        " Can I share a tip on how to get the most out of it?"
       ],
-      "pricingOutro": " And remember, our plans are designed to grow with your restaurant 💡",
-      "supportOutro": " And don't worry, our team usually responds in less than 24 hours ⏱️"
+      "pricingOutro": [
+        " And remember, our plans are designed to grow with your restaurant 💡",
+        " Plus, our pricing is flexible, so you only pay for what you really need 💸",
+        " The nice part is you can start simple and add features as you grow 🚀",
+        " And don’t forget: yearly plans come with extra savings 😉"
+      ],
+      "supportOutro": [
+        " And don't worry, our team usually responds in less than 24 hours ⏱️",
+        " If you ever need us, we’re just an email away 📧",
+        " Our support is friendly, fast, and always happy to help 🙌",
+        " Most questions get answered the same day, often within a few hours ⚡"
+      ]
     },
     "intents": {
       "greeting": [
         "Hello 👋! How can I help you today?",
-        "Welcome 🙌 Would you like to know more about Myrestaurantmenu?"
+        "Welcome 🙌 Would you like to know more about Myrestaurantmenu?",
+        "Hi there! 😊 Are you looking for features or pricing info?",
+        "Hey! 👋 Curious about how Myrestaurantmenu can help your restaurant?",
+        "Good to see you! 🍽️ What would you like to explore first?"
       ],
       "thanks": [
         "You're welcome! 🙌",
         "Glad to help! 😃",
-        "My pleasure — do you have any more questions?"
+        "My pleasure — do you have any more questions?",
+        "Anytime! 🤗",
+        "Happy I could help — is there something else you’d like to know?",
+        "Always here if you need me! 👌"
       ],
       "goodbye": [
         "See you later! 🍽️",
-        "Goodbye, have a great day at your restaurant 🚀"
+        "Goodbye, have a great day at your restaurant 🚀",
+        "Take care and talk soon 👋",
+        "Bye for now — wishing you lots of happy customers 🌟",
+        "Catch you later! 👌"
       ],
       "support": [
-        "No te preocupes, puedo conectarte con nuestro equipo. ¿Podrías compartir tus datos de contacto, por favor?",
-        "Me encantaría ayudarte. ¿Puedes dejar tu correo electrónico o teléfono para que podamos llamarte?"
+        "No worries, I can connect you with our team. Could you share your contact details, please?",
+        "I'd love to help. Can you leave your email or phone so we can reach out?",
+        "If you’d prefer, I can pass this directly to our support team 📩 — can you share your contact?",
+        "Our team can follow up quickly if you give us your email or number 👌"
       ]
     },
     "leadForm": {

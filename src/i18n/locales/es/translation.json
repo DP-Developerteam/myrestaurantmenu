@@ -432,42 +432,75 @@
     }
   },
   "chatbot": {
-    "notUnderstood": "Sorry, I didn’t understand your question.",
-    "suspicious": "⚠️ Your messages look suspicious, so I can’t continue this conversation right now.",
-    "header": "Chat de atención al cliente",
-    "placeholder": "Type your message...",
+    "notUnderstood": "Lo siento, no entendí tu pregunta.",
+    "suspicious": "⚠️ Tus mensajes parecen sospechosos, así que no puedo continuar esta conversación ahora mismo.",
+    "header": "Soporte por chat",
+    "placeholder": "Escribe tu mensaje...",
     "send": "Enviar",
-    "export": "Export",
+    "export": "Exportar",
 
     "responses": {
       "intros": [
-        "¡Claro que sí! ",
         "¡Por supuesto! ",
-        "Genial pregunta 👍 ",
-        "Con gusto te explico: "
+        "¡Claro que sí! ",
+        "Buena pregunta 👍 ",
+        "Con gusto te lo explico: ",
+        "¡Sin problema! ",
+        "Buen punto — revisémoslo 👇 ",
+        "No hay problema, así funciona: ",
+        "Encantado de aclararlo para ti 🙂"
       ],
       "outros": [
         " ¿Quieres que te dé más detalles?",
         " ¿Quieres que te muestre cómo funciona en la práctica?",
         " Esta es una de nuestras funciones más populares 🚀",
-        " ¿Responde esto a tu pregunta?"
+        " ¿Responde esto a tu pregunta?",
+        " ¿Quieres que te guíe con un ejemplo paso a paso?",
+        " A muchos dueños de restaurantes les encanta esta función 🙌",
+        " ¿Quieres que lo desglosé paso a paso?",
+        " ¿Quieres que comparta un consejo para sacarle el máximo provecho?"
       ],
-      "pricingOutro": " Y recuerda, nuestros planes están diseñados para crecer con tu restaurante 💡",
-      "supportOutro": " Y no te preocupes, nuestro equipo responde normalmente en menos de 24 horas ⏱️"
+      "pricingOutro": [
+        " Y recuerda, nuestros planes están diseñados para crecer con tu restaurante 💡",
+        " Además, nuestros precios son flexibles: solo pagas por lo que realmente necesitas 💸",
+        " Lo mejor es que puedes empezar de forma simple y añadir funciones a medida que crezcas 🚀",
+        " Y no olvides: los planes anuales incluyen ahorros adicionales 😉"
+      ],
+      "supportOutro": [
+        " No te preocupes, nuestro equipo suele responder en menos de 24 horas ⏱️",
+        " Si alguna vez nos necesitas, estamos a un correo de distancia 📧",
+        " Nuestro soporte es amable, rápido y siempre dispuesto a ayudar 🙌",
+        " La mayoría de las preguntas se responden el mismo día, muchas veces en pocas horas ⚡"
+      ]
     },
     "intents": {
       "greeting": [
         "¡Hola 👋! ¿Cómo puedo ayudarte hoy?",
-        "Bienvenido 🙌 ¿Quieres saber más sobre Myrestaurantmenu?"
+        "Bienvenido 🙌 ¿Quieres saber más sobre Myrestaurantmenu?",
+        "¡Hola 😊! ¿Buscas información sobre funciones o precios?",
+        "¡Hey! 👋 ¿Quieres ver cómo Myrestaurantmenu puede ayudar a tu restaurante?",
+        "¡Qué gusto verte! 🍽️ ¿Qué te gustaría explorar primero?"
       ],
       "thanks": [
         "¡De nada! 🙌",
-        "Encantado de ayudarte 😃",
-        "Con gusto — ¿quieres preguntar algo más?"
+        "¡Encantado de ayudar! 😃",
+        "Con mucho gusto — ¿tienes más preguntas?",
+        "¡Cuando quieras! 🤗",
+        "Me alegra poder ayudar — ¿hay algo más que quieras saber?",
+        "¡Siempre estoy aquí si me necesitas! 👌"
       ],
       "goodbye": [
         "¡Hasta luego! 🍽️",
-        "Adiós, que tengas un gran día en tu restaurante 🚀"
+        "Adiós, que tengas un gran día en tu restaurante 🚀",
+        "Cuídate y hablamos pronto 👋",
+        "Adiós por ahora — te deseo muchos clientes felices 🌟",
+        "¡Nos vemos luego! 👌"
+      ],
+      "support": [
+        "No te preocupes, puedo conectarte con nuestro equipo. ¿Podrías compartir tus datos de contacto?",
+        "Me encantaría ayudarte. ¿Puedes dejar tu correo electrónico o teléfono?",
+        "Si lo prefieres, puedo pasar esto directamente a nuestro equipo de soporte 📩 — ¿puedes compartir tu contacto?",
+        "Nuestro equipo puede responder rápidamente si nos das tu correo o número 👌"
       ]
     },
     "leadForm": {
@@ -476,7 +509,7 @@
       "phone": "Tu número de teléfono",
       "submit": "Enviar",
       "cancel": "Cancelar",
-      "requireContact": "Por favor proporciona al menos un correo o un teléfono."
+      "requireContact": "Por favor, proporciona al menos un correo electrónico o número de teléfono."
     }
   }
 }
