@@ -23,12 +23,12 @@ export default function ChatPanel({ onClose }) {
     const [faq, setFaq] = useState([]);
     // Fetch FAQ
     useEffect(() => {
-        fetch(`/src/components/chatbot/faq/faq.${lang}.json`)
+        fetch(`/faq/faq.${lang}.json`)
         .then((res) => res.json())
         .then((data) => setFaq(data))
         .catch(() => {
             // fallback in english
-            fetch('/src/components/chatbot/faq/faq.en.json')
+            fetch('/faq/faq.en.json')
             .then((res) => res.json())
             .then((data) => setFaq(data));
         });
@@ -83,10 +83,14 @@ export default function ChatPanel({ onClose }) {
             return;
         }
 
-        // add user message
+        // declarer user message
         const userMsg = { role: 'user', text: input };
         // Logs for analytics
         logEvent("message_sent", { text: input });
+        // add user message
+        setMessages((prev) => [...prev, userMsg]);
+
+        // build newMessages
         let newMessages = [...messages, userMsg];
 
         // Check for intent first
@@ -95,19 +99,20 @@ export default function ChatPanel({ onClose }) {
         if (intentReply) {
             // Logs for analytics
             logEvent("intent_detected", { intent });
-            // Set typing
-            setIsTyping(true);
-            // Set time out to simulate bot typing
+
+            // staged fake typing
             setTimeout(() => {
-                newMessages = [...newMessages, { role: 'bot', text: intentReply }];
-                if (intent === "support") {
-                    // Logs for analytics
-                    logEvent("lead_intent", { text: input });
-                    setIsLeadForm(true);
-                }
-                setMessages(newMessages);
-                setIsTyping(false);
-            }, 800);
+                setIsTyping(true);
+                setTimeout(() => {
+                    newMessages = [...newMessages, { role: 'bot', text: intentReply }];
+                    if (intent === "support") {
+                        logEvent("lead_intent", { text: input });
+                        setIsLeadForm(true);
+                    }
+                    setMessages(newMessages);
+                    setIsTyping(false);
+                }, 1200); // how long bot "types"
+            }, 400); // delay before bot "starts typing"
             setInput('');
             return;
         }
@@ -123,10 +128,6 @@ export default function ChatPanel({ onClose }) {
                 text: toConversational(matches[0].a, matches[0].id)
             };
         }
-
-        // newMessages = [...newMessages, botReply];
-        // setMessages(newMessages);
-        // setInput('');
         setIsTyping(true);
         setTimeout(() => {
             newMessages = [...newMessages, botReply];
