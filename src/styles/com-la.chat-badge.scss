@@ -248,7 +248,7 @@
     .chatbox.chatbox--touch {
         bottom: auto;
         top: 2rem;
-        max-height: 50dvh;
+        max-height: calc(50dvh - 2rem);
     }
 }
 
