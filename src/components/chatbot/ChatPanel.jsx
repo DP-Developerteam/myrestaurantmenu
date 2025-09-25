@@ -182,8 +182,9 @@ export default function ChatPanel({ onClose }) {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && handleSend()}
+                        disabled={isLeadForm}
                     />
-                    <button onClick={handleSend}>{t('chatbot.send')}</button>
+                    <button onClick={handleSend} disabled={isLeadForm} >{t('chatbot.send')}</button>
                     {/* <button onClick={exportConversations}>{t('chatbot.export')}</button> */}
                 </footer>
             </>
