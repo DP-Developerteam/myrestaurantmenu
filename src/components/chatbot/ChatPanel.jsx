@@ -7,6 +7,8 @@ import { useStyler } from './style';
 import { useIntents } from './intents';
 // Import component
 import LeadForm from './LeadForm';
+// Import generators
+import { paraphraseRuleBased, paraphraseGemini } from "./generators/index.js";
 // Import ...
 import { getTopMatches } from './retrieval';
 import { checkSpam } from './antibot';
@@ -45,6 +47,8 @@ export default function ChatPanel({ onClose }) {
 
     // State to ref last message
     const messagesEndRef = useRef(null);
+    // State to ref input focus
+    const inputRef = useRef(null);
 
     // State for lead form
     const [isLeadForm, setIsLeadForm] = useState(false);
@@ -65,8 +69,32 @@ export default function ChatPanel({ onClose }) {
             };
     }, [messages]);
 
+    // function to focus input
+    function focusInputCaretEnd() {
+        const el = inputRef.current;
+        if (!el) return;
+        // Esperar al siguiente frame asegura que el DOM ya refleja disabled=false
+        requestAnimationFrame(() => {
+            el.focus();
+            // colocar el cursor al final (UX más natural)
+            const len = el.value?.length ?? 0;
+            el.setSelectionRange?.(len, len);
+        });
+    }
+
+    // Al abrir el ChatPanel (montaje)
+    useEffect(() => {
+        focusInputCaretEnd();
+    }, []);
+    // Cuando el bot termina o se cierra el LeadForm, vuelve el foco
+    useEffect(() => {
+        if (!isTyping && !isLeadForm) {
+            focusInputCaretEnd();
+        }
+    }, [isTyping, isLeadForm]);
+
     // Handle send
-    function handleSend() {
+    async function handleSend() {
         if (!input.trim()) return;
 
         // implement antispam/bots
@@ -83,12 +111,16 @@ export default function ChatPanel({ onClose }) {
             return;
         }
 
-        // declarer user message
+        // declare user message
         const userMsg = { role: 'user', text: input };
         // Logs for analytics
         logEvent("message_sent", { text: input });
         // add user message
         setMessages((prev) => [...prev, userMsg]);
+        // Clear input
+        setInput("");
+        // Set bot's typing
+        setIsTyping(true);
 
         // build newMessages
         let newMessages = [...messages, userMsg];
@@ -120,6 +152,7 @@ export default function ChatPanel({ onClose }) {
         // find best FAQ match
         const matches = getTopMatches(input, faq, 1);
         let botReply = { role: 'bot', text: 'Sorry, I didn’t understand your question.' };
+        // Try FAQ match
         if (matches.length > 0) {
             // Logs for analytics
             logEvent("faq_hit", { faqId: matches[0].id, score: matches[0].score });
@@ -127,6 +160,15 @@ export default function ChatPanel({ onClose }) {
                 role: 'bot',
                 text: toConversational(matches[0].a, matches[0].id)
             };
+        } else {
+        // Try Gemini fallback
+            try {
+                const geminiText = await paraphraseGemini(input);
+                botReply = { role: 'bot', text: geminiText };
+            } catch (e) {
+                console.error("Gemini fallback failed:", e);
+                botReply = { role: 'bot', text: await paraphraseRuleBased(input) };
+            }
         }
         setIsTyping(true);
         setTimeout(() => {
@@ -134,7 +176,6 @@ export default function ChatPanel({ onClose }) {
             setMessages(newMessages);
             setIsTyping(false);
         }, 1000); // 1s de delay
-        setInput("");
     }
 
     const renderChatBox = () => {
@@ -153,7 +194,9 @@ export default function ChatPanel({ onClose }) {
                     ))}
                     {isTyping && (
                         <div className="message bot typing">
-                            <em>...</em>
+                            <span className="dot"></span>
+                            <span className="dot"></span>
+                            <span className="dot"></span>
                         </div>
                     )}
                     {isLeadForm && (
@@ -177,12 +220,13 @@ export default function ChatPanel({ onClose }) {
                 </main>
                 <footer className='chatbox-footer'>
                     <input
+                        ref={inputRef}
                         type='text'
                         placeholder={t('chatbot.placeholder')}
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                        disabled={isLeadForm}
+                        disabled={isLeadForm || isTyping}
                     />
                     <button onClick={handleSend} disabled={isLeadForm} >{t('chatbot.send')}</button>
                     {/* <button onClick={exportConversations}>{t('chatbot.export')}</button> */}

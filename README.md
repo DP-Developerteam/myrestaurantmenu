@@ -34,6 +34,8 @@ If you are developing a production application, we recommend using TypeScript wi
 │   │   └── img
 │   ├── components
 │   │   ├── chatbot
+│   │   │   ├── generators
+│   │   │   │   └── index.js
 │   │   │   ├── analyticcs.js
 │   │   │   ├── antibot.js
 │   │   │   ├── ChatPanel.jsx
