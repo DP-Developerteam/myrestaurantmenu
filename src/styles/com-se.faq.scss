@@ -5,7 +5,7 @@
 @use './_base.mixins.scss' as *;
 
 .secion-faq {
-    @include displayFlex(column nowrap, flex-start, flex-start);
+    @include displayFlex(column nowrap, flex-start, center);
     margin: 5rem 0;
 
     .faq-container {
