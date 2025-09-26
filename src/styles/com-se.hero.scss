@@ -53,6 +53,9 @@
                 font-size: 5rem;
                 line-height: 4.7rem;
                 color: inherit;
+                word-break: keep-all;
+                overflow-wrap: normal;
+                white-space: normal;
             }
             .subtitle {
                 @include fontSans(3rem, 400, inherit);

@@ -11,20 +11,47 @@ import useDisableMediaInteractions from './hooks/useDisableMediaInteractions';
 import useLenisScroll from './hooks/useLenisScroll';
 
 // Import pages
-import Homepage from './pages/public/Home.jsx';
-import Features from './pages/public/Features.jsx';
-import Pricing from './pages/public/Pricing.jsx';
-import Demo from './pages/public/Demo.jsx';
+import Home from './pages/public/Home.jsx';
+
+import About from './pages/public/About.jsx';
+import Academy from './pages/public/Academy.jsx';
+import AddsOn from './pages/public/AddsOn.jsx';
+import Blogs from './pages/public/Blogs.jsx';
 import Contact from './pages/public/Contact.jsx';
+import CookiesPolicy from './pages/public/CookiesPolicy.jsx';
+import Demos from './pages/public/Demos.jsx';
+import Faq from './pages/public/Faq.jsx';
+import Features from './pages/public/Features.jsx';
+import Partners from './pages/public/Partners.jsx';
+import Pricing from './pages/public/Pricing.jsx';
+import PrivacyPolicy from './pages/public/PrivacyPolicy.jsx';
+import QrCodes from './pages/public/QrCodes.jsx';
+import SalesConsultant from './pages/public/SalesConsultant.jsx';
+import SmartMarket from './pages/public/SmartMarket.jsx';
+import Status from './pages/public/Status.jsx';
+import TermsService from './pages/public/TermsService.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout/>}>
-        <Route index element={<Homepage />}/>
-        <Route path="features" element={<Features />}/>
-        <Route path="pricing" element={<Pricing />}/>
-        <Route path="demo" element={<Demo />}/>
+        <Route index element={<Home />}/>
+        <Route path="about" element={<About />}/>
+        <Route path="academy" element={<Academy />}/>
+        <Route path="addson" element={<AddsOn />}/>
+        <Route path="blogs" element={<Blogs />}/>
         <Route path="contact" element={<Contact />}/>
+        <Route path="cookiespolicy" element={<CookiesPolicy />}/>
+        <Route path="demos" element={<Demos />}/>
+        <Route path="faq" element={<Faq />}/>
+        <Route path="features" element={<Features />}/>
+        <Route path="partners" element={<Partners />}/>
+        <Route path="pricing" element={<Pricing />}/>
+        <Route path="privacypolicy" element={<PrivacyPolicy />}/>
+        <Route path="qrcodes" element={<QrCodes />}/>
+        <Route path="salesconsultant" element={<SalesConsultant />}/>
+        <Route path="smartmarket" element={<SmartMarket />}/>
+        <Route path="status" element={<Status />}/>
+        <Route path="termsservice" element={<TermsService />}/>
     </Route>
   )
 )

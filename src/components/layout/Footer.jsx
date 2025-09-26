@@ -15,13 +15,13 @@ const Footer = () => {
             <div className='nav-group'>
                 <p className='font-bold'>Company</p>
                 <div className='nav-links'>
-                    <NavLink className='tab' to='/'>{t('nav.about')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.contact')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.status')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.partners')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.privacy')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.legal')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.cookies')}</NavLink>
+                    <NavLink className='tab' to='about'>{t('nav.about')}</NavLink>
+                    <NavLink className='tab' to='contact'>{t('nav.contact')}</NavLink>
+                    <NavLink className='tab' to='status'>{t('nav.status')}</NavLink>
+                    <NavLink className='tab' to='partners'>{t('nav.partners')}</NavLink>
+                    <NavLink className='tab' to='privacypolicy'>{t('nav.privacy')}</NavLink>
+                    <NavLink className='tab' to='termsservice'>{t('nav.legal')}</NavLink>
+                    <NavLink className='tab' to='cookiespolicy'>{t('nav.cookies')}</NavLink>
                 </div>
             </div>
         )
@@ -32,10 +32,10 @@ const Footer = () => {
             <div className='nav-group'>
                 <p className='font-bold'>Ressources</p>
                 <div className='nav-links'>
-                    <NavLink className='tab' to='/'>{t('nav.academy')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.faq')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.blog')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.sales')}</NavLink>
+                    <NavLink className='tab' to='academy'>{t('nav.academy')}</NavLink>
+                    <NavLink className='tab' to='faq'>{t('nav.faq')}</NavLink>
+                    <NavLink className='tab' to='blogs'>{t('nav.blog')}</NavLink>
+                    <NavLink className='tab' to='salesconsultant'>{t('nav.sales')}</NavLink>
                 </div>
             </div>
         )
@@ -47,7 +47,7 @@ const Footer = () => {
                 <p className='font-bold'>Demos</p>
                 <div className='nav-links'>
                     <NavLink className='tab' to='/'>{t('nav.demoPizza')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.smartMarket')}</NavLink>
+                    <NavLink className='tab' to='/'>{t('nav.demoMarket')}</NavLink>
                 </div>
             </div>
         )
@@ -58,13 +58,13 @@ const Footer = () => {
             <div className='nav-group'>
                 <p className='font-bold'>Service</p>
                 <div className='nav-links'>
-                    <NavLink className='tab' to='/'>{t('nav.pricing')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.addsOn')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.features')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.qrCodes')}</NavLink>
+                    <NavLink className='tab' to='pricing'>{t('nav.pricing')}</NavLink>
+                    <NavLink className='tab' to='addson'>{t('nav.addsOn')}</NavLink>
+                    <NavLink className='tab' to='features'>{t('nav.features')}</NavLink>
+                    <NavLink className='tab' to='qrcodes'>{t('nav.qrCodes')}</NavLink>
+                    <NavLink className='tab' to='smartmarket'>{t('nav.smartMarket')}</NavLink>
                     <NavLink className='tab' to='/'>{t('nav.signIn')}</NavLink>
                     <NavLink className='tab' to='/'>{t('nav.signUp')}</NavLink>
-                    <NavLink className='tab' to='/'>{t('nav.smartMarket')}</NavLink>
                 </div>
             </div>
         )

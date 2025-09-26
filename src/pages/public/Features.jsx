@@ -21,6 +21,7 @@ import ImgAbTesting from '../../assets/img/ab-testing.webp';
 import ImgCustomization from '../../assets/img/customization.webp';
 import ImgTableTurnOver from '../../assets/img/table-turnover.webp';
 
+
 const Features = () => {
 
     const SectionSingleTabRed = {

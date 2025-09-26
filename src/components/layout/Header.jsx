@@ -56,7 +56,7 @@ const Header = () => {
                 <NavLink className='tab' onClick={closeMenu} to='/'>{t('nav.home')}</NavLink>
                 <NavLink className='tab' onClick={closeMenu} to='features'>{t('nav.features')}</NavLink>
                 <NavLink className='tab' onClick={closeMenu} to='pricing'>{t('nav.pricing')}</NavLink>
-                <NavLink className='tab' onClick={closeMenu} to='demo'>{t('nav.demo')}</NavLink>
+                <NavLink className='tab' onClick={closeMenu} to='demos'>{t('nav.demo')}</NavLink>
                 <NavLink className='tab' onClick={closeMenu} to='contact'>{t('nav.contact')}</NavLink>
             </>
         )
