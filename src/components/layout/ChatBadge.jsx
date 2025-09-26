@@ -43,7 +43,6 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
         const touch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
         setIsTouch(touch);
     }, []);
-
     useEffect(() => {
         // Throttled setter to avoid jank on rapid resize
         let raf = null;

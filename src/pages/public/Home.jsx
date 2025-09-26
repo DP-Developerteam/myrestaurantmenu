@@ -28,6 +28,19 @@ import SliderHero02 from "../../assets/img/slider-hero-2.jpg";
 import SliderHero03 from "../../assets/img/slider-hero-3.jpg";
 import SliderHero04 from "../../assets/img/slider-hero-4.jpg";
 
+import ImgContactCta from '../../assets/img/contact-cta.webp';
+
+import ImgAmbient01 from "../../assets/img/delicious-burger-with-emojis.png";
+import ImgManagement from "../../assets/img/management.png";
+import ImgCustomizable from "../../assets/img/3d-brainstorming.png";
+import ImgEngagement from "../../assets/img/engagement.png";
+import ImgCalendar from "../../assets/img/calendar.png";
+import ImgHero01 from "../../assets/img/hero-01.jpg";
+import ImgHero02 from "../../assets/img/hero-02.jpg";
+import ImgHero03 from "../../assets/img/hero-03.jpg";
+
+
+
 
 const Home = () => {
 
@@ -40,7 +53,7 @@ const Home = () => {
         },
         "slides": [
             {
-                image: SliderHero01,
+                image: ImgHero01,
                 alt: "Delicious pizza",
                 text: "Try our new Margherita",
                 cta: "Contact us now!",
@@ -49,7 +62,7 @@ const Home = () => {
                 height: 450,
             },
             {
-                image: SliderHero02,
+                image: ImgHero02,
                 alt: "Refreshing drink",
                 text: "Summer specials available!",
                 // link: "/demo",
@@ -57,13 +70,7 @@ const Home = () => {
                 height: 450,
             },
             {
-                image: SliderHero03,
-                alt: "Refreshing drink",
-                width: 834,
-                height: 450,
-            },
-            {
-                image: SliderHero04,
+                image: ImgHero03,
                 alt: "Refreshing drink",
                 width: 834,
                 height: 450,
@@ -79,7 +86,7 @@ const Home = () => {
             {
                 text: "ui.buttons.promo",
                 cssClass: "btn-solid-red btn-hover-gradient-red",
-                to: "salesconsultant"
+                onClick: "openChat",
             }
         ]
 
@@ -195,7 +202,7 @@ const Home = () => {
                     }
                 },
                 "image": {
-                    "src": ImgQrCode,
+                    "src": ImgAmbient01,
                     "alt": "Description",
                     "width": 300,
                     "height": 300,
@@ -247,7 +254,7 @@ const Home = () => {
                     "04": "Visually highlight promotions, new items, or chef\"s recommendations to drive sales.",
                 },
                 "image": {
-                    "src": ImgQrCode, // Use screenshot of the manager CMS
+                    "src": ImgManagement,
                     "alt": "Restaurant menu management dashboard",
                     "width": 300,
                     "height": 300,
@@ -262,7 +269,7 @@ const Home = () => {
                     "04": "Create a consistent brand experience from the moment your customer sits down.",
                 },
                 "image": {
-                    "src": ImgQrCode, // Use screenshot of customization options
+                    "src": ImgCustomizable,
                     "alt": "Customizing a digital menu",
                     "width": 300,
                     "height": 300,
@@ -277,7 +284,7 @@ const Home = () => {
                     "04": "Gather direct feedback and build a community around your brand.",
                 },
                 "image": {
-                    "src": ImgQrCode, // Use image showing the loyalty card feature
+                    "src": ImgEngagement,
                     "alt": "Digital loyalty card on a phone",
                     "width": 300,
                     "height": 300,
@@ -345,6 +352,27 @@ const Home = () => {
             }
         ]
     };
+    const SectionContactCta01 = {
+        "text": {
+            "title": "Do you have any more questions?",
+            "paragraph": "You can fill out our quick form and we’ll get back to you with a tailored solution. Prefer a direct conversation? Call or reach out to our founder personally.",
+        },
+        "buttons": {
+            "text": "Fill out the form here",
+            "to": "contact"
+        },
+        "image": {
+            image: ImgContactCta,
+            alt: "Delicious pizza",
+            text: "Try our new Margherita",
+            cta: "Contact us now!",
+            link: "/contact",
+            width: 834,
+            height: 450,
+        },
+        "cssClass": "section-overflow-background",
+        "backgroundOverflow": "background-red-200"
+    };
     const SectionCarouselText02 = {
         "title": "Hear what our clients says about MyRestaurantMenu",
         "content": [
@@ -391,7 +419,7 @@ const Home = () => {
                     },
                 },
                 "image": {
-                    "src": ImgQrCode,
+                    "src": ImgCalendar,
                     "alt": "Description",
                     "width": 300,
                     "height": 300,
@@ -444,7 +472,7 @@ const Home = () => {
             {
                 text: "Chat live with Diego's assistant",
                 cssClass: "btn-solid-red",
-                action: "openChat"
+                onClick: "openChat",
             }
         ],
         "faqs": [
@@ -481,7 +509,26 @@ const Home = () => {
                 answer: 'Your data and your guests’ data are protected with industry-standard security protocols. We also provide regular updates and monitoring to ensure reliability.'
             }
         ]
-    }
+    };
+    const SectionContactCta02 = {
+        "text": {
+            "title": "Do you have any more questions?",
+            "paragraph": "You can fill out our quick form and we’ll get back to you with a tailored solution. Prefer a direct conversation? Call or reach out to our founder personally.",
+        },
+        "buttons": {
+            "text": "What about?",
+            "to": "contact"
+        },
+        "image": {
+            image: ImgContactCta,
+            alt: "Delicious pizza",
+            text: "Try our new Margherita",
+            cta: "Contact us now!",
+            link: "/contact",
+            width: 834,
+            height: 450,
+        }
+    };
 
     return (
         <div className="page page-home">
@@ -492,12 +539,12 @@ const Home = () => {
             <ComponentCards cardsData={SectionCardsFeatures02.cardsData} />
             <ComponentTabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} backgroundOverflow={SectionMultiTabs.backgroundOverflow} />
             <ComponentCarouselText title={SectionCarouselText01.title} content={SectionCarouselText01.content} cssClass={SectionCarouselText01.cssClass} />
-            <ComponentContactCTA cssClass={"section-overflow-background"} backgroundOverflow={"background-red-200"}/>
+            <ComponentContactCTA text={SectionContactCta01.text} buttons={SectionContactCta01.buttons} image={SectionContactCta01.image} cssClass={SectionContactCta01.cssClass} backgroundOverflow={SectionContactCta01.backgroundOverflow}/>
             <ComponentCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
             <ComponentTabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
             <ComponentCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} cssClass={SectionCarouselText03.cssClass} />
             <ComponentFaq text={SectionFaq.text} buttons={SectionFaq.buttons} faqs={SectionFaq.faqs} />
-            <ComponentContactCTA />
+            <ComponentContactCTA text={SectionContactCta02.text} buttons={SectionContactCta02.buttons} image={SectionContactCta02.image} cssClass={SectionContactCta02.cssClass} backgroundOverflow={SectionContactCta02.backgroundOverflow}/>
         </div>
     )
 }

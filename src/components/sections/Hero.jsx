@@ -4,6 +4,7 @@ import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
+import { useChatActions } from '../../hooks/useChatActions';
 // Import components
 import Carousel from '../ui/Carousel';
 import Button from '../ui/Button';
@@ -12,8 +13,11 @@ const Hero = ({text, slides, buttons, cssClass}) => {
     // States for translations
     const { t } = useTranslation();
 
-    // State for responsive design using custom hook
+    // Use Media query hook
     const isDesktop = useMediaQuery('(min-width: 480px)');
+
+    // Use hook chat actions
+    const { openChat } = useChatActions();
 
     // Render intro text
     const renderIntroText = () => {
@@ -52,16 +56,24 @@ const Hero = ({text, slides, buttons, cssClass}) => {
         return (
             <>
                 <div className='buttons-container'>
-                    {buttons.map((btn, i) => (
-                        <Button
-                            key={i}
-                            text={btn.text}
-                            cssClass={btn.cssClass}
-                            to={btn.to}
-                            icon={btn.icon}
-                            aria-label={btn.ariaLabel}
-                        />
-                    ))}
+                    {buttons.map((btn, i) => {
+                        // Manage actions
+                        const isOpenChat = btn.onClick === 'openChat';
+                        const clickHandler = isOpenChat ? openChat : btn.onClick;
+                        const toProp = isOpenChat ? undefined : btn.to;
+
+                        return (
+                            <Button
+                                key={i}
+                                text={btn.text}
+                                cssClass={btn.cssClass}
+                                to={toProp}
+                                onClick={clickHandler}
+                                icon={btn.icon}
+                                aria-label={btn.ariaLabel}
+                            />
+                        )
+                    })}
                 </div>
             </>
         )

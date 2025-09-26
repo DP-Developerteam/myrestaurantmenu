@@ -1,15 +1,19 @@
 // Import styles and libraries
 import '../../styles/com-se.contactcta.scss';
-import { useOutletContext } from 'react-router-dom';
-// import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
+// Import hooks
+import { useChatActions } from '../../hooks/useChatActions';
+// Import components
+import Button from '../ui/Button';
 // Images and icons
 import ImgContactCta from '../../assets/img/contact-cta.webp';
 
-const ContactCTA = ({cssClass, backgroundOverflow}) => {
+const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
     // States for translations
-    // const { t } = useTranslation();
-    // State to manage chat badge
-    const { setIsChatOpen } = useOutletContext();
+    const { t } = useTranslation();
+    // Use hook chat actions
+    const { openChat } = useChatActions();
+
 
     // Render overflow background
     const renderBackgroundOverflow = () => {
@@ -23,21 +27,28 @@ const ContactCTA = ({cssClass, backgroundOverflow}) => {
             {backgroundOverflow && renderBackgroundOverflow()}
             <div className='content-wrapper'>
                 <div className='text-container'>
-                    <h4 className='title'>Do you have any more questions?</h4>
-                    <p className='font-normal'>You can fill out our quick form and we’ll get back to you with a tailored solution.</p>
-                    <p>Prefer a direct conversation? Call or reach out to our founder personally.</p>
-                    <button className='btn-solid-light btn-inner-shadow' >Fill out the form here</button>
+                    <h4 className='title'>{t(text.title)}</h4>
+                    <p className='font-normal'>{t(text.paragraph)}</p>
+                    <Button
+                        text={buttons.text}
+                        cssClass='btn-solid-light btn-inner-shadow'
+                        to='contact'
+                    />
                     <p className='font-smaller'>We’ll contact you within 24 hours</p>
                 </div>
                 <div className='image-contact-info-container'>
-                    <img src={ImgContactCta} alt='' />
+                    <img src={image.image} alt={image.alt} width={image.width} height={image.height} />
                     <div className='text-container'>
                         <p className='font-bold'>Diego Pérez</p>
                         <p className='font-smaller'>Founder of <span className='font-red font-bold'>MyRestaurantMenu</span></p>
                         <p className='font-normal'>+49 0176 62 67 69 49</p>
                         <p className='font-smaller'>Mon-Fri. 09:00 - 17:00</p>
                         <p className='font-normal'>contact@myrestaurantapp.com</p>
-                        <button className='btn-solid-red' onClick={() => setIsChatOpen(true)}  >Chat live with Diego’s assistant</button>
+                        <Button
+                            text='Chat live with Diego’s assistant'
+                            cssClass='btn-solid-red'
+                            onClick={openChat}
+                        />
                     </div>
                 </div>
             </div>
