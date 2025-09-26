@@ -56,7 +56,7 @@ const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
                 {currentSlide.text && currentSlide.link && (
                     <NavLink className="carousel-text carousel-link" to={currentSlide.link}>
                         {currentSlide.text}
-                        <p>{t('carousel.cta')}</p>
+                        <p>{t(currentSlide.cta)}</p>
                     </NavLink>
                 )}
                 {currentSlide.text && !currentSlide.link && (
@@ -96,9 +96,9 @@ const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
                 transition: isDragging ? 'none' : 'transform 200ms ease-out',
             }}
         >
-            <img src={currentSlide.image} alt={currentSlide.alt} className="carousel-image" />
+            <img src={currentSlide.image} alt={currentSlide.alt} width={currentSlide.width} height={currentSlide.height} className="carousel-image" />
             {renderText()}
-            {renderNavigationDots()}
+            {slides.length > 1 && renderNavigationDots()}
         </div>
     );
 };

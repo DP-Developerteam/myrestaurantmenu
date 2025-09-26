@@ -3,6 +3,7 @@ import '../../styles/com-ui.button.scss';
 import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
+
 const Button = ({
     cssClass,
     disabled = false,
@@ -11,6 +12,7 @@ const Button = ({
     text,
     to,
     type = 'button',
+    ariaLabel = 'none',
     ...props
 }) => {
     // States for translations
@@ -29,12 +31,12 @@ const Button = ({
     return (
         <>
             {to && (
-                <NavLink className={cssClass} to={to} onClick={onClick} {...props} >
+                <NavLink className={cssClass} to={to} onClick={onClick} type={type} disabled={disabled} aria-label={ariaLabel} {...props} >
                     {renderContent()}
                 </NavLink>
             )}
             {!to && (
-                <button  className={cssClass} onClick={onClick} type={type} disabled={disabled} {...props} >
+                <button  className={cssClass} onClick={onClick} type={type} disabled={disabled} aria-label={ariaLabel} {...props} >
                     {renderContent()}
                 </button>
             )}

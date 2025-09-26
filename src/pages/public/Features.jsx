@@ -1,29 +1,56 @@
 // Import styles and libraries
 import '../../App.scss';
 // Import components
-import SectionHero from '../../components/sections/Hero';
-import SectionCards from '../../components/sections/Cards';
-import Tabs from '../../components/sections/Tabs';
-import SectionCarouselText from '../../components/sections/CarouselText';
+import ComponentHero from "../../components/sections/Hero";
+import ComponentCards from "../../components/sections/Cards";
+import ComponentTabs from "../../components/sections/Tabs";
+import ComponentCarouselText from "../../components/sections/CarouselText";
+import ComponentContactCTA from "../../components/sections/ContactCTA";
+import ComponentFaq from "../../components/sections/Faq";
 // Import icons & images
-import ImgCommission from '../../assets/img/commission.webp';
-import ImgGiftCart from '../../assets/img/gift-card.webp';
-import ImgMultilingual from '../../assets/img/multilingual.webp';
-import SliderHero01 from '../../assets/img/qr-code.webp';
-import ImgResponsive from '../../assets/img/responsive.webp';
-import ImgUxResponsive from '../../assets/img/ux-friendly.webp';
-import IconChains from '../../assets/img/icon-chains.svg';
-import IconGastro from '../../assets/img/icon-gastro-market.svg';
-import IconHotels from '../../assets/img/icon-hotels.svg';
-import IconRestaurant from '../../assets/img/icon-restaurant.svg';
-import ImgDataOwnership from '../../assets/img/data-ownership.webp';
-import ImgAbTesting from '../../assets/img/ab-testing.webp';
-import ImgCustomization from '../../assets/img/customization.webp';
-import ImgTableTurnOver from '../../assets/img/table-turnover.webp';
+import ImgCommission from "../../assets/img/commission.webp";
+import ImgGiftCart from "../../assets/img/gift-card.webp";
+import ImgMultilingual from "../../assets/img/multilingual.webp";
+import ImgQrCode from "../../assets/img/qr-code.webp";
+import ImgResponsive from "../../assets/img/responsive.webp";
+import ImgUxResponsive from "../../assets/img/ux-friendly.webp";
+import IconChains from "../../assets/img/icon-chains.svg";
+import IconGastro from "../../assets/img/icon-gastro-market.svg";
+import IconHotels from "../../assets/img/icon-hotels.svg";
+import IconRestaurant from "../../assets/img/icon-restaurant.svg";
+import ImgDataOwnership from "../../assets/img/data-ownership.webp";
+import ImgAbTesting from "../../assets/img/ab-testing.webp";
+import ImgCustomization from "../../assets/img/customization.webp";
+import ImgTableTurnOver from "../../assets/img/table-turnover.webp";
+
+import SliderHero01 from "../../assets/img/slider-hero-1.jpg";
+import SliderHero02 from "../../assets/img/slider-hero-2.jpg";
+import SliderHero03 from "../../assets/img/slider-hero-3.jpg";
+import SliderHero04 from "../../assets/img/slider-hero-4.jpg";
 
 
 const Features = () => {
 
+    const SectionHero = {
+        "text": {
+            "intro": "MRM - Features",
+            "title": "Hola que tal amigo",
+            "subtitle": "Features",
+            "claimer": "section.hero.homepage.claimer"
+        },
+        "slides": [
+            {
+                image: SliderHero01,
+                alt: "Delicious pizza",
+                text: "Try our new Margherita",
+                cta: "Contact us now!",
+                link: "/contact",
+                width: 834,
+                height: 450,
+            }
+        ]
+
+    }
     const SectionSingleTabRed = {
         'tabs': false,
         'cssClass': 'section-tab-red',
@@ -41,7 +68,7 @@ const Features = () => {
                     },
                 },
                 'image': {
-                    'src': SliderHero01,
+                    'src': ImgQrCode,
                     'alt': 'Description',
                     'width': 300,
                     'height': 300,
@@ -55,7 +82,7 @@ const Features = () => {
                 'id': 1,
                 'isOnClick': true,
                 'text': 'QR Code Menu',
-                'image': SliderHero01,
+                'image': ImgQrCode,
                 'description': 'Share your menu instantly with a simple QR scan. Customers can browse without downloading any app.',
                 },
                 {
@@ -99,8 +126,9 @@ const Features = () => {
 
     return (
         <div className='page page-home'>
-            <Tabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
-            <SectionCards cardsData={SectionCardsFeatures01.cardsData} />
+            <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
+            <ComponentTabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
+            <ComponentCards cardsData={SectionCardsFeatures01.cardsData} />
         </div>
     )
 }

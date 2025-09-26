@@ -34,6 +34,9 @@
                 @include hoverPointer();
                 @include fontSans(0.85rem, 400, $COLORS-base-900);
             }
+            .tab:hover {
+                text-decoration: underline;
+            }
             .nav-links {
                 @include displayFlex(row wrap, center, flex-start);
                 gap: 1.2rem;
