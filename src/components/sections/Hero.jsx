@@ -8,6 +8,8 @@ import { useChatActions } from '../../hooks/useChatActions';
 // Import components
 import Carousel from '../ui/Carousel';
 import Button from '../ui/Button';
+// Images and icons
+import { IconCheck } from '../../components/ui/Icons';
 
 const Hero = ({text, slides, buttons, cssClass}) => {
     // States for translations
@@ -26,7 +28,8 @@ const Hero = ({text, slides, buttons, cssClass}) => {
                 <span className='font-small'>
                     <Trans i18nKey={text.intro}
                         components={{
-                            1: <strong className='font-red'/>,
+                            bold: <span className='font-bold' />,
+                            boldRed: <strong className='font-red'/>,
                         }}
                     />
                 </span>
@@ -42,11 +45,32 @@ const Hero = ({text, slides, buttons, cssClass}) => {
                 <p className='claimer'>
                     <Trans i18nKey={text.claimer}
                         components={{
-                            1: <span className='font-bold' />,
-                            2: <span className='font-bold font-red' />
+                            bold: <span className='font-bold' />,
+                            boldRed: <span className='font-bold font-red' />
                         }}
                     />
                 </p>
+            </>
+        )
+    }
+
+    // Render bullets text
+    const renderBulletsText = () => {
+        return (
+            <>
+                <ul className='bullets-container'>
+                    {text.bullets.map((bullet, idx) => (
+                        <li key={idx} className='bullet'>
+                            <IconCheck className='icon' />
+                            <Trans i18nKey={bullet}
+                                components={{
+                                    bold: <span className='font-bold' />,
+                                    boldRed: <span className='font-bold font-red' />
+                                }}
+                            />
+                        </li>
+                    ))}
+                </ul>
             </>
         )
     }
@@ -86,6 +110,7 @@ const Hero = ({text, slides, buttons, cssClass}) => {
                 <h1 className='title'>{t(text.title)}</h1>
                 <h2 className='subtitle'>{t(text.subtitle)}</h2>
                 {text.claimer && renderClaimerText()}
+                {text.bullets && renderBulletsText()}
             </div>
             <div className='section-content carousel-container'>
                 {isDesktop ? <Carousel slides={slides} /> : null}

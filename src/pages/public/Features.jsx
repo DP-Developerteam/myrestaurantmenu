@@ -8,6 +8,8 @@ import ComponentCarouselText from "../../components/sections/CarouselText";
 import ComponentContactCTA from "../../components/sections/ContactCTA";
 import ComponentFaq from "../../components/sections/Faq";
 // Import icons & images
+import ImgHero01 from "../../assets/img/hero-01.jpg";
+
 import ImgCommission from "../../assets/img/commission.webp";
 import ImgGiftCart from "../../assets/img/gift-card.webp";
 import ImgMultilingual from "../../assets/img/multilingual.webp";
@@ -33,18 +35,22 @@ const Features = () => {
 
     const SectionHero = {
         "text": {
-            "intro": "MRM - Features",
-            "title": "Hola que tal amigo",
-            "subtitle": "Features",
-            "claimer": "section.hero.homepage.claimer"
+            "intro": "section.hero.features.intro",
+            "title": "section.hero.features.title",
+            "subtitle": "section.hero.features.subtitle",
+            // "claimer": "section.hero.features.claimer",
+            "bullets": [
+                "section.hero.common.bullets.loading",
+                "section.hero.common.bullets.engagement",
+                "section.hero.common.bullets.onlinePresence",
+                "section.hero.common.bullets.streamline",
+                "section.hero.common.bullets.grow"
+            ]
         },
         "slides": [
             {
-                image: SliderHero01,
+                image: ImgHero01,
                 alt: "Delicious pizza",
-                text: "Try our new Margherita",
-                cta: "Contact us now!",
-                link: "/contact",
                 width: 834,
                 height: 450,
             }

@@ -12,7 +12,7 @@
     "status": "Status",
     "partners": "Partners",
     "privacy": "Privacy policy",
-    "legal": "Terms of service",
+    "legal": "Terms of use",
     "cookies": "Cookie policy",
     "academy": "Menu Academy",
     "faq": "FAQs",
@@ -26,20 +26,81 @@
   },
   "section": {
     "hero": {
-      "welcome": "Welcome to <1>my restaurant menu</1>",
-      "welcomePrefix": "Welcome to ",
-      "welcomeHighlight": "my restaurant menu",
+      "common": {
+        "bullets": {
+          "loading": "<boldRed>Fast loading speeds</boldRed>",
+          "engagement": "<bold>Boost engagement</bold>",
+          "onlinePresence": "Professional online presence",
+          "streamline": "Streamline service",
+          "grow": "Grow your restaurant",
+
+          "transparent": "<bold>Transparent</bold> - no hidden fees",
+          "commission": "<boldRed>0% comission</boldRed> - keep 100% of your sales",
+          "flexible": "Monthly or yearly plans",
+          "customDomain": "Get subdomain for free",
+          "support": "Email support within 24h",
+
+          "interactive": "<boldRed>Interactive</boldRed> menu navigation",
+          "switchMode": "Switch between <bold>day & night</bold> themes",
+          "addsOn": "Preview all <bold>add-ons</bold>",
+          "multilanguage": "Test <bold>multi-language</bold> menus instantly"
+        }
+      },
       "homepage": {
+        "intro": "Welcome to <boldRed>my restaurant menu</boldRed>",
         "title": "Digital & interactive",
         "subtitle": "menu for your restaurant",
-        "claimer": "<1>Designed</1> to <2>increase</2> your sales & engagement"
+        "claimer": "<bold>Designed</bold> to <boldRed>increase</boldRed> your sales & engagement"
+      },
+      "features": {
+        "intro": "<bold>Features</bold> of <boldRed>my restaurant menu</boldRed>",
+        "title": "Discover",
+        "subtitle": "how our digital menus helps your restaurant"
+      },
+      "pricing": {
+        "intro": "<bold>Prices</bold> of <boldRed>my restaurant menu</boldRed>",
+        "title": "Flexible",
+        "subtitle": "options that fit your needs"
+      },
+      "demos": {
+        "intro": "<bold>Demos</bold> of <boldRed>my restaurant menu</boldRed>",
+        "_intro": "See <boldRed>my restaurant menu</boldRed> in action",
+        "title": "3, 2, 1... ACTION",
+        "subtitle": "explore menus and features live"
+      },
+      "contact": {
+        "intro": "Get in touch with <boldRed>our team</boldRed>",
+        "title": "Contact us",
+        "subtitle": "we reply within 24 hours"
+      },
+      "academy": {
+        "intro": "<bold>Menu Academy</bold> by <boldRed>my restaurant menu</boldRed>",
+        "title": "Learn & grow",
+        "subtitle": "guides, tips, and best practices"
+      },
+      "addons": {
+        "intro": "Enhance your <boldRed>digital menu</boldRed>",
+        "title": "Powerful add-ons",
+        "subtitle": "expand with loyalty, booking & more"
+      },
+      "about": {
+        "intro": "About <boldRed>my restaurant menu</boldRed>",
+        "title": "Our mission",
+        "subtitle": "helping restaurants go digital"
+      },
+      "faqs": {
+        "intro": "<bold>FAQs</bold> for <boldRed>my restaurant menu</boldRed>",
+        "title": "Got questions?",
+        "subtitle": "we have the answers you need"
       }
     }
   },
   "ui": {
     "buttons": {
       "liveDemo": "Check live Demo now",
-      "promo": "Start trial of 30 days for free"
+      "promo": "Start trial of 30 days for free",
+      "demoPiza": "Pizzeria demo",
+      "demoMarket": "Food market demo"
     }
   },
   "chatbot": {

@@ -23,11 +23,6 @@ import ImgAbTesting from "../../assets/img/ab-testing.webp";
 import ImgCustomization from "../../assets/img/customization.webp";
 import ImgTableTurnOver from "../../assets/img/table-turnover.webp";
 
-import SliderHero01 from "../../assets/img/slider-hero-1.jpg";
-import SliderHero02 from "../../assets/img/slider-hero-2.jpg";
-import SliderHero03 from "../../assets/img/slider-hero-3.jpg";
-import SliderHero04 from "../../assets/img/slider-hero-4.jpg";
-
 import ImgContactCta from '../../assets/img/contact-cta.webp';
 
 import ImgAmbient01 from "../../assets/img/delicious-burger-with-emojis.png";
@@ -46,7 +41,7 @@ const Home = () => {
 
     const SectionHero = {
         "text": {
-            "intro": "section.hero.welcome",
+            "intro": "section.hero.homepage.intro",
             "title": "section.hero.homepage.title",
             "subtitle": "section.hero.homepage.subtitle",
             "claimer": "section.hero.homepage.claimer"
@@ -402,7 +397,7 @@ const Home = () => {
             },
         ]
     };
-    const SectionSingleTabRed = {
+    const SectionTest30Days = {
         "tabs": false,
         "cssClass": "section-tab-red",
         "tabsContent": [
@@ -491,22 +486,6 @@ const Home = () => {
             {
                 question: 'What can I expect during the first 30 days?',
                 answer: 'You can fully test the platform free of charge for 30 days. This includes uploading your real menu, checking how guests interact, and requesting design tweaks. No risk, no commitment — we want you to be 100% confident before continuing.'
-            },
-            {
-                question: 'Can I update my menu by myself?',
-                answer: 'Yes! You’ll have access to a simple admin dashboard where you can edit items, prices, or photos instantly. No technical skills required.'
-            },
-            {
-                question: 'Do my guests need to download an app?',
-                answer: 'No downloads are needed. Your menu is accessible through a QR code or a direct link, so guests can open it instantly in their browser.'
-            },
-            {
-                question: 'Is customer support included?',
-                answer: 'Absolutely. We provide dedicated support via email, phone, or live chat. Most requests are resolved within 24 hours.'
-            },
-            {
-                question: 'How secure is the platform?',
-                answer: 'Your data and your guests’ data are protected with industry-standard security protocols. We also provide regular updates and monitoring to ensure reliability.'
             }
         ]
     };
@@ -541,7 +520,7 @@ const Home = () => {
             <ComponentCarouselText title={SectionCarouselText01.title} content={SectionCarouselText01.content} cssClass={SectionCarouselText01.cssClass} />
             <ComponentContactCTA text={SectionContactCta01.text} buttons={SectionContactCta01.buttons} image={SectionContactCta01.image} cssClass={SectionContactCta01.cssClass} backgroundOverflow={SectionContactCta01.backgroundOverflow}/>
             <ComponentCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
-            <ComponentTabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
+            <ComponentTabs tabs={SectionTest30Days.tabs} tabsContent={SectionTest30Days.tabsContent} cssClass={SectionTest30Days.cssClass}/>
             <ComponentCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} cssClass={SectionCarouselText03.cssClass} />
             <ComponentFaq text={SectionFaq.text} buttons={SectionFaq.buttons} faqs={SectionFaq.faqs} />
             <ComponentContactCTA text={SectionContactCta02.text} buttons={SectionContactCta02.buttons} image={SectionContactCta02.image} cssClass={SectionContactCta02.cssClass} backgroundOverflow={SectionContactCta02.backgroundOverflow}/>
