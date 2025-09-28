@@ -33,22 +33,18 @@
           "onlinePresence": "Professional online presence",
           "streamline": "Streamline service",
           "grow": "Grow your restaurant",
-
           "transparent": "<bold>Transparent</bold> - no hidden fees",
           "commission": "<boldRed>0% comission</boldRed> - keep 100% of your sales",
           "flexible": "Monthly or yearly plans",
           "customDomain": "Get subdomain for free",
           "support": "Email support within 24h",
-
           "interactive": "<boldRed>Interactive</boldRed> menu navigation",
           "switchMode": "Switch between <bold>day & night</bold> themes",
           "addsOn": "Preview all <bold>add-ons</bold>",
           "multilanguage": "Test <bold>multi-language</bold> menus instantly",
-
           "24h": "we reply within 24 hours",
           "chat": "Use our trainned AI to chat and solve your questions",
           "formular": "Fill the formular, and we will make a call and get the best out of it"
-
         }
       },
       "homepage": {
@@ -340,7 +336,6 @@
     "placeholder": "Type your message...",
     "send": "Send",
     "export": "Export",
-
     "responses": {
       "intros": [
         "Of course! ",

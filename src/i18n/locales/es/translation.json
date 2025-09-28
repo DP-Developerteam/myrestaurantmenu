@@ -33,18 +33,15 @@
           "onlinePresence": "Presencia online profesional",
           "streamline": "Optimiza el servicio",
           "grow": "Haz crecer tu restaurante",
-
           "transparent": "<bold>Transparente</bold> - sin comisiones ocultas",
           "commission": "<boldRed>0% de comisión</boldRed>",
           "flexible": "Planes mensuales o anuales",
           "customDomain": "Obtén un subdominio gratis",
           "support": "Soporte por email en menos de 24h",
-
           "interactive": "Navegación <boldRed>interactiva</boldRed> del menú",
           "switchMode": "Cambia entre temas de <bold>día y noche</bold>",
           "addsOn": "Vista previa de todos los <bold>complementos</bold>",
           "multilanguage": "Prueba menús <bold>multilingües</bold> al instante",
-
           "24h": "respondemos en menos de 24 horas",
           "chat": "Usa nuestra IA entrenada para chatear y resolver tus dudas",
           "formular": "Rellena el formulario y te llamaremos para sacarle el máximo partido"
@@ -339,7 +336,6 @@
     "placeholder": "Escribe tu mensaje...",
     "send": "Enviar",
     "export": "Exportar",
-
     "responses": {
       "intros": [
         "¡Por supuesto! ",
@@ -414,4 +410,3 @@
     }
   }
 }
-
