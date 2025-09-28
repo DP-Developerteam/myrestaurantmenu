@@ -1,439 +1,340 @@
 {
   "nav": {
     "home": "Inicio",
-    "menu": "Carta",
-    "foods": "Comida",
-    "drinks": "Bebidas",
-    "orders": "Mi lista",
+    "features": "Funciones",
+    "pricing": "Precios",
+    "demo": "Demos",
+    "contact": "Contáctanos",
     "signIn": "Iniciar sesión",
-    "signUp": "Registrarse",
+    "signUp": "Crear cuenta",
     "signOut": "Cerrar sesión",
-    "reservation": "Reservar",
-    "gift": "Haz un regalo",
-    "rewards": "Tarjeta cliente",
-    "personal": "Área personal",
-    "contact": "Contáctanos"
-  },
-  "footer": {
-    "legal": "Aviso legal",
+    "about": "Sobre nosotros",
+    "status": "Estado",
+    "partners": "Socios",
     "privacy": "Política de privacidad",
+    "legal": "Términos de uso",
     "cookies": "Política de cookies",
-    "copyright": "Creado por Diego Pérez, 2025"
-  },
-  "restaurant": {
-    "info": {
-      "name": "Nombre del restaurante",
-      "description": "Párrafo/slogan para describir el restaurante.",
-      "timeTable": {
-        "title": "Horarios",
-        "monTitle": "Lunes:",
-        "tueTitle": "Martes:",
-        "wedTitle": "Miércoles:",
-        "thuTitle": "Jueves:",
-        "friTitle": "Viernes:",
-        "satTitle": "Sábado:",
-        "sunTitle": "Domingo:",
-        "monTime": "Cerrado",
-        "tueTime": "12:00 - 22:00",
-        "wedTime": "12:00 - 22:00",
-        "thuTime": "12:00 - 22:00",
-        "friTime": "12:00 - 01:30",
-        "satTime": "12:00 - 01:30",
-        "sunTime": "12:00 - 22:00"
-      }
-    }
+    "academy": "Academia del Menú",
+    "faq": "Preguntas frecuentes",
+    "blog": "Blog",
+    "sales": "Asesor de ventas con IA",
+    "demoPizza": "DEMO Pizzería",
+    "demoMarket": "DEMO Mercado de comida",
+    "addsOn": "Complementos",
+    "qrCodes": "Códigos QR",
+    "smartMarket": "Mercado Inteligente"
   },
   "section": {
-    "carousel": {
-      "content": "Echa un vistazo a nuestro acogedor restaurante, donde la buena comida se encuentra con un ambiente acogedor. Disfruta de una mezcla de arte, diseño y platos deliciosos hechos con amor y cuidado, todo servido en un entorno relajado y amigable."
-    },
-    "review": {
-      "content": "Nos encanta escuchar a nuestros invitados. Si disfrutaste tu experiencia, nos encantaría que compartieras tus pensamientos con una reseña rápida en Google. Tu feedback nos ayuda a seguir mejorando y mantiene a nuestro equipo motivado para ofrecer la mejor experiencia posible.",
-      "button": "Comparte tus pensamientos ahora"
-    },
-    "deals": {
-      "title": "Lo que no te puedes perder:",
-      "offerHappyHour": {
-        "title": "¡Happy Hour!",
-        "content-1": "Todos los viernes",
-        "content-2": "De 17:00 a 19:00"
-      },
-      "eventNewYear": {
-        "title": "Fiesta de fin de año",
-        "content-1": "Estamos planeando una cena y fiesta espectacular para despedir este año increíble.",
-        "content-2": "Si quieres compartir la alegría con nosotros en una noche tan especial, te recomendamos que nos contactes para reservar tu lugar.",
-        "button": "Obtén más información"
-      }
-    },
-    "newsletter": {
-      "title": "¿Te gustaría aprender a cocinar algo delicioso?",
-      "content-1": "¡Entonces únete a nuestro taller práctico! Nos reunimos cada primer martes del mes, y nos encantaría que estés allí.",
-      "content-2": "Suscríbete a nuestro boletín para estar en nuestra lista prioritaria para eventos.",
-      "content-3": "Además, podrás recibir recetas, ofertas especiales y, por supuesto, serás el primero en enterarte de noticias y eventos.",
-      "button": "Suscribirse"
-    },
-    "aboutUs": {
-      "title": "Conoce un poco más sobre nosotros",
-      "content-1": "Fundado en [Año], [Nombre del Restaurante] está dedicado a servir platos deliciosos y caseros en un ambiente amigable y acogedor. Ya sea que estés aquí para una comida casual o una ocasión especial, nuestro equipo se compromete a hacer que cada experiencia culinaria sea memorable.",
-      "content-2": "A lo largo de los años, hemos tenido el honor de recibir múltiples premios, reconociendo nuestro compromiso con la calidad, el servicio y la excelencia culinaria. Estamos orgullosos de los galardones que hemos obtenido y seguimos esforzándonos por la excelencia en cada plato que servimos.",
-      "content-3": "Mantente conectado con nosotros y obtén una muestra de lo que está sucediendo en [Nombre del Restaurante] siguiéndonos en redes sociales. ¡Nos encanta compartir nuestras últimas creaciones, eventos especiales y más!"
-    },
-    "orders": {
-      "intro": {
-        "title": "Mi lista de productos:",
-        "content": "Crea tu propia lista de productos para que te sea más fácil hacer tu pedido cuando venga el camarero",
-        "clearOrder": "Borrar lista"
-      }
-    }
-  },
-  "product": {
-    "action": {
-      "add": "Añadir a mi lista",
-      "addMore": "Añadir otro más",
-      "changeView": "Cambiar vista"
-    },
-    "category": {
-      "breakfast": "Desayuno",
-      "brunch": "Brunch Dominical",
-      "snack": "Snacks",
-      "lunch": "Almuerzo",
-      "dinner": "Cena",
-      "cold": "Bebidas Frías",
-      "hot": "Cafés y Tés",
-      "fresh": "Jugos Naturales y Smoothies",
-      "alcohol": "Vinos y Cervezas",
-      "cocktail": "Cócteles"
-    },
-    "allergen": {
-      "almond": {
-        "name": "Almendra",
-        "description": "Contiene almendras o productos de almendra"
-      },
-      "avocado": {
-        "name": "Aguacate",
-        "description": "Contiene aguacate"
-      },
-      "blueberries": {
-        "name": "Arándanos",
-        "description": "Contiene arándanos"
-      },
-      "celery": {
-        "name": "Apio",
-        "description": "Contiene apio o apio nabo"
-      },
-      "color": {
-        "name": "Colorantes artificiales",
-        "description": "Contiene colorantes artificiales"
-      },
-      "corn": {
-        "name": "Maíz",
-        "description": "Contiene maíz o productos de maíz"
-      },
-      "crustaceans": {
-        "name": "Crustáceos",
-        "description": "Contiene mariscos (cangrejos, langostas, gambas)"
-      },
-      "eggs": {
-        "name": "Huevos",
-        "description": "Contiene huevos o productos de huevo"
-      },
-      "fish": {
-        "name": "Pescado",
-        "description": "Contiene pescado o productos de pescado"
-      },
-      "gluten": {
-        "name": "Gluten",
-        "description": "Contiene gluten (trigo, cebada, centeno)"
-      },
-      "kiwi": {
-        "name": "Kiwi",
-        "description": "Contiene kiwi"
-      },
-      "lemon": {
-        "name": "Limón",
-        "description": "Contiene limón o productos de limón"
-      },
-      "lupin": {
-        "name": "Altramuz",
-        "description": "Contiene habas de altramuz o harina de altramuz"
-      },
-      "meat": {
-        "name": "Carne",
-        "description": "Contiene productos cárnicos"
-      },
-      "lactose": {
-        "name": "Lactosa",
-        "description": "Contiene leche o productos lácteos"
-      },
-      "molluscs": {
-        "name": "Moluscos",
-        "description": "Contiene moluscos (almejas, mejillones, ostras)"
-      },
-      "mustard": {
-        "name": "Mostaza",
-        "description": "Contiene mostaza o semillas de mostaza"
-      },
-      "nut": {
-        "name": "Frutos secos",
-        "description": "Contiene frutos secos de cáscara"
-      },
-      "peach": {
-        "name": "Melocotón",
-        "description": "Contiene melocotón"
-      },
-      "peanut": {
-        "name": "Cacahuetes",
-        "description": "Contiene cacahuetes o productos de cacahuete"
-      },
-      "salmon": {
-        "name": "Salmón",
-        "description": "Contiene salmón"
-      },
-      "sesame": {
-        "name": "Sésamo",
-        "description": "Contiene semillas de sésamo"
-      },
-      "soy": {
-        "name": "Soja",
-        "description": "Contiene soja o productos de soja"
-      },
-      "strawberry": {
-        "name": "Fresa",
-        "description": "Contiene fresas"
-      },
-      "sugar": {
-        "name": "Azúcar",
-        "description": "Contiene azúcares añadidos"
-      },
-      "sulphite": {
-        "name": "Sulfitos",
-        "description": "Contiene sulfitos (conservantes)"
-      },
-      "trans-fat": {
-        "name": "Grasas trans",
-        "description": "Contiene grasas trans"
-      },
-      "yogurt": {
-        "name": "Yogur",
-        "description": "Contiene yogur"
-      },
-      "vegetarian": {
-        "name": "Vegetariano",
-        "description": " - Apto para vegetarianos"
-      }
-    },
-    "nav": {
-      "breakfast": {
-        "title": "Desayunos",
-        "description": "Jue - Sab de 06:00 a 11:00"
-      },
-      "brunch": {
-        "title": "Sunday Brunch",
-        "description": "Domingos de 10:00 a 15:00"
-      },
-      "snack": {
-        "title": "Lil'Snacks",
-        "description": "Jue - Dom de 11:00 a 18:30"
-      },
-      "lunch": {
-        "title": "Almuerzo",
-        "description": "Jue - Dom de 18:30 a 22:00"
-      },
-      "dinner": {
-        "title": "Cena",
-        "description": "Jue - Dom de 18:30 a 22:00"
-      },
-      "cold": {
-        "title": "Bebidas frías",
-        "description": "Descripción Bebidas frías"
-      },
-      "hot": {
-        "title": "Cafés y tés",
-        "description": "Descripción Cafés y tés"
-      },
-      "fresh": {
-        "title": "Zumos naturales y batidos",
-        "description": "Descripción Zumos naturales y batidos"
-      },
-      "alcohol": {
-        "title": "Vinos y Cervezas",
-        "description": "Descripción Vinos y Cervezas"
-      },
-      "cocktail": {
-        "title": "Cóckteles",
-        "description": "Descripción Cóckteles"
-      }
-    },
-    "crossSelling": {
-      "food": {
-        "title": "¿Te apetece algo de comer?",
-        "button": "Ir a comidas"
-      },
-      "drink": {
-        "title": "¿Te apetece algo de beber?",
-        "button": "Ir a bebidas"
-      }
-    },
-    "modal": {
-      "like": {
-        "line1": "¿Quieres dar un me gusta a ",
-        "line2": "Inicia sesión para compartir lo que te gusta!",
-        "line3": "¿No tienes cuenta?",
-        "line4": "Crea una cuenta en segundos."
-      }
-    }
-  },
-  "crud": {
-    "title": {
-      "user": "Usuarios",
-      "product": "Productos"
-    },
-    "buttonCreate": {
-      "user": "Registrar usuario",
-      "product": "Crear producto"
-    },
-    "filter": {
-      "bar": "Escribe para buscar...",
-      "all": "Mostrar todo",
-      "role": {
-        "employee": "Empleado",
-        "client": "Cliente"
-      }
-    },
-    "form": {
-      "language": "Cambia de idioma usando las banderas. Todos los nombres y descripciones son obligatorios en todos los idiomas activos.",
-      "or" : "O quizás",
-      "button": {
-          "create": "Crear",
-          "delete": "Eliminar",
-          "update": "Editar",
-          "cancel": "Cancelar",
-          "send": "Enviar",
-          "signinGoogle": "Iniciar sesión con Google",
-          "passwordForgot": "Restablecer contraseña"
-      },
-      "user": {
-        "title": {
-          "create": "Registrar usuario",
-          "delete": "Eliminar usuario",
-          "update": "Editar usuario",
-          "signin": "Iniciar sesión",
-          "passwordForgot": "¿Olvidaste tu contraseña?",
-          "passwordReset": "Restablece tu contraseña"
-        },
-        "question": {
-          "delete": "¿Estás seguro que quieres eliminar el siguiente usuario?",
-          "signup": "¿No tienes una cuenta?",
-          "google": "O inicia sesión con Google",
-          "passwordForgot": "¿Olvidaste tu contraseña?",
-          "passwordRemember": "¿Recordaste tu contraseña?"
-        },
-        "label": {
-          "id": "ID del usuario:",
-          "name": "Nombre del usuario",
-          "email": "Nombre de la cuenta",
-          "password": "Contraseña",
-          "confirmPasswordLabel": "Confirmar contraseña",
-          "role": "Rol del usuario"
-        },
-        "placeholder": {
-          "id": "ID del usuario:",
-          "name": "Escriba nombre del usuario",
-          "email": "Escriba nombre de la cuenta",
-          "password": "Aquí puedes cambiar la contraseña",
-          "confirmPasswordError": "Las contraseñas deben coincidir",
-          "signinPassword": "Escriba contraseña",
-          "role": "Rol del usuario"
+    "hero": {
+      "common": {
+        "bullets": {
+          "loading": "<boldRed>Velocidad de carga rápida</boldRed>",
+          "engagement": "<bold>Aumenta la interacción</bold>",
+          "onlinePresence": "Presencia online profesional",
+          "streamline": "Optimiza el servicio",
+          "grow": "Haz crecer tu restaurante",
+
+          "transparent": "<bold>Transparente</bold> - sin comisiones ocultas",
+          "commission": "<boldRed>0% de comisión</boldRed>",
+          "flexible": "Planes mensuales o anuales",
+          "customDomain": "Obtén un subdominio gratis",
+          "support": "Soporte por email en menos de 24h",
+
+          "interactive": "Navegación <boldRed>interactiva</boldRed> del menú",
+          "switchMode": "Cambia entre temas de <bold>día y noche</bold>",
+          "addsOn": "Vista previa de todos los <bold>complementos</bold>",
+          "multilanguage": "Prueba menús <bold>multilingües</bold> al instante",
+
+          "24h": "respondemos en menos de 24 horas",
+          "chat": "Usa nuestra IA entrenada para chatear y resolver tus dudas",
+          "formular": "Rellena el formulario y te llamaremos para sacarle el máximo partido"
         }
       },
-      "product": {
-        "title": {
-          "create": "Crear producto",
-          "delete": "Eliminar producto",
-          "update": "Editar producto"
-        },
-        "question": {
-          "delete": "¿Estás seguro que quieres eliminar el siguiente producto?"
-        },
-        "label": {
-          "id": "ID del producto:",
-          "name": {
-            "en": "Nombre en inglés:",
-            "es": "Nombre en español:",
-            "de": "Nombre en alemán:"
-          },
-          "description": {
-            "en": "Desccripción en inglés:",
-            "es": "Desccripción en español:",
-            "de": "Desccripción en alemán:"
-          },
-          "category": "Categoría:",
-          "price": "Precio:",
-          "ingredients": "Ingredientes:",
-          "vegetarian": "¿Es vegetariano?",
-          "image": "Imagen:",
-          "video": "Vídeo:",
-          "yes": "Sí",
-          "no": "No"
-        },
-        "placeholder": {
-          "id": "ID del producto:",
-          "name": {
-            "en": "Nombre del producto en inglés",
-            "es": "Nombre del producto en español",
-            "de": "Nombre del producto en alemán"
-          },
-          "description": {
-            "en": "Desccripción del producto en inglés",
-            "es": "Desccripción del producto en español",
-            "de": "Desccripción del producto en alemán"
-          },
-          "category": "Categoría del producto",
-          "price": "Precio del producto",
-          "ingredients": "Ingredientes del producto",
-          "vegetarian": "¿Es vegetariano?",
-          "image": "Imagen del producto",
-          "video": "Vídeo del producto",
-          "yes": "Sí",
-          "no": "No"
+      "homepage": {
+        "intro": "Bienvenido a <boldRed>my restaurant menu</boldRed>",
+        "title": "Digital e interactivo",
+        "subtitle": "para tu restaurante",
+        "claimer": "<bold>Diseñado</bold> para <boldRed>aumentar</boldRed> tus ventas e interacción"
+      },
+      "features": {
+        "intro": "<bold>Funciones</bold> de <boldRed>my restaurant menu</boldRed>",
+        "title": "Descubre",
+        "subtitle": "cómo nuestros menús digitales ayudan a tu restaurante"
+      },
+      "pricing": {
+        "intro": "<bold>Precios</bold> de <boldRed>my restaurant menu</boldRed>",
+        "title": "Flexibles",
+        "subtitle": "opciones que se adaptan a tus necesidades"
+      },
+      "demos": {
+        "intro": "<bold>Demos</bold> de <boldRed>my restaurant menu</boldRed>",
+        "_intro": "Mira <boldRed>my restaurant menu</boldRed> en acción",
+        "title": "En acción",
+        "subtitle": "explora menús y funciones en vivo"
+      },
+      "contact": {
+        "intro": "<bold>Contacta</bold> con <boldRed>my restaurant menu</boldRed>",
+        "title": "Conéctate",
+        "subtitle": "Habla con nuestro equipo"
+      },
+      "academy": {
+        "intro": "<bold>Academia del Menú</bold> de <boldRed>my restaurant menu</boldRed>",
+        "title": "Aprende y crece",
+        "subtitle": "guías, consejos y buenas prácticas"
+      },
+      "addons": {
+        "intro": "Mejora tu <boldRed>menú digital</boldRed>",
+        "title": "Complementos potentes",
+        "subtitle": "amplía con fidelización, reservas y más"
+      },
+      "about": {
+        "intro": "Sobre <boldRed>my restaurant menu</boldRed>",
+        "title": "Nuestra misión",
+        "subtitle": "ayudar a los restaurantes a digitalizarse"
+      },
+      "faqs": {
+        "intro": "<bold>Preguntas frecuentes</bold> de <boldRed>my restaurant menu</boldRed>",
+        "title": "Preguntas",
+        "subtitle": "tenemos las respuestas que necesitas"
+      }
+    },
+    "cards": {
+      "titles": {
+        "industries": "Trabajamos con negocios como el tuyo"
+      },
+      "qrCode": {
+        "title": "Menú con Código QR",
+        "description": "Comparte tu menú al instante con un simple escaneo QR. Los clientes pueden verlo sin descargar ninguna app."
+      },
+      "tablet": {
+        "title": "Compatible con tablets",
+        "description": "Diseñado para funcionar perfectamente en tablets. Ofrece a tu personal una herramienta moderna y fácil para gestionar pedidos."
+      },
+      "giftCard": {
+        "title": "Tarjetas regalo y de fidelización",
+        "description": "Premia a tus clientes con tarjetas digitales regalo y de sellos. Fáciles de usar y ecológicas."
+      },
+      "marketing": {
+        "title": "Herramientas de marketing",
+        "description": "Promociona tu negocio con campañas y ofertas integradas. Llega a más clientes sin esfuerzo."
+      },
+      "multilingual": {
+        "title": "Multilingüe",
+        "description": "Ofrece menús en varios idiomas. Haz que cada cliente se sienta como en casa."
+      },
+      "comission": {
+        "title": "0% de comisión",
+        "description": "Conserva el 100% de tus ingresos. Sin costes ocultos ni comisiones en tus ventas."
+      },
+      "data": {
+        "title": "Propiedad de los datos",
+        "description": "Los datos de tus clientes son tuyos. Obtén información y construye relaciones sin depender de terceros."
+      },
+      "abTesting": {
+        "title": "Test A/B",
+        "description": "Prueba distintos diseños de menú, precios o promociones. Descubre qué funciona mejor con tus clientes reales."
+      },
+      "customization": {
+        "title": "Personalización",
+        "description": "Adapta tu menú a tu marca. Añade logotipos, colores y estilos que reflejen la identidad de tu restaurante."
+      },
+      "tableTurnover": {
+        "title": "Rotación de mesas",
+        "description": "Acelera el servicio y reduce los tiempos de espera. Los menús digitales ayudan a liberar mesas más rápido y aumentar ingresos."
+      },
+      "gastroMarket": {
+        "title": "Gastro Market",
+        "description": "Crea menús de todos los restaurantes de tu mercado en un solo código QR."
+      },
+      "hotels": {
+        "title": "Hoteles",
+        "description": "Haz que tu menú esté listo en el idioma de tus huéspedes en cuanto escaneen el código QR."
+      },
+      "restaurants": {
+        "title": "Restaurantes",
+        "description": "Refuerza tu reputación ofreciendo un servicio digital profesional."
+      },
+      "chains": {
+        "title": "Cadenas",
+        "description": "Nunca fue tan fácil crear y mantener menús en distintas ubicaciones."
+      }
+    },
+    "tabs": {
+      "dinning": {
+        "title": "Una experiencia gastronómica inolvidable",
+        "bullets": {
+          "01": "Visualización perfecta en cualquier lugar: nuestra pantalla adaptable garantiza un menú rápido y atractivo en cualquier dispositivo y conexión.",
+          "02": "Acceso instantáneo: los clientes escanean el código QR y el menú se abre al instante en su navegador. Sin necesidad de apps.",
+          "03": "Interacción: permite a los clientes dar 'me gusta' a sus platos favoritos, dándote información valiosa y haciéndoles sentir conectados.",
+          "04": "Siempre actualizado: muestra disponibilidad y precios en tiempo real, evitando frustraciones y confusiones."
         }
       },
-      "select": {
-        "selectDefault": "Selecciona una opción",
-        "selectAll": "Seleccionar todo"
+      "management": {
+        "title": "Gestión sin esfuerzo",
+        "bullets": {
+          "01": "Un CMS intuitivo que se siente como tu red social favorita. Sin necesidad de conocimientos técnicos.",
+          "02": "Crea, edita y organiza categorías y platos con una sencilla interfaz de arrastrar y soltar.",
+          "03": "Programa menús para que aparezcan en horarios específicos (desayuno, comida, cena).",
+          "04": "Resalta visualmente promociones, novedades o recomendaciones del chef para aumentar las ventas."
+        }
       },
-      "error": {
-        "name": {
-          "en": "El nombre en inglés es obligatorio.",
-          "es": "El nombre en español es obligatorio.",
-          "de": "El nombre en alemán es obligatorio."
+      "customization": {
+        "title": "Personalización avanzada",
+        "bullets": {
+          "01": "Ajusta el menú a tu marca con colores, tipografías y logotipo personalizados.",
+          "02": "Elige entre varios diseños para presentar mejor tu comida y bebida.",
+          "03": "Añade información de alérgenos, etiquetas dietéticas (vegano, sin gluten) y calorías fácilmente.",
+          "04": "Crea una experiencia de marca coherente desde el primer momento."
+        }
+      },
+      "engagement": {
+        "title": "Fidelización e interacción",
+        "bullets": {
+          "01": "Ofrece tarjetas de fidelización digitales para fomentar las visitas repetidas. 'Compra 5 cafés, el 6º es gratis'.",
+          "02": "Vende tarjetas regalo digitales directamente desde tu menú: un refuerzo perfecto de ingresos.",
+          "03": "Permite a los clientes crear perfiles para guardar sus platos favoritos y seguir sus recompensas.",
+          "04": "Recoge comentarios directos y crea comunidad alrededor de tu marca."
+        }
+      },
+      "test30days": {
+        "title": "Prueba MyRestaurantMenu gratis durante 30 días",
+        "bullets": {
+          "01": "Durante tu fase de prueba de 30 días, crearemos una aplicación de muestra para ti. Incluye una pequeña parte de tu menú. Tú mantienes el control y puedes completar el contenido como quieras con nuestro sistema modular."
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Puedes rellenar un formulario para que te ofrezcamos un servicio adaptado a tus necesidades, o bien llamar o contactar directamente con nuestro fundador.",
+      "questions": {
+        "howLong": {
+          "question": "¿Cuánto tarda en estar listo mi menú digital?",
+          "answer": "Una vez recibimos los detalles de tu menú y tu identidad visual (logo, colores, imágenes), tu menú digital suele estar listo en 3-5 días laborables. Nos aseguramos de que funcione perfectamente antes de entregártelo."
         },
-        "description": {
-          "en": "La descripción en inglés es obligatoria.",
-          "es": "La descripción en español es obligatoria.",
-          "de": "La descripción en alemán es obligatoria."
+        "responsiveDesign": {
+          "question": "¿Qué significa una web app responsive?",
+          "answer": "Responsive significa que tu menú digital se adapta automáticamente a cualquier dispositivo — móviles, tablets o pantallas de ordenador. Tus clientes disfrutarán de una experiencia fluida sin necesidad de descargar apps."
         },
-        "price": "El precio es obligatorio.",
-        "ingredients": "Los ingredientes son obligatorios.",
-        "category": "La categoría es obligatoria."
+        "designChanges": {
+          "question": "¿Qué cambios de diseño son posibles?",
+          "answer": "Personalizamos colores, tipografías y diseños para adaptarlos a la identidad de tu restaurante. También puedes añadir fotos, destacar platos populares y actualizar tu menú cuando quieras. Para personalizaciones avanzadas, nuestro equipo te apoya."
+        },
+        "expect30days": {
+          "question": "¿Qué puedo esperar en los primeros 30 días?",
+          "answer": "Puedes probar la plataforma gratis durante 30 días. Esto incluye subir tu menú real, ver cómo interactúan tus clientes y solicitar ajustes de diseño. Sin riesgos, sin compromiso: queremos que estés 100% seguro antes de continuar."
+        },
+        "updateMyself": {
+          "question": "¿Puedo actualizar mi menú yo mismo?",
+          "answer": "¡Sí! Tendrás acceso a un panel de administración sencillo donde podrás editar platos, precios o fotos al instante. Sin conocimientos técnicos."
+        },
+        "appDownload": {
+          "question": "¿Mis clientes necesitan descargar una app?",
+          "answer": "No, no necesitan descargas. Tu menú es accesible con un código QR o un enlace directo, abriéndose al instante en el navegador."
+        },
+        "customerSupport": {
+          "question": "¿Incluye soporte al cliente?",
+          "answer": "Por supuesto. Ofrecemos soporte dedicado por email, teléfono o chat en vivo. La mayoría de solicitudes se resuelven en menos de 24h."
+        },
+        "secure": {
+          "question": "¿Qué seguridad tiene la plataforma?",
+          "answer": "Tus datos y los de tus clientes están protegidos con protocolos de seguridad estándar de la industria. También hacemos actualizaciones y monitorización continua para garantizar fiabilidad."
+        }
+      }
+    },
+    "contact": {
+      "title": "¿Tienes más preguntas?",
+      "description": "Rellena nuestro formulario rápido y te responderemos con una solución a medida. ¿Prefieres una conversación directa? Llama o contacta con nuestro fundador personalmente.",
+      "button": "Rellenar formulario aquí"
+    },
+    "carouselText": {
+      "benefits": {
+        "title": "Ventajas de un vistazo",
+        "clients": {
+          "title": "Ventajas para tus clientes",
+          "bullet01": "Acceso instantáneo a tu menú mediante QR.",
+          "bullet02": "Siempre actualizado con precios y platos reales.",
+          "bullet03": "Navegación fluida con fotos y vídeos.",
+          "bullet04": "Soporte multilingüe para cada cliente.",
+          "bullet05": "Experiencia rápida, higiénica y sin contacto."
+        },
+        "business": {
+          "title": "Ventajas para tu negocio",
+          "bullet01": "Actualiza menús en cualquier momento sin reimpresiones.",
+          "bullet02": "Destaca ofertas y aumenta tus ventas.",
+          "bullet03": "Llega a turistas y clientes locales nuevos.",
+          "bullet04": "Ahorra costes y reduce el desperdicio de papel.",
+          "bullet05": "Obtén información útil para mejorar resultados."
+        },
+        "employees": {
+          "title": "Ventajas para tu personal",
+          "bullet01": "Simplifica el trabajo con un sistema fácil de usar.",
+          "bullet02": "Reduce errores en pedidos y malentendidos.",
+          "bullet03": "Dedica más tiempo al servicio al cliente.",
+          "bullet04": "Recibe alertas instantáneas de nuevos pedidos.",
+          "bullet05": "Disfruta de flujos de trabajo más rápidos y fluidos."
+        },
+        "technical": {
+          "title": "Ventajas técnicas",
+          "bullet01": "Plataforma en la nube con 99,9% de disponibilidad.",
+          "bullet02": "Funciona sin fallos en cualquier dispositivo móvil.",
+          "bullet03": "Herramientas de análisis para medir resultados.",
+          "bullet04": "Integración sencilla con TPV.",
+          "bullet05": "Datos seguros y protección fiable."
+        }
+      },
+      "reviews": {
+        "title": "Lo que opinan nuestros clientes sobre <boldRed>MyRestaurantMenu</boldRed>",
+        "pizzeria": {
+          "title": "Pizzería Mario",
+          "bullet01": "“Con MyRestaurantMenu, nuestros clientes pueden escanear y pedir al instante. Se acabó esperar por menús impresos, y hemos visto un gran aumento en la rotación de mesas y las ventas.”"
+        },
+        "foodMarket": {
+          "title": "Mercado FreshTown",
+          "bullet01": "“Gestionar varios menús de restaurantes solía ser un dolor de cabeza. Ahora todo está en un solo lugar, fácil de actualizar, y a nuestros visitantes les encanta consultar todas las opciones desde un único QR.”"
+        },
+        "restaurantFoodMarket": {
+          "title": "La Cocina @ City Market",
+          "bullet01": "“En un mercado de comida tan concurrido, la visibilidad importa. Gracias a MyRestaurantMenu, podemos gestionar nuestro menú en minutos y anunciarlo directamente en el sistema digital del mercado — nos trae más clientes cada día.”"
+        }
+      },
+      "steps": {
+        "title": "Implementación rápida en solo 3 pasos",
+        "step01": {
+          "title": "01. Incorporación",
+          "bullet01": "Llamada rápida de introducción para entender las necesidades de tu restaurante.",
+          "bullet02": "Envíanos tu menú, identidad visual y preferencias.",
+          "bullet03": "Soporte personalizado para garantizar un inicio sin problemas."
+        },
+        "step02": {
+          "title": "02. Creación",
+          "bullet01": "Configuramos tu menú digital en solo unos días.",
+          "bullet02": "Personaliza fácilmente diseño, promociones y herramientas de fidelización en nuestro CMS.",
+          "bullet03": "Revisa todo antes de publicarlo."
+        },
+        "step03": {
+          "title": "03. Listo para usar",
+          "bullet01": "Lanza tu menú al instante con tu código QR único y compártelo con tus clientes.",
+          "bullet02": "Tu menú funciona en cualquier dispositivo, en cualquier idioma, sin descargas.",
+          "bullet03": "Disfruta desde el primer día de mayor interacción, servicio más ágil y más ventas."
+        }
       }
     }
   },
-  "foods": {
-    "intro": {
-      "title": "Menú de comida",
-      "paragraph": "Explora nuestra carta"
-    }
-  },
-  "drinks": {
-    "intro": {
-      "title": "Menú de bebidas",
-      "paragraph": "Párrafo en la página de a bebidas"
+  "ui": {
+    "buttons": {
+      "demo": "Ver demo en vivo ahora",
+      "promo": "Empieza la prueba gratuita de 30 días",
+      "demoPiza": "Demo Pizzería",
+      "demoMarket": "Demo Mercado de comida",
+      "chatbot": "Abrir chat ahora",
+      "formular": "Abrir formulario",
+      "features": "Ver más funciones",
+      "chatAssistant": "Chatea en vivo con el asistente de Diego"
     }
   },
   "chatbot": {
-    "notUnderstood": "Lo siento, no entendí tu pregunta.",
-    "suspicious": "⚠️ Tus mensajes parecen sospechosos, así que no puedo continuar esta conversación ahora mismo.",
+    "notUnderstood": "Lo siento, no he entendido tu pregunta.",
+    "suspicious": "⚠️ Tus mensajes parecen sospechosos, no puedo continuar esta conversación ahora mismo.",
     "header": "Soporte por chat",
     "placeholder": "Escribe tu mensaje...",
     "send": "Enviar",
@@ -443,64 +344,64 @@
       "intros": [
         "¡Por supuesto! ",
         "¡Claro que sí! ",
-        "Buena pregunta 👍 ",
-        "Con gusto te lo explico: ",
-        "¡Sin problema! ",
-        "Buen punto — revisémoslo 👇 ",
-        "No hay problema, así funciona: ",
-        "Encantado de aclararlo para ti 🙂"
+        "Muy buena pregunta 👍 ",
+        "Encantado de explicarlo: ",
+        "¡Seguro! ",
+        "Buen punto — vamos a verlo 👇 ",
+        "Sin problema, así es como funciona: ",
+        "Me alegra aclarártelo 🙂"
       ],
       "outros": [
         " ¿Quieres que te dé más detalles?",
         " ¿Quieres que te muestre cómo funciona en la práctica?",
         " Esta es una de nuestras funciones más populares 🚀",
         " ¿Responde esto a tu pregunta?",
-        " ¿Quieres que te guíe con un ejemplo paso a paso?",
-        " A muchos dueños de restaurantes les encanta esta función 🙌",
-        " ¿Quieres que lo desglosé paso a paso?",
-        " ¿Quieres que comparta un consejo para sacarle el máximo provecho?"
+        " ¿Quieres que te guíe con un ejemplo?",
+        " Muchos dueños de restaurantes adoran esta función 🙌",
+        " ¿Quieres que lo desglosamos paso a paso?",
+        " ¿Te cuento un truco para sacarle el máximo partido?"
       ],
       "pricingOutro": [
         " Y recuerda, nuestros planes están diseñados para crecer con tu restaurante 💡",
         " Además, nuestros precios son flexibles: solo pagas por lo que realmente necesitas 💸",
-        " Lo mejor es que puedes empezar de forma simple y añadir funciones a medida que crezcas 🚀",
-        " Y no olvides: los planes anuales incluyen ahorros adicionales 😉"
+        " Lo mejor es que puedes empezar simple e ir añadiendo funciones según crezcas 🚀",
+        " Y no lo olvides: los planes anuales incluyen descuentos adicionales 😉"
       ],
       "supportOutro": [
-        " No te preocupes, nuestro equipo suele responder en menos de 24 horas ⏱️",
-        " Si alguna vez nos necesitas, estamos a un correo de distancia 📧",
-        " Nuestro soporte es amable, rápido y siempre dispuesto a ayudar 🙌",
-        " La mayoría de las preguntas se responden el mismo día, muchas veces en pocas horas ⚡"
+        " Y no te preocupes, nuestro equipo suele responder en menos de 24 horas ⏱️",
+        " Si alguna vez nos necesitas, estamos a un email de distancia 📧",
+        " Nuestro soporte es cercano, rápido y siempre encantado de ayudarte 🙌",
+        " La mayoría de dudas se resuelven el mismo día, muchas veces en solo unas horas ⚡"
       ]
     },
     "intents": {
       "greeting": [
-        "¡Hola 👋! ¿Cómo puedo ayudarte hoy?",
-        "Bienvenido 🙌 ¿Quieres saber más sobre Myrestaurantmenu?",
-        "¡Hola 😊! ¿Buscas información sobre funciones o precios?",
-        "¡Hey! 👋 ¿Quieres ver cómo Myrestaurantmenu puede ayudar a tu restaurante?",
-        "¡Qué gusto verte! 🍽️ ¿Qué te gustaría explorar primero?"
+        "¡Hola 👋! ¿En qué puedo ayudarte hoy?",
+        "¡Bienvenido 🙌! ¿Quieres saber más sobre MyRestaurantMenu?",
+        "¡Hola! 😊 ¿Buscas información sobre funciones o precios?",
+        "¡Hey! 👋 ¿Tienes curiosidad por cómo MyRestaurantMenu puede ayudar a tu restaurante?",
+        "¡Encantado de verte! 🍽️ ¿Qué te gustaría explorar primero?"
       ],
       "thanks": [
         "¡De nada! 🙌",
         "¡Encantado de ayudar! 😃",
-        "Con mucho gusto — ¿tienes más preguntas?",
+        "Un placer — ¿tienes alguna otra pregunta?",
         "¡Cuando quieras! 🤗",
-        "Me alegra poder ayudar — ¿hay algo más que quieras saber?",
-        "¡Siempre estoy aquí si me necesitas! 👌"
+        "Me alegra haberte ayudado — ¿quieres saber algo más?",
+        "¡Siempre aquí si me necesitas! 👌"
       ],
       "goodbye": [
-        "¡Hasta luego! 🍽️",
+        "¡Hasta pronto! 🍽️",
         "Adiós, que tengas un gran día en tu restaurante 🚀",
-        "Cuídate y hablamos pronto 👋",
-        "Adiós por ahora — te deseo muchos clientes felices 🌟",
-        "¡Nos vemos luego! 👌"
+        "Cuídate, hablamos pronto 👋",
+        "Hasta luego — te deseo muchos clientes felices 🌟",
+        "¡Nos vemos! 👌"
       ],
       "support": [
-        "No te preocupes, puedo conectarte con nuestro equipo. ¿Podrías compartir tus datos de contacto?",
-        "Me encantaría ayudarte. ¿Puedes dejar tu correo electrónico o teléfono?",
-        "Si lo prefieres, puedo pasar esto directamente a nuestro equipo de soporte 📩 — ¿puedes compartir tu contacto?",
-        "Nuestro equipo puede responder rápidamente si nos das tu correo o número 👌"
+        "No te preocupes, puedo ponerte en contacto con nuestro equipo. ¿Podrías compartir tus datos de contacto?",
+        "Me encantaría ayudarte. ¿Nos dejas tu email o teléfono para contactarte?",
+        "Si lo prefieres, paso esto directamente a nuestro equipo de soporte 📩 — ¿puedes darnos tu contacto?",
+        "Nuestro equipo puede responderte rápidamente si nos dejas tu email o número 👌"
       ]
     },
     "leadForm": {
@@ -509,7 +410,8 @@
       "phone": "Tu número de teléfono",
       "submit": "Enviar",
       "cancel": "Cancelar",
-      "requireContact": "Por favor, proporciona al menos un correo electrónico o número de teléfono."
+      "requireContact": "Por favor, proporciona al menos un email o un número de teléfono."
     }
   }
 }
+
