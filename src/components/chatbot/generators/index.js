@@ -1,5 +1,8 @@
 // src/components/chatbot/generators/index.js
 import { GoogleGenerativeAI } from "@google/generative-ai";
+// Import prompt config
+import promptConfig from '/public/promptConfig.json';
+
 
 console.log("API Key loaded?", import.meta.env.VITE_GEMINI_API_KEY);
 
@@ -10,12 +13,16 @@ if (API_KEY) {
     genAI = new GoogleGenerativeAI(API_KEY);
 }
 
+// AI model
 const MODEL = "gemini-2.0-flash-lite";
 
+// Count limit
 let requestCount = 0;
 const MAX_REQUESTS_PER_SESSION = 10;
 
-console.log('requestCount', requestCount);
+// detect from user session, browser, or default
+const language = 'en';
+const systemInstruction = promptConfig[language];
 
 // Rule-based fallback (simple, safe)
 export async function paraphraseRuleBased(text) {
@@ -41,12 +48,7 @@ export async function paraphraseGemini(prompt, history = []) {
         const contents = [
             {
                 role: "user",
-                parts: [{
-                text: "Instruction: Always give concise answers (max 2-3 sentences)." +
-                        "Focus only on conclusions. " +
-                        "If you are not sure or lack info, reply with 'I don’t know', or something similar, to make the conversation flow." +
-                        "Diego Pérez Rodríguez, founder MyRestaurantMenu. contact@myrestaurantmenu.com. Don't provide contact details unless is requested. If it is requested, you can give the email address"
-                }]
+                parts: [{ text: systemInstruction }]
             },
             ...history.map(m => ({
                 role: m.role === 'user' ? 'user' : 'model',
