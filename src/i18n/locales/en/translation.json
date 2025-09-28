@@ -252,54 +252,72 @@
         "title": "The Benefits at a Glance",
         "clients": {
           "title": "Benefits for your clients",
-          "bullet01": "No wait - browse and order instantly",
-          "bullet02": "Easy access via QR code - no app download needed",
-          "bullet03": "Always up-to-date info (availability, prices)",
-          "bullet04": "View in multiple formats (photo, video, list)",
-          "bullet05": "Multi-language, multi-currency options",
-          "bullet06": "Nutrition and allergy info at a glance",
-          "bullet07": "Fast, hygienic, and contactless experience",
-          "bullet08": "Leave feedback instantly"
+          "bullet01": "Instant access to your menu via QR code.",
+          "bullet02": "Always updated with real prices and items.",
+          "bullet03": "Smooth browsing with photos and videos.",
+          "bullet04": "Multi-language support for every guest.",
+          "bullet05": "Fast, hygienic, and contactless experience."
         },
         "business": {
           "title": "Benefits for your business",
-          "bullet01": "Reduce staff workload and increase efficiency",
-          "bullet02": "Real-time menu updates (no reprints needed)",
-          "bullet03": "Promote offers, specials, or seasonal dishes easily",
-          "bullet04": "Increase sales with flash offers & marketing tools",
-          "bullet05": "Reach tourists and international guests seamlessly",
-          "bullet06": "Build trust with transparency and compliance",
-          "bullet07": "Save costs on printing and reduce environmental waste",
-          "bullet08": "Collect guest reviews and improve your service"
+          "bullet01": "Update menus anytime with no reprints.",
+          "bullet02": "Highlight offers and drive more sales.",
+          "bullet03": "Reach new tourists and local customers.",
+          "bullet04": "Save costs and cut down paper waste.",
+          "bullet05": "Gather insights to improve performance."
         },
         "employees": {
           "title": "Benefits for your employees",
-          "bullet01": "Less time explaining menu items to customers",
-          "bullet02": "Reduced order errors and miscommunication",
-          "bullet03": "More time to focus on service quality",
-          "bullet04": "Easy menu management through simple interface",
-          "bullet05": "Instant notifications for new orders",
-          "bullet06": "Real-time inventory tracking",
-          "bullet07": "Streamlined workflow and operations",
-          "bullet08": "Enhanced customer satisfaction scores"
+          "bullet01": "Simplify work with an easy-to-use system.",
+          "bullet02": "Reduce order errors and miscommunication.",
+          "bullet03": "Spend more time on customer service.",
+          "bullet04": "Receive instant alerts for new orders.",
+          "bullet05": "Enjoy smoother and faster workflows."
         },
         "technical": {
           "title": "Technical advantages",
-          "bullet01": "Cloud-based system with 99.9% uptime guarantee",
-          "bullet02": "Mobile-responsive design for all devices",
-          "bullet03": "Advanced analytics and reporting tools",
-          "bullet04": "Integration with existing POS systems",
-          "bullet05": "Secure payment processing and data protection",
-          "bullet06": "Automatic backups and disaster recovery",
-          "bullet07": "Regular updates and new feature rollouts",
-          "bullet08": "24/7 technical support and maintenance"
+          "bullet01": "Cloud-based platform with 99.9% uptime.",
+          "bullet02": "Works flawlessly on any mobile device.",
+          "bullet03": "Analytics tools to track performance.",
+          "bullet04": "Easy integration with POS solutions.",
+          "bullet05": "Secure data and reliable protection."
         }
       },
       "reviews": {
-        "title": "Hear what our clients says about <boldRed>MyRestaurantMenu</boldRed>"
+        "title": "Hear what our clients say about <boldRed>MyRestaurantMenu</boldRed>",
+        "pizzeria": {
+          "title": "Mario’s Pizzeria",
+          "bullet01": "“With MyRestaurantMenu, our customers can scan and order instantly. No more waiting for printed menus, and we’ve seen a real boost in table turnover and sales.”"
+        },
+        "foodMarket": {
+          "title": "FreshTown Food Market",
+          "bullet01": "“Managing multiple restaurant menus used to be a headache. Now everything is in one place, easy to update, and our visitors love the convenience of browsing all options from a single QR code.”"
+        },
+        "restaurantFoodMarket": {
+          "title": "La Cocina @ City Market",
+          "bullet01": "“Being inside a busy food market, visibility matters. Thanks to MyRestaurantMenu, we can manage our menu in minutes and advertise directly within the market’s digital menu system — it brings us more customers every day.”"
+        }
       },
       "steps": {
-        "title": ""
+        "title": "Quick implementation in just 3 steps",
+        "step01": {
+          "title": "01. Onboarding",
+          "bullet01": "Quick introduction call to understand your restaurant’s needs.",
+          "bullet02": "Send us your menu details, branding, and preferences.",
+          "bullet03": "Personalized support to ensure a smooth start."
+        },
+        "step02": {
+          "title": "02. Creation",
+          "bullet01": "We set up your digital menu in just a few days.",
+          "bullet02": "Easily customize design, promotions, and loyalty tools in our CMS.",
+          "bullet03": "Preview everything before going live."
+        },
+        "step03": {
+          "title": "03. Ready to go",
+          "bullet01": "Launch instantly with your unique QR code and share it with customers.",
+          "bullet02": "Your menu works on any device, in any language, without app downloads.",
+          "bullet03": "Enjoy higher engagement, smoother service, and more sales from day one."
+        }
       }
     }
   },

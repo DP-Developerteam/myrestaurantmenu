@@ -315,9 +315,6 @@ const Home = () => {
                     "section.carouselText.benefits.clients.bullet03",
                     "section.carouselText.benefits.clients.bullet04",
                     "section.carouselText.benefits.clients.bullet05",
-                    "section.carouselText.benefits.clients.bullet06",
-                    "section.carouselText.benefits.clients.bullet07",
-                    "section.carouselText.benefits.clients.bullet08",
                 ]
             },
             {
@@ -328,9 +325,6 @@ const Home = () => {
                     "section.carouselText.benefits.business.bullet03",
                     "section.carouselText.benefits.business.bullet04",
                     "section.carouselText.benefits.business.bullet05",
-                    "section.carouselText.benefits.business.bullet06",
-                    "section.carouselText.benefits.business.bullet07",
-                    "section.carouselText.benefits.business.bullet08",
                 ]
             },
             {
@@ -341,9 +335,6 @@ const Home = () => {
                     "section.carouselText.benefits.employees.bullet03",
                     "section.carouselText.benefits.employees.bullet04",
                     "section.carouselText.benefits.employees.bullet05",
-                    "section.carouselText.benefits.employees.bullet06",
-                    "section.carouselText.benefits.employees.bullet07",
-                    "section.carouselText.benefits.employees.bullet08",
                 ]
             },
             {
@@ -354,9 +345,6 @@ const Home = () => {
                     "section.carouselText.benefits.technical.bullet03",
                     "section.carouselText.benefits.technical.bullet04",
                     "section.carouselText.benefits.technical.bullet05",
-                    "section.carouselText.benefits.technical.bullet06",
-                    "section.carouselText.benefits.technical.bullet07",
-                    "section.carouselText.benefits.technical.bullet08",
                 ]
             }
         ]
@@ -382,34 +370,28 @@ const Home = () => {
         "cssClass": "section-overflow-background",
         "backgroundOverflow": "background-red-200"
     };
-    const SectionCarouselText02 = {
+    const SectionReviews = {
         "title": "section.carouselText.reviews.title",
         "content": [
             {
-                "title": "1 Name of the business owner",
+                "title": "section.carouselText.reviews.pizzeria.title",
                 "bullets": [
-                    "Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                    "section.carouselText.reviews.pizzeria.bullet01",
                 ]
             },
             {
-                "title": "2 Name of the business owner",
+                "title": "section.carouselText.reviews.foodMarket.title",
                 "bullets": [
-                    "Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                    "section.carouselText.reviews.foodMarket.bullet01",
                 ]
             },
             {
-                "title": "3 Name of the business owner",
+                "title": "section.carouselText.reviews.restaurantFoodMarket.title",
                 "bullets": [
-                    "Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+                    "section.carouselText.reviews.restaurantFoodMarket.bullet01",
                 ]
             },
-            {
-                "title": "4 Name of the business owner",
-                "bullets": [
-                    "Review of the business owner. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-                ]
-            },
-        ]
+        ],
     };
     const SectionTest30Days = {
         "tabs": false,
@@ -436,37 +418,31 @@ const Home = () => {
             }
         ]
     };
-    const SectionCarouselText03 = {
-        "title": "Quick implementation in just 3 steps",
+    const SectionSteps = {
+        "title": "section.carouselText.steps.title",
         "content": [
             {
-                "title": "01. Onboarding",
+                "title": "section.carouselText.steps.step01.title",
                 "bullets": [
-                    "Briefly introduce your company.",
-                    "Initial consultation at the time of your choice",
-                    "Personalized support",
-                    "Discussion of individual wishes",
-                    "No previous experience required",
+                    "section.carouselText.steps.step01.bullet01",
+                    "section.carouselText.steps.step01.bullet02",
+                    "section.carouselText.steps.step01.bullet03",
                 ]
             },
             {
-                "title": "02. Creation",
+                "title": "section.carouselText.steps.step02.title",
                 "bullets": [
-                    "Briefly introduce your company.",
-                    "Initial consultation at the time of your choice",
-                    "Personalized support",
-                    "Discussion of individual wishes",
-                    "No previous experience required",
+                    "section.carouselText.steps.step02.bullet01",
+                    "section.carouselText.steps.step02.bullet02",
+                    "section.carouselText.steps.step02.bullet03",
                 ]
             },
             {
-                "title": "03. Deployment",
+                "title": "section.carouselText.steps.step03.title",
                 "bullets": [
-                    "Briefly introduce your company.",
-                    "Initial consultation at the time of your choice",
-                    "Personalized support",
-                    "Discussion of individual wishes",
-                    "No previous experience required",
+                    "section.carouselText.steps.step03.bullet01",
+                    "section.carouselText.steps.step03.bullet02",
+                    "section.carouselText.steps.step03.bullet03",
                 ]
             },
         ],
@@ -533,9 +509,9 @@ const Home = () => {
             <ComponentTabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} backgroundOverflow={SectionMultiTabs.backgroundOverflow} />
             <ComponentCarouselText title={SectionBenefits.title} content={SectionBenefits.content} cssClass={SectionBenefits.cssClass} />
             <ComponentContactCTA text={SectionContactCta01.text} buttons={SectionContactCta01.buttons} image={SectionContactCta01.image} cssClass={SectionContactCta01.cssClass} backgroundOverflow={SectionContactCta01.backgroundOverflow}/>
-            <ComponentCarouselText title={SectionCarouselText02.title} content={SectionCarouselText02.content} />
+            <ComponentCarouselText title={SectionReviews.title} content={SectionReviews.content} />
             <ComponentTabs tabs={SectionTest30Days.tabs} tabsContent={SectionTest30Days.tabsContent} cssClass={SectionTest30Days.cssClass}/>
-            <ComponentCarouselText title={SectionCarouselText03.title} content={SectionCarouselText03.content} cssClass={SectionCarouselText03.cssClass} />
+            <ComponentCarouselText title={SectionSteps.title} content={SectionSteps.content} cssClass={SectionSteps.cssClass} />
             <ComponentFaq text={SectionFaq.text} buttons={SectionFaq.buttons} faqs={SectionFaq.faqs} />
             <ComponentContactCTA text={SectionContactCta02.text} buttons={SectionContactCta02.buttons} image={SectionContactCta02.image} cssClass={SectionContactCta02.cssClass} backgroundOverflow={SectionContactCta02.backgroundOverflow}/>
         </div>
