@@ -2,13 +2,20 @@
 import '../../styles/com-se.tabs.scss';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+// Import hooks
+import { useChatActions } from '../../hooks/useChatActions';
+// Import components
+import Button from '../ui/Button';
 // Images and icons
 import { IconCheck } from '../../components/ui/Icons';
 
 
-const Tabs = ({title, tabs, cssClass, tabsContent, backgroundOverflow}) => {
+const Tabs = ({title, tabs, tabsContent, cssClass, backgroundOverflow}) => {
     // States for translations
     const { t } = useTranslation();
+
+    // Use hook chat actions
+    const { openChat } = useChatActions();
 
     // State to track which tab is currently active (index-based)
     const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -43,8 +50,8 @@ const Tabs = ({title, tabs, cssClass, tabsContent, backgroundOverflow}) => {
     const renderBullets = () => {
         return (
             <>
-                {cssClass === 'section-tab-red' ?
-                    <h3 className='title'>{t(tabsContent[0].title)}</h3>
+                {activeContent.title && !tabs ?
+                    <h3 className='title'>{t(activeContent.title)}</h3>
                     : null
                 }
                 <ul className='bullets-container'>
@@ -62,11 +69,24 @@ const Tabs = ({title, tabs, cssClass, tabsContent, backgroundOverflow}) => {
     const renderButtons = () => {
         return (
             <div className='buttons-container'>
-                {Object.entries(activeContent.buttons).map(([key, button]) => (
-                    <button className={button.cssClass} key={key}>
-                        {t(button.content)}
-                    </button>
-                ))}
+                {activeContent.buttons.map((btn, i) => {
+                    // Manage actions
+                    const isOpenChat = btn.onClick === 'openChat';
+                    const clickHandler = isOpenChat ? openChat : btn.onClick;
+                    const toProp = isOpenChat ? undefined : btn.to;
+
+                    return (
+                        <Button
+                            key={i}
+                            text={btn.text}
+                            cssClass={btn.cssClass}
+                            to={toProp}
+                            onClick={clickHandler}
+                            icon={btn.icon}
+                            aria-label={btn.ariaLabel}
+                        />
+                    )
+                })}
             </div>
         )
     }

@@ -57,83 +57,57 @@ const Features = () => {
         ]
 
     }
-    const SectionSingleTabRed = {
-        'tabs': false,
-        'cssClass': 'section-tab-red',
-        'tabsContent': [
+    const SectionCardsFeatures01 = {
+        "cardsData": [
             {
-                'title': 'Test MyRestaurantMenu 30 days for free',
-                'bullets': {
-                    '01': 'During your 30-day test phase, we will create a sample app for you. This includes a small taste of your menu. You keep the reins in your hands and can complete the content as you wish using our simple modular system.'
-                },
-                'buttons': {
-                    '01': {
-                        'content': 'Start trial for free now',
-                        'cssClass': 'btn-solid-light btn-inner-shadow',
-                        'to': 'demo'
-                    },
-                },
-                'image': {
-                    'src': ImgQrCode,
-                    'alt': 'Description',
-                    'width': 300,
-                    'height': 300,
-                }
-            }
+            "id": 1,
+            "isOnClick": true,
+            "text": "section.cards.qrCode.title",
+            "description": "section.cards.qrCode.description",
+            "image": ImgQrCode,
+            },
+            {
+            "id": 2,
+            "isOnClick": true,
+            "text": "section.cards.tablet.title",
+            "description": "section.cards.tablet.description",
+            "image": ImgResponsive,
+            },
+            {
+            "id": 3,
+            "isOnClick": true,
+            "text": "section.cards.giftCard.title",
+            "description": "section.cards.giftCard.description",
+            "image": ImgGiftCart,
+            },
+            {
+            "id": 4,
+            "isOnClick": true,
+            "text": "section.cards.marketing.title",
+            "description": "section.cards.marketing.description",
+            "image": ImgUxResponsive,
+            },
+            {
+            "id": 5,
+            "isOnClick": true,
+            "text": "section.cards.multilingual.title",
+            "description": "section.cards.multilingual.description",
+            "image": ImgMultilingual,
+            },
+            {
+            "id": 6,
+            "cssClass": "card-red",
+            "isOnClick": true,
+            "text": "section.cards.comission.title",
+            "description": "section.cards.comission.description",
+            "image": ImgCommission,
+            },
         ]
     };
-    const SectionCardsFeatures01 = {
-            'cardsData': [
-                {
-                'id': 1,
-                'isOnClick': true,
-                'text': 'QR Code Menu',
-                'image': ImgQrCode,
-                'description': 'Share your menu instantly with a simple QR scan. Customers can browse without downloading any app.',
-                },
-                {
-                'id': 2,
-                'isOnClick': true,
-                'text': 'Tablet Ready',
-                'image': ImgResponsive,
-                'description': 'Designed to work seamlessly on tablets. Give your staff an easy, modern tool to manage orders.',
-                },
-                {
-                'id': 3,
-                'isOnClick': true,
-                'text': 'Gift & Stamp Cards',
-                'image': ImgGiftCart,
-                'description': 'Reward loyal customers with digital gift and stamp cards. Easy to use and eco-friendly.',
-                },
-                {
-                'id': 4,
-                'isOnClick': true,
-                'text': 'Marketing Tools',
-                'image': ImgUxResponsive,
-                'description': 'Promote your business with built-in campaigns and offers. Reach more customers effortlessly.',
-                },
-                {
-                'id': 5,
-                'isOnClick': true,
-                'text': 'Multilingual',
-                'image': ImgMultilingual,
-                'description': 'Offer menus in multiple languages. Make every guest feel at home with inclusive communication.',
-                },
-                {
-                'id': 6,
-                'cssClass': 'card-red',
-                'isOnClick': true,
-                'text': '0% Commission',
-                'image': ImgCommission,
-                'description': 'Keep 100% of your earnings. No hidden fees, no commission on your sales.',
-                },
-            ]
-        };
 
     return (
         <div className='page page-home'>
             <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
-            <ComponentTabs tabs={SectionSingleTabRed.tabs} tabsContent={SectionSingleTabRed.tabsContent} cssClass={SectionSingleTabRed.cssClass}/>
             <ComponentCards cardsData={SectionCardsFeatures01.cardsData} />
         </div>
     )

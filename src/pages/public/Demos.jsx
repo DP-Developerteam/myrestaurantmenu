@@ -13,6 +13,13 @@ import ImgCalendar from "../../assets/img/calendar.png";
 import ImgHero01 from "../../assets/img/hero-01.jpg";
 import ImgHero02 from "../../assets/img/hero-03.jpg";
 
+import ImgCommission from "../../assets/img/commission.webp";
+import ImgGiftCart from "../../assets/img/gift-card.webp";
+import ImgMultilingual from "../../assets/img/multilingual.webp";
+import ImgQrCode from "../../assets/img/qr-code.webp";
+import ImgResponsive from "../../assets/img/responsive.webp";
+import ImgUxResponsive from "../../assets/img/ux-friendly.webp";
+
 
 const Demos = () => {
 
@@ -62,7 +69,53 @@ const Demos = () => {
             }
         ]
     }
-
+    const SectionCardsFeatures01 = {
+        "cardsData": [
+            {
+            "id": 1,
+            "isOnClick": true,
+            "text": "section.cards.qrCode.title",
+            "description": "section.cards.qrCode.description",
+            "image": ImgQrCode,
+            },
+            {
+            "id": 2,
+            "isOnClick": true,
+            "text": "section.cards.tablet.title",
+            "description": "section.cards.tablet.description",
+            "image": ImgResponsive,
+            },
+            {
+            "id": 3,
+            "isOnClick": true,
+            "text": "section.cards.giftCard.title",
+            "description": "section.cards.giftCard.description",
+            "image": ImgGiftCart,
+            },
+            {
+            "id": 4,
+            "isOnClick": true,
+            "text": "section.cards.marketing.title",
+            "description": "section.cards.marketing.description",
+            "image": ImgUxResponsive,
+            },
+            {
+            "id": 5,
+            "isOnClick": true,
+            "text": "section.cards.multilingual.title",
+            "description": "section.cards.multilingual.description",
+            "image": ImgMultilingual,
+            },
+            {
+            "id": 6,
+            "cssClass": "card-red",
+            "isOnClick": true,
+            "text": "section.cards.comission.title",
+            "description": "section.cards.comission.description",
+            "image": ImgCommission,
+            },
+        ]
+    };
     const SectionFaq = {
         "text": {
             "title": "FAQ",
@@ -77,36 +130,20 @@ const Demos = () => {
         ],
         "faqs": [
             {
-                question: 'How long does it take until my digital menu is ready?',
-                answer: 'Once we receive your menu details and branding assets (logo, colors, images), your digital menu is usually ready within 3–5 business days. We make sure it works seamlessly before handing it over to you.'
+                question: 'section.faq.questions.updateMyself.question',
+                answer: 'section.faq.questions.updateMyself.answer'
             },
             {
-                question: 'What does a responsive web app mean?',
-                answer: 'Responsive means your digital menu automatically adapts to any device — mobile phones, tablets, or desktop screens. Guests will have a smooth experience without needing to download an app.'
+                question: 'section.faq.questions.appDownload.question',
+                answer: 'section.faq.questions.appDownload.answer'
             },
             {
-                question: 'What design changes are possible?',
-                answer: 'We customize colors, fonts, and layouts to match your restaurant’s branding. You can also add photos, highlight popular dishes, and update your menu items anytime. If you need advanced customization, our team can support you.'
+                question: 'section.faq.questions.customerSupport.question',
+                answer: 'section.faq.questions.customerSupport.answer'
             },
             {
-                question: 'What can I expect during the first 30 days?',
-                answer: 'You can fully test the platform free of charge for 30 days. This includes uploading your real menu, checking how guests interact, and requesting design tweaks. No risk, no commitment — we want you to be 100% confident before continuing.'
-            },
-            {
-                question: 'Can I update my menu by myself?',
-                answer: 'Yes! You’ll have access to a simple admin dashboard where you can edit items, prices, or photos instantly. No technical skills required.'
-            },
-            {
-                question: 'Do my guests need to download an app?',
-                answer: 'No downloads are needed. Your menu is accessible through a QR code or a direct link, so guests can open it instantly in their browser.'
-            },
-            {
-                question: 'Is customer support included?',
-                answer: 'Absolutely. We provide dedicated support via email, phone, or live chat. Most requests are resolved within 24 hours.'
-            },
-            {
-                question: 'How secure is the platform?',
-                answer: 'Your data and your guests’ data are protected with industry-standard security protocols. We also provide regular updates and monitoring to ensure reliability.'
+                question: 'section.faq.questions.secure.question',
+                answer: 'section.faq.questions.secure.answer'
             }
         ]
     };
@@ -129,36 +166,11 @@ const Demos = () => {
             height: 450,
         }
     };
-    const SectionTest30Days = {
-        "tabs": false,
-        "cssClass": "section-tab-red",
-        "tabsContent": [
-            {
-                "title": "Test MyRestaurantMenu 30 days for free",
-                "bullets": {
-                    "01": "During your 30-day test phase, we will create a sample app for you. This includes a small taste of your menu. You keep the reins in your hands and can complete the content as you wish using our simple modular system."
-                },
-                "buttons": {
-                    "01": {
-                        "content": "Start trial for free now",
-                        "cssClass": "btn-solid-light btn-inner-shadow",
-                        "to": "demo"
-                    },
-                },
-                "image": {
-                    "src": ImgCalendar,
-                    "alt": "Description",
-                    "width": 300,
-                    "height": 300,
-                }
-            }
-        ]
-    };
 
     return (
         <div className='page page-demos'>
             <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
-            <ComponentTabs tabs={SectionTest30Days.tabs} tabsContent={SectionTest30Days.tabsContent} cssClass={SectionTest30Days.cssClass}/>
+            <ComponentCards cardsData={SectionCardsFeatures01.cardsData} />
             <ComponentFaq text={SectionFaq.text} buttons={SectionFaq.buttons} faqs={SectionFaq.faqs} />
             <ComponentContactCTA text={SectionContactCta01.text} buttons={SectionContactCta01.buttons} image={SectionContactCta01.image} />
         </div>

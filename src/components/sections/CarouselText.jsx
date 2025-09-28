@@ -1,6 +1,7 @@
 // Import styles and libraries
 import './../../styles/com-se.carousel-text.scss';
 import { useState, useEffect } from 'react';
+import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
 import useDragToSlide from '../../hooks/useDragToSlide';
@@ -63,9 +64,9 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
     const renderBullets = (contentData) => {
         return (
             <ul className='bullets-container'>
-                {Object.entries(contentData.content).map(([key, bullet]) => (
-                    <li className='bullet' key={key}>
-                        <IconCheck className='icon' /> {t(bullet)}
+                {contentData.bullets.map((bullet, idx) => (
+                    <li className="bullet" key={idx}>
+                        <IconCheck className="icon" /> {t(bullet)}
                     </li>
                 ))}
             </ul>
@@ -125,7 +126,16 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
         >
-            {title && <h3 className='section-title'>{t(title)}</h3>}
+            {title &&
+                <h3 className='section-title'>
+                    <Trans i18nKey={title}
+                        components={{
+                            bold: <span className='font-bold' />,
+                            boldRed: <strong className='font-red'/>,
+                        }}
+                    />
+                </h3>
+            }
 
             <div className='carousel-container'>
                 {/* <div className='carousel-content'> */}
