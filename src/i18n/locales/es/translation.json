@@ -10,19 +10,19 @@
     "signOut": "Cerrar sesión",
     "about": "Sobre nosotros",
     "status": "Estado",
-    "partners": "Socios",
+    "partners": "Partners",
     "privacy": "Política de privacidad",
     "legal": "Términos de uso",
     "cookies": "Política de cookies",
-    "academy": "Academia del Menú",
+    "academy": "Menu Academy",
     "faq": "Preguntas frecuentes",
     "blog": "Blog",
-    "sales": "Asesor de ventas con IA",
+    "sales": "Consultor con IA",
     "demoPizza": "DEMO Pizzería",
-    "demoMarket": "DEMO Mercado de comida",
+    "demoMarket": "DEMO Food Market",
     "addsOn": "Complementos",
     "qrCodes": "Códigos QR",
-    "smartMarket": "Mercado Inteligente"
+    "smartMarket": "Smart Market"
   },
   "section": {
     "hero": {
