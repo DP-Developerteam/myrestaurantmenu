@@ -45,8 +45,10 @@
     }
     @media (min-width:820px) {
         flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-between;
         .nav-container {
+            flex-wrap: nowrap;
             .nav-group {
                 align-items: flex-start;
                 width: fit-content;
