@@ -1,7 +1,7 @@
 // src/components/chatbot/generators/index.js
 import { GoogleGenerativeAI } from "@google/generative-ai";
 // Import prompt config
-import promptConfig from '/public/promptConfig.json';
+import promptConfig from './promptConfig.json';
 
 
 console.log("API Key loaded?", import.meta.env.VITE_GEMINI_API_KEY);

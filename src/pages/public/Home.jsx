@@ -79,7 +79,7 @@ const Home = () => {
             {
                 text: "ui.buttons.promo",
                 cssClass: "btn-solid-red btn-hover-gradient-red",
-                onClick: "openChat",
+                onClick: "openChat:lead",
             }
         ]
 
@@ -354,10 +354,13 @@ const Home = () => {
             "title": "section.contact.title",
             "paragraph": "section.contact.description",
         },
-        "buttons": {
-            "text": "section.contact.button",
-            "to": "contact"
-        },
+        "buttons": [
+            {
+                text: "section.contact.button",
+                cssClass: "btn-solid-light btn-inner-shadow",
+                onClick: "openChat:lead",
+            }
+        ],
         "image": {
             image: ImgContactCta,
             alt: "Delicious pizza",
@@ -457,7 +460,7 @@ const Home = () => {
             {
                 text: "ui.buttons.chatAssistant",
                 cssClass: "btn-solid-red",
-                onClick: "openChat",
+                onClick: "openChat:open",
             }
         ],
         "faqs": [
@@ -484,10 +487,13 @@ const Home = () => {
             "title": "section.contact.title",
             "paragraph": "section.contact.description",
         },
-        "buttons": {
-            "text": "section.contact.button",
-            "to": "contact"
-        },
+        "buttons": [
+            {
+                text: "section.contact.button",
+                cssClass: "btn-solid-light btn-inner-shadow",
+                onClick: "openChat:lead",
+            }
+        ],
         "image": {
             image: ImgContactCta,
             alt: "Delicious pizza",

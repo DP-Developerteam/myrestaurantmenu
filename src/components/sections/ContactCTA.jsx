@@ -2,7 +2,7 @@
 import '../../styles/com-se.contactcta.scss';
 import { useTranslation } from 'react-i18next';
 // Import hooks
-import { useChatActions } from '../../hooks/useChatActions';
+import useButtonChatActions from '../../hooks/useButtonChatActions';
 // Import components
 import Button from '../ui/Button';
 // Images and icons
@@ -11,8 +11,9 @@ import ImgContactCta from '../../assets/img/contact-cta.webp';
 const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
     // States for translations
     const { t } = useTranslation();
-    // Use hook chat actions
-    const { openChat } = useChatActions();
+
+    // Use hook chat button actions
+    const { mapButtons, getClickHandler } = useButtonChatActions();
 
 
     // Render overflow background
@@ -29,11 +30,22 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                 <div className='text-container'>
                     <h4 className='title'>{t(text.title)}</h4>
                     <p className='font-normal'>{t(text.paragraph)}</p>
-                    <Button
+                    {/* <Button
                         text={buttons.text}
                         cssClass='btn-solid-light btn-inner-shadow'
                         to='contact'
-                    />
+                    /> */}
+                    {mapButtons(buttons).map(({ key, text, cssClass, to, onClick, icon, ariaLabel }) => (
+                        <Button
+                            key={key}
+                            text={text}
+                            cssClass={cssClass}
+                            to={to}
+                            onClick={onClick}
+                            icon={icon}
+                            aria-label={ariaLabel}
+                        />
+                    ))}
                     <p className='font-smaller'>We’ll contact you within 24 hours</p>
                 </div>
                 <div className='image-contact-info-container'>
@@ -47,7 +59,7 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                         <Button
                             text='Chat live with Diego’s assistant'
                             cssClass='btn-solid-red'
-                            onClick={openChat}
+                            onClick={getClickHandler('openChat:open')}
                         />
                     </div>
                 </div>

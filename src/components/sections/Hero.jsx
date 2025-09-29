@@ -4,7 +4,7 @@ import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
-import { useChatActions } from '../../hooks/useChatActions';
+import useButtonChatActions from '../../hooks/useButtonChatActions';
 // Import components
 import Carousel from '../ui/Carousel';
 import Button from '../ui/Button';
@@ -18,8 +18,8 @@ const Hero = ({text, slides, buttons, cssClass}) => {
     // Use Media query hook
     const isDesktop = useMediaQuery('(min-width: 480px)');
 
-    // Use hook chat actions
-    const { openChat } = useChatActions();
+    // Use hook chat button actions
+    const { mapButtons } = useButtonChatActions();
 
     // Render intro text
     const renderIntroText = () => {
@@ -80,24 +80,17 @@ const Hero = ({text, slides, buttons, cssClass}) => {
         return (
             <>
                 <div className='buttons-container'>
-                    {buttons.map((btn, i) => {
-                        // Manage actions
-                        const isOpenChat = btn.onClick === 'openChat';
-                        const clickHandler = isOpenChat ? openChat : btn.onClick;
-                        const toProp = isOpenChat ? undefined : btn.to;
-
-                        return (
-                            <Button
-                                key={i}
-                                text={btn.text}
-                                cssClass={btn.cssClass}
-                                to={toProp}
-                                onClick={clickHandler}
-                                icon={btn.icon}
-                                aria-label={btn.ariaLabel}
-                            />
-                        )
-                    })}
+                    {mapButtons(buttons).map(({ key, text, cssClass, to, onClick, icon, ariaLabel }) => (
+                        <Button
+                            key={key}
+                            text={text}
+                            cssClass={cssClass}
+                            to={to}
+                            onClick={onClick}
+                            icon={icon}
+                            aria-label={ariaLabel}
+                        />
+                    ))}
                 </div>
             </>
         )

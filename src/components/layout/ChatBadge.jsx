@@ -15,10 +15,45 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
     const open = isOpen !== undefined ? isOpen : internalOpen;
     const toggleOpen = setIsOpen || setInternalOpen;
     // State to accept terms
-    const [accepted, setAccepted] = useState(false)
-    // const [accepted, setAccepted] = useState(
-    //     () => localStorage.getItem("chatbot_terms") === "true"
-    // );
+    const [accepted, setAccepted] = useState(false);
+
+    // State to open with options
+    const [openWithOptions, setOpenWithOptions] = useState(false);
+
+    // State to know if options have being shown
+    const [optionsSeen, setOptionsSeen] = useState(
+        () => localStorage.getItem("chatbot_options_seen") === "true"
+    );
+
+    // State to set form
+    const [pendingForm, setPendingForm] = useState(null);
+
+    // Handle open chat
+    useEffect(() => {
+        function handleOpenChat(e) {
+            const { formId, prefill, openWithOptions: showOptions } = e.detail || {};
+
+            const wantsOptions =
+                !!showOptions || formId === 'open' || formId === 'options';
+
+            if (wantsOptions) {
+                setPendingForm(null);
+                setOpenWithOptions(true);
+            } else {
+                setPendingForm({
+                    formId: formId || null,
+                    prefill: prefill || {}
+                });
+                setOpenWithOptions(false);
+            }
+
+            toggleOpen(true);
+        }
+
+        window.addEventListener("chat:open", handleOpenChat);
+        return () => window.removeEventListener("chat:open", handleOpenChat);
+    }, [toggleOpen]);
+
     // State for touch devices
     const [isTouch, setIsTouch] = useState(false);
 
@@ -71,13 +106,37 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
     const renderChatBox = () => {
         return (
             <div className='chat-overlay'>
-                <div className='chat-overlay-bg' onClick={() => setIsOpen(false)}></div>
+                <div className='chat-overlay-bg' onClick={() => toggleOpen(false)}></div>
                 <div className={`chatbox ${isTouch ? 'chatbox--touch' : 'chatbox--desktop'}`}>
                     { !accepted
                         ?
-                            <TermsModal onAccept={() => { localStorage.setItem("chatbot_terms", "true"); setAccepted(true); }} onDecline={() => toggleOpen(false)} />
+                            <TermsModal
+                                onAccept={() => {
+                                    localStorage.setItem("chatbot_terms", "true");
+                                    setAccepted(true);
+                                    if (!optionsSeen) {
+                                        localStorage.setItem("chatbot_options_seen", "true");
+                                        setOptionsSeen(true);
+                                    }
+
+                                    // mark options as *not yet shown* until ChatPanel injects the
+                                    localStorage.removeItem("chatbot_options_seen");
+                                    setOptionsSeen(false);
+                                    // first post-terms open should show the options
+                                    setOpenWithOptions(true);
+                                }}
+                                onDecline={() => toggleOpen(false)}
+                            />
                         :
-                            <ChatPanel onClose={() => toggleOpen(false)} />
+                            <ChatPanel
+                                onClose={() => {
+                                    toggleOpen(false);
+                                    setOpenWithOptions(false);
+                                }}
+                                initialForm={pendingForm?.formId}
+                                initialPrefill={pendingForm?.prefill}
+                                openWithOptions={!pendingForm?.formId && openWithOptions}
+                            />
                     }
                 </div>
             </div>
@@ -86,7 +145,16 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
 
     return (
         <>
-            <button className='chat-badge' aria-label='Open chat support' onClick={() => toggleOpen(!open)}>
+            <button
+                className='chat-badge'
+                aria-label='Open chat support'
+                onClick={() => {
+                    setPendingForm(null);
+                    const wantOptions = accepted ? !optionsSeen : true;
+                    setOpenWithOptions(wantOptions);
+                    toggleOpen(true);
+                }}
+            >
                 <img src={ImgChatBadge} alt='' aria-hidden='true' />
             </button>
             {open && createPortal(renderChatBox(), document.body)}

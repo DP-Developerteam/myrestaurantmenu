@@ -1,12 +1,20 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-export default function LeadForm({ onSubmit, onCancel }) {
+export default function LeadForm({ onSubmit, onCancel, prefill = {} }) {
     const { t } = useTranslation();
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [phone, setPhone] = useState("");
+    const [name, setName] = useState(prefill.name || "");
+    const [email, setEmail] = useState(prefill.email || "");
+    const [phone, setPhone] = useState(prefill.phone || "");
+
+    const firstFieldRef = useRef(null);
+
+    useEffect(() => {
+    if (firstFieldRef.current) {
+        firstFieldRef.current.focus();
+    }
+    }, []);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -20,11 +28,11 @@ export default function LeadForm({ onSubmit, onCancel }) {
     return (
         <form className="lead-form message" onSubmit={handleSubmit}>
             <label>{t("chatbot.leadForm.name")}</label>
-            <input value={name} onChange={(e) => setName(e.target.value)} placeholder={t("chatbot.leadForm.name")}/>
+            <input value={name} onChange={(e) => setName(e.target.value)} placeholder={t("chatbot.leadForm.name")} ref={firstFieldRef} />
             <label>{t("chatbot.leadForm.email")}</label>
-            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("chatbot.leadForm.email")}/>
+            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("chatbot.leadForm.email")} />
             <label>{t("chatbot.leadForm.phone")}</label>
-            <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t("chatbot.leadForm.phone")}/>
+            <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t("chatbot.leadForm.phone")} />
             <div className="buttons-container">
                 <button className="btn-solid-red" type="submit">{t("chatbot.leadForm.submit")}</button>
                 <button className="btn-solid-dark" type="button" onClick={onCancel}>{t("chatbot.leadForm.cancel")}</button>

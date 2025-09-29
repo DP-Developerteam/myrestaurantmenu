@@ -36,6 +36,13 @@ const patterns = {
         de: /(hilfe|support|unterstützung)/i,
         fr: /(aide|support|assistance)/i,
         it: /(aiuto|supporto|assistenza)/i
+    },
+    start: {
+        en: /(start|begin|get (started|going)|try|trial)/i,
+        es: /(empezar|comenzar|iniciar|prueba|ensayo)/i,
+        de: /(start|anfangen|beginnen|versuch|probe)/i,
+        fr: /(d(é|e)marre|commencer|essai|d(é|e)but)/i,
+        it: /(inizia|comincia|avvia|prova|tentativo)/i
     }
 };
 
