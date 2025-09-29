@@ -329,6 +329,30 @@
       "chatAssistant": "Chat live with Diego's assistant"
     }
   },
+  "forms": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Your favourite email",
+    "phoneLabel": "Phone number",
+    "phonePlaceholder": "Your phone number",
+    "countryLabel": "Country",
+    "countryPlaceholder": "Where is your restaurant",
+    "restaurantNameLabel": "Restaurant name",
+    "restaurantNamePlaceholder": "Your restaurant name",
+    "locationLabel": "Location",
+    "locationPlaceholder": "Location of your restaurant",
+    "menuTypeLabel": "How many restaurants need a menu?",
+    "menuTypePlaceholder": "Is it for a single restaurant or multiple restaurants.",
+    "restaurantTypeLabel": "Type of restaurant",
+    "restaurantTypePlaceholder": "Pizzeria, gourmet, traditional...",
+    "accept": "Accept",
+    "decline": "Decline",
+    "termsUse": "Read and accept our terms of use to continue with the chat.",
+    "submit": "Send",
+    "cancel": "Cancel",
+    "requireContact": "Please provide at least an email or phone number."
+  },
   "chatbot": {
     "notUnderstood": "Sorry, I didn’t understand your question.",
     "suspicious": "⚠️ Your messages look suspicious, so I can’t continue this conversation right now.",
@@ -399,14 +423,6 @@
         "If you’d prefer, I can pass this directly to our support team 📩 — can you share your contact?",
         "Our team can follow up quickly if you give us your email or number 👌"
       ]
-    },
-    "leadForm": {
-      "name": "Your name",
-      "email": "Your email",
-      "phone": "Your phone number",
-      "submit": "Send",
-      "cancel": "Cancel",
-      "requireContact": "Please provide at least an email or phone number."
     }
   }
 }

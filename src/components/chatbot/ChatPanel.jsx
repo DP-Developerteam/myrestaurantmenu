@@ -6,7 +6,8 @@ import { useTranslation } from 'react-i18next';
 import { useStyler } from './style';
 import { useIntents } from './intents';
 // Import forms
-import LeadForm from './LeadForm';
+import LeadForm from './forms/LeadForm';
+import TrialForm from './forms/TrialForm';
 // Import generators
 import { paraphraseRuleBased, paraphraseGemini } from "./generators/index.js";
 // Import ...
@@ -30,14 +31,14 @@ import { logEvent } from "./analytics";
 // Declare forms
 const FORM_REGISTRY = {
     lead: LeadForm,
-    // trial: TrialForm,
+    trial: TrialForm,
     // register: RegisterForm,
     // issue: IssueForm,
 };
 
 // Declare options
 const DEFAULT_OPTIONS = [
-    { label: "Start free trial", formId: "lead" },
+    { label: "Start free trial", formId: "trial" },
     { label: "Create account", formId: "lead" },
     { label: "Report an issue", formId: "lead" },
 ];

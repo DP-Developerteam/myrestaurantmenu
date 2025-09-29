@@ -240,7 +240,8 @@
     },
     "contact": {
       "title": "Hast du noch weitere Fragen?",
-      "description": "Fülle unser kurzes Formular aus und wir melden uns mit einer maßgeschneiderten Lösung. Lieber direkt sprechen? Ruf an oder kontaktiere unseren Gründer persönlich."
+      "description": "Fülle unser kurzes Formular aus und wir melden uns mit einer maßgeschneiderten Lösung. Lieber direkt sprechen? Ruf an oder kontaktiere unseren Gründer persönlich.",
+      "founder": "Founder of"
     },
     "carouselText": {
       "benefits": {
@@ -328,6 +329,30 @@
       "chatAssistant": "Live-Chat mit Diegos Assistent"
     }
   },
+  "forms": {
+    "nameLabel": "Name",
+    "namePlaceholder": "Dein Name",
+    "emailLabel": "E-Mail",
+    "emailPlaceholder": "Deine bevorzugte E-Mail-Adresse",
+    "phoneLabel": "Telefonnummer",
+    "phonePlaceholder": "Deine Telefonnummer",
+    "countryLabel": "Land",
+    "countryPlaceholder": "Wo sich dein Restaurant befindet",
+    "restaurantNameLabel": "Name des Restaurants",
+    "restaurantNamePlaceholder": "Der Name deines Restaurants",
+    "locationLabel": "Standort",
+    "locationPlaceholder": "Standort deines Restaurants",
+    "menuTypeLabel": "Wie viele Restaurants benötigen eine Speisekarte?",
+    "menuTypePlaceholder": "Ist es für ein einzelnes oder mehrere Restaurants?",
+    "restaurantTypeLabel": "Art des Restaurants",
+    "restaurantTypePlaceholder": "Pizzeria, Gourmet, traditionell...",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "termsUse": "Lies und akzeptiere unsere Nutzungsbedingungen, um den Chat fortzusetzen.",
+    "submit": "Senden",
+    "cancel": "Abbrechen",
+    "requireContact": "Bitte gib mindestens eine E-Mail-Adresse oder eine Telefonnummer an."
+  },
   "chatbot": {
     "notUnderstood": "Entschuldigung, ich habe deine Frage nicht verstanden.",
     "suspicious": "⚠️ Deine Nachrichten wirken verdächtig, daher kann ich das Gespräch gerade nicht fortsetzen.",
@@ -398,14 +423,6 @@
         "Wenn du magst, leite ich das direkt an unser Support-Team weiter 📩 — kannst du uns deinen Kontakt mitteilen?",
         "Unser Team meldet sich schnell, wenn du uns deine E-Mail oder Nummer gibst 👌"
       ]
-    },
-    "leadForm": {
-      "name": "Dein Name",
-      "email": "Deine E-Mail",
-      "phone": "Deine Telefonnummer",
-      "submit": "Senden",
-      "cancel": "Abbrechen",
-      "requireContact": "Bitte gib mindestens eine E-Mail oder Telefonnummer an."
     }
   }
 }

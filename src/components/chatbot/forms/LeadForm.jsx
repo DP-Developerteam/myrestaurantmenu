@@ -19,7 +19,7 @@ export default function LeadForm({ onSubmit, onCancel, prefill = {} }) {
     function handleSubmit(e) {
         e.preventDefault();
         if (!email && !phone) {
-            alert(t("chatbot.leadForm.requireContact"));
+            alert(t("forms.requireContact"));
         return;
         }
         onSubmit({ name, email, phone });
@@ -27,15 +27,15 @@ export default function LeadForm({ onSubmit, onCancel, prefill = {} }) {
 
     return (
         <form className="lead-form message" onSubmit={handleSubmit}>
-            <label>{t("chatbot.leadForm.name")}</label>
-            <input value={name} onChange={(e) => setName(e.target.value)} placeholder={t("chatbot.leadForm.name")} ref={firstFieldRef} />
-            <label>{t("chatbot.leadForm.email")}</label>
-            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("chatbot.leadForm.email")} />
-            <label>{t("chatbot.leadForm.phone")}</label>
-            <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t("chatbot.leadForm.phone")} />
+            <label>{t("forms.nameLabel")}</label>
+            <input value={name} onChange={(e) => setName(e.target.value)} placeholder={t("forms.namePlaceholder")} ref={firstFieldRef} />
+            <label>{t("forms.emailLabel")}</label>
+            <input value={email} onChange={(e) => setEmail(e.target.value)} placeholder={t("forms.emailPlaceholder")} />
+            <label>{t("forms.phoneLabel")}</label>
+            <input value={phone} onChange={(e) => setPhone(e.target.value)} placeholder={t("forms.phonePlaceholder")} />
             <div className="buttons-container">
-                <button className="btn-solid-red" type="submit">{t("chatbot.leadForm.submit")}</button>
-                <button className="btn-solid-dark" type="button" onClick={onCancel}>{t("chatbot.leadForm.cancel")}</button>
+                <button className="btn-solid-red" type="submit">{t("forms.submit")}</button>
+                <button className="btn-solid-dark" type="button" onClick={onCancel}>{t("forms.cancel")}</button>
             </div>
         </form>
     );

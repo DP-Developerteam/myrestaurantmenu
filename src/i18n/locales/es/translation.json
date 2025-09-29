@@ -240,7 +240,8 @@
     },
     "contact": {
       "title": "¿Tienes más preguntas?",
-      "description": "Rellena nuestro formulario rápido y te responderemos con una solución a medida. ¿Prefieres una conversación directa? Llama o contacta con nuestro fundador personalmente."
+      "description": "Rellena nuestro formulario rápido y te responderemos con una solución a medida. ¿Prefieres una conversación directa? Llama o contacta con nuestro fundador personalmente.",
+      "founder": "Founder of"
     },
     "carouselText": {
       "benefits": {
@@ -328,6 +329,30 @@
       "chatAssistant": "Chatea en vivo con el asistente de Diego"
     }
   },
+  "forms": {
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "emailLabel": "Correo electrónico",
+    "emailPlaceholder": "Tu correo electrónico favorito",
+    "phoneLabel": "Número de teléfono",
+    "phonePlaceholder": "Tu número de teléfono",
+    "countryLabel": "País",
+    "countryPlaceholder": "Dónde está tu restaurante",
+    "restaurantNameLabel": "Nombre del restaurante",
+    "restaurantNamePlaceholder": "El nombre de tu restaurante",
+    "locationLabel": "Ubicación",
+    "locationPlaceholder": "Ubicación de tu restaurante",
+    "menuTypeLabel": "¿Cuántos restaurantes necesitan un menú?",
+    "menuTypePlaceholder": "¿Es para un solo restaurante o varios restaurantes?",
+    "restaurantTypeLabel": "Tipo de restaurante",
+    "restaurantTypePlaceholder": "Pizzería, gourmet, tradicional...",
+    "accept": "Aceptar",
+    "decline": "Rechazar",
+    "termsUse": "Lee y acepta nuestros términos de uso para continuar con el chat.",
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "requireContact": "Por favor, proporciona al menos un correo electrónico o un número de teléfono."
+  },
   "chatbot": {
     "notUnderstood": "Lo siento, no he entendido tu pregunta.",
     "suspicious": "⚠️ Tus mensajes parecen sospechosos, no puedo continuar esta conversación ahora mismo.",
@@ -398,14 +423,6 @@
         "Si lo prefieres, paso esto directamente a nuestro equipo de soporte 📩 — ¿puedes darnos tu contacto?",
         "Nuestro equipo puede responderte rápidamente si nos dejas tu email o número 👌"
       ]
-    },
-    "leadForm": {
-      "name": "Tu nombre",
-      "email": "Tu correo electrónico",
-      "phone": "Tu número de teléfono",
-      "submit": "Enviar",
-      "cancel": "Cancelar",
-      "requireContact": "Por favor, proporciona al menos un email o un número de teléfono."
     }
   }
 }
