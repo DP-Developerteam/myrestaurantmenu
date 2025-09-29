@@ -52,12 +52,12 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                     <img src={image.image} alt={image.alt} width={image.width} height={image.height} />
                     <div className='text-container'>
                         <p className='font-bold'>Diego Pérez</p>
-                        <p className='font-smaller'>Founder of <span className='font-red font-bold'>MyRestaurantMenu</span></p>
+                        <p className='font-smaller'>{t("section.contact.founder")} <span className='font-red font-bold'>MyRestaurantMenu</span></p>
                         <p className='font-normal'>+49 0176 62 67 69 49</p>
                         <p className='font-smaller'>Mon-Fri. 09:00 - 17:00</p>
                         <p className='font-normal'>contact@myrestaurantapp.com</p>
                         <Button
-                            text='Chat live with Diego’s assistant'
+                            text= "ui.buttons.chatAssistant"
                             cssClass='btn-solid-red'
                             onClick={getClickHandler('openChat:open')}
                         />

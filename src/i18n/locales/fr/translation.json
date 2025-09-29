@@ -201,120 +201,119 @@
         }
         },
         "faq": {
-        "title": "Questions fréquentes",
-        "description": "Vous pouvez remplir un formulaire pour recevoir un service adapté à vos besoins ou appeler / contacter directement notre fondateur.",
-        "questions": {
-            "howLong": {
-            "question": "Combien de temps faut-il pour que mon menu digital soit prêt ?",
-            "answer": "Dès réception des détails de votre menu et de vos éléments visuels (logo, couleurs, images), votre menu digital est généralement prêt sous 3 à 5 jours ouvrés. Nous vérifions son bon fonctionnement avant de vous le livrer."
-            },
-            "responsiveDesign": {
-            "question": "Qu’est-ce qu’une web app responsive ?",
-            "answer": "Responsive signifie que votre menu digital s’adapte automatiquement à tout appareil — mobile, tablette ou ordinateur. Vos clients profiteront d’une expérience fluide sans téléchargement."
-            },
-            "designChanges": {
-            "question": "Quels changements de design sont possibles ?",
-            "answer": "Nous personnalisons couleurs, polices et mises en page selon l’identité de votre restaurant. Vous pouvez ajouter des photos, mettre en avant des plats populaires et mettre à jour votre menu à tout moment. Pour des personnalisations avancées, notre équipe vous aide."
-            },
-            "expect30days": {
-            "question": "Que puis-je attendre pendant les 30 premiers jours ?",
-            "answer": "Vous pouvez tester la plateforme gratuitement pendant 30 jours. Vous pourrez charger votre vrai menu, voir comment interagissent vos clients et demander des ajustements de design. Sans risque, sans engagement — nous voulons que vous soyez 100% convaincu."
-            },
-            "updateMyself": {
-            "question": "Puis-je mettre à jour mon menu moi-même ?",
-            "answer": "Oui ! Vous aurez accès à un tableau de bord simple où modifier plats, prix ou photos instantanément. Aucune compétence technique requise."
-            },
-            "appDownload": {
-            "question": "Mes clients doivent-ils télécharger une application ?",
-            "answer": "Non, aucun téléchargement nécessaire. Votre menu est accessible via QR code ou lien direct et s’ouvre immédiatement dans le navigateur."
-            },
-            "customerSupport": {
-            "question": "Le support client est-il inclus ?",
-            "answer": "Bien sûr. Nous offrons un support dédié par email, téléphone ou chat en direct. La majorité des demandes sont résolues en moins de 24h."
-            },
-            "secure": {
-            "question": "La plateforme est-elle sécurisée ?",
-            "answer": "Vos données et celles de vos clients sont protégées par des protocoles de sécurité standards. Nous fournissons aussi mises à jour et monitoring réguliers pour fiabilité."
+            "title": "Questions fréquentes",
+            "description": "Vous pouvez remplir un formulaire pour recevoir un service adapté à vos besoins ou appeler / contacter directement notre fondateur.",
+            "questions": {
+                "howLong": {
+                "question": "Combien de temps faut-il pour que mon menu digital soit prêt ?",
+                "answer": "Dès réception des détails de votre menu et de vos éléments visuels (logo, couleurs, images), votre menu digital est généralement prêt sous 3 à 5 jours ouvrés. Nous vérifions son bon fonctionnement avant de vous le livrer."
+                },
+                "responsiveDesign": {
+                "question": "Qu’est-ce qu’une web app responsive ?",
+                "answer": "Responsive signifie que votre menu digital s’adapte automatiquement à tout appareil — mobile, tablette ou ordinateur. Vos clients profiteront d’une expérience fluide sans téléchargement."
+                },
+                "designChanges": {
+                "question": "Quels changements de design sont possibles ?",
+                "answer": "Nous personnalisons couleurs, polices et mises en page selon l’identité de votre restaurant. Vous pouvez ajouter des photos, mettre en avant des plats populaires et mettre à jour votre menu à tout moment. Pour des personnalisations avancées, notre équipe vous aide."
+                },
+                "expect30days": {
+                "question": "Que puis-je attendre pendant les 30 premiers jours ?",
+                "answer": "Vous pouvez tester la plateforme gratuitement pendant 30 jours. Vous pourrez charger votre vrai menu, voir comment interagissent vos clients et demander des ajustements de design. Sans risque, sans engagement — nous voulons que vous soyez 100% convaincu."
+                },
+                "updateMyself": {
+                "question": "Puis-je mettre à jour mon menu moi-même ?",
+                "answer": "Oui ! Vous aurez accès à un tableau de bord simple où modifier plats, prix ou photos instantanément. Aucune compétence technique requise."
+                },
+                "appDownload": {
+                "question": "Mes clients doivent-ils télécharger une application ?",
+                "answer": "Non, aucun téléchargement nécessaire. Votre menu est accessible via QR code ou lien direct et s’ouvre immédiatement dans le navigateur."
+                },
+                "customerSupport": {
+                "question": "Le support client est-il inclus ?",
+                "answer": "Bien sûr. Nous offrons un support dédié par email, téléphone ou chat en direct. La majorité des demandes sont résolues en moins de 24h."
+                },
+                "secure": {
+                "question": "La plateforme est-elle sécurisée ?",
+                "answer": "Vos données et celles de vos clients sont protégées par des protocoles de sécurité standards. Nous fournissons aussi mises à jour et monitoring réguliers pour fiabilité."
+                }
             }
-        }
         },
         "contact": {
-        "title": "Vous avez d’autres questions ?",
-        "description": "Remplissez notre formulaire rapide et nous vous répondrons avec une solution sur mesure. Préférez-vous un échange direct ? Appelez ou contactez notre fondateur personnellement.",
-        "button": "Remplir le formulaire ici"
+            "title": "Vous avez d’autres questions ?",
+            "description": "Remplissez notre formulaire rapide et nous vous répondrons avec une solution sur mesure. Préférez-vous un échange direct ? Appelez ou contactez notre fondateur personnellement."
         },
         "carouselText": {
-        "benefits": {
-            "title": "Les avantages en un coup d’œil",
-            "clients": {
-            "title": "Avantages pour vos clients",
-            "bullet01": "Accès instantané à votre menu via QR code.",
-            "bullet02": "Toujours à jour avec prix et plats réels.",
-            "bullet03": "Navigation fluide avec photos et vidéos.",
-            "bullet04": "Support multilingue pour chaque client.",
-            "bullet05": "Expérience rapide, hygiénique et sans contact."
+            "benefits": {
+                "title": "Les avantages en un coup d’œil",
+                "clients": {
+                "title": "Avantages pour vos clients",
+                "bullet01": "Accès instantané à votre menu via QR code.",
+                "bullet02": "Toujours à jour avec prix et plats réels.",
+                "bullet03": "Navigation fluide avec photos et vidéos.",
+                "bullet04": "Support multilingue pour chaque client.",
+                "bullet05": "Expérience rapide, hygiénique et sans contact."
+                },
+                "business": {
+                "title": "Avantages pour votre activité",
+                "bullet01": "Mettez à jour vos menus à tout moment sans réimpression.",
+                "bullet02": "Mettez en avant vos offres et augmentez vos ventes.",
+                "bullet03": "Touchez touristes et nouveaux clients locaux.",
+                "bullet04": "Réduisez coûts et gaspillage de papier.",
+                "bullet05": "Obtenez des insights pour améliorer vos résultats."
+                },
+                "employees": {
+                "title": "Avantages pour votre personnel",
+                "bullet01": "Simplifiez le travail avec un système facile à utiliser.",
+                "bullet02": "Réduisez erreurs de commande et malentendus.",
+                "bullet03": "Consacrez plus de temps au service client.",
+                "bullet04": "Recevez des alertes instantanées pour nouvelles commandes.",
+                "bullet05": "Profitez de flux de travail plus rapides et fluides."
+                },
+                "technical": {
+                "title": "Avantages techniques",
+                "bullet01": "Plateforme cloud avec 99,9% de disponibilité.",
+                "bullet02": "Fonctionne sans problème sur tout appareil mobile.",
+                "bullet03": "Outils d’analyse pour suivre la performance.",
+                "bullet04": "Intégration facile avec vos solutions POS.",
+                "bullet05": "Données sécurisées et protection fiable."
+                }
             },
-            "business": {
-            "title": "Avantages pour votre activité",
-            "bullet01": "Mettez à jour vos menus à tout moment sans réimpression.",
-            "bullet02": "Mettez en avant vos offres et augmentez vos ventes.",
-            "bullet03": "Touchez touristes et nouveaux clients locaux.",
-            "bullet04": "Réduisez coûts et gaspillage de papier.",
-            "bullet05": "Obtenez des insights pour améliorer vos résultats."
+            "reviews": {
+                "title": "Avis de nos clients sur <boldRed>My Restaurant Menu</boldRed>",
+                "pizzeria": {
+                "title": "Pizzeria Mario",
+                "bullet01": "« Avec My Restaurant Menu, nos clients peuvent scanner et commander instantanément. Fini l’attente des menus papier, et nous avons constaté une vraie hausse du turnover et des ventes. »"
+                },
+                "foodMarket": {
+                "title": "FreshTown Food Market",
+                "bullet01": "« Gérer plusieurs menus de restaurants était un casse-tête. Maintenant tout est au même endroit, facile à mettre à jour, et nos visiteurs adorent consulter toutes les options via un seul QR. »"
+                },
+                "restaurantFoodMarket": {
+                "title": "La Cocina @ City Market",
+                "bullet01": "« Dans un marché alimentaire animé, la visibilité est clé. Grâce à My Restaurant Menu, nous gérons notre menu en quelques minutes et le diffusons directement dans le système digital du marché — cela nous apporte plus de clients chaque jour. »"
+                }
             },
-            "employees": {
-            "title": "Avantages pour votre personnel",
-            "bullet01": "Simplifiez le travail avec un système facile à utiliser.",
-            "bullet02": "Réduisez erreurs de commande et malentendus.",
-            "bullet03": "Consacrez plus de temps au service client.",
-            "bullet04": "Recevez des alertes instantanées pour nouvelles commandes.",
-            "bullet05": "Profitez de flux de travail plus rapides et fluides."
-            },
-            "technical": {
-            "title": "Avantages techniques",
-            "bullet01": "Plateforme cloud avec 99,9% de disponibilité.",
-            "bullet02": "Fonctionne sans problème sur tout appareil mobile.",
-            "bullet03": "Outils d’analyse pour suivre la performance.",
-            "bullet04": "Intégration facile avec vos solutions POS.",
-            "bullet05": "Données sécurisées et protection fiable."
+            "steps": {
+                "title": "Mise en place rapide en 3 étapes",
+                "step01": {
+                "title": "01. Onboarding",
+                "bullet01": "Appel d’introduction rapide pour comprendre vos besoins.",
+                "bullet02": "Envoyez-nous votre menu, identité visuelle et préférences.",
+                "bullet03": "Support personnalisé pour un démarrage fluide."
+                },
+                "step02": {
+                "title": "02. Création",
+                "bullet01": "Nous configurons votre menu digital en quelques jours.",
+                "bullet02": "Personnalisez facilement design, promos et outils de fidélisation dans notre CMS.",
+                "bullet03": "Vérifiez tout avant la mise en ligne."
+                },
+                "step03": {
+                "title": "03. Prêt à l’emploi",
+                "bullet01": "Lancez immédiatement avec votre QR code unique et partagez-le avec vos clients.",
+                "bullet02": "Votre menu fonctionne sur tout appareil, dans toute langue, sans téléchargement.",
+                "bullet03": "Profitez dès le premier jour d’un meilleur engagement, d’un service plus rapide et de plus de ventes."
+                }
             }
-        },
-        "reviews": {
-            "title": "Avis de nos clients sur <boldRed>My Restaurant Menu</boldRed>",
-            "pizzeria": {
-            "title": "Pizzeria Mario",
-            "bullet01": "« Avec My Restaurant Menu, nos clients peuvent scanner et commander instantanément. Fini l’attente des menus papier, et nous avons constaté une vraie hausse du turnover et des ventes. »"
-            },
-            "foodMarket": {
-            "title": "FreshTown Food Market",
-            "bullet01": "« Gérer plusieurs menus de restaurants était un casse-tête. Maintenant tout est au même endroit, facile à mettre à jour, et nos visiteurs adorent consulter toutes les options via un seul QR. »"
-            },
-            "restaurantFoodMarket": {
-            "title": "La Cocina @ City Market",
-            "bullet01": "« Dans un marché alimentaire animé, la visibilité est clé. Grâce à My Restaurant Menu, nous gérons notre menu en quelques minutes et le diffusons directement dans le système digital du marché — cela nous apporte plus de clients chaque jour. »"
-            }
-        },
-        "steps": {
-            "title": "Mise en place rapide en 3 étapes",
-            "step01": {
-            "title": "01. Onboarding",
-            "bullet01": "Appel d’introduction rapide pour comprendre vos besoins.",
-            "bullet02": "Envoyez-nous votre menu, identité visuelle et préférences.",
-            "bullet03": "Support personnalisé pour un démarrage fluide."
-            },
-            "step02": {
-            "title": "02. Création",
-            "bullet01": "Nous configurons votre menu digital en quelques jours.",
-            "bullet02": "Personnalisez facilement design, promos et outils de fidélisation dans notre CMS.",
-            "bullet03": "Vérifiez tout avant la mise en ligne."
-            },
-            "step03": {
-            "title": "03. Prêt à l’emploi",
-            "bullet01": "Lancez immédiatement avec votre QR code unique et partagez-le avec vos clients.",
-            "bullet02": "Votre menu fonctionne sur tout appareil, dans toute langue, sans téléchargement.",
-            "bullet03": "Profitez dès le premier jour d’un meilleur engagement, d’un service plus rapide et de plus de ventes."
-            }
-        }
         }
     },
     "ui": {
@@ -324,7 +323,7 @@
         "demoPiza": "Démo Pizzeria",
         "demoMarket": "Démo Food Market",
         "chatbot": "Ouvrir le chat maintenant",
-        "formular": "Ouvrir le formulaire",
+        "formular": "Remplir le formulaire ici",
         "features": "Voir plus de fonctionnalités",
         "chatAssistant": "Chat en direct avec l’assistant de Diego"
         }

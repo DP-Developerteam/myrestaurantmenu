@@ -240,8 +240,7 @@
     },
     "contact": {
       "title": "¿Tienes más preguntas?",
-      "description": "Rellena nuestro formulario rápido y te responderemos con una solución a medida. ¿Prefieres una conversación directa? Llama o contacta con nuestro fundador personalmente.",
-      "button": "Rellenar formulario aquí"
+      "description": "Rellena nuestro formulario rápido y te responderemos con una solución a medida. ¿Prefieres una conversación directa? Llama o contacta con nuestro fundador personalmente."
     },
     "carouselText": {
       "benefits": {
@@ -324,7 +323,7 @@
       "demoPiza": "Demo Pizzería",
       "demoMarket": "Demo Mercado de comida",
       "chatbot": "Abrir chat ahora",
-      "formular": "Abrir formulario",
+      "formular": "Rellenar formulario aquí",
       "features": "Ver más funciones",
       "chatAssistant": "Chatea en vivo con el asistente de Diego"
     }

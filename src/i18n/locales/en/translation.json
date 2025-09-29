@@ -241,7 +241,7 @@
     "contact": {
       "title": "Do you have any more questions?",
       "description": "You can fill out our quick form and we’ll get back to you with a tailored solution. Prefer a direct conversation? Call or reach out to our founder personally.",
-      "button": "Fill out the form here"
+      "founder": "Founder of"
     },
     "carouselText": {
       "benefits": {
@@ -324,7 +324,7 @@
       "demoPiza": "Pizzeria demo",
       "demoMarket": "Food market demo",
       "chatbot": "Open chat now!",
-      "formular": "Open formular",
+      "formular": "Fill out the form here",
       "features": "See more features",
       "chatAssistant": "Chat live with Diego's assistant"
     }

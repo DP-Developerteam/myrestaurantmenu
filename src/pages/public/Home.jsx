@@ -356,7 +356,7 @@ const Home = () => {
         },
         "buttons": [
             {
-                text: "section.contact.button",
+                text: "ui.buttons.formular",
                 cssClass: "btn-solid-light btn-inner-shadow",
                 onClick: "openChat:lead",
             }
@@ -489,7 +489,7 @@ const Home = () => {
         },
         "buttons": [
             {
-                text: "section.contact.button",
+                text: "ui.buttons.formular",
                 cssClass: "btn-solid-light btn-inner-shadow",
                 onClick: "openChat:lead",
             }
