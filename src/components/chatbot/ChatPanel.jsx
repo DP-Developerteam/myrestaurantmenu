@@ -37,9 +37,9 @@ const FORM_REGISTRY = {
 
 // Declare options
 const DEFAULT_OPTIONS = [
-    { label: "Start free trial", formId: "trial" },
-    { label: "Create account", formId: "register" },
-    { label: "Report an issue", formId: "issue" },
+    { label: "Start free trial", formId: "lead" },
+    { label: "Create account", formId: "lead" },
+    { label: "Report an issue", formId: "lead" },
 ];
 
 
