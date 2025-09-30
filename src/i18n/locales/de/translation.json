@@ -104,7 +104,6 @@
           "title": "Wie beeindruckend ist Ihre Speisekarte mit <boldRed>MyRestaurantMenu</boldRed>",
           "description": "Unser smartes Menü passt sich jeder Situation an: Es erkennt automatisch die Internetgeschwindigkeit des Gastes und zeigt die beste Version an — Video, Bild oder Text. Und mit nur einem Klick können die Gäste selbst die Ansicht wechseln und Ihr Menü so genießen, wie sie es bevorzugen. Immer schnell, immer überzeugend."
         }
-
       },
       "qrCode": {
         "title": "QR-Code-Menü",
@@ -341,8 +340,109 @@
         "step03": {
           "title": "03. Bereit zum Start",
           "bullet01": "Starte sofort mit deinem einzigartigen QR-Code und teile ihn mit deinen Gästen.",
-          "bullet02": "Dein Menü funktioniert auf jedem Gerät, in jeder Sprache – ohne App-Download.",
+          "bullet02": "Dein Menü funktioniert auf jedem Gerät, in jeder Sprache - ohne App-Download.",
           "bullet03": "Genieße von Tag eins mehr Interaktion, schnelleren Service und höhere Umsätze."
+        }
+      }
+    },
+    "pricingCards": {
+      "common": {
+        "perMonth": "/ pro Monat",
+        "saveMoney": "Spare mit jährlicher Zahlung",
+        "multilingual2": "Übersetzungen in 2 Sprachen",
+        "multilingual4": "Übersetzungen in 4 Sprachen",
+        "multilingual6": "Übersetzungen in 6 Sprachen",
+        "qrCode": "QR-Code-Erstellung",
+        "customization": "Anpassbares Design",
+        "url": "Eigene URL",
+        "images": "Bilder in der Speisekarte",
+        "video": "Videos in der Speisekarte",
+        "booking": "Reservierungssystem",
+        "giftCard": "Stempelkarten-System",
+        "clientSignIn": "Kunden-Login",
+        "popUp": "Werbe-Pop-ups",
+        "emailMarketing": "E-Mail-Marketing",
+        "multiLocation": "<boldRed>Multi-Standort Unterstützung</boldRed>",
+        "centralDashboard": "<boldRed>Zentrales Dashboard</boldRed>",
+        "branchManagement": "<boldRed>Filialverwaltung</boldRed>",
+        "sharedLoyalty": "<boldRed>Gemeinsames Treuesystem</boldRed>",
+        "bulkDiscounts": "<boldRed>Mengenrabatte</boldRed>",
+        "chainAnalytics": "<boldRed>Kettenweite Analysen</boldRed>"
+      },
+      "restaurants": {
+        "intro": {
+          "title": "Flexible Preise für <boldRed>Restaurants</boldRed>",
+          "description": "Wählen Sie den Plan, der zu Ihrem Restaurant passt. Von kleinen Cafés bis zu großen Ketten – unsere Pakete digitalisieren Ihre Speisekarte, ziehen mehr Gäste an und optimieren den Service."
+        },
+        "plan01": {
+          "title": "Paket S",
+          "description": "Perfekt für kleine Restaurants oder Cafés, die ihre ersten Schritte ins digitale Menü wagen. Einfach und mit den wichtigsten Funktionen jederzeit verfügbar.",
+          "price": {
+            "monthly": "3,99 €",
+            "annual": "5,99 €"
+          }
+        },
+        "plan02": {
+          "title": "Paket M",
+          "description": "Ideal für wachsende Restaurants, die mehr Anpassung und Flexibilität wünschen. Verbessern Sie Ihr Menü mit Bildern und schaffen Sie ein ansprechenderes Erlebnis.",
+          "price": {
+            "monthly": "9,99 €",
+            "annual": "15,99 €"
+          }
+        },
+        "plan03": {
+          "title": "Paket L",
+          "description": "Eine Komplettlösung für Restaurants, die auffallen möchten. Bieten Sie multimediale Menüs, einfache Reservierungen und ein nahtloses digitales Erlebnis.",
+          "price": {
+            "monthly": "14,99 €",
+            "annual": "29,99 €"
+          }
+        },
+        "plan04": {
+          "title": "Paket XL",
+          "description": "Für stark frequentierte Restaurants oder Ketten. Nutzen Sie Premium-Tools für Reservierungen, Videos und ein beeindruckendes Markenerlebnis.",
+          "price": {
+            "monthly": "24,99 €",
+            "annual": "39,99 €"
+          }
+        }
+      },
+      "restaurantChains": {
+        "intro": {
+          "title": "Skalierbare Preise für <boldRed>Restaurantketten</boldRed>",
+          "description": "Ob mehrere Standorte oder eine landesweite Kette - unsere Pläne wachsen mit Ihrem Geschäft. Zentralisieren Sie Ihre Abläufe, sichern Sie Einheitlichkeit über alle Filialen und sparen Sie mit Mehrstandort-Rabatten."
+        },
+        "plan01": {
+          "title": "Chain Starter",
+          "description": "Ideal für bis zu 3 Standorte, die ihre digitale Präsenz vereinheitlichen möchten. Erhalten Sie essenzielle Funktionen zu einem reduzierten Mehrstandort-Tarif.",
+          "price": {
+            "monthly": "19,99 €",
+            "annual": "24,99 €"
+          }
+        },
+        "plan02": {
+          "title": "Chain Growth",
+          "description": "Für wachsende Ketten mit bis zu 10 Standorten. Profitieren Sie von mehr Anpassung und visuellen Möglichkeiten bei voller Kostenkontrolle.",
+          "price": {
+            "monthly": "49,99 €",
+            "annual": "74,99 €"
+          }
+        },
+        "plan03": {
+          "title": "Chain Pro",
+          "description": "Für etablierte Ketten mit bis zu 25 Standorten. Zentralisieren Sie Reservierungen, fügen Sie Videos hinzu und bieten Sie ein erstklassiges digitales Restauranterlebnis.",
+          "price": {
+            "monthly": "99,99 €",
+            "annual": "139,99 €"
+          }
+        },
+        "plan04": {
+          "title": "Chain Enterprise",
+          "description": "Unbegrenzte Standorte, erweiterter Support und alle Premium-Funktionen inklusive. Perfekt für landesweite Ketten, die volle Skalierbarkeit und Kontrolle benötigen.",
+          "price": {
+            "monthly": "199,99 €",
+            "annual": "249,99 €"
+          }
         }
       }
     }
@@ -356,7 +456,11 @@
       "chatbot": "Chat jetzt öffnen",
       "formular": "Formular hier ausfüllen",
       "features": "Weitere Funktionen ansehen",
-      "chatAssistant": "Live-Chat mit Diegos Assistent"
+      "chatAssistant": "Live-Chat mit dem KI-Assistenten",
+      "included": "Mehr Infos anzeigen",
+      "select": "Plan auswählen",
+      "monthly": "Monatlich",
+      "annual": "Jährlich"
     }
   },
   "forms": {

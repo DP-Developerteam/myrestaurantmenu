@@ -344,6 +344,107 @@
           "bullet03": "Disfruta desde el primer día de mayor interacción, servicio más ágil y más ventas."
         }
       }
+    },
+    "pricingCards": {
+      "common": {
+        "perMonth": "/ por mes",
+        "saveMoney": "Ahorra con el pago anual",
+        "multilingual2": "Traducciones en 2 idiomas",
+        "multilingual4": "Traducciones en 4 idiomas",
+        "multilingual6": "Traducciones en 6 idiomas",
+        "qrCode": "Creación de QR",
+        "customization": "Diseño personalizable",
+        "url": "URL personalizada",
+        "images": "Imágenes en el menú",
+        "video": "Videos en el menú",
+        "booking": "Sistema de reservas",
+        "giftCard": "Sistema de tarjetas de sello",
+        "clientSignIn": "Acceso de clientes",
+        "popUp": "Pop-ups promocionales",
+        "emailMarketing": "Email marketing",
+        "multiLocation": "<boldRed>Soporte multi-sede</boldRed>",
+        "centralDashboard": "<boldRed>Panel centralizado</boldRed>",
+        "branchManagement": "<boldRed>Gestión de sucursales</boldRed>",
+        "sharedLoyalty": "<boldRed>Sistema de fidelización compartido</boldRed>",
+        "bulkDiscounts": "<boldRed>Descuentos por volumen</boldRed>",
+        "chainAnalytics": "<boldRed>Análisis para toda la cadena</boldRed>"
+      },
+      "restaurants": {
+        "intro": {
+          "title": "Precios flexibles para <boldRed>Restaurantes</boldRed>",
+          "description": "Elige el plan que se adapte a tu restaurante. Desde pequeños cafés hasta grandes cadenas, nuestros paquetes te ayudan a digitalizar tu menú, atraer más clientes y optimizar tu servicio."
+        },
+        "plan01": {
+          "title": "Paquete S",
+          "description": "Perfecto para pequeños restaurantes o cafés que dan sus primeros pasos en menús digitales. Sencillo y con funciones esenciales siempre disponibles.",
+          "price": {
+            "monthly": "3,99 €",
+            "annual": "5,99 €"
+          }
+        },
+        "plan02": {
+          "title": "Paquete M",
+          "description": "Ideal para restaurantes en crecimiento que buscan más personalización y flexibilidad. Mejora tu menú con imágenes y crea una experiencia más atractiva.",
+          "price": {
+            "monthly": "9,99 €",
+            "annual": "15,99 €"
+          }
+        },
+        "plan03": {
+          "title": "Paquete L",
+          "description": "Una solución completa para restaurantes que quieren destacar. Ofrece menús multimedia, reservas ágiles y una experiencia digital impecable.",
+          "price": {
+            "monthly": "14,99 €",
+            "annual": "29,99 €"
+          }
+        },
+        "plan04": {
+          "title": "Paquete XL",
+          "description": "Diseñado para restaurantes con alta demanda o cadenas. Desbloquea herramientas premium para reservas, videos y una experiencia de marca inmersiva.",
+          "price": {
+            "monthly": "24,99 €",
+            "annual": "39,99 €"
+          }
+        }
+      },
+      "restaurantChains": {
+        "intro": {
+          "title": "Precios escalables para <boldRed>Cadenas de Restaurantes</boldRed>",
+          "description": "Ya sea que administres varias ubicaciones o una cadena nacional, nuestros planes se adaptan a tu negocio. Centraliza tus operaciones, mantén la coherencia entre locales y ahorra con descuentos multi-sede."
+        },
+        "plan01": {
+          "title": "Chain Starter",
+          "description": "Ideal para hasta 3 locales que buscan unificar su presencia digital. Obtén funciones esenciales a una tarifa reducida para múltiples ubicaciones.",
+          "price": {
+            "monthly": "19,99 €",
+            "annual": "24,99 €"
+          }
+        },
+        "plan02": {
+          "title": "Chain Growth",
+          "description": "Pensado para cadenas en crecimiento con hasta 10 locales. Disfruta de mayor personalización y elementos visuales manteniendo el control de los costos.",
+          "price": {
+            "monthly": "49,99 €",
+            "annual": "74,99 €"
+          }
+        },
+        "plan03": {
+          "title": "Chain Pro",
+          "description": "Para cadenas consolidadas con hasta 25 locales. Centraliza reservas, añade videos y ofrece una experiencia gastronómica digital de primer nivel.",
+          "price": {
+            "monthly": "99,99 €",
+            "annual": "139,99 €"
+          }
+        },
+        "plan04": {
+          "title": "Chain Enterprise",
+          "description": "Ubicaciones ilimitadas, soporte avanzado y todas las funciones premium incluidas. Perfecto para cadenas nacionales que necesitan máxima escalabilidad y control.",
+          "price": {
+            "monthly": "199,99 €",
+            "annual": "249,99 €"
+          }
+        }
+      }
     }
   },
   "ui": {
@@ -355,7 +456,11 @@
       "chatbot": "Abrir chat ahora",
       "formular": "Rellenar formulario aquí",
       "features": "Ver más funciones",
-      "chatAssistant": "Chatea en vivo con el asistente de Diego"
+      "chatAssistant": "Chatea con el asistente de IA",
+      "included": "Mostrar más información",
+      "select": "Seleccionar plan",
+      "monthly": "Mensual",
+      "annual": "Anual"
     }
   },
   "forms": {

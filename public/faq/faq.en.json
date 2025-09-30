@@ -7,7 +7,7 @@
     {
         "id": "domain",
         "q": "Can I use my own domain?",
-        "a": "Yes! Your restaurant gets a free subdomain (xxx.myrestaurantmenu.com). If you prefer a custom domain, it's included with a yearly contract, otherwise it has an extra cost."
+        "a": "Yes! Your restaurant gets a free subdomain (xxx.myrestaurantmenu.com). If you prefer a custom domain, it's included with an annual contract, otherwise it has an extra cost."
     },
     {
         "id": "multilang",

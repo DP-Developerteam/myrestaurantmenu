@@ -344,6 +344,107 @@
                 "bullet03": "Profitez dès le premier jour d’un meilleur engagement, d’un service plus rapide et de plus de ventes."
                 }
             }
+        },
+        "pricingCards": {
+            "common": {
+                "perMonth": "/ par mois",
+                "saveMoney": "Économisez avec un paiement annuel",
+                "multilingual2": "Traductions en 2 langues",
+                "multilingual4": "Traductions en 4 langues",
+                "multilingual6": "Traductions en 6 langues",
+                "qrCode": "Création de QR Code",
+                "customization": "Design personnalisable",
+                "url": "URL personnalisée",
+                "images": "Images dans le menu",
+                "video": "Vidéos dans le menu",
+                "booking": "Système de réservation",
+                "giftCard": "Système de cartes fidélité",
+                "clientSignIn": "Connexion clients",
+                "popUp": "Pop-ups promotionnels",
+                "emailMarketing": "Email marketing",
+                "multiLocation": "<boldRed>Support multi-sites</boldRed>",
+                "centralDashboard": "<boldRed>Tableau de bord centralisé</boldRed>",
+                "branchManagement": "<boldRed>Gestion des établissements</boldRed>",
+                "sharedLoyalty": "<boldRed>Système de fidélité partagé</boldRed>",
+                "bulkDiscounts": "<boldRed>Remises sur volume</boldRed>",
+                "chainAnalytics": "<boldRed>Analyses pour toute la chaîne</boldRed>"
+            },
+            "restaurants": {
+                "intro": {
+                    "title": "Tarifs flexibles pour les <boldRed>Restaurants</boldRed>",
+                    "description": "Choisissez l’offre qui correspond à vos besoins. Des petits cafés aux grandes chaînes, nos forfaits vous aident à digitaliser vos menus, attirer plus de clients et simplifier votre service."
+                },
+                "plan01": {
+                    "title": "Forfait S",
+                    "description": "Parfait pour les petits restaurants ou cafés qui débutent avec les menus digitaux. Simple avec les fonctions essentielles toujours disponibles.",
+                    "price": {
+                        "monthly": "3,99 €",
+                        "annual": "5,99 €"
+                    }
+                },
+                "plan02": {
+                    "title": "Forfait M",
+                    "description": "Idéal pour les restaurants en croissance qui souhaitent plus de personnalisation et de flexibilité. Ajoutez des images et rendez l’expérience plus engageante.",
+                    "price": {
+                        "monthly": "9,99 €",
+                        "annual": "15,99 €"
+                    }
+                },
+                "plan03": {
+                    "title": "Forfait L",
+                    "description": "Une solution complète pour les restaurants qui veulent se démarquer. Offrez des menus multimédias, simplifiez les réservations et créez une expérience digitale fluide.",
+                    "price": {
+                        "monthly": "14,99 €",
+                        "annual": "29,99 €"
+                    }
+                },
+                "plan04": {
+                    "title": "Forfait XL",
+                    "description": "Conçu pour les restaurants à forte demande ou les chaînes. Débloquez des outils premium pour les réservations, vidéos et une expérience de marque immersive.",
+                    "price": {
+                        "monthly": "24,99 €",
+                        "annual": "39,99 €"
+                    }
+                }
+            },
+            "restaurantChains": {
+                "intro": {
+                    "title": "Tarifs évolutifs pour les <boldRed>Chaînes de Restaurants</boldRed>",
+                    "description": "Que vous gériez plusieurs établissements ou une chaîne nationale, nos offres s’adaptent à votre activité. Centralisez vos opérations, gardez la cohérence entre vos restaurants et économisez grâce aux réductions multi-sites."
+                },
+                "plan01": {
+                    "title": "Chain Starter",
+                    "description": "Idéal pour jusqu’à 3 établissements souhaitant unifier leur présence digitale. Accédez aux fonctions essentielles à un tarif réduit multi-sites.",
+                    "price": {
+                        "monthly": "19,99 €",
+                        "annual": "24,99 €"
+                    }
+                },
+                "plan02": {
+                    "title": "Chain Growth",
+                    "description": "Conçu pour les chaînes en croissance jusqu’à 10 établissements. Profitez d’une personnalisation avancée et d’éléments visuels tout en maîtrisant les coûts.",
+                    "price": {
+                        "monthly": "49,99 €",
+                        "annual": "74,99 €"
+                    }
+                },
+                "plan03": {
+                    "title": "Chain Pro",
+                    "description": "Pour les chaînes établies jusqu’à 25 établissements. Centralisez les réservations, ajoutez des vidéos et offrez une expérience digitale haut de gamme.",
+                    "price": {
+                        "monthly": "99,99 €",
+                        "annual": "139,99 €"
+                    }
+                },
+                "plan04": {
+                    "title": "Chain Enterprise",
+                    "description": "Sites illimités, support avancé et toutes les fonctionnalités premium incluses. Parfait pour les chaînes nationales nécessitant une évolutivité et un contrôle complets.",
+                    "price": {
+                        "monthly": "199,99 €",
+                        "annual": "249,99 €"
+                    }
+                }
+            }
         }
     },
     "ui": {
@@ -355,7 +456,11 @@
         "chatbot": "Ouvrir le chat maintenant",
         "formular": "Remplir le formulaire ici",
         "features": "Voir plus de fonctionnalités",
-        "chatAssistant": "Chat en direct avec l’assistant de Diego"
+        "chatAssistant": "Chat avec l’assistant IA",
+        "included": "Voir plus d'infos",
+        "select": "Choisir un forfait",
+        "monthly": "Mensuel",
+        "annual": "Annuel"
         }
     },
     "forms": {

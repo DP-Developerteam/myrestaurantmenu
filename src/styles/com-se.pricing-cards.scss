@@ -12,8 +12,14 @@
 
     .intro-text {
         @include displayFlex(column nowrap, center, center);
-        h2 {
+        max-width: 600px;
+        text-align: center;
+        .title {
             font-size: 2rem;
+            .font-red {
+                white-space: nowrap;
+                display: inline-block;
+            }
         }
     }
     .tariff-selection-container{
@@ -21,9 +27,8 @@
         gap: 0.4rem;
     }
     .pricing-cards-container {
-        @include displayFlex(row nowrap, center, flex-start);
-        gap: 2rem;
         @include displayFlex(row nowrap, flex-start, flex-start);
+        gap: 1rem;
         width: 100%;
         overflow-x: auto;
         will-change: transform, opacity;
@@ -33,13 +38,23 @@
         }
         .pricing-card {
             @include displayFlex(column nowrap, center, center);
+            flex-grow: 1;
+            flex-shrink: 0;
             gap: 1rem;
-            width: 270px;
+            width: 300px;
+            max-width: 300px;
             padding: 2rem;
             border: none;
             border-radius: 2rem;
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
             transition: all 0.3s ease-in-out;
+            .title {
+                font-size: 2rem;
+            }
+            .description {
+                flex-grow: 1;
+                text-align: center;
+            }
             .price {
                 font-size: 3rem;
                 font-weight: 600;
@@ -100,11 +115,12 @@
                         margin-right: 10px;
                         flex-shrink: 0;
                         flex-grow: 0;
-                        width: 28px;
-                        height: 28px;
+                        width: 20px;
+                        height: 20px;
                         fill: $COLORS-red-900;
+                        background-color: $COLORS-base-100;
                         border-radius: 50%;
-                        padding: 5px;
+                        padding: 4px;
                         box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
                             -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
                             -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
@@ -123,15 +139,31 @@
                 background-color: $COLORS-base-700;
                 color: $COLORS-base-100;
             }
+            .features-container {
+                .bullet {
+                    .font-red {
+                        color: $COLORS-base-100 !important;
+                    }
+                }
+            }
         }
 
-        @media (min-width: 620px) {
-            @include displayFlex(row wrap, center, flex-start);
-            max-width: 800px;
+    }
+    @media (min-width: 691px) {
+        .pricing-cards-container {
+            @include displayFlex(row wrap, center, flex-stretch);
+            .pricing-card {
+                justify-content: flex-start;
+                width: auto;
+                flex-shrink: 1;
+                max-width: 40%;
+            }
         }
+    }
 
-        @media (min-width: 1210px) {
-            gap: 2rem;
+    @media (min-width: 1110px) {
+        .pricing-cards-container {
+            @include displayFlex(row nowrap, center, stretch);
             max-width: 100%;
         }
     }

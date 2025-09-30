@@ -39,184 +39,231 @@ const Pricing = () => {
     }
     const SectionRestaurantPricing = {
         "intro": {
-            "title": "Prices for <boldRed>Restaurants</boldRed>",
-            "description": "Description pricing for restaurants"
+            "title": "section.pricingCards.restaurants.intro.title",
+            "description": "section.pricingCards.restaurants.intro.description"
         },
         "cardsData": [
             {
-                "title": "Package S",
-                "description": "Description Package S",
+                "title": "section.pricingCards.restaurants.plan01.title",
+                "description": "section.pricingCards.restaurants.plan01.description",
                 "price": {
-                    "monthly": "3,99 €",
-                    "yearly": "5,99 €"
+                    "monthly": "section.pricingCards.restaurants.plan01.price.monthly",
+                    "annual": "section.pricingCards.restaurants.plan01.price.annual"
                 },
                 "featureIncluded": [
-                    "Multilingual: 2 languages",
-                    "QR Code creation",
-                    "Customization",
+                    "section.pricingCards.common.multilingual2",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
                 ],
                 "featureNotIncluded": [
-                    "Custom URL",
-                    "Images in the menu",
-                    "Videos in the menu",
-                    "Gift & stamp-cards",
-                    "Reservation",
-                    "Clients log in",
-                    "Promotion pop ups",
-                    "Email marketing",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
                 ]
             },
             {
-                "title": "Package M",
-                "description": "Description Package M",
+                "title": "section.pricingCards.restaurants.plan02.title",
+                "description": "section.pricingCards.restaurants.plan02.description",
                 "price": {
-                    "monthly": "9,99 €",
-                    "yearly": "15,99 €"
+                    "monthly": "section.pricingCards.restaurants.plan02.price.monthly",
+                    "annual": "section.pricingCards.restaurants.plan02.price.annual"
                 },
                 "featureIncluded": [
-                    "<boldRed>Everything in package S</boldRed>",
-                    "Custom URL",
-                    "Images in the menu",
+                    "section.pricingCards.common.multilingual2",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
                 ],
                 "featureNotIncluded": [
-                    "Videos in the menu",
-                    "Gift & stamp-cards",
-                    "Reservation",
-                    "Clients log in",
-                    "Promotion pop ups",
-                    "Email marketing",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
                 ]
             },
             {
-                "title": "Package L",
-                "description": "Description Package L",
+                "cssClass": "highlighted",
+                "title": "section.pricingCards.restaurants.plan03.title",
+                "description": "section.pricingCards.restaurants.plan03.description",
                 "price": {
-                    "monthly": "14,99 €",
-                    "yearly": "29,99 €"
+                    "monthly": "section.pricingCards.restaurants.plan03.price.monthly",
+                    "annual": "section.pricingCards.restaurants.plan03.price.annual"
                 },
                 "featureIncluded": [
-                    "<boldRed>Everything in package M</boldRed>",
-                    "Multilingual: 4 languages",
-                    "Videos in the menu",
-                    "Clients log in",
-                    "Gift & stamp-cards",
+                    "section.pricingCards.common.multilingual4",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
                 ],
                 "featureNotIncluded": [
-                    "Reservation",
-                    "Promotion pop ups",
-                    "Email marketing",
-                ],
-                "cssClass": "highlighted"
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
+                ]
             },
             {
-                "title": "Package XL",
-                "description": "Description Package XL",
+                "title": "section.pricingCards.restaurants.plan04.title",
+                "description": "section.pricingCards.restaurants.plan04.description",
                 "price": {
-                    "monthly": "24,99 €",
-                    "yearly": "39,99 €"
+                    "monthly": "section.pricingCards.restaurants.plan04.price.monthly",
+                    "annual": "section.pricingCards.restaurants.plan04.price.annual"
                 },
                 "featureIncluded": [
-                    "<boldRed>Everything in package L</boldRed>",
-                    "Multilingual: 6 languages",
-                    "Reservation",
-                    "Promotion pop ups",
-                    "Email marketing",
+                    "section.pricingCards.common.multilingual6",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
                 ],
                 "featureNotIncluded": [
                 ]
-            }
+            },
         ]
     }
     const SectionRestaurantChainPricing = {
         "intro": {
-            "title": "Prices for <boldRed>Restaurant chains</boldRed>",
-            "description": "Description pricing for restaurant chains, or multiple restaurants"
+            "title": "section.pricingCards.restaurantChains.intro.title",
+            "description": "section.pricingCards.restaurantChains.intro.description"
         },
         "cardsData": [
             {
-                "title": "Package S",
-                "description": "Description Package S",
+                "title": "section.pricingCards.restaurantChains.plan01.title",
+                "description": "section.pricingCards.restaurantChains.plan01.description",
                 "price": {
-                    "monthly": "3,99 €",
-                    "yearly": "5,99 €"
+                    "monthly": "section.pricingCards.restaurantChains.plan01.price.monthly",
+                    "annual": "section.pricingCards.restaurantChains.plan01.price.annual"
                 },
                 "featureIncluded": [
-                    "Multilingual: 2 languages",
-                    "QR Code creation",
-                    "Customization",
+                    "section.pricingCards.common.multiLocation",
+                    "section.pricingCards.common.centralDashboard",
+                    "section.pricingCards.common.multilingual2",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
                 ],
                 "featureNotIncluded": [
-                    "Custom URL",
-                    "Images in the menu",
-                    "Videos in the menu",
-                    "Gift & stamp-cards",
-                    "Reservation",
-                    "Clients log in",
-                    "Promotion pop ups",
-                    "Email marketing",
+                    "section.pricingCards.common.branchManagement",
+                    "section.pricingCards.common.sharedLoyalty",
+                    "section.pricingCards.common.bulkDiscounts",
+                    "section.pricingCards.common.chainAnalytics",
+                    "section.pricingCards.common.images",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
                 ]
             },
             {
-                "title": "Package M",
-                "description": "Description Package M",
+                "title": "section.pricingCards.restaurantChains.plan02.title",
+                "description": "section.pricingCards.restaurantChains.plan02.description",
                 "price": {
-                    "monthly": "9,99 €",
-                    "yearly": "15,99 €"
+                    "monthly": "section.pricingCards.restaurantChains.plan02.price.monthly",
+                    "annual": "section.pricingCards.restaurantChains.plan02.price.annual"
                 },
                 "featureIncluded": [
-                    "<boldRed>Everything in package S</boldRed>",
-                    "Custom URL",
-                    "Images in the menu",
+                    "section.pricingCards.common.multiLocation",
+                    "section.pricingCards.common.centralDashboard",
+                    "section.pricingCards.common.branchManagement",
+                    "section.pricingCards.common.multilingual2",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
                 ],
                 "featureNotIncluded": [
-                    "Videos in the menu",
-                    "Gift & stamp-cards",
-                    "Reservation",
-                    "Clients log in",
-                    "Promotion pop ups",
-                    "Email marketing",
-                ],
-                "cssClass": "highlighted"
-            },
-            {
-                "title": "Package L",
-                "description": "Description Package L",
-                "price": {
-                    "monthly": "14,99 €",
-                    "yearly": "29,99 €"
-                },
-                "featureIncluded": [
-                    "<boldRed>Everything in package M</boldRed>",
-                    "Multilingual: 4 languages",
-                    "Videos in the menu",
-                    "Clients log in",
-                    "Gift & stamp-cards",
-                ],
-                "featureNotIncluded": [
-                    "Reservation",
-                    "Promotion pop ups",
-                    "Email marketing",
+                    "section.pricingCards.common.sharedLoyalty",
+                    "section.pricingCards.common.bulkDiscounts",
+                    "section.pricingCards.common.chainAnalytics",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
                 ]
             },
             {
-                "title": "Package XL",
-                "description": "Description Package XL",
+                "cssClass": "highlighted",
+                "title": "section.pricingCards.restaurantChains.plan03.title",
+                "description": "section.pricingCards.restaurantChains.plan03.description",
                 "price": {
-                    "monthly": "24,99 €",
-                    "yearly": "39,99 €"
+                    "monthly": "section.pricingCards.restaurantChains.plan03.price.monthly",
+                    "annual": "section.pricingCards.restaurantChains.plan03.price.annual"
                 },
                 "featureIncluded": [
-                    "<boldRed>Everything in package L</boldRed>",
-                    "Multilingual: 6 languages",
-                    "Reservation",
-                    "Promotion pop ups",
-                    "Email marketing",
+                    "section.pricingCards.common.multiLocation",
+                    "section.pricingCards.common.centralDashboard",
+                    "section.pricingCards.common.branchManagement",
+                    "section.pricingCards.common.sharedLoyalty",
+                    "section.pricingCards.common.multilingual4",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                ],
+                "featureNotIncluded": [
+                    "section.pricingCards.common.bulkDiscounts",
+                    "section.pricingCards.common.chainAnalytics",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
+                ]
+            },
+            {
+                "title": "section.pricingCards.restaurantChains.plan04.title",
+                "description": "section.pricingCards.restaurantChains.plan04.description",
+                "price": {
+                    "monthly": "section.pricingCards.restaurantChains.plan04.price.monthly",
+                    "annual": "section.pricingCards.restaurantChains.plan04.price.annual"
+                },
+                "featureIncluded": [
+                    "section.pricingCards.common.multiLocation",
+                    "section.pricingCards.common.centralDashboard",
+                    "section.pricingCards.common.branchManagement",
+                    "section.pricingCards.common.sharedLoyalty",
+                    "section.pricingCards.common.bulkDiscounts",
+                    "section.pricingCards.common.chainAnalytics",
+                    "section.pricingCards.common.multilingual6",
+                    "section.pricingCards.common.qrCode",
+                    "section.pricingCards.common.customization",
+                    "section.pricingCards.common.url",
+                    "section.pricingCards.common.images",
+                    "section.pricingCards.common.video",
+                    "section.pricingCards.common.booking",
+                    "section.pricingCards.common.giftCard",
+                    "section.pricingCards.common.clientSignIn",
+                    "section.pricingCards.common.popUp",
+                    "section.pricingCards.common.emailMarketing",
                 ],
                 "featureNotIncluded": [
                 ]
-            }
+            },
         ]
     }
+
 
     return (
         <div className='page page-pricing'>

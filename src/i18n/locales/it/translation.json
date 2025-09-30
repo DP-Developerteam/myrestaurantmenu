@@ -344,6 +344,107 @@
                 "bullet03": "Goditi da subito più interazione, servizio più rapido e più vendite."
                 }
             }
+        },
+        "pricingCards": {
+            "common": {
+                "perMonth": "/ al mese",
+                "saveMoney": "Risparmia con il pagamento annuale",
+                "multilingual2": "Traduzioni in 2 lingue",
+                "multilingual4": "Traduzioni in 4 lingue",
+                "multilingual6": "Traduzioni in 6 lingue",
+                "qrCode": "Creazione QR Code",
+                "customization": "Design personalizzabile",
+                "url": "URL personalizzato",
+                "images": "Immagini nel menu",
+                "video": "Video nel menu",
+                "booking": "Sistema di prenotazione",
+                "giftCard": "Sistema di tessere a timbri",
+                "clientSignIn": "Accesso clienti",
+                "popUp": "Pop-up promozionali",
+                "emailMarketing": "Email marketing",
+                "multiLocation": "<boldRed>Supporto multi-sede</boldRed>",
+                "centralDashboard": "<boldRed>Dashboard centralizzata</boldRed>",
+                "branchManagement": "<boldRed>Gestione filiali</boldRed>",
+                "sharedLoyalty": "<boldRed>Sistema fedeltà condiviso</boldRed>",
+                "bulkDiscounts": "<boldRed>Sconti su volume</boldRed>",
+                "chainAnalytics": "<boldRed>Analisi per tutta la catena</boldRed>"
+            },
+            "restaurants": {
+                "intro": {
+                    "title": "Prezzi flessibili per <boldRed>Ristoranti</boldRed>",
+                    "description": "Scegli il piano adatto al tuo ristorante. Dai piccoli caffè alle grandi catene, i nostri pacchetti ti aiutano a digitalizzare il menu, attirare più clienti e semplificare il servizio."
+                },
+                "plan01": {
+                    "title": "Pacchetto S",
+                    "description": "Perfetto per piccoli ristoranti o caffè che muovono i primi passi nei menu digitali. Semplice e con funzioni essenziali sempre disponibili.",
+                    "price": {
+                        "monthly": "3,99 €",
+                        "annual": "5,99 €"
+                    }
+                },
+                "plan02": {
+                    "title": "Pacchetto M",
+                    "description": "Ideale per ristoranti in crescita che vogliono più personalizzazione e flessibilità. Migliora il menu con immagini e crea un’esperienza più coinvolgente.",
+                    "price": {
+                        "monthly": "9,99 €",
+                        "annual": "15,99 €"
+                    }
+                },
+                "plan03": {
+                    "title": "Pacchetto L",
+                    "description": "Una soluzione completa per ristoranti che vogliono distinguersi. Offri menu multimediali, semplifica le prenotazioni e garantisci un’esperienza digitale fluida.",
+                    "price": {
+                        "monthly": "14,99 €",
+                        "annual": "29,99 €"
+                    }
+                },
+                "plan04": {
+                    "title": "Pacchetto XL",
+                    "description": "Progettato per ristoranti ad alta domanda o catene. Sblocca strumenti premium per prenotazioni, video e un’esperienza di marca immersiva.",
+                    "price": {
+                        "monthly": "24,99 €",
+                        "annual": "39,99 €"
+                    }
+                }
+            },
+            "restaurantChains": {
+                "intro": {
+                    "title": "Prezzi scalabili per <boldRed>Catene di Ristoranti</boldRed>",
+                    "description": "Che tu gestisca più sedi o una catena nazionale, i nostri piani crescono con il tuo business. Centralizza le operazioni, mantieni la coerenza tra i locali e risparmia con sconti multi-sede."
+                },
+                "plan01": {
+                    "title": "Chain Starter",
+                    "description": "Perfetto per fino a 3 sedi che vogliono unificare la loro presenza digitale. Ottieni le funzioni essenziali a una tariffa ridotta multi-sede.",
+                    "price": {
+                        "monthly": "19,99 €",
+                        "annual": "24,99 €"
+                    }
+                },
+                "plan02": {
+                    "title": "Chain Growth",
+                    "description": "Ideale per catene in crescita fino a 10 sedi. Godi di maggiore personalizzazione e contenuti visivi mantenendo sotto controllo i costi.",
+                    "price": {
+                        "monthly": "49,99 €",
+                        "annual": "74,99 €"
+                    }
+                },
+                "plan03": {
+                    "title": "Chain Pro",
+                    "description": "Per catene consolidate fino a 25 sedi. Centralizza le prenotazioni, aggiungi video e offri un’esperienza gastronomica digitale di alto livello.",
+                    "price": {
+                        "monthly": "99,99 €",
+                        "annual": "139,99 €"
+                    }
+                },
+                "plan04": {
+                    "title": "Chain Enterprise",
+                    "description": "Sedi illimitate, supporto avanzato e tutte le funzioni premium incluse. Perfetto per catene nazionali che necessitano massima scalabilità e controllo.",
+                    "price": {
+                        "monthly": "199,99 €",
+                        "annual": "249,99 €"
+                    }
+                }
+            }
         }
     },
     "ui": {
@@ -355,7 +456,11 @@
             "chatbot": "Apri chat ora",
             "formular": "Compila il modulo qui",
             "features": "Scopri altre funzionalità",
-            "chatAssistant": "Chat live con l’assistente di Diego"
+            "chatAssistant": "Chatta con l’assistente AI",
+            "included": "Mostra più informazioni",
+            "select": "Seleziona piano",
+            "monthly": "Mensile",
+            "annual": "Annuale"
         }
     },
     "forms": {
