@@ -59,8 +59,8 @@ const Hero = ({text, slides, buttons, cssClass}) => {
         return (
             <>
                 <ul className='bullets-container'>
-                    {text.bullets.map((bullet, idx) => (
-                        <li key={idx} className='bullet'>
+                    {text.bullets.map((bullet, index) => (
+                        <li key={index} className='bullet'>
                             <IconCheck className='icon' />
                             <Trans i18nKey={bullet}
                                 components={{

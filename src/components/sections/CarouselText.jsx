@@ -64,8 +64,8 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
     const renderBullets = (contentData) => {
         return (
             <ul className='bullets-container'>
-                {contentData.bullets.map((bullet, idx) => (
-                    <li className="bullet" key={idx}>
+                {contentData.bullets.map((bullet, index) => (
+                    <li className="bullet" key={index}>
                         <IconCheck className="icon" /> {t(bullet)}
                     </li>
                 ))}

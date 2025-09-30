@@ -9,11 +9,6 @@ import useGsapHorizontalScroll from '../../hooks/useGsapHorizontalScroll';
 import Card from '../ui/Card';
 
 
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
-
 const Cards = ({ intro, cardsData, cssClass = '' }) => {
     // Use i18n translations hook
     useTranslation();
@@ -114,9 +109,9 @@ const Cards = ({ intro, cardsData, cssClass = '' }) => {
                 </div>
             }
             <div className="cards-scroll-wrapper">
-                {cardsData.map((card, idx) => (
+                {cardsData.map((card, index) => (
                     <Card
-                        ref={idx === 0 ? firstCardRef : null}
+                        ref={index === 0 ? firstCardRef : null}
                         key={card.id}
                         {...card}
                         currentOpenId={openId}

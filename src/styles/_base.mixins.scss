@@ -56,10 +56,11 @@
     padding: 0.3rem 1rem;
     background-color: $background;
     @include fontSans(1.1rem, 400, $COLORS-base-900);
-    color: $color !important;
+    color: $color;
     border-radius: 1.5rem;
-    border: solid 0.1rem;
-    border-color: $background;
+    // border: solid 0.1rem;
+    // border-color: $background;
+    border: none;
 }
 
 @mixin buttonBorder ($background, $color, $border) {
@@ -69,7 +70,7 @@
     padding: 0.3rem 1rem;
     background-color: $background;
     @include fontSans(1.1rem, 400, $COLORS-base-900);
-    color: $color !important;
+    color: $color;
     border-radius: 1.5rem;
     border: solid 0.1rem;
     border-color: $border;
