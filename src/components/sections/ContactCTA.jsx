@@ -30,11 +30,6 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                 <div className='text-container'>
                     <h4 className='title'>{t(text.title)}</h4>
                     <p className='font-normal'>{t(text.paragraph)}</p>
-                    {/* <Button
-                        text={buttons.text}
-                        cssClass='btn-solid-light btn-inner-shadow'
-                        to='contact'
-                    /> */}
                     {mapButtons(buttons).map(({ key, text, cssClass, to, onClick, icon, ariaLabel }) => (
                         <Button
                             key={key}

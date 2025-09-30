@@ -3,7 +3,8 @@ import '../../styles/com-se.tabs.scss';
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 // Import hooks
-import { useChatActions } from '../../hooks/useChatActions';
+import useButtonChatActions from '../../hooks/useButtonChatActions';
+// import { useChatActions } from '../../hooks/useChatActions';
 // Import components
 import Button from '../ui/Button';
 // Images and icons
@@ -14,8 +15,10 @@ const Tabs = ({title, tabs, tabsContent, cssClass, backgroundOverflow}) => {
     // States for translations
     const { t } = useTranslation();
 
-    // Use hook chat actions
-    const { openChat } = useChatActions();
+    // // Use hook chat actions
+    // const { openChat } = useChatActions();
+    // Use hook chat button actions
+    const { mapButtons } = useButtonChatActions();
 
     // State to track which tab is currently active (index-based)
     const [activeTabIndex, setActiveTabIndex] = useState(0);
@@ -69,24 +72,17 @@ const Tabs = ({title, tabs, tabsContent, cssClass, backgroundOverflow}) => {
     const renderButtons = () => {
         return (
             <div className='buttons-container'>
-                {activeContent.buttons.map((btn, i) => {
-                    // Manage actions
-                    const isOpenChat = btn.onClick === 'openChat';
-                    const clickHandler = isOpenChat ? openChat : btn.onClick;
-                    const toProp = isOpenChat ? undefined : btn.to;
-
-                    return (
-                        <Button
-                            key={i}
-                            text={btn.text}
-                            cssClass={btn.cssClass}
-                            to={toProp}
-                            onClick={clickHandler}
-                            icon={btn.icon}
-                            aria-label={btn.ariaLabel}
-                        />
-                    )
-                })}
+                {mapButtons(activeContent.buttons).map(({ key, text, cssClass, to, onClick, icon, ariaLabel }) => (
+                    <Button
+                        key={key}
+                        text={text}
+                        cssClass={cssClass}
+                        to={to}
+                        onClick={onClick}
+                        icon={icon}
+                        aria-label={ariaLabel}
+                    />
+                ))}
             </div>
         )
     }

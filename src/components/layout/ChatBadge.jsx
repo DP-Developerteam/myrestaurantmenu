@@ -54,9 +54,6 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
         return () => window.removeEventListener("chat:open", handleOpenChat);
     }, [toggleOpen]);
 
-    // State for touch devices
-    const [isTouch, setIsTouch] = useState(false);
-
     // Lock/unlock background scroll
     useEffect(() => {
         if (open) {
@@ -72,6 +69,9 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
             };
         }
     }, [open]);
+
+    // State for touch devices
+    const [isTouch, setIsTouch] = useState(false);
 
     // Detect if it is touch device
     useEffect(() => {

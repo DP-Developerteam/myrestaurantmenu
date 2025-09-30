@@ -10,13 +10,28 @@ import ComponentFaq from "../../components/sections/Faq";
 // Import icons & images
 import ImgHero01 from "../../assets/img/hero-01.jpg";
 
-import ImgCommission from "../../assets/img/commission.webp";
-import ImgGiftCart from "../../assets/img/gift-card.webp";
-import ImgMultilingual from "../../assets/img/multilingual.webp";
 import ImgQrCode from "../../assets/img/qr-code.webp";
-import ImgQrCodePhone from "../../assets/img/qr-code-phone.png";
 import ImgResponsive from "../../assets/img/responsive.webp";
+import ImgGiftCart from "../../assets/img/gift-card.webp";
 import ImgUxResponsive from "../../assets/img/ux-friendly.webp";
+import ImgMultilingual from "../../assets/img/multilingual.webp";
+import ImgCommission from "../../assets/img/commission.webp";
+
+import ImgQrCodePhone from "../../assets/img/qr-code-phone.png";
+
+import ImgViewText from "../../assets/img/feature-view-text.png";
+import ImgViewImage from "../../assets/img/feature-view-image.png";
+import ImgViewVideo from "../../assets/img/feature-view-video.png";
+
+import ImgCalendar from "../../assets/img/calendar.png";
+
+import ImgManagement from "../../assets/img/management.png";
+import ImgCustomizable from "../../assets/img/3d-brainstorming.png";
+import ImgEngagement from "../../assets/img/engagement.png";
+
+import ImgContactCta from '../../assets/img/contact-cta.webp';
+
+
 import IconChains from "../../assets/img/icon-chains.svg";
 import IconGastro from "../../assets/img/icon-gastro-market.svg";
 import IconHotels from "../../assets/img/icon-hotels.svg";
@@ -25,16 +40,6 @@ import ImgDataOwnership from "../../assets/img/data-ownership.webp";
 import ImgAbTesting from "../../assets/img/ab-testing.webp";
 import ImgCustomization from "../../assets/img/customization.webp";
 import ImgTableTurnOver from "../../assets/img/table-turnover.webp";
-
-import SliderHero01 from "../../assets/img/slider-hero-1.jpg";
-import SliderHero02 from "../../assets/img/slider-hero-2.jpg";
-import SliderHero03 from "../../assets/img/slider-hero-3.jpg";
-import SliderHero04 from "../../assets/img/slider-hero-4.jpg";
-
-
-import ImgViewText from "../../assets/img/feature-view-text.png";
-import ImgViewImage from "../../assets/img/feature-view-image.png";
-import ImgViewVideo from "../../assets/img/feature-view-video.png";
 
 
 
@@ -165,6 +170,151 @@ const Features = () => {
             }
         ]
     };
+    const SectionTest30Days = {
+        "tabs": false,
+        "cssClass": "section-tab-red",
+        "tabsContent": [
+            {
+                "title": "section.tabs.test30days.title",
+                "bullets": [
+                    "section.tabs.test30days.bullets.01"
+                ],
+                "image": {
+                    "src": ImgCalendar,
+                    "alt": "Description",
+                    "width": 300,
+                    "height": 300,
+                },
+                "buttons": [
+                    {
+                        text: "ui.buttons.promo",
+                        cssClass: "btn-solid-light btn-inner-shadow",
+                        onClick: "openChat:trial"
+                    }
+                ]
+            }
+        ]
+    };
+    const SectionMultiTabs = {
+        "tabs": true,
+        "tabsContent": [
+            {
+                "title": "section.tabs.management.title",
+                "bullets": [
+                    "section.tabs.management.bullets.01",
+                    "section.tabs.management.bullets.02",
+                    "section.tabs.management.bullets.03",
+                    "section.tabs.management.bullets.04",
+                ],
+                "image": {
+                    "src": ImgManagement,
+                    "alt": "Restaurant menu management dashboard",
+                    "width": 300,
+                    "height": 300,
+                },
+                "buttons": [
+                    {
+                        text: "ui.buttons.demo",
+                        cssClass: "btn-solid-red btn-hover-gradient-red",
+                        to: "/demos"
+                    }
+                ]
+            },
+            {
+                "title": "section.tabs.customization.title",
+                "bullets": [
+                    "section.tabs.customization.bullets.01",
+                    "section.tabs.customization.bullets.02",
+                    "section.tabs.customization.bullets.03",
+                    "section.tabs.customization.bullets.04",
+                ],
+                "image": {
+                    "src": ImgCustomizable,
+                    "alt": "Customizing a digital menu",
+                    "width": 300,
+                    "height": 300,
+                },
+                "buttons": [
+                    {
+                        text: "ui.buttons.promo",
+                        cssClass: "btn-solid-red btn-hover-gradient-red",
+                        onClick: "openChat:trial",
+                    }
+                ]
+            },
+            {
+                "title": "section.tabs.engagement.title",
+                "bullets": [
+                    "section.tabs.engagement.bullets.01",
+                    "section.tabs.engagement.bullets.02",
+                    "section.tabs.engagement.bullets.03",
+                    "section.tabs.engagement.bullets.04",
+                ],
+                "image": {
+                    "src": ImgGiftCart,
+                    "alt": "Digital loyalty card on a phone",
+                    "width": 300,
+                    "height": 300,
+                },
+                "buttons": [
+                    {
+                        text: "ui.buttons.chatbot",
+                        cssClass: "btn-solid-red btn-hover-gradient-red",
+                        onClick: "openChat:open",
+                    }
+                ]
+            },
+        ],
+        "cssClass": "section-overflow-background section-tabs-bullet-icon",
+        "backgroundOverflow": "background-base-200"
+    };
+    const SectionReviews = {
+        "title": "section.carouselText.reviews.title",
+        "content": [
+            {
+                "title": "section.carouselText.reviews.pizzeria.title",
+                "bullets": [
+                    "section.carouselText.reviews.pizzeria.bullet01",
+                ]
+            },
+            {
+                "title": "section.carouselText.reviews.foodMarket.title",
+                "bullets": [
+                    "section.carouselText.reviews.foodMarket.bullet01",
+                ]
+            },
+            {
+                "title": "section.carouselText.reviews.restaurantFoodMarket.title",
+                "bullets": [
+                    "section.carouselText.reviews.restaurantFoodMarket.bullet01",
+                ]
+            },
+        ],
+    };
+    const SectionContactCta01 = {
+        "text": {
+            "title": "section.contact.title",
+            "paragraph": "section.contact.description",
+        },
+        "buttons": [
+            {
+                text: "ui.buttons.formular",
+                cssClass: "btn-solid-light btn-inner-shadow",
+                onClick: "openChat:lead",
+            }
+        ],
+        "image": {
+            image: ImgContactCta,
+            alt: "Delicious pizza",
+            text: "Try our new Margherita",
+            cta: "Contact us now!",
+            link: "/contact",
+            width: 834,
+            height: 450,
+        },
+        "cssClass": "section-overflow-background",
+        "backgroundOverflow": "background-red-200"
+    };
 
     return (
         <div className='page page-home'>
@@ -172,6 +322,11 @@ const Features = () => {
             <ComponentCards cardsData={SectionCardsFeatures01.cardsData} />
             <ComponentTabs tabs={SectionFeatureQrCode.tabs} tabsContent={SectionFeatureQrCode.tabsContent} cssClass={SectionFeatureQrCode.cssClass} backgroundOverflow={SectionFeatureQrCode.backgroundOverflow}/>
             <ComponentCards intro={SectionFeaturesView.intro} cardsData={SectionFeaturesView.cardsData} />
+            <ComponentTabs tabs={SectionTest30Days.tabs} tabsContent={SectionTest30Days.tabsContent} cssClass={SectionTest30Days.cssClass}/>
+            <ComponentTabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} backgroundOverflow={SectionMultiTabs.backgroundOverflow} />
+            <ComponentCarouselText title={SectionReviews.title} content={SectionReviews.content} />
+            <ComponentContactCTA text={SectionContactCta01.text} buttons={SectionContactCta01.buttons} image={SectionContactCta01.image} cssClass={SectionContactCta01.cssClass} backgroundOverflow={SectionContactCta01.backgroundOverflow}/>
+
         </div>
     )
 }

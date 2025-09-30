@@ -35,23 +35,23 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout/>}>
         <Route index element={<Home />}/>
-        <Route path="about" element={<About />}/>
-        <Route path="academy" element={<Academy />}/>
-        <Route path="addson" element={<AddsOn />}/>
-        <Route path="blogs" element={<Blogs />}/>
-        <Route path="contact" element={<Contact />}/>
-        <Route path="cookiespolicy" element={<CookiesPolicy />}/>
-        <Route path="demos" element={<Demos />}/>
-        <Route path="faq" element={<Faq />}/>
-        <Route path="features" element={<Features />}/>
-        <Route path="partners" element={<Partners />}/>
-        <Route path="pricing" element={<Pricing />}/>
-        <Route path="privacypolicy" element={<PrivacyPolicy />}/>
-        <Route path="qrcodes" element={<QrCodes />}/>
-        <Route path="salesconsultant" element={<SalesConsultant />}/>
-        <Route path="smartmarket" element={<SmartMarket />}/>
-        <Route path="status" element={<Status />}/>
-        <Route path="termsservice" element={<TermsService />}/>
+        <Route path="/about" element={<About />}/>
+        <Route path="/academy" element={<Academy />}/>
+        <Route path="/addson" element={<AddsOn />}/>
+        <Route path="/blogs" element={<Blogs />}/>
+        <Route path="/contact" element={<Contact />}/>
+        <Route path="/cookiespolicy" element={<CookiesPolicy />}/>
+        <Route path="/demos" element={<Demos />}/>
+        <Route path="/faq" element={<Faq />}/>
+        <Route path="/features" element={<Features />}/>
+        <Route path="/partners" element={<Partners />}/>
+        <Route path="/pricing" element={<Pricing />}/>
+        <Route path="/privacypolicy" element={<PrivacyPolicy />}/>
+        <Route path="/qrcodes" element={<QrCodes />}/>
+        <Route path="/salesconsultant" element={<SalesConsultant />}/>
+        <Route path="/smartmarket" element={<SmartMarket />}/>
+        <Route path="/status" element={<Status />}/>
+        <Route path="/termsservice" element={<TermsService />}/>
     </Route>
   )
 )

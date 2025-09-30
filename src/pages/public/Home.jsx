@@ -74,7 +74,7 @@ const Home = () => {
             {
                 text: "ui.buttons.demo",
                 cssClass: "btn-solid-light btn-inner-shadow",
-                to: "demos",
+                to: "/demos",
             },
             {
                 text: "ui.buttons.promo",
@@ -251,7 +251,7 @@ const Home = () => {
                     {
                         text: "ui.buttons.features",
                         cssClass: "btn-solid-red btn-hover-gradient-red",
-                        to: "features"
+                        to: "/features"
                     }
                 ]
             },
@@ -273,7 +273,7 @@ const Home = () => {
                     {
                         text: "ui.buttons.demo",
                         cssClass: "btn-solid-red btn-hover-gradient-red",
-                        to: "demos"
+                        to: "/demos"
                     }
                 ]
             },
@@ -295,7 +295,7 @@ const Home = () => {
                     {
                         text: "ui.buttons.promo",
                         cssClass: "btn-solid-red btn-hover-gradient-red",
-                        onClick: "openChat",
+                        onClick: "openChat:trial",
                     }
                 ]
             },
@@ -415,7 +415,7 @@ const Home = () => {
                     {
                         text: "ui.buttons.promo",
                         cssClass: "btn-solid-light btn-inner-shadow",
-                        onClick: "openChat"
+                        onClick: "openChat:trial"
                     }
                 ]
             }

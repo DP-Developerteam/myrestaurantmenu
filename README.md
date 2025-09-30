@@ -87,11 +87,24 @@ If you are developing a production application, we recommend using TypeScript wi
 │   ├── pages
 │   │   ├── protected
 │   │   └── public
+│   │       ├── About.jsx
+│   │       ├── Academy.jsx
+│   │       ├── AddsOn.jsx
+│   │       ├── Blogs.jsx
 │   │       ├── Contact.jsx
-│   │       ├── Demo.jsx
+│   │       ├── CookiesPolicy.jsx
+│   │       ├── Demos.jsx
+│   │       ├── Faq.jsx
 │   │       ├── Features.jsx
 │   │       ├── Home.jsx
-│   │       └── Pricing.jsx
+│   │       ├── Partners.jsx
+│   │       ├── Pricing.jsx
+│   │       ├── PrivacyPolicy.jsx
+│   │       ├── QrCodes.jsx
+│   │       ├── SalesConsultant.jsx
+│   │       ├── SmartMarket.jsx
+│   │       ├── Status.jsx
+│   │       └── TermsService.jsx
 │   ├── store
 │   │   ├── constants.jsx
 │   │   ├── reducers.jsx
