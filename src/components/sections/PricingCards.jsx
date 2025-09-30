@@ -17,15 +17,26 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
     // State to show/hide includes
     const [isIncludes, setIsIncludes] = useState(false)
 
+    // State to track collapsing animation
+    const [isCollapsing, setIsCollapsing] = useState({})
+
     // States for tariff
     const [isTariff, setIsTariff] = useState(true)
 
     // Handle includes
     function handleIncludes(index) {
-        setIsIncludes(prev => ({
-            ...prev,
-            [index]: !prev[index]
-        }));
+        if (isIncludes[index]) {
+            // Start collapsing animation
+            setIsCollapsing(prev => ({ ...prev, [index]: true }));
+            // Wait for animation to complete before hiding
+            setTimeout(() => {
+                setIsIncludes(prev => ({ ...prev, [index]: false }));
+                setIsCollapsing(prev => ({ ...prev, [index]: false }));
+            }, 300);
+        } else {
+            // Expanding - show immediately
+            setIsIncludes(prev => ({ ...prev, [index]: true }));
+        }
     }
 
     // Handle tariff
@@ -103,7 +114,7 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
                     onClick={() => handleIncludes(index)}
                     icon={<IconArrow />}
                 />
-                {isIncludes[index] &&
+                {/* {isIncludes[index] &&
                     <>
                         {card.featureIncluded.map((bullet, index) =>
                             <p key={index} className='bullet'>
@@ -126,6 +137,26 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
                             </p>
                         )}
                     </>
+                } */}
+                {isIncludes[index] &&
+                    <div className={`features-container ${isCollapsing[index] ? 'collapsing' : ''}`}>
+                        {card.featureIncluded.map((bullet, bulletIndex) =>
+                            <p key={bulletIndex} className='bullet'>
+                                <IconCheck className='icon' />
+                                <Trans i18nKey={bullet}
+                                    components={{
+                                        bold: <span className='font-bold' />,
+                                        boldRed: <strong className='font-red'/>,
+                                    }}
+                                />
+                            </p>
+                        )}
+                        {card.featureNotIncluded.map((bullet, bulletIndex) =>
+                            <p key={bulletIndex} className='bullet not-included'>
+                                {t(bullet)}
+                            </p>
+                        )}
+                    </div>
                 }
                 {card.cssClass === 'highlighted' ?
                     <Button text={'ui.buttons.select'} cssClass={'btn-gradient-red'} to={'/'} />
