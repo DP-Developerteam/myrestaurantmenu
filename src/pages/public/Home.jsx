@@ -132,8 +132,8 @@ const Home = () => {
         ]
     };
     const SectionIndustries = {
-        "text": {
-            "title": "section.cards.titles.industries",
+        "intro": {
+            "title": "section.cards.intro.industries.title",
         },
         "cardsData": [
             {
@@ -509,7 +509,7 @@ const Home = () => {
         <div className="page page-home">
             <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
             <ComponentCards cardsData={SectionCardsFeatures01.cardsData} />
-            <ComponentCards text={SectionIndustries.text} cardsData={SectionIndustries.cardsData} cssClass={SectionIndustries.cssClass} />
+            <ComponentCards intro={SectionIndustries.intro} cardsData={SectionIndustries.cardsData} cssClass={SectionIndustries.cssClass} />
             <ComponentTabs title={SectionDinningExperience.title} tabs={SectionDinningExperience.tabs} tabsContent={SectionDinningExperience.tabsContent} />
             <ComponentCards cardsData={SectionCardsFeatures02.cardsData} />
             <ComponentTabs tabs={SectionMultiTabs.tabs} tabsContent={SectionMultiTabs.tabsContent} cssClass={SectionMultiTabs.cssClass} backgroundOverflow={SectionMultiTabs.backgroundOverflow} />

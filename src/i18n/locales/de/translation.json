@@ -96,8 +96,15 @@
       }
     },
     "cards": {
-      "titles": {
-        "industries": "Wir arbeiten mit Betrieben wie deinem"
+      "intro": {
+        "industries": {
+          "title": "Wir arbeiten mit Betrieben wie deinem"
+        },
+        "featureViews": {
+          "title": "Wie beeindruckend ist Ihre Speisekarte mit <boldRed>MyRestaurantMenu</boldRed>",
+          "description": "Unser smartes Menü passt sich jeder Situation an: Es erkennt automatisch die Internetgeschwindigkeit des Gastes und zeigt die beste Version an — Video, Bild oder Text. Und mit nur einem Klick können die Gäste selbst die Ansicht wechseln und Ihr Menü so genießen, wie sie es bevorzugen. Immer schnell, immer überzeugend."
+        }
+
       },
       "qrCode": {
         "title": "QR-Code-Menü",
@@ -154,6 +161,18 @@
       "chains": {
         "title": "Ketten",
         "description": "Noch nie war es so einfach, Menüs an verschiedenen Standorten zu erstellen und zu pflegen."
+      },
+      "viewImage": {
+        "title": "Visuell & Appetitanregend",
+        "description": "Präsentieren Sie Ihre Gerichte mit hochwertigen Bildern. Perfekt bei stabiler Verbindung und der ideale erste Eindruck für Ihre Gäste."
+      },
+      "viewVideo": {
+        "title": "Fesselnde Videoschleife",
+        "description": "Erwecken Sie Ihre Speisekarte mit Videos in Dauerschleife zum Leben - wie ein GIF. Ideal bei schneller Verbindung für ein immersives Restauranterlebnis."
+      },
+      "viewText": {
+        "title": "Immer Zugänglich",
+        "description": "Bei eingeschränkter Geschwindigkeit passt sich Ihr Menü an und zeigt sofort Klartext an. Einfach, übersichtlich und jederzeit verfügbar - kein Gast bleibt außen vor."
       }
     },
     "tabs": {
@@ -197,6 +216,17 @@
         "title": "Teste My Restaurant Menu 30 Tage kostenlos",
         "bullets": {
           "01": "Während deiner 30-tägigen Testphase erstellen wir eine Beispiel-App für dich. Sie enthält einen kleinen Teil deines Menüs. Du behältst die Kontrolle und kannst die Inhalte mit unserem modularen System beliebig ergänzen."
+        }
+      },
+      "qrCode": {
+        "title": "Intelligenter QR-Code für ein modernes Restauranterlebnis",
+        "bullets": {
+          "01": "Keine App-Downloads erforderlich - Ihre Gäste scannen einfach und sehen die Speisekarte.",
+          "02": "Schnelles und zuverlässiges Laden für ein reibungsloses Restauranterlebnis.",
+          "03": "Erstellen und verwalten Sie QR-Codes direkt in der Plattform.",
+          "04": "Passen Sie den QR-Code an das Branding Ihres Restaurants an.",
+          "05": "Sparen Sie Druckkosten, indem Sie Ihre Speisekarte in Echtzeit aktualisieren.",
+          "06": "Bieten Sie eine moderne, kontaktlose Lösung, die Gäste begeistert."
         }
       }
     },

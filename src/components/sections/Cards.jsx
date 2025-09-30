@@ -1,5 +1,6 @@
 // Import styles and libraries
 import { useState, useRef, useEffect } from 'react';
+import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
@@ -13,9 +14,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 
-const Cards = ({ text, cardsData, cssClass = '' }) => {
-    // States for translations
-    const { t } = useTranslation();
+const Cards = ({ intro, cardsData, cssClass = '' }) => {
+    // Use i18n translations hook
+    useTranslation();
 
     // State for card active
     const [openId, setOpenId] = useState(null);
@@ -82,50 +83,34 @@ const Cards = ({ text, cardsData, cssClass = '' }) => {
         };
     }, [cardsData, setOpenId]);
 
-    // ####################
-    // ####################
-    // TODO DIEGO!! This moves all cards of the page at the same time.
-    // ####################
-    // ####################
-    // useEffect(() => {
-    //     if (isDesktop) return; // only run on mobile
-    //     if (!fallbackRef.current) return;
-
-    //     const ctx = gsap.context(() => {
-    //         const wrapper = fallbackRef.current.querySelector(".cards-scroll-wrapper");
-    //         if (!wrapper) return;
-
-    //         gsap.fromTo(
-    //         wrapper,
-    //         { x: 0 },
-    //         {
-    //             x: -30,
-    //             duration: 0.4,
-    //             delay: 3,
-    //             yoyo: true,
-    //             repeat: 1,
-    //             ease: "power1.inOut",
-    //             scrollTrigger: {
-    //             trigger: fallbackRef.current,
-    //             start: "top 80%",
-    //             onLeave: () => gsap.killTweensOf(wrapper) // ensure once
-    //             }
-    //         }
-    //         );
-    //     }, fallbackRef);
-
-    //     return () => ctx.revert();
-    // }, [isDesktop]);
 
     return (
         <section
             className={`section section-cards ${isCentered ? 'centered-cards' : ''} ${cssClass} ${cssClass === '' && !isDesktop ? 'scroll-active' : ''}`}
             ref={sectionRef}
         >
-            {text &&
+            {intro &&
                 <div className='text-container'>
-                    <h3 className='title-text'>{t(text.title)}</h3>
-                    <p className='description-text'>{t(text.description)}</p>
+                    {intro.title && (
+                        <h3 className='text-title'>
+                            <Trans i18nKey={intro.title}
+                                components={{
+                                    bold: <span className='font-bold' />,
+                                    boldRed: <strong className='font-red'/>,
+                                }}
+                                />
+                        </h3>
+                    )}
+                    {intro.description && (
+                        <p className='text-description'>
+                            <Trans i18nKey={intro.description}
+                                components={{
+                                    bold: <span className='font-bold' />,
+                                    boldRed: <strong className='font-red'/>,
+                                }}
+                            />
+                        </p>
+                    )}
                 </div>
             }
             <div className="cards-scroll-wrapper">

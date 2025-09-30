@@ -96,8 +96,14 @@
             }
         },
         "cards": {
-            "titles": {
-                "industries": "Lavoriamo con attività come la tua"
+            "intro": {
+                "industries": {
+                    "title": "Lavoriamo con attività come la tua"
+                },
+                "featureViews": {
+                    "title": "Quanto è sorprendente il tuo menu con <boldRed>MyRestaurantMenu</boldRed>",
+                    "description": "Il nostro menu smart si adatta a ogni situazione: rileva automaticamente la velocità di internet del cliente e mostra la versione migliore — video, immagine o testo. E con un solo clic, i clienti possono cambiare la visualizzazione da soli e gustarsi il menu come preferiscono. Sempre veloce, sempre coinvolgente."
+                }
             },
             "qrCode": {
                 "title": "Menu con Codice QR",
@@ -154,6 +160,18 @@
             "chains": {
                 "title": "Catene",
                 "description": "Non è mai stato così facile creare e gestire menu in diverse sedi."
+            },
+            "viewImage": {
+                "title": "Visivo e Appetitoso",
+                "description": "Mostra i tuoi piatti con immagini di alta qualità. Perfetto con una connessione stabile, offrendo ai clienti una prima impressione invitante."
+            },
+            "viewVideo": {
+                "title": "Video Coinvolgente in Loop",
+                "description": "Dai vita al tuo menu con video in loop, come una GIF. Ideale per connessioni veloci, creando un’esperienza culinaria immersiva e dinamica."
+            },
+            "viewText": {
+                "title": "Sempre Accessibile",
+                "description": "Quando la velocità è limitata, il menu si adatta e mostra subito il testo semplice. Chiaro, immediato e disponibile in ogni momento — nessun cliente escluso."
             }
         },
         "tabs": {
@@ -197,6 +215,17 @@
                 "title": "Prova My Restaurant Menu gratis per 30 giorni",
                 "bullets": {
                 "01": "Durante i tuoi 30 giorni di prova, creeremo un'app dimostrativa per te con una parte del tuo menu. Tu mantieni il controllo e puoi completare i contenuti come vuoi con il nostro sistema modulare."
+                }
+            },
+            "qrCode": {
+                "title": "QR Code smart per un'esperienza di ristorazione moderna",
+                "bullets": {
+                "01": "Nessun download necessario: i tuoi clienti scansionano e vedono subito il menu.",
+                "02": "Caricamento veloce e affidabile per un’esperienza senza interruzioni.",
+                "03": "Crea e gestisci i QR Code direttamente dalla piattaforma.",
+                "04": "Personalizza il QR Code con il branding del tuo ristorante.",
+                "05": "Riduci i costi di stampa aggiornando il menu in tempo reale.",
+                "06": "Offri una soluzione moderna e contactless che i clienti adorano."
                 }
             }
         },

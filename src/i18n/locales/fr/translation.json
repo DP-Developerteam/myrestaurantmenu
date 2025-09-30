@@ -96,8 +96,14 @@
             }
         },
         "cards": {
-            "titles": {
-                "industries": "Nous travaillons avec des entreprises comme la vôtre"
+            "intro": {
+                "industries": {
+                    "title": "Nous travaillons avec des entreprises comme la vôtre"
+                },
+                "featureViews": {
+                    "title": "À quel point votre menu est-il incroyable avec <boldRed>MyRestaurantMenu</boldRed>",
+                    "description": "Notre menu intelligent s’adapte à chaque situation : il détecte automatiquement la vitesse de connexion du client et affiche la meilleure version — vidéo, image ou texte. Et en un seul clic, vos clients peuvent changer la vue eux-mêmes et profiter de votre menu comme ils le souhaitent. Toujours rapide, toujours engageant."
+                }
             },
             "qrCode": {
                 "title": "Menu avec code QR",
@@ -154,6 +160,18 @@
             "chains": {
                 "title": "Chaînes",
                 "description": "Jamais il n’a été aussi simple de créer et gérer des menus sur plusieurs sites."
+            },
+            "viewImage": {
+                "title": "Visuel & Appétissant",
+                "description": "Mettez vos plats en valeur avec des images de haute qualité. Parfait avec une connexion stable, offrant une première impression gourmande à vos clients."
+            },
+            "viewVideo": {
+                "title": "Vidéo Bouclée Captivante",
+                "description": "Donnez vie à votre menu grâce à des vidéos en boucle, comme un GIF. Idéal avec une connexion rapide pour une expérience culinaire immersive et dynamique."
+            },
+            "viewText": {
+                "title": "Toujours Accessible",
+                "description": "Quand la connexion est limitée, votre menu s’adapte et affiche immédiatement du texte clair. Simple, lisible et disponible à tout moment — aucun client laissé de côté."
             }
         },
         "tabs": {
@@ -197,6 +215,17 @@
                 "title": "Testez My Restaurant Menu gratuitement pendant 30 jours",
                 "bullets": {
                 "01": "Pendant vos 30 jours d’essai, nous créerons une application de démonstration avec une partie de votre menu. Vous gardez le contrôle et complétez le contenu comme vous le souhaitez via notre système modulaire."
+                }
+            },
+            "qrCode": {
+                "title": "QR Code intelligent pour une expérience culinaire moderne",
+                "bullets": {
+                "01": "Aucun téléchargement requis — vos clients scannent simplement et consultent le menu.",
+                "02": "Chargement rapide et fiable pour une expérience fluide au restaurant.",
+                "03": "Créez et gérez vos QR Codes directement dans la plateforme.",
+                "04": "Personnalisez votre QR Code avec l’image de marque de votre restaurant.",
+                "05": "Réduisez vos coûts d’impression en mettant votre menu à jour en temps réel.",
+                "06": "Proposez une solution moderne et sans contact que vos clients apprécieront."
                 }
             }
         },

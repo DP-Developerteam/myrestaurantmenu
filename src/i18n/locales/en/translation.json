@@ -96,8 +96,14 @@
       }
     },
     "cards": {
-      "titles": {
-        "industries": "We work with companies like yours"
+      "intro": {
+        "industries": {
+          "title": "We work with companies like yours"
+        },
+        "featureViews": {
+          "title": "How amazing is your menu with <boldRed>MyRestaurantMenu</boldRed>",
+          "description": "Our smart menu adapts to every situation: it automatically detects the client’s internet speed and displays the best version — video, image, or text. And with just one click, customers can switch views themselves, enjoying your menu the way they prefer. Always fast, always engaging."
+        }
       },
       "qrCode": {
         "title": "QR Code Menu",
@@ -154,6 +160,18 @@
       "chains": {
         "title": "Chains",
         "description": "Never before was so easy to create and maintain menus across different locations."
+      },
+      "viewImage": {
+        "title": "Visual & Appetizing",
+        "description": "Showcase your dishes with high-quality images. Perfect when the connection is stable, giving customers a delicious first impression."
+      },
+      "viewVideo": {
+        "title": "Engaging Video Loop",
+        "description": "Bring your menu to life with looping videos, like a GIF. Ideal for fast connections, creating an immersive and dynamic dining experience."
+      },
+      "viewText": {
+        "title": "Always Accessible",
+        "description": "When speed is limited, your menu adapts and shows plain text instantly. Simple, clear, and available anytime — no customer left behind."
       }
     },
     "tabs": {
@@ -197,6 +215,17 @@
         "title": "Test MyRestaurantMenu 30 days for free",
         "bullets": {
           "01": "During your 30-day test phase, we will create a sample app for you. This includes a small taste of your menu. You keep the reins in your hands and can complete the content as you wish using our simple modular system."
+        }
+      },
+      "qrCode": {
+        "title": "Smart QR Code for a Modern Dining Experience",
+        "bullets": {
+          "01": "No app downloads required — your customers just scan and view the menu.",
+          "02": "Fast and reliable loading for a smooth dining experience.",
+          "03": "Create and manage QR codes directly inside the platform.",
+          "04": "Customize your QR code with your restaurant’s branding.",
+          "05": "Reduce printing costs and update your menu in real time.",
+          "06": "Offer a modern, contactless solution that customers love."
         }
       }
     },

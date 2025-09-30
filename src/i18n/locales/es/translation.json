@@ -96,8 +96,14 @@
       }
     },
     "cards": {
-      "titles": {
-        "industries": "Trabajamos con negocios como el tuyo"
+      "intro": {
+        "industries": {
+          "title": "Trabajamos con negocios como el tuyo"
+        },
+        "featureViews": {
+          "title": "Qué increíble es tu menú con <boldRed>MyRestaurantMenu</boldRed>",
+          "description": "Nuestro menú inteligente se adapta a cada situación: detecta automáticamente la velocidad de internet del cliente y muestra la mejor versión — video, imagen o texto. Y con un solo clic, los clientes pueden cambiar la vista ellos mismos y disfrutar de tu menú como prefieran. Siempre rápido, siempre atractivo."
+        }
       },
       "qrCode": {
         "title": "Menú con Código QR",
@@ -154,6 +160,18 @@
       "chains": {
         "title": "Cadenas",
         "description": "Nunca fue tan fácil crear y mantener menús en distintas ubicaciones."
+      },
+      "viewImage": {
+        "title": "Visual y Apetitoso",
+        "description": "Muestra tus platos con imágenes de alta calidad. Perfecto cuando la conexión es estable, dando a tus clientes una primera impresión deliciosa."
+      },
+      "viewVideo": {
+        "title": "Bucle de Video Atractivo",
+        "description": "Da vida a tu menú con videos en bucle, como un GIF. Ideal para conexiones rápidas, creando una experiencia gastronómica inmersiva y dinámica."
+      },
+      "viewText": {
+        "title": "Siempre Accesible",
+        "description": "Cuando la velocidad es limitada, tu menú se adapta y muestra texto plano al instante. Simple, claro y disponible en todo momento — ningún cliente se queda atrás."
       }
     },
     "tabs": {
@@ -197,6 +215,17 @@
         "title": "Prueba MyRestaurantMenu gratis durante 30 días",
         "bullets": {
           "01": "Durante tu fase de prueba de 30 días, crearemos una aplicación de muestra para ti. Incluye una pequeña parte de tu menú. Tú mantienes el control y puedes completar el contenido como quieras con nuestro sistema modular."
+        }
+      },
+      "qrCode": {
+        "title": "Código QR inteligente para una experiencia gastronómica moderna",
+        "bullets": {
+          "01": "Sin necesidad de descargar apps: tus clientes solo escanean y ven el menú.",
+          "02": "Carga rápida y fiable para una experiencia gastronómica fluida.",
+          "03": "Crea y gestiona códigos QR directamente desde la plataforma.",
+          "04": "Personaliza tu código QR con la identidad de tu restaurante.",
+          "05": "Ahorra en costes de impresión actualizando el menú en tiempo real.",
+          "06": "Ofrece una solución moderna y sin contacto que encanta a los clientes."
         }
       }
     },
