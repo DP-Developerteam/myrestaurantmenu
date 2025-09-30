@@ -43,7 +43,7 @@
             gap: 1rem;
             width: 300px;
             max-width: 300px;
-            padding: 2rem;
+            padding: 1rem;
             border: none;
             border-radius: 2rem;
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
@@ -154,9 +154,10 @@
             @include displayFlex(row wrap, center, flex-stretch);
             .pricing-card {
                 justify-content: flex-start;
-                width: auto;
                 flex-shrink: 1;
+                width: auto;
                 max-width: 40%;
+                padding: 2rem;
             }
         }
     }
