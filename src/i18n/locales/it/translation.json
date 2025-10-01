@@ -33,7 +33,7 @@
                 "onlinePresence": "Presenza online professionale",
                 "streamline": "Ottimizza il servizio",
                 "grow": "Fai crescere il tuo ristorante",
-                "transparent": "<bold>Trasparente</bold> – nessun costo nascosto",
+                "transparent": "<bold>Trasparente</bold>",
                 "commission": "<boldRed>0% di commissioni</boldRed> – tieni il 100% delle vendite",
                 "flexible": "Piani mensili o annuali",
                 "customDomain": "Ottieni un sottodominio gratuito",
@@ -345,7 +345,15 @@
                 }
             }
         },
-        "pricingCards": {
+        "pricing": {
+            "tabs": {
+                "title": "<boldRed>Per prima cosa</boldRed> scegli il tipo di attività che hai",
+                "description": "Ricorda che puoi sempre modificare il tuo piano in qualsiasi momento, ottenere <bold>componenti aggiuntivi</bold> con le funzionalità che desideri. I nostri piani sono flessibili e possiamo <boldRed>crescere</boldRed> allo stesso tempo <boldRed>insieme</boldRed>.",
+                "restaurants": "Ristoranti",
+                "restaurantChains": "Catene di ristoranti",
+                "foodMarkets": "Mercati alimentari",
+                "festivals": "Festival"
+            },
             "common": {
                 "perMonth": "/ al mese",
                 "saveMoney": "Risparmia con il pagamento annuale",
@@ -445,6 +453,9 @@
                     }
                 }
             }
+        },
+        "promo": {
+            "setupFree": "Risparmia 120 € oggi — Configurazione del menu GRATIS per un periodo limitato"
         }
     },
     "ui": {

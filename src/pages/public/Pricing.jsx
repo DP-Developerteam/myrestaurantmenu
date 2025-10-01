@@ -2,7 +2,8 @@
 import '../../App.scss';
 // Import components
 import ComponentHero from "../../components/sections/Hero";
-import ComponentPricing from "../../components/sections/PricingCards";
+import ComponentPricing from "../../components/sections/PricingTabs";
+import PromoBannerLoop from '../../components/sections/PromoBannerLoop';
 // Import icons & images
 import ImgHero01 from "../../assets/img/hero-01.jpg";
 
@@ -37,101 +38,104 @@ const Pricing = () => {
             }
         ]
     }
+    const SectionPromo = {
+        "text": "section.promo.setupFree",
+    }
     const SectionRestaurantPricing = {
         "intro": {
-            "title": "section.pricingCards.restaurants.intro.title",
-            "description": "section.pricingCards.restaurants.intro.description"
+            "title": "section.pricing.restaurants.intro.title",
+            "description": "section.pricing.restaurants.intro.description"
         },
         "cardsData": [
             {
-                "title": "section.pricingCards.restaurants.plan01.title",
-                "description": "section.pricingCards.restaurants.plan01.description",
+                "title": "section.pricing.restaurants.plan01.title",
+                "description": "section.pricing.restaurants.plan01.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurants.plan01.price.monthly",
-                    "annual": "section.pricingCards.restaurants.plan01.price.annual"
+                    "monthly": "section.pricing.restaurants.plan01.price.monthly",
+                    "annual": "section.pricing.restaurants.plan01.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multilingual2",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
+                    "section.pricing.common.multilingual2",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
                 ],
                 "featureNotIncluded": [
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ]
             },
             {
-                "title": "section.pricingCards.restaurants.plan02.title",
-                "description": "section.pricingCards.restaurants.plan02.description",
+                "title": "section.pricing.restaurants.plan02.title",
+                "description": "section.pricing.restaurants.plan02.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurants.plan02.price.monthly",
-                    "annual": "section.pricingCards.restaurants.plan02.price.annual"
+                    "monthly": "section.pricing.restaurants.plan02.price.monthly",
+                    "annual": "section.pricing.restaurants.plan02.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multilingual2",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
+                    "section.pricing.common.multilingual2",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
                 ],
                 "featureNotIncluded": [
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ]
             },
             {
                 "cssClass": "highlighted",
-                "title": "section.pricingCards.restaurants.plan03.title",
-                "description": "section.pricingCards.restaurants.plan03.description",
+                "title": "section.pricing.restaurants.plan03.title",
+                "description": "section.pricing.restaurants.plan03.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurants.plan03.price.monthly",
-                    "annual": "section.pricingCards.restaurants.plan03.price.annual"
+                    "monthly": "section.pricing.restaurants.plan03.price.monthly",
+                    "annual": "section.pricing.restaurants.plan03.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multilingual4",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
+                    "section.pricing.common.multilingual4",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
                 ],
                 "featureNotIncluded": [
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ]
             },
             {
-                "title": "section.pricingCards.restaurants.plan04.title",
-                "description": "section.pricingCards.restaurants.plan04.description",
+                "title": "section.pricing.restaurants.plan04.title",
+                "description": "section.pricing.restaurants.plan04.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurants.plan04.price.monthly",
-                    "annual": "section.pricingCards.restaurants.plan04.price.annual"
+                    "monthly": "section.pricing.restaurants.plan04.price.monthly",
+                    "annual": "section.pricing.restaurants.plan04.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multilingual6",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.multilingual6",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ],
                 "featureNotIncluded": [
                 ]
@@ -140,138 +144,143 @@ const Pricing = () => {
     }
     const SectionRestaurantChainPricing = {
         "intro": {
-            "title": "section.pricingCards.restaurantChains.intro.title",
-            "description": "section.pricingCards.restaurantChains.intro.description"
+            "title": "section.pricing.restaurantChains.intro.title",
+            "description": "section.pricing.restaurantChains.intro.description"
         },
         "cardsData": [
             {
-                "title": "section.pricingCards.restaurantChains.plan01.title",
-                "description": "section.pricingCards.restaurantChains.plan01.description",
+                "title": "section.pricing.restaurantChains.plan01.title",
+                "description": "section.pricing.restaurantChains.plan01.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurantChains.plan01.price.monthly",
-                    "annual": "section.pricingCards.restaurantChains.plan01.price.annual"
+                    "monthly": "section.pricing.restaurantChains.plan01.price.monthly",
+                    "annual": "section.pricing.restaurantChains.plan01.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multiLocation",
-                    "section.pricingCards.common.centralDashboard",
-                    "section.pricingCards.common.multilingual2",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
+                    "section.pricing.common.multiLocation",
+                    "section.pricing.common.centralDashboard",
+                    "section.pricing.common.multilingual2",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
                 ],
                 "featureNotIncluded": [
-                    "section.pricingCards.common.branchManagement",
-                    "section.pricingCards.common.sharedLoyalty",
-                    "section.pricingCards.common.bulkDiscounts",
-                    "section.pricingCards.common.chainAnalytics",
-                    "section.pricingCards.common.images",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.branchManagement",
+                    "section.pricing.common.sharedLoyalty",
+                    "section.pricing.common.bulkDiscounts",
+                    "section.pricing.common.chainAnalytics",
+                    "section.pricing.common.images",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ]
             },
             {
-                "title": "section.pricingCards.restaurantChains.plan02.title",
-                "description": "section.pricingCards.restaurantChains.plan02.description",
+                "title": "section.pricing.restaurantChains.plan02.title",
+                "description": "section.pricing.restaurantChains.plan02.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurantChains.plan02.price.monthly",
-                    "annual": "section.pricingCards.restaurantChains.plan02.price.annual"
+                    "monthly": "section.pricing.restaurantChains.plan02.price.monthly",
+                    "annual": "section.pricing.restaurantChains.plan02.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multiLocation",
-                    "section.pricingCards.common.centralDashboard",
-                    "section.pricingCards.common.branchManagement",
-                    "section.pricingCards.common.multilingual2",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
+                    "section.pricing.common.multiLocation",
+                    "section.pricing.common.centralDashboard",
+                    "section.pricing.common.branchManagement",
+                    "section.pricing.common.multilingual2",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
                 ],
                 "featureNotIncluded": [
-                    "section.pricingCards.common.sharedLoyalty",
-                    "section.pricingCards.common.bulkDiscounts",
-                    "section.pricingCards.common.chainAnalytics",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.sharedLoyalty",
+                    "section.pricing.common.bulkDiscounts",
+                    "section.pricing.common.chainAnalytics",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ]
             },
             {
                 "cssClass": "highlighted",
-                "title": "section.pricingCards.restaurantChains.plan03.title",
-                "description": "section.pricingCards.restaurantChains.plan03.description",
+                "title": "section.pricing.restaurantChains.plan03.title",
+                "description": "section.pricing.restaurantChains.plan03.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurantChains.plan03.price.monthly",
-                    "annual": "section.pricingCards.restaurantChains.plan03.price.annual"
+                    "monthly": "section.pricing.restaurantChains.plan03.price.monthly",
+                    "annual": "section.pricing.restaurantChains.plan03.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multiLocation",
-                    "section.pricingCards.common.centralDashboard",
-                    "section.pricingCards.common.branchManagement",
-                    "section.pricingCards.common.sharedLoyalty",
-                    "section.pricingCards.common.multilingual4",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
+                    "section.pricing.common.multiLocation",
+                    "section.pricing.common.centralDashboard",
+                    "section.pricing.common.branchManagement",
+                    "section.pricing.common.sharedLoyalty",
+                    "section.pricing.common.multilingual4",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
                 ],
                 "featureNotIncluded": [
-                    "section.pricingCards.common.bulkDiscounts",
-                    "section.pricingCards.common.chainAnalytics",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.bulkDiscounts",
+                    "section.pricing.common.chainAnalytics",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ]
             },
             {
-                "title": "section.pricingCards.restaurantChains.plan04.title",
-                "description": "section.pricingCards.restaurantChains.plan04.description",
+                "title": "section.pricing.restaurantChains.plan04.title",
+                "description": "section.pricing.restaurantChains.plan04.description",
                 "price": {
-                    "monthly": "section.pricingCards.restaurantChains.plan04.price.monthly",
-                    "annual": "section.pricingCards.restaurantChains.plan04.price.annual"
+                    "monthly": "section.pricing.restaurantChains.plan04.price.monthly",
+                    "annual": "section.pricing.restaurantChains.plan04.price.annual"
                 },
                 "featureIncluded": [
-                    "section.pricingCards.common.multiLocation",
-                    "section.pricingCards.common.centralDashboard",
-                    "section.pricingCards.common.branchManagement",
-                    "section.pricingCards.common.sharedLoyalty",
-                    "section.pricingCards.common.bulkDiscounts",
-                    "section.pricingCards.common.chainAnalytics",
-                    "section.pricingCards.common.multilingual6",
-                    "section.pricingCards.common.qrCode",
-                    "section.pricingCards.common.customization",
-                    "section.pricingCards.common.url",
-                    "section.pricingCards.common.images",
-                    "section.pricingCards.common.video",
-                    "section.pricingCards.common.booking",
-                    "section.pricingCards.common.giftCard",
-                    "section.pricingCards.common.clientSignIn",
-                    "section.pricingCards.common.popUp",
-                    "section.pricingCards.common.emailMarketing",
+                    "section.pricing.common.multiLocation",
+                    "section.pricing.common.centralDashboard",
+                    "section.pricing.common.branchManagement",
+                    "section.pricing.common.sharedLoyalty",
+                    "section.pricing.common.bulkDiscounts",
+                    "section.pricing.common.chainAnalytics",
+                    "section.pricing.common.multilingual6",
+                    "section.pricing.common.qrCode",
+                    "section.pricing.common.customization",
+                    "section.pricing.common.url",
+                    "section.pricing.common.images",
+                    "section.pricing.common.video",
+                    "section.pricing.common.booking",
+                    "section.pricing.common.giftCard",
+                    "section.pricing.common.clientSignIn",
+                    "section.pricing.common.popUp",
+                    "section.pricing.common.emailMarketing",
                 ],
                 "featureNotIncluded": [
                 ]
             },
         ]
     }
+    const pricingData = {
+        "restaurants": SectionRestaurantPricing,
+        "restaurantChains": SectionRestaurantChainPricing,
+        "cssClass": "section-overflow-background section-tabs-bullet-icon",
+        "backgroundOverflow": "background-gradient-light-diagonal"
+    };
 
 
     return (
-        <div className='page page-pricing'>
-            <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
-            <ComponentPricing intro={SectionRestaurantPricing.intro} cardsData={SectionRestaurantPricing.cardsData} />
-            <ComponentPricing intro={SectionRestaurantChainPricing.intro} cardsData={SectionRestaurantChainPricing.cardsData} />
-
-        </div>
+            <div className='page page-pricing'>
+                <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
+                <PromoBannerLoop text={SectionPromo.text}/>
+                <ComponentPricing pricingData={pricingData} cssClass={pricingData.cssClass} backgroundOverflow={pricingData.backgroundOverflow} />
+            </div>
     )
 }
 

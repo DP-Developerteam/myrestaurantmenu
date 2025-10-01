@@ -59,19 +59,28 @@
     color: $COLORS-base-100;
 }
 
-.section-text-block,
-.section-status {
-    @include displayFlex(column nowrap, flex-start, stretch);
-    max-width: 800px;
-}
-
 // ### LAYOUT PAGE
 .page {
     @include displayFlex(column nowrap, flex-start, center);
 }
 
-.section-status {
+.page-pricing {
+    .promo-banner-container {
+        margin: 8rem 0 0;
+    }
+}
 
+
+//////////////////
+//////////////////
+//////////////////
+/// THIS ARE ONLY TEMPORARY STYLES for legal text pages and status page
+
+.section-text-block, .section-status {
+    @include displayFlex(column nowrap, flex-start, stretch);
+    max-width: 800px;
+}
+.section-status {
     header {
         text-align: center;
         margin-bottom: 24px;

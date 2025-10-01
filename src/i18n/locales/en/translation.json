@@ -33,7 +33,7 @@
           "onlinePresence": "Professional online presence",
           "streamline": "Streamline service",
           "grow": "Grow your restaurant",
-          "transparent": "<bold>Transparent</bold> - no hidden fees",
+          "transparent": "<bold>Transparent</bold>",
           "commission": "<boldRed>0% comission</boldRed> - keep 100% of your sales",
           "flexible": "Monthly or annual plans",
           "customDomain": "Get subdomain for free",
@@ -345,7 +345,15 @@
         }
       }
     },
-    "pricingCards": {
+    "pricing": {
+      "tabs": {
+        "title": "<boldRed>First</boldRed> choose what kind of business you have",
+        "description": "Remember that you can always change your plan on the go, get <bold>adds-on</bold> with the features you want. Our plans are flexible and we can <boldRed>grow</boldRed> at the same time <boldRed>together</boldRed>",
+        "restaurants": "Restaurants",
+        "restaurantChains": "Restaurant Chains",
+        "foodMarkets": "Food Markets",
+        "festivals": "Festivals"
+      },
       "common": {
         "perMonth": "/ per month",
         "saveMoney": "Save money with annual payment",
@@ -445,6 +453,9 @@
           }
         }
       }
+    },
+    "promo": {
+      "setupFree": "Save 120€ Today — Menu Setup is FREE for a Limited Time"
     }
   },
   "ui": {

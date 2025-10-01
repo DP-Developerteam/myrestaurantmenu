@@ -1,4 +1,4 @@
-// src/styles/com-se.pricing-cards.scss
+// src/styles/com-se.pricing.scss
 
 
 @use './_base.variables.scss' as *;
@@ -9,22 +9,57 @@
 
 .section-pricing {
     @include displayFlex(column nowrap, center, center);
+    margin: 6rem 0;
+    position: relative;
 
+    .section-title, .section-description {
+        z-index: 2;
+        text-align: center;
+        max-width: 750px
+    }
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: -2rem;
+    }
+    .section-description {
+        font-size: 1.1rem;
+    }
+
+    .tabs-buttons-container {
+        @include displayFlex(row wrap, center, center);
+        width: 100%;
+        max-width: 420px;
+        z-index: 2;
+    }
+    .line-red {
+        height: 0;
+        width: 80%;
+        max-width: 600px;
+        border: solid 0.5px $COLORS-red-900;
+        border-color: $COLORS-red-900;
+        margin: 0 0 1rem;
+        z-index: 2;
+    }
     .intro-text {
         @include displayFlex(column nowrap, center, center);
-        max-width: 600px;
+        max-width: 750px;
         text-align: center;
         .title {
-            font-size: 2rem;
+            font-size: 1.8rem;
             .font-red {
                 white-space: nowrap;
                 display: inline-block;
             }
         }
+        .description {
+            font-size: 1.1rem;
+        }
+        z-index: 2;
     }
     .tariff-selection-container{
         @include displayFlex(column nowrap, center, center);
         gap: 0.4rem;
+        z-index: 2;
     }
     .pricing-cards-container {
         @include displayFlex(row nowrap, flex-start, flex-start);
@@ -33,9 +68,8 @@
         overflow-x: auto;
         will-change: transform, opacity;
         scrollbar-width: none;
-        &::-webkit-scrollbar {
-            display: none;
-        }
+            &::-webkit-scrollbar { display: none; }
+        z-index: 2;
         .pricing-card {
             @include displayFlex(column nowrap, center, center);
             flex-grow: 1;
@@ -46,6 +80,7 @@
             padding: 1rem;
             border: none;
             border-radius: 2rem;
+            background-color: rgba($COLORS-base-100, 0.6);
             box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.25);
             transition: all 0.3s ease-in-out;
             .title {
@@ -150,6 +185,9 @@
 
     }
     @media (min-width: 691px) {
+        .tabs-buttons-container {
+            max-width: 100%;
+        }
         .pricing-cards-container {
             @include displayFlex(row wrap, center, flex-stretch);
             .pricing-card {

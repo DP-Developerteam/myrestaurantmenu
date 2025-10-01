@@ -1,18 +1,17 @@
 // Import styles and libraries
-import './../../styles/com-se.pricing-cards.scss';
 import { useState, useRef } from 'react';
 import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
 import useMediaQuery from '../../hooks/useMediaQuery';
 // Import components
-import Button from '../ui/Button';
+import Button from './Button';
 // Import icons & images
-import { IconArrow } from '../ui/Icons';
-import { IconCheck } from '../../components/ui/Icons';
+import { IconArrow } from './Icons';
+import { IconCheck } from './Icons';
 
 
-const PricingCards = ({intro, cardsData, cssClass}) => {
+const PricingCards = ({intro, cardsData}) => {
     // States for translations
     const { t } = useTranslation();
 
@@ -103,7 +102,7 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
                         onClick={() => handleTariffOption()}
                     />
                 </div>
-                <p className='font-smaller'>{t('section.pricingCards.common.saveMoney')}</p>
+                <p className='font-smaller'>{t('section.pricing.common.saveMoney')}</p>
             </div>
         )
     }
@@ -124,8 +123,8 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
                     </>
                 }
                 <div className='complementary-text'>
-                    <p className='font-smaller'>{t('section.pricingCards.common.perMonth')}</p>
-                    <p className='font-smaller'>{t('section.pricingCards.common.saveMoney')}</p>
+                    <p className='font-smaller'>{t('section.pricing.common.perMonth')}</p>
+                    <p className='font-smaller'>{t('section.pricing.common.saveMoney')}</p>
                 </div>
                 {isPhone ?
                     <Button
@@ -189,13 +188,13 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
     }
 
     return (
-        <section className={`section section-pricing ${cssClass}`} >
+        <>
             {intro && renderIntroText()}
             {renderButtons()}
             <div className='pricing-cards-container'>
                 {cardsData.map(renderCards)}
             </div>
-        </section>
+        </>
     )
 }
 
