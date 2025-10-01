@@ -1,6 +1,6 @@
 // Import styles and libraries
 import './../../styles/com-se.pricing-cards.scss';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Trans } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 // Import hooks
@@ -19,6 +19,12 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
     // Use Media query hook
     const isPhone = useMediaQuery('(max-width: 690px)');
 
+    // Use ref for timeout
+    const timeoutRef = useRef(null);
+
+    // State to disble button. Debouncce
+    const [isDisabled, setIsDisabled] = useState(false);
+
     // State to show/hide includes
     const [isIncludes, setIsIncludes] = useState(false)
 
@@ -27,6 +33,19 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
 
     // States for tariff
     const [isTariff, setIsTariff] = useState(true)
+
+    // Handle tariff
+    function handleTariffOption() {
+        if (isDisabled) return;
+
+        setIsTariff(!isTariff);
+        setIsDisabled(true);
+
+        // allow clicks again after 300ms
+        timeoutRef.current = setTimeout(() => {
+            setIsDisabled(false);
+        }, 600);
+    }
 
     // Handle includes
     function handleIncludes(index) {
@@ -42,11 +61,6 @@ const PricingCards = ({intro, cardsData, cssClass}) => {
             // Expanding - show immediately
             setIsIncludes(prev => ({ ...prev, [index]: true }));
         }
-    }
-
-    // Handle tariff
-    function handleTariffOption() {
-        setIsTariff(!isTariff);
     }
 
     // Render intro text
