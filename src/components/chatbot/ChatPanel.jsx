@@ -8,6 +8,8 @@ import { useIntents } from './intents';
 // Import forms
 import LeadForm from './forms/LeadForm';
 import TrialForm from './forms/TrialForm';
+import RegisterForm from './forms/RegisterForm';
+import IssueForm from './forms/IssueForm';
 // Import generators
 import { paraphraseRuleBased, paraphraseGemini } from "./generators/index.js";
 // Import ...
@@ -32,8 +34,8 @@ import { logEvent } from "./analytics";
 const FORM_REGISTRY = {
     lead: LeadForm,
     trial: TrialForm,
-    // register: RegisterForm,
-    // issue: IssueForm,
+    register: RegisterForm,
+    issue: IssueForm,
 };
 
 // Declare options
@@ -45,7 +47,7 @@ const DEFAULT_OPTIONS = [
 
 
 
-export default function ChatPanel({ onClose, initialForm = null, initialPrefill = {}, openWithOptions = false }) {
+export default function ChatPanel({ onClose, initialForm = null, initialPrefill = {}, openWithOptions = false, initialFormToken = 0 }) {
     // States for translations
     const { t, i18n } = useTranslation();
     const lang = i18n.language || 'en';
@@ -63,8 +65,9 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     const [input, setInput] = useState('');
     const [isTyping, setIsTyping] = useState(false);
 
-    // State to ref last message and input focus
+    // State to ref last message container and input focus
     const messagesEndRef = useRef(null);
+    const messagesContainerRef = useRef(null);
     const inputRef = useRef(null);
 
     // State for FAQ cache by language
@@ -74,6 +77,16 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     const [activeForm, setActiveForm] = useState(initialForm);
     const [activePrefill, setActivePrefill] = useState(initialPrefill || {});
     const optionsInjectedRef = useRef(false);
+
+    // React to external triggers: if parent passes a new `initialForm` (or token)
+    // open that form inside the chat. The token allows the parent to re-trigger
+    // the same form multiple times.
+    useEffect(() => {
+        if (initialForm && initialForm !== activeForm) {
+            openFormAction({ formId: initialForm, prefill: initialPrefill || {} });
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [initialForm, initialFormToken]);
 
     // Reset injected ref if localStorage has been cleared
     useEffect(() => {
@@ -97,9 +110,17 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     }, [lang]);
 
     // Auto-scroll to last message when typing, new message or form changes
+    // Use the messages container scroll to avoid forcing the browser to scroll the whole page.
     useEffect(() => {
-        if (messagesEndRef.current) {
-            messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+        const el = messagesContainerRef.current;
+        if (!el) return;
+        // Scroll the container to its bottom. This keeps the viewport stable while only the
+        // chat messages area scrolls.
+        try {
+            el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
+        } catch {
+            // Fallback for older browsers
+            el.scrollTop = el.scrollHeight;
         }
     }, [messages, isTyping, activeForm]);
 
@@ -135,7 +156,13 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
         const el = inputRef.current;
         if (!el) return;
         requestAnimationFrame(() => {
-            el.focus();
+            // Try to focus without causing the browser to scroll the page.
+            try {
+                el.focus({ preventScroll: true });
+            } catch {
+                // Some browsers don't support the options object.
+                el.focus();
+            }
             const len = el.value?.length ?? 0;
             el.setSelectionRange?.(len, len);
         });
@@ -319,7 +346,7 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
                     <h4 className='font-larger'>{t('chatbot.header')}</h4>
                     <button onClick={onClose} aria-label='Close chat' className='chatbox-close font-small font-red font-bold'>✖</button>
                 </header>
-                <main className='chatbox-messages'>
+                <main className='chatbox-messages' ref={messagesContainerRef}>
                     {messages.map((msg, i) => (
                         <div key={i} className={`message ${msg.role}`}>
                             {msg.type === "options" ? (

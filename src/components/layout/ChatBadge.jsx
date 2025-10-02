@@ -54,20 +54,49 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
         return () => window.removeEventListener("chat:open", handleOpenChat);
     }, [toggleOpen]);
 
-    // Lock/unlock background scroll
+    // Lock/unlock background scroll by intercepting scroll events.
+    // This avoids changing body styles (position:fixed) which can cause
+    // visual jumps on some browsers. Instead we prevent wheel/touchmove
+    // unless the event target is inside the chat messages container.
     useEffect(() => {
-        if (open) {
-            const y = window.scrollY;
-            document.body.style.position = 'fixed';
-            document.body.style.top = `-${y}px`;
-            document.body.style.width = '100%';
-            return () => {
-                document.body.style.position = '';
-                document.body.style.top = '';
-                document.body.style.width = '';
-                window.scrollTo(0, y);
-            };
+        if (!open) return;
+
+        const allowScrollSelector = '.chatbox-messages';
+
+        function isInsideAllow(el) {
+            if (!el) return false;
+            return !!el.closest?.(allowScrollSelector);
         }
+
+        function onWheel(e) {
+            if (!isInsideAllow(e.target)) {
+                e.preventDefault();
+            }
+        }
+
+        function onTouchMove(e) {
+            if (!isInsideAllow(e.target)) {
+                e.preventDefault();
+            }
+        }
+
+        function onKeyDown(e) {
+            // prevent page up/down, space, home/end unless focus is inside chat
+            const keys = ['PageUp', 'PageDown', ' ', 'Home', 'End', 'ArrowUp', 'ArrowDown'];
+            if (keys.includes(e.key) && !isInsideAllow(document.activeElement)) {
+                e.preventDefault();
+            }
+        }
+
+        window.addEventListener('wheel', onWheel, { passive: false });
+        window.addEventListener('touchmove', onTouchMove, { passive: false });
+        window.addEventListener('keydown', onKeyDown, { passive: false });
+
+        return () => {
+            window.removeEventListener('wheel', onWheel);
+            window.removeEventListener('touchmove', onTouchMove);
+            window.removeEventListener('keydown', onKeyDown);
+        };
     }, [open]);
 
     // State for touch devices
@@ -155,7 +184,7 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
                     toggleOpen(true);
                 }}
             >
-                <img src={ImgChatBadge} alt='' aria-hidden='true' />
+                <img src={ImgChatBadge} alt='chat bubble image' aria-hidden='true' />
             </button>
             {open && createPortal(renderChatBox(), document.body)}
         </>

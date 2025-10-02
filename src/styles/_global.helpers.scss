@@ -29,6 +29,34 @@
     gap: 30px;
 }
 
+// Global input / textarea styles
+input, textarea, select {
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: $COLORS-base-900;
+    background: $COLORS-base-200;
+    border: 1px solid transparent;
+    padding: 0.55rem 0.65rem;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba($COLORS-base-900, 0.5);
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    border-color: rgba($COLORS-red-900, 0.15);
+    transform: translateY(-1px);
+}
+
+textarea {
+    min-height: 6rem;
+    resize: vertical;
+}
+
 // Background style helpers
 // Section with overflow background
 .section.section-overflow-background {

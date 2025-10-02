@@ -3,6 +3,7 @@
 
 @use './_base.variables.scss' as *;
 @use './_base.mixins.scss' as *;
+@use './com-ui.forms.scss' as *;
 
 
 // ### Styles for ./components/layout/ChatBadge
@@ -24,9 +25,9 @@
     z-index: 10;
     box-sizing: border-box;
     cursor: pointer;
-    // hover bounce
+    // hover bounce (badge)
     &:hover {
-        animation: bounce 0.6s ease;
+        animation: badge-bounce 0.6s ease;
     }
     img {
         object-fit: contain;
@@ -89,6 +90,8 @@
             padding: 1rem;
             font-size: 0.9rem;
             overflow-y: auto;
+            /* Avoid layout-driven page jumps when new messages are added */
+            overflow-anchor: none;
                 -webkit-overflow-scrolling: touch;
             scrollbar-width: none;
                 -ms-overflow-style: none;  /* IE and Edge */
@@ -128,7 +131,7 @@
                     background: #555;
                     border-radius: 50%;
                     display: inline-block;
-                    animation: bounce 1.4s infinite;
+                    animation: dot-bounce 1.4s infinite;
                 }
 
                 .dot:nth-child(1) {
@@ -142,7 +145,7 @@
                 }
             }
 
-            @keyframes bounce {
+            @keyframes dot-bounce {
                 0%, 80%, 100% {
                     transform: scale(0.6);
                     opacity: 0.5;
@@ -156,52 +159,10 @@
 
             .chat-options {
                 @include displayFlex(column wrap, flex-start, stretch);
-                gap: 0.4rem;
-                width: 100%;
-                .chat-option {
-                    border: none;
-                    background: $COLORS-red-900;
-                    color: white;
-                    padding: 0.5rem;
-                    border-radius: 6px;
-                    cursor: pointer;
-                    transition: background 0.2s;
-                    &:hover {
-                        background: transparent;
-                        background-image: $COLORS-gradient-red-diagonal
-                    }
-                }
             }
 
-            .lead-form {
+            .form-container {
                 @include displayFlex(column nowrap, flex-start, stretch);
-                background: $COLORS-base-200;
-                width: 100%;
-                label, input {
-                    all: unset;
-                    // width: 100%;
-                }
-                label {
-                    @include fontSans(0.75rem, 400, inherit);
-                }
-                input {
-                    background: $COLORS-base-100;
-                    padding: 0.5rem 0.8rem;
-                    margin: 0.4rem 0;
-                    border-radius: 8px;
-                    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
-                        -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
-                        -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.2) inset;
-                    // avoid text-lines out of the message container
-                    word-wrap: break-word;
-                    overflow-wrap: break-word;
-                    word-break: break-word;
-                    max-width: 100%;
-                    white-space: pre-wrap;
-                }
-                input:last-of-type {
-                    margin-bottom: 2rem;
-                }
             }
         }
 
@@ -224,7 +185,7 @@
                 min-height: 44px;
                 outline: none;
                 color: $COLORS-base-900;
-                background-color: $COLORS-base-200;
+                background-color: transparent; // inherit from global
                 caret-color: $COLORS-base-900;
             }
 
@@ -238,11 +199,10 @@
         }
 
         @media (min-width: 650px) {
-            right: 30px;
+            top: 70px;
             bottom: 130px;
-            width: 300px;
-            min-height: 400px;
-            max-height: 70dvh;
+            width: 500px;
+            height: calc(100dvh - 200px);
         }
     }
     .chatbox.chatbox--touch {
@@ -263,7 +223,7 @@
         transform: translateY(0);
     }
 }
-@keyframes bounce {
+@keyframes badge-bounce {
     0%   { transform: translateY(0); }
     30%  { transform: translateY(-8px) scale(1.05); }
     50%  { transform: translateY(0); }

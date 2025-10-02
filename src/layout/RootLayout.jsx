@@ -1,6 +1,6 @@
 // Import libs
 import { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 // Import custom hooks
 import { useScrollToTop } from "../hooks/useScrollToTop";
 // Import components
@@ -13,6 +13,7 @@ function RootLayout() {
 
     // State to manage chat badge
     const [isChatOpen, setIsChatOpen] = useState(false);
+    const location = useLocation();
 
     // Call custom hook for auto-scroll to top on navigation
     useScrollToTop();
@@ -22,7 +23,9 @@ function RootLayout() {
         <div className='dp-wrapper'>
             <ScrollTopButton />
             <Header />
-            <ChatBadge isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
+            {location.pathname !== '/salesconsultant' && (
+                <ChatBadge isOpen={isChatOpen} setIsOpen={setIsChatOpen} />
+            )}
             <div className='dp-content'>
                 <Outlet context={{ setIsChatOpen }} />
             </div>

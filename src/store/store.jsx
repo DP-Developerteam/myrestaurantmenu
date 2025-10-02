@@ -9,6 +9,7 @@ import storage from 'redux-persist/lib/storage'; // defaults to localStorage for
 
 
 // Dummy reducer that just returns state as is
+/* eslint-disable-next-line no-unused-vars */
 const dummyReducer = (state = {}, action) => state;
 
 // Configuration object for redux-persist
