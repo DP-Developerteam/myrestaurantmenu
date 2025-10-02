@@ -472,10 +472,20 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
                         placeholder={t('chatbot.placeholder')}
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        onKeyDown={(e) => e.key === 'Enter' && handleSend()}
-                        disabled={activeForm !== null || isTyping}
+                        onKeyDown={(e) => {
+                            // Only send on Enter when send button would be enabled
+                            const sendEnabled = !(isTyping || activeForm !== null) && input.trim().length > 0;
+                            if (e.key === 'Enter' && sendEnabled) {
+                                handleSend();
+                            }
+                        }}
+                        // Input should remain focusable at all times on mobile to avoid odd behaviour
                     />
-                    <button onClick={handleSend} disabled={activeForm !== null} >{t('chatbot.send')}</button>
+                    <button
+                        onClick={handleSend}
+                        // Disable send when typing, when a form is open, or when there's no input
+                        disabled={isTyping || activeForm !== null || input.trim().length === 0}
+                    >{t('chatbot.send')}</button>
                     {/* <button onClick={exportConversations}>{t('chatbot.export')}</button> */}
                 </footer>
             </>
