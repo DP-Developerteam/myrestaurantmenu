@@ -155,7 +155,6 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
                                         localStorage.setItem("chatbot_options_seen", "true");
                                         setOptionsSeen(true);
                                     }
-
                                     // mark options as *not yet shown* until ChatPanel injects the
                                     localStorage.removeItem("chatbot_options_seen");
                                     setOptionsSeen(false);
