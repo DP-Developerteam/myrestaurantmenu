@@ -34,7 +34,10 @@
                 @include hoverPointer();
                 @include fontSans(0.85rem, 400, $COLORS-base-900);
             }
-            .tab:hover {
+            .tab.active {
+                font-weight: 600;
+            }
+            .tab.active, .tab:hover {
                 text-decoration: underline;
             }
             .nav-links {

@@ -17,6 +17,8 @@
     height: 50px;
     padding: 0 20px;
     background-color: $COLORS-base-100;
+    box-shadow: inset 0px -4px 10px -2px rgba(0,0,0,0.1);
+        -webkit-box-shadow: inset 0px -4px 10px -2px rgba(0,0,0,0.1);
     .logo {
         @include hoverPointer();
         height: 30px;
@@ -29,6 +31,10 @@
             @include hoverPointer();
             margin: 10px 0;
             @include fontSans(1.05rem, 400, $COLORS-base-900);
+        }
+        .tab.active {
+            color: $COLORS-red-900;
+            font-weight: 600;
         }
         .btn-solid-red {
             @include fontSans(1.05rem, 600, $COLORS-base-100);
@@ -88,6 +94,13 @@
             margin: 10px 0;
             @include fontSans(1.5rem, 600, $COLORS-base-100);
         }
+        .tab.active {
+            color: $COLORS-red-900;
+            font-weight: 700;
+            background-color: $COLORS-base-100;
+            padding: 0.15rem 2rem;
+            border-radius: 0.4rem;
+        }
         .dropdown-languages-box {
             position: absolute;
             top: 1rem;
@@ -113,4 +126,9 @@
         max-width: 1430px;
         border-radius: 0 0 5px 5px;
     }
+}
+
+@keyframes expand-menu {
+    from { clip-path: circle(0% at 100% 0%); }
+    to { clip-path: circle(150% at 100% 0%); }
 }
