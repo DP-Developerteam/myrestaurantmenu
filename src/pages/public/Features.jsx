@@ -135,7 +135,14 @@ const Features = () => {
                     "alt": "Description",
                     "width": 300,
                     "height": 300,
-                }
+                },
+                "buttons": [
+                    {
+                        text: "ui.buttons.qrCodes",
+                        cssClass: "btn-solid-red btn-hover-gradient-red",
+                        to: "/qrcodes"
+                    }
+                ]
             }
         ],
         "cssClass": "section-overflow-background section-tabs-bullet-icon",
