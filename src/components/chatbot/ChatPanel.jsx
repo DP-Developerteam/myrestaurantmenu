@@ -89,6 +89,7 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
             const kb = Math.max(0, inner - (window.visualViewport?.height || inner));
             const chatBottom = getComputedStyle(document.documentElement).getPropertyValue('--chat-bottom') || '';
             setDebugInfo({ vvHeight: Math.round(vv), innerHeight: inner, keyboard: kb, chatBottom });
+            console.log('[chat-debug]', { vv: Math.round(vv), inner, kb, chatBottom });
         }
         updateDebug();
         window.addEventListener('resize', updateDebug);
@@ -99,6 +100,20 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
             window.visualViewport?.removeEventListener('resize', updateDebug);
             window.visualViewport?.removeEventListener('scroll', updateDebug);
         };
+    }, [isDev]);
+
+    // In dev, try to focus the input shortly after mount so mobile keyboard appears
+    useEffect(() => {
+        if (!isDev) return;
+        const t = setTimeout(() => {
+            try {
+                inputRef?.current?.focus?.({ preventScroll: true });
+                console.log('[chat-debug] attempted focus to inputRef');
+            } catch {
+                try { inputRef?.current?.focus(); } catch { console.debug('focus fallback failed'); }
+            }
+        }, 600);
+        return () => clearTimeout(t);
     }, [isDev]);
 
     // React to external triggers: if parent passes a new `initialForm` (or token)
