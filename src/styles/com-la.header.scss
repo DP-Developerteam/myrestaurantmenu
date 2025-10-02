@@ -39,6 +39,9 @@
         .btn-solid-red {
             @include fontSans(1.05rem, 600, $COLORS-base-100);
         }
+        .btn-solid-red.active {
+            color: $COLORS-base-100;
+        }
         .language-toggle {
             @include hoverPointer();
         }
