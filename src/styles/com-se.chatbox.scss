@@ -46,6 +46,9 @@
 
         .chatbox-header {
             display: none;
+            position: sticky;
+            top: 0;
+            z-index: 2;
         }
         .chatbox-messages {
             @include displayFlex(column nowrap, flex-start, flex-start);
@@ -138,6 +141,7 @@
         .chatbox-footer {
             display: flex;
             border-top: 1px solid #eee;
+            padding-bottom: env(safe-area-inset-bottom);
 
             input {
                 flex: 1;

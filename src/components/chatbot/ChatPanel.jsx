@@ -78,6 +78,29 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     const [activePrefill, setActivePrefill] = useState(initialPrefill || {});
     const optionsInjectedRef = useRef(false);
 
+    // Dev-only debug info about visual viewport and computed CSS vars
+    const isDev = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.DEV;
+    const [debugInfo, setDebugInfo] = useState({ vvHeight: 0, innerHeight: 0, keyboard: 0, chatBottom: '' });
+    useEffect(() => {
+        if (!isDev) return;
+        function updateDebug() {
+            const vv = window.visualViewport?.height || 0;
+            const inner = window.innerHeight || 0;
+            const kb = Math.max(0, inner - (window.visualViewport?.height || inner));
+            const chatBottom = getComputedStyle(document.documentElement).getPropertyValue('--chat-bottom') || '';
+            setDebugInfo({ vvHeight: Math.round(vv), innerHeight: inner, keyboard: kb, chatBottom });
+        }
+        updateDebug();
+        window.addEventListener('resize', updateDebug);
+        window.visualViewport?.addEventListener('resize', updateDebug);
+        window.visualViewport?.addEventListener('scroll', updateDebug);
+        return () => {
+            window.removeEventListener('resize', updateDebug);
+            window.visualViewport?.removeEventListener('resize', updateDebug);
+            window.visualViewport?.removeEventListener('scroll', updateDebug);
+        };
+    }, [isDev]);
+
     // React to external triggers: if parent passes a new `initialForm` (or token)
     // open that form inside the chat. The token allows the parent to re-trigger
     // the same form multiple times.
@@ -346,6 +369,14 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
                     <h4 className='font-larger'>{t('chatbot.header')}</h4>
                     <button onClick={onClose} aria-label='Close chat' className='chatbox-close font-small font-red font-bold'>✖</button>
                 </header>
+                {isDev && (
+                    <div className="chat-debug" aria-hidden="true">
+                        <div>vvh: {debugInfo.vvHeight}px</div>
+                        <div>innerH: {debugInfo.innerHeight}px</div>
+                        <div>kb: {debugInfo.keyboard}px</div>
+                        <div>--chat-bottom: {debugInfo.chatBottom}</div>
+                    </div>
+                )}
                 <main className='chatbox-messages' ref={messagesContainerRef}>
                     {messages.map((msg, i) => (
                         <div key={i} className={`message ${msg.role}`}>

@@ -113,8 +113,16 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
         const setVH = () => {
             if (raf) cancelAnimationFrame(raf);
             raf = requestAnimationFrame(() => {
-                const h = (window.visualViewport?.height || window.innerHeight) * 0.01;
-                document.documentElement.style.setProperty('--vh', `${h}px`);
+                const vvHeight = window.visualViewport?.height || window.innerHeight;
+                const windowInner = window.innerHeight;
+                // Visual viewport height as a pixel value
+                document.documentElement.style.setProperty('--vvh', `${vvHeight}px`);
+                // Keyboard height (approx) = window.innerHeight - visualViewport.height
+                const kb = Math.max(0, windowInner - vvHeight);
+                document.documentElement.style.setProperty('--keyboard-height', `${kb}px`);
+                // Chat bottom offset: 10px above keyboard (minimum 10px)
+                const chatBottom = Math.max(10, kb + 10);
+                document.documentElement.style.setProperty('--chat-bottom', `${chatBottom}px`);
             });
         };
         setVH();
