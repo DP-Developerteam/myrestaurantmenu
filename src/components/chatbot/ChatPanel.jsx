@@ -152,14 +152,37 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     useEffect(() => {
         const el = messagesContainerRef.current;
         if (!el) return;
-        // Scroll the container to its bottom. This keeps the viewport stable while only the
-        // chat messages area scrolls.
-        try {
-            el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
-        } catch {
-            // Fallback for older browsers
-            el.scrollTop = el.scrollHeight;
-        }
+
+        // Robust scroll-to-bottom helper: attempt immediate scroll, then retry on
+        // next animation frames and after a short timeout. Also scroll the messagesEndRef
+        // element into view (this scrolls the container, not the page, because the ref
+        // is inside the container).
+        const scrollToBottom = () => {
+            try {
+                el.scrollTo({ top: el.scrollHeight, behavior: 'smooth' });
+            } catch {
+                el.scrollTop = el.scrollHeight;
+            }
+            try {
+                if (messagesEndRef.current) messagesEndRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
+            } catch (err) { console.debug('scrollIntoView failed', err); }
+        };
+
+        // run a few retries to handle images or dynamically sized content
+        scrollToBottom();
+        requestAnimationFrame(() => scrollToBottom());
+        requestAnimationFrame(() => requestAnimationFrame(() => scrollToBottom()));
+        const timer = setTimeout(() => scrollToBottom(), 150);
+
+        // If the messages contain images that load after render, ensure we scroll when they finish loading
+        const imgs = Array.from(el.querySelectorAll('img'));
+        const onImgLoad = () => scrollToBottom();
+        imgs.forEach(img => img.addEventListener('load', onImgLoad));
+
+        return () => {
+            clearTimeout(timer);
+            imgs.forEach(img => img.removeEventListener('load', onImgLoad));
+        };
     }, [messages, isTyping, activeForm]);
 
     // // Persist conversation on unmount
