@@ -456,6 +456,10 @@
     },
     "promo": {
       "setupFree": "Spare heute 120 € — Menüeinrichtung KOSTENLOS für begrenzte Zeit"
+    },
+    "salesConsultant": {
+      "title": "Lernen Sie Ihren KI-Verkaufsberater kennen",
+      "description": "Unser KI-gestützter Verkaufsberater hilft Ihnen, den perfekten Plan für Ihr Restaurant zu finden. Erhalten Sie personalisierte Empfehlungen basierend auf Ihren Bedürfnissen und Ihrem Budget."
     }
   },
   "ui": {

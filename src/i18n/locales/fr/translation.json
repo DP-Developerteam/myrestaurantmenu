@@ -456,6 +456,10 @@
         },
         "promo": {
             "setupFree": "Économisez 120 € aujourd’hui — Configuration du menu GRATUITE pour une durée limitée"
+        },
+        "salesConsultant": {
+            "title": "Rencontrez votre consultant commercial IA",
+            "description": "Notre consultant commercial alimenté par l’IA est là pour vous aider à trouver le plan parfait pour votre restaurant. Obtenez des recommandations personnalisées selon vos besoins et votre budget."
         }
     },
     "ui": {

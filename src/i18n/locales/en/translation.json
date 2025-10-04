@@ -456,6 +456,10 @@
     },
     "promo": {
       "setupFree": "Save 120€ Today — Menu Setup is FREE for a Limited Time"
+    },
+    "salesConsultant": {
+      "title": "Meet Your AI Sales Consultant",
+      "description": "Our AI-powered sales consultant is here to help you find the perfect plan for your restaurant. Get personalized recommendations based on your needs and budget."
     }
   },
   "ui": {
@@ -471,7 +475,11 @@
       "included": "Show more info",
       "select": "Select plan",
       "monthly": "Monthly",
-      "annual": "Annual"
+      "annual": "Annual",
+      "lead": "Make an appointment",
+      "trial": "30 days for free",
+      "register": "Register",
+      "issue": "Report an issue"
     }
   },
   "forms": {

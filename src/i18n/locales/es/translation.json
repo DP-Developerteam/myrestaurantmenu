@@ -456,6 +456,10 @@
     },
     "promo": {
       "setupFree": "Ahorra 120 € hoy — Configuración del menú GRATIS por tiempo limitado"
+    },
+    "salesConsultant": {
+      "title": "Conoce a tu Consultor de Ventas con IA",
+      "description": "Nuestro consultor de ventas impulsado por IA está aquí para ayudarte a encontrar el plan perfecto para tu restaurante. Obtén recomendaciones personalizadas según tus necesidades y presupuesto."
     }
   },
   "ui": {

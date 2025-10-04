@@ -47,7 +47,7 @@ const DEFAULT_OPTIONS = [
 
 
 
-export default function ChatPanel({ onClose, initialForm = null, initialPrefill = {}, openWithOptions = false, initialFormToken = 0 }) {
+export default function ChatPanel({ onClose, initialForm = null, initialPrefill = {}, openWithOptions = false, initialFormToken = 0, onActiveFormChange = null }) {
     // States for translations
     const { t, i18n } = useTranslation();
     const lang = i18n.language || 'en';
@@ -77,6 +77,13 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     const [activeForm, setActiveForm] = useState(initialForm);
     const [activePrefill, setActivePrefill] = useState(initialPrefill || {});
     const optionsInjectedRef = useRef(false);
+
+    // Notify parent when activeForm changes (if callback provided)
+    useEffect(() => {
+        if (typeof onActiveFormChange === 'function') {
+            try { onActiveFormChange(activeForm); } catch (e) { console.debug('onActiveFormChange callback failed', e); }
+        }
+    }, [activeForm, onActiveFormChange]);
 
     // React to external triggers: if parent passes a new `initialForm` (or token)
     // open that form inside the chat. The token allows the parent to re-trigger

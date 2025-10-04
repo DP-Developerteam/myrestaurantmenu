@@ -15,7 +15,7 @@ const SalesConsultant = () => {
         },
         "buttons": [
             {
-                text: "ui.buttons.contact",
+                text: "nav.contact",
                 cssClass: "btn-solid-red",
                 to: "contact",
             }
@@ -36,6 +36,22 @@ const SalesConsultant = () => {
             {
                 question: 'section.faq.questions.expect30days.question',
                 answer: 'section.faq.questions.expect30days.answer'
+            },
+            {
+                question: 'section.faq.questions.updateMyself.question',
+                answer: 'section.faq.questions.updateMyself.answer'
+            },
+            {
+                question: 'section.faq.questions.appDownload.question',
+                answer: 'section.faq.questions.appDownload.answer'
+            },
+            {
+                question: 'section.faq.questions.customerSupport.question',
+                answer: 'section.faq.questions.customerSupport.answer'
+            },
+            {
+                question: 'section.faq.questions.secure.question',
+                answer: 'section.faq.questions.secure.answer'
             }
         ]
     };

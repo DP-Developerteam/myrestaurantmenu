@@ -15,8 +15,11 @@
     .intro-container {
         @include displayFlex(column wrap, flex-start, flex-start);
         flex-grow: 0;
-        flex-shrink: 1;
+        flex-shrink: 2;
         gap: 3rem;
+        width: 100%;
+        min-width: 250px;
+        max-width: 500px;
         .text-container {
             @include displayFlex(column nowrap, flex-start, flex-start);
             gap: 0;
@@ -29,12 +32,14 @@
         }
         .buttons-container {
             @include displayFlex(row wrap, flex-start, flex-start);
+            width: 100%;
             gap: 1rem;
         }
     }
     .chatbox-container {
         @include displayFlex(column nowrap, flex-start, stretch);
         flex-grow: 1;
+        flex-shrink: 1;
         background: $COLORS-base-100;
         border-radius: 12px;
         overflow: hidden;
@@ -164,7 +169,7 @@
         }
     }
 
-    @media (min-width: 780px) {
+    @media (min-width: 670px) {
         flex-direction: row;
         height: calc(100dvh - 100px);
         .intro-container {

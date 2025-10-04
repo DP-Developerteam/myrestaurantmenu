@@ -456,6 +456,10 @@
         },
         "promo": {
             "setupFree": "Risparmia 120 € oggi — Configurazione del menu GRATIS per un periodo limitato"
+        },
+        "salesConsultant": {
+            "title": "Incontra il tuo consulente alle vendite IA",
+            "description": "Il nostro consulente alle vendite basato sull’intelligenza artificiale è qui per aiutarti a trovare il piano perfetto per il tuo ristorante. Ricevi raccomandazioni personalizzate in base alle tue esigenze e al tuo budget."
         }
     },
     "ui": {
