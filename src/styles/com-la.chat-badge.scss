@@ -222,9 +222,6 @@
         }
     }
     .chatbox.chatbox--touch {
-        /* On touch devices we want the box anchored near the top but still
-           responsive to the keyboard; set bottom using the same CSS var so
-           it stays above the keyboard when it appears. */
         bottom: var(--chat-bottom, 10px);
         top: 2rem;
         max-height: calc(var(--vvh, 50vh) - 2rem);

@@ -55,9 +55,6 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
     }, [toggleOpen]);
 
     // Lock/unlock background scroll by intercepting scroll events.
-    // This avoids changing body styles (position:fixed) which can cause
-    // visual jumps on some browsers. Instead we prevent wheel/touchmove
-    // unless the event target is inside the chat messages container.
     useEffect(() => {
         if (!open) return;
 
@@ -137,7 +134,6 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
             if (raf) cancelAnimationFrame(raf);
         };
     }, []);
-
 
     // Render chat box
     const renderChatBox = () => {
