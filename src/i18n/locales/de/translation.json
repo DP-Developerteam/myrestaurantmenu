@@ -475,7 +475,11 @@
       "included": "Mehr Infos anzeigen",
       "select": "Plan auswählen",
       "monthly": "Monatlich",
-      "annual": "Jährlich"
+      "annual": "Jährlich",
+      "lead": "Einen Termin vereinbaren",
+      "trial": "30 Tage kostenlos",
+      "register": "Registrieren",
+      "issue": "Ein Problem melden"
     }
   },
   "forms": {

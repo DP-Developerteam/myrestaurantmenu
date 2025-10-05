@@ -13,7 +13,8 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
     const { t } = useTranslation();
 
     // Use hook chat button actions
-    const { mapButtons, getClickHandler } = useButtonChatActions();
+    const { mapButtons } = useButtonChatActions();
+    // const { mapButtons, getClickHandler } = useButtonChatActions();
 
 
     // Render overflow background
@@ -41,7 +42,7 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                             aria-label={ariaLabel}
                         />
                     ))}
-                    <p className='font-smaller'>We’ll contact you within 24 hours</p>
+                    { buttons >= 1 && <p className='font-smaller'>We’ll contact you within 24 hours</p> }
                 </div>
                 <div className='image-contact-info-container'>
                     <img src={image.image} alt={image.alt} width={image.width} height={image.height} />
@@ -54,7 +55,8 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                         <Button
                             text= "ui.buttons.chatAssistant"
                             cssClass='btn-solid-red'
-                            onClick={getClickHandler('openChat:open')}
+                            // onClick={getClickHandler('openChat:open')}
+                            to={'salesconsultant'}
                         />
                     </div>
                 </div>

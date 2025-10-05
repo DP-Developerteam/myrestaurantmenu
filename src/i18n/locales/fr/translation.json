@@ -475,7 +475,11 @@
         "included": "Voir plus d'infos",
         "select": "Choisir un forfait",
         "monthly": "Mensuel",
-        "annual": "Annuel"
+        "annual": "Annuel",
+        "lead": "Prendre rendez-vous",
+        "trial": "30 jours gratuits",
+        "register": "S'inscrire",
+        "issue": "Signaler un problème"
         }
     },
     "forms": {

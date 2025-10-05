@@ -38,11 +38,6 @@ const Contact = () => {
         ],
         "buttons": [
             {
-                text: "ui.buttons.formular",
-                cssClass: "btn-solid-light btn-inner-shadow",
-                onClick: "openChat",
-            },
-            {
                 text: "ui.buttons.chatbot",
                 cssClass: "btn-solid-red btn-hover-gradient-red",
                 onClick: "openChat",

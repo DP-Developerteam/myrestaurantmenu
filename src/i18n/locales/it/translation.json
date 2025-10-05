@@ -475,7 +475,11 @@
             "included": "Mostra più informazioni",
             "select": "Seleziona piano",
             "monthly": "Mensile",
-            "annual": "Annuale"
+            "annual": "Annuale",
+            "lead": "Fissare un appuntamento",
+            "trial": "30 giorni gratis",
+            "register": "Registrati",
+            "issue": "Segnala un problema"
         }
     },
     "forms": {
