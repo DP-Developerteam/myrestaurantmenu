@@ -22,6 +22,7 @@ import CookiesPolicy from './pages/public/CookiesPolicy.jsx';
 import Demos from './pages/public/Demos.jsx';
 import Faq from './pages/public/Faq.jsx';
 import Features from './pages/public/Features.jsx';
+import LegalNotice from './pages/public/LegalNotice.jsx';
 import Partners from './pages/public/Partners.jsx';
 import Pricing from './pages/public/Pricing.jsx';
 import PrivacyPolicy from './pages/public/PrivacyPolicy.jsx';
@@ -29,7 +30,7 @@ import QrCodes from './pages/public/QrCodes.jsx';
 import SalesConsultant from './pages/public/SalesConsultant.jsx';
 import SmartMarket from './pages/public/SmartMarket.jsx';
 import Status from './pages/public/Status.jsx';
-import TermsService from './pages/public/TermsService.jsx';
+import TermsOfService from './pages/public/TermsOfService.jsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,6 +45,7 @@ const router = createBrowserRouter(
         <Route path="/demos" element={<Demos />}/>
         <Route path="/faq" element={<Faq />}/>
         <Route path="/features" element={<Features />}/>
+        <Route path="/legalnotice" element={<LegalNotice />}/>
         <Route path="/partners" element={<Partners />}/>
         <Route path="/pricing" element={<Pricing />}/>
         <Route path="/privacypolicy" element={<PrivacyPolicy />}/>
@@ -51,7 +53,7 @@ const router = createBrowserRouter(
         <Route path="/salesconsultant" element={<SalesConsultant />}/>
         <Route path="/smartmarket" element={<SmartMarket />}/>
         <Route path="/status" element={<Status />}/>
-        <Route path="/termsservice" element={<TermsService />}/>
+        <Route path="/termsofservice" element={<TermsOfService />}/>
     </Route>
   )
 )

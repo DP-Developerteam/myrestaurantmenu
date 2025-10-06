@@ -76,11 +76,49 @@
 //////////////////
 /// THIS ARE ONLY TEMPORARY STYLES for legal text pages and status page
 
-.section-text-block, .section-status {
+.section-text-block {
     @include displayFlex(column nowrap, flex-start, stretch);
     max-width: 800px;
+    min-height: calc(100dvh - 50px);
+    gap: 0;
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        color: $COLORS-base-600;
+    }
+    h5 {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+    h6 {
+        font-size: 1rem;
+        margin-bottom: 6px;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+    ul {
+        margin: 0;
+        padding-left: 3rem;
+        li {
+            list-style-type:"-   ";
+            margin-top: 6px;
+        }
+    }
+    hr {
+        border: none;
+        border-top: 1px solid $COLORS-red-900;
+        margin: 10px 0 20px;
+        width: 180px;
+    }
 }
 .section-status {
+    @include displayFlex(column nowrap, flex-start, stretch);
+    max-width: 800px;
+
     header {
         text-align: center;
         margin-bottom: 24px;

@@ -19,9 +19,10 @@ const Footer = () => {
                     <NavLink className='tab' to='/contact'>{t('nav.contact')}</NavLink>
                     <NavLink className='tab' to='/status'>{t('nav.status')}</NavLink>
                     <NavLink className='tab' to='/partners'>{t('nav.partners')}</NavLink>
-                    <NavLink className='tab' to='/privacypolicy'>{t('nav.privacy')}</NavLink>
-                    <NavLink className='tab' to='/termsservice'>{t('nav.legal')}</NavLink>
                     <NavLink className='tab' to='/cookiespolicy'>{t('nav.cookies')}</NavLink>
+                    <NavLink className='tab' to='/privacypolicy'>{t('nav.privacy')}</NavLink>
+                    <NavLink className='tab' to='/termsofservice'>{t('nav.termsOfService')}</NavLink>
+                    <NavLink className='tab' to='/legalnotice'>{t('nav.legalNotice')}</NavLink>
                 </div>
             </div>
         )
