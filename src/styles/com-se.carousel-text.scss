@@ -125,6 +125,15 @@
             }
         }
 
+        /* Cursor states for draggable content */
+        .carousel-draggable {
+            cursor: grab;
+        }
+
+        .carousel-drag {
+            cursor: grabbing;
+        }
+
         /* dots */
         .carousel-dots {
             display: flex;

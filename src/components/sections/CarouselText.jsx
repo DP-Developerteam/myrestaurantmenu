@@ -13,8 +13,12 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
     const [activeIndex, setActiveIndex] = useState(0);
     const [isHovered, setIsHovered] = useState(false);
 
-    // Set use drag hook
+    // Decide whether dragging should be enabled (disable when there's only one content item)
+    const dragEnabled = Array.isArray(content) ? content.length > 1 : false;
+
+    // Set use drag hook (pass enabled flag so the hook short-circuits when disabled)
     const { bind: dragBind, offset, isDragging } = useDragToSlide({
+        enabled: dragEnabled,
         axis: 'x',
         fractionOfSize: 0.2,
         onCommit: (dir) => {
@@ -138,8 +142,7 @@ const CarouselText = ({ content, title, cssClass, autoScrollInterval = 8000 }) =
             }
 
             <div className='carousel-container'>
-                {/* <div className='carousel-content'> */}
-                <div className='carousel-content' {...dragBind} style={{ transform: `translateX(${offset}px)` }}>
+                <div className={`carousel-content ${dragEnabled ? 'carousel-draggable' : ''} ${isDragging ? 'carousel-drag' : ''}`} {...(dragEnabled ? dragBind : {})} style={{ transform: `translateX(${dragEnabled ? offset : 0}px)` }}>
                     {content.length > 1 && renderContentItem(content[left], 'left', left)}
                     {renderContentItem(content[center], 'center', center)}
                     {content.length > 1 && renderContentItem(content[right], 'right', right)}
