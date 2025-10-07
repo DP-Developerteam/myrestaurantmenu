@@ -58,11 +58,23 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
     useEffect(() => {
         if (!open) return;
 
-        const allowScrollSelector = '.chatbox-messages';
+        // Allow keys (space, page up/down, arrows, home/end) when focus is
+        // anywhere inside the chatbox (including footer/input) or when the
+        // target is a form control (input, textarea, button, select).
+        const allowScrollSelector = '.chatbox';
 
         function isInsideAllow(el) {
             if (!el) return false;
-            return !!el.closest?.(allowScrollSelector);
+            try {
+                if (el.closest?.(allowScrollSelector)) return true;
+            } catch {
+                // ignore malformed elements
+            }
+            const tag = el.tagName?.toLowerCase?.();
+            if (tag === 'input' || tag === 'textarea' || tag === 'button' || tag === 'select') return true;
+            // allow contenteditable regions as well
+            if (el.isContentEditable) return true;
+            return false;
         }
 
         function onWheel(e) {
@@ -78,9 +90,15 @@ const ChatBadge = ({isOpen, setIsOpen}) => {
         }
 
         function onKeyDown(e) {
-            // prevent page up/down, space, home/end unless focus is inside chat
-            const keys = ['PageUp', 'PageDown', ' ', 'Home', 'End', 'ArrowUp', 'ArrowDown'];
-            if (keys.includes(e.key) && !isInsideAllow(document.activeElement)) {
+            // prevent page up/down, space, home/end unless focus (or event target) is inside chat
+            const navigationKeys = ['PageUp', 'PageDown', 'Home', 'End', 'ArrowUp', 'ArrowDown'];
+            const isSpace = e.key === ' ' || e.key === 'Spacebar' || e.code === 'Space';
+
+            const shouldBlock = (isSpace || navigationKeys.includes(e.key)) &&
+                !isInsideAllow(document.activeElement) &&
+                !isInsideAllow(e.target);
+
+            if (shouldBlock) {
                 e.preventDefault();
             }
         }
