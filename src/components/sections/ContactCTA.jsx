@@ -55,8 +55,7 @@ const ContactCTA = ({text, buttons, image, cssClass, backgroundOverflow}) => {
                         <Button
                             text= "ui.buttons.chatAssistant"
                             cssClass='btn-solid-red'
-                            // onClick={getClickHandler('openChat:open')}
-                            to={'salesconsultant'}
+                            to={'/salesconsultant'}
                         />
                     </div>
                 </div>
