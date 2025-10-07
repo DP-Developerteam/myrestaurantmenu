@@ -14,7 +14,6 @@
     overflow: hidden;
     border-radius: 0.8rem;
     will-change: transform;
-    cursor: grab;
 
     .carousel-image {
         object-fit: cover;
@@ -65,4 +64,10 @@
     @media (min-width: 920px) {
         height: 450px;
     }
+}
+.carousel.carousel-draggable {
+    cursor: grab;
+}
+.carousel.carousel-drag {
+    cursor: grabbing;
 }

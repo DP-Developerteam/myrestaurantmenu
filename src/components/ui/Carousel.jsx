@@ -19,8 +19,12 @@ const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
     // State for hovered items
     const [isHovered, setIsHovered] = useState(false);
 
-    // Set use drag hook
+    // Decide whether dragging should be enabled (disable when there's only one slide)
+    const dragEnabled = Array.isArray(slides) ? slides.length > 1 : false;
+
+    // Set use drag hook (pass enabled flag so the hook itself short-circuits when disabled)
     const { bind: dragBind, offset, isDragging } = useDragToSlide({
+        enabled: dragEnabled,
         // Horizontal-only dragging; the hook handles intent locking & a11y
         fractionOfSize: 0.15,
         velocityThreshold: 0.65,
@@ -87,12 +91,12 @@ const Carousel = ({ slides, autoSlideInterval = 10000 }) => {
 
     return (
         <div
-            className="carousel"
+            className={`carousel ${dragEnabled ? "carousel-draggable" : ""} ${isDragging ? "carousel-drag" : ""}`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            {...dragBind}
+            {...(dragEnabled ? dragBind : {})}
             style={{
-                transform: `translateX(${offset}px)`,
+                transform: `translateX(${dragEnabled ? offset : 0}px)`,
                 transition: isDragging ? 'none' : 'transform 200ms ease-out',
             }}
         >
