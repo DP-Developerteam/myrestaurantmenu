@@ -171,7 +171,7 @@
 
     @media (min-width: 670px) {
         flex-direction: row;
-        height: calc(100dvh - 100px);
+        // height: calc(100dvh - 100px);
         .intro-container {
             flex-direction: column;
             max-width: 450px;
