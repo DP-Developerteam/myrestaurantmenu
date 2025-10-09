@@ -10,7 +10,7 @@ import ComponentFaq from "../../components/sections/Faq";
 // Import icons & images
 import ImgContactCta from '../../assets/img/contact-cta.webp';
 import ImgCalendar from "../../assets/img/calendar.png";
-import ImgHero01 from "../../assets/img/hero-01.jpg";
+import ImgHero01 from "../../assets/img/hero-contact.jpg";
 import ImgHero02 from "../../assets/img/hero-02.jpg";
 import ImgHero03 from "../../assets/img/hero-03.jpg";
 

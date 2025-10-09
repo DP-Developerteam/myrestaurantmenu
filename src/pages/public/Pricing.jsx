@@ -6,7 +6,7 @@ import ComponentPricing from "../../components/sections/PricingTabs";
 import ComponentPromoBanner from '../../components/sections/PromoBannerLoop';
 import ComponentTabs from "../../components/sections/Tabs";
 // Import icons & images
-import ImgHero01 from "../../assets/img/hero-01.jpg";
+import ImgHero01 from "../../assets/img/mobile-payment-illustration.jpg";
 import ImgCalendar from "../../assets/img/calendar.png";
 
 

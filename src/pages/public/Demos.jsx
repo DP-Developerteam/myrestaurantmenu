@@ -10,8 +10,8 @@ import ComponentFaq from "../../components/sections/Faq";
 // Import icons & images
 import ImgContactCta from '../../assets/img/contact-cta.webp';
 import ImgCalendar from "../../assets/img/calendar.png";
-import ImgHero01 from "../../assets/img/hero-01.jpg";
-import ImgHero02 from "../../assets/img/hero-03.jpg";
+import ImgHero01 from "../../assets/img/hero-demo-pizza.jpg";
+import ImgHero02 from "../../assets/img/hero-demo-market.jpg";
 
 import ImgCommission from "../../assets/img/commission.webp";
 import ImgGiftCart from "../../assets/img/gift-card.webp";

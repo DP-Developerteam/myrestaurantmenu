@@ -162,7 +162,7 @@
         "description": "Never before was so easy to create and maintain menus across different locations."
       },
       "viewImage": {
-        "title": "Visual & Appetizing",
+        "title": "Visual & Appetizing with images",
         "description": "Showcase your dishes with high-quality images. Perfect when the connection is stable, giving customers a delicious first impression."
       },
       "viewVideo": {
@@ -170,7 +170,7 @@
         "description": "Bring your menu to life with looping videos, like a GIF. Ideal for fast connections, creating an immersive and dynamic dining experience."
       },
       "viewText": {
-        "title": "Always Accessible",
+        "title": "Always Accessible by text",
         "description": "When speed is limited, your menu adapts and shows plain text instantly. Simple, clear, and available anytime — no customer left behind."
       }
     },

@@ -162,15 +162,15 @@
                 "description": "Non è mai stato così facile creare e gestire menu in diverse sedi."
             },
             "viewImage": {
-                "title": "Visivo e Appetitoso",
+                "title": "Visivo e appetitoso con immagini",
                 "description": "Mostra i tuoi piatti con immagini di alta qualità. Perfetto con una connessione stabile, offrendo ai clienti una prima impressione invitante."
             },
             "viewVideo": {
-                "title": "Video Coinvolgente in Loop",
+                "title": "Video coinvolgente in loop",
                 "description": "Dai vita al tuo menu con video in loop, come una GIF. Ideale per connessioni veloci, creando un’esperienza culinaria immersiva e dinamica."
             },
             "viewText": {
-                "title": "Sempre Accessibile",
+                "title": "Sempre accessibile tramite testo",
                 "description": "Quando la velocità è limitata, il menu si adatta e mostra subito il testo semplice. Chiaro, immediato e disponibile in ogni momento — nessun cliente escluso."
             }
         },

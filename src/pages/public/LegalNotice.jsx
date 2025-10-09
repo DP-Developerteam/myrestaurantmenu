@@ -7,7 +7,7 @@ const LegalNotice = () => {
         <div className='page page-impressum'>
             <div className='section section-text-block'>
                 <h1>Impressum</h1>
-                <p className='font-smaller'>Angaben gemäß § 5 TMG</p>
+                <p className='font-smaller'>Angaben gemäß § 5 DDG</p>
                 <hr/>
                 <h5>Name: </h5>
                 <p>Diego Pérez Rodríguez <span className='font-small'>(Geschäftsbezeichnung: MyRestaurantMenu)</span></p>

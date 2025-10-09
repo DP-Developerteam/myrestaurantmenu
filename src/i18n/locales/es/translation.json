@@ -162,15 +162,15 @@
         "description": "Nunca fue tan fácil crear y mantener menús en distintas ubicaciones."
       },
       "viewImage": {
-        "title": "Visual y Apetitoso",
+        "title": "Visual y apetitoso con imágenes",
         "description": "Muestra tus platos con imágenes de alta calidad. Perfecto cuando la conexión es estable, dando a tus clientes una primera impresión deliciosa."
       },
       "viewVideo": {
-        "title": "Bucle de Video Atractivo",
+        "title": "Bucle de video atractivo",
         "description": "Da vida a tu menú con videos en bucle, como un GIF. Ideal para conexiones rápidas, creando una experiencia gastronómica inmersiva y dinámica."
       },
       "viewText": {
-        "title": "Siempre Accesible",
+        "title": "Siempre accesible por texto",
         "description": "Cuando la velocidad es limitada, tu menú se adapta y muestra texto plano al instante. Simple, claro y disponible en todo momento — ningún cliente se queda atrás."
       }
     },

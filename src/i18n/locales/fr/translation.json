@@ -162,15 +162,15 @@
                 "description": "Jamais il n’a été aussi simple de créer et gérer des menus sur plusieurs sites."
             },
             "viewImage": {
-                "title": "Visuel & Appétissant",
+                "title": "Visuel et appétissant avec des images",
                 "description": "Mettez vos plats en valeur avec des images de haute qualité. Parfait avec une connexion stable, offrant une première impression gourmande à vos clients."
             },
             "viewVideo": {
-                "title": "Vidéo Bouclée Captivante",
+                "title": "Vidéo bouclée captivante",
                 "description": "Donnez vie à votre menu grâce à des vidéos en boucle, comme un GIF. Idéal avec une connexion rapide pour une expérience culinaire immersive et dynamique."
             },
             "viewText": {
-                "title": "Toujours Accessible",
+                "title": "Toujours accessible par texte",
                 "description": "Quand la connexion est limitée, votre menu s’adapte et affiche immédiatement du texte clair. Simple, lisible et disponible à tout moment — aucun client laissé de côté."
             }
         },

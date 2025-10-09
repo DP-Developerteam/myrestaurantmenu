@@ -8,7 +8,7 @@ import ComponentCarouselText from "../../components/sections/CarouselText";
 import ComponentContactCTA from "../../components/sections/ContactCTA";
 import ComponentFaq from "../../components/sections/Faq";
 // Import icons & images
-import ImgHero01 from "../../assets/img/hero-01.jpg";
+import ImgHero01 from "../../assets/img/hero-features.jpg";
 
 import ImgQrCode from "../../assets/img/qr-code.webp";
 import ImgResponsive from "../../assets/img/responsive.webp";
