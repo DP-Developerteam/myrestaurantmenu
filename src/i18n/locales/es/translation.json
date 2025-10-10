@@ -227,6 +227,27 @@
           "05": "Ahorra en costes de impresión actualizando el menú en tiempo real.",
           "06": "Ofrece una solución moderna y sin contacto que encanta a los clientes."
         }
+      },
+      "forms": {
+        "lead": {
+          "title": "Solicita hoy tu consulta gratuita",
+          "bullets": {
+            "01": "Rellena el formulario y nuestro equipo se pondrá en contacto contigo pronto para conocer tu restaurante y tus necesidades.",
+            "02": "Te mostraremos cómo nuestro menú digital puede simplificar tus operaciones y ayudarte a atraer más clientes.",
+            "03": "Sin compromiso: solo una conversación rápida y amable para explorar la mejor solución de menú digital para tu negocio.",
+            "04": "Empieza a transformar la experiencia de tu restaurante con un menú fácil, moderno y profesional."
+          }
+        },
+        "trial": {
+          "title": "Comienza hoy tu prueba gratuita de 30 días",
+          "bullets": {
+            "01": "Regístrate en solo unos segundos — no se requiere tarjeta de crédito.",
+            "02": "Obtén acceso completo a nuestra plataforma de menús digitales y explora todas las funciones premium durante 30 días.",
+            "03": "Experimenta cómo nuestra solución puede optimizar tus operaciones y atraer más clientes.",
+            "04": "Disfruta de una prueba sin riesgo — cancela en cualquier momento, sin compromiso.",
+            "05": "Comienza hoy tu prueba gratuita y descubre lo fácil que es modernizar la experiencia de tu restaurante."
+          }
+        }
       }
     },
     "faq": {
@@ -504,7 +525,9 @@
     "termsUse": "Lee y acepta nuestros términos de uso para continuar con el chat.",
     "submit": "Enviar",
     "cancel": "Cancelar",
-    "requireContact": "Por favor, proporciona al menos un correo electrónico o un número de teléfono."
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Introduce un correo electrónico válido",
+    "invalidPhone": "Introduce un número de teléfono válido"
   },
   "chatbot": {
     "notUnderstood": "Lo siento, no he entendido tu pregunta.",

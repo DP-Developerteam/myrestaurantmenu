@@ -227,6 +227,27 @@
                 "05": "Riduci i costi di stampa aggiornando il menu in tempo reale.",
                 "06": "Offri una soluzione moderna e contactless che i clienti adorano."
                 }
+            },
+            "forms": {
+                "lead": {
+                    "title": "Richiedi oggi la tua consulenza gratuita",
+                    "bullets": {
+                    "01": "Compila il modulo e il nostro team ti contatterà presto per conoscere il tuo ristorante e le tue esigenze.",
+                    "02": "Ti mostreremo come il nostro menu digitale può semplificare le tue operazioni e aiutarti ad attirare più clienti.",
+                    "03": "Nessun impegno — solo una breve e cordiale conversazione per esplorare la migliore soluzione di menu digitale per la tua attività.",
+                    "04": "Inizia a trasformare l’esperienza del tuo ristorante con un menu semplice, moderno e professionale."
+                    }
+                },
+                "trial": {
+                    "title": "Inizia oggi la tua prova gratuita di 30 giorni",
+                    "bullets": {
+                    "01": "Registrati in pochi secondi — non è richiesta la carta di credito.",
+                    "02": "Accedi completamente alla nostra piattaforma di menu digitale ed esplora tutte le funzionalità premium per 30 giorni.",
+                    "03": "Scopri come la nostra soluzione può ottimizzare le operazioni del tuo ristorante e attirare più clienti.",
+                    "04": "Prova senza rischi — cancella in qualsiasi momento, senza obblighi.",
+                    "05": "Inizia oggi la tua prova gratuita e scopri quanto è facile modernizzare l’esperienza del tuo ristorante."
+                    }
+                }
             }
         },
         "faq": {
@@ -504,7 +525,9 @@
         "termsUse": "Leggi e accetta i nostri termini di utilizzo per continuare la chat.",
         "submit": "Invia",
         "cancel": "Annulla",
-        "requireContact": "Per favore, fornisci almeno un'email o un numero di telefono."
+        "required": "Questo campo è obbligatorio",
+        "invalidEmail": "Inserisci un indirizzo email valido",
+        "invalidPhone": "Inserisci un numero di telefono valido"
     },
     "chatbot": {
         "notUnderstood": "Mi dispiace, non ho capito la tua domanda.",

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { isEmailValid } from './validate';
 import { useTranslation } from "react-i18next";
 
-export default function RegisterForm({ onSubmit, onCancel, prefill = {} }) {
+export default function RegisterForm({ onSubmit, onCancel, prefill = {}, autoFocus = true }) {
     const { t } = useTranslation();
 
     const [name, setName] = useState(prefill.name || "");
@@ -20,10 +20,10 @@ export default function RegisterForm({ onSubmit, onCancel, prefill = {} }) {
 
     useEffect(() => {
         // focus the first field when the form mounts
-        if (firstFieldRef.current) {
+        if (autoFocus && firstFieldRef.current) {
             firstFieldRef.current.focus();
         }
-    }, []);
+    }, [autoFocus]);
 
     function handleSubmit(e) {
         e.preventDefault();

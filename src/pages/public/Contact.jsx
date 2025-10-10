@@ -35,19 +35,44 @@ const Contact = () => {
                 width: 834,
                 height: 450,
             }
-        ],
-        "buttons": [
-            {
-                text: "ui.buttons.chatbot",
-                cssClass: "btn-solid-red btn-hover-gradient-red",
-                onClick: "openChat",
-            }
         ]
     }
+    const SectionFormLead = {
+        "tabs": false,
+        "tabsContent": [
+            {
+                "title": "section.tabs.forms.lead.title",
+                "bullets": [
+                    "section.tabs.forms.lead.bullets.01",
+                    "section.tabs.forms.lead.bullets.02",
+                    "section.tabs.forms.lead.bullets.03",
+                    "section.tabs.forms.lead.bullets.04",
+                ],
+                "form": "lead"
+            }
+        ],
+    };
+    const SectionFormTrial = {
+        "tabs": false,
+        "tabsContent": [
+            {
+                "title": "section.tabs.forms.trial.title",
+                "bullets": [
+                    "section.tabs.forms.trial.bullets.01",
+                    "section.tabs.forms.trial.bullets.02",
+                    "section.tabs.forms.trial.bullets.03",
+                    "section.tabs.forms.trial.bullets.04",
+                ],
+                "form": "trial"
+            }
+        ],
+    };
 
     return (
         <div className='page page-contact'>
             <ComponentHero text={SectionHero.text} slides={SectionHero.slides} buttons={SectionHero.buttons} />
+            <ComponentTabs title={SectionFormLead.title} tabs={SectionFormLead.tabs} tabsContent={SectionFormLead.tabsContent} />
+            <ComponentTabs title={SectionFormTrial.title} tabs={SectionFormTrial.tabs} tabsContent={SectionFormTrial.tabsContent} />
         </div>
     )
 }

@@ -227,6 +227,27 @@
           "05": "Sparen Sie Druckkosten, indem Sie Ihre Speisekarte in Echtzeit aktualisieren.",
           "06": "Bieten Sie eine moderne, kontaktlose Lösung, die Gäste begeistert."
         }
+      },
+      "forms": {
+        "lead": {
+          "title": "Fordern Sie noch heute Ihre kostenlose Beratung an",
+          "bullets": {
+            "01": "Füllen Sie das Formular aus, und unser Team wird sich in Kürze mit Ihnen in Verbindung setzen, um mehr über Ihr Restaurant und Ihre Bedürfnisse zu erfahren.",
+            "02": "Wir zeigen Ihnen, wie unsere digitale Speisekarte Ihre Abläufe vereinfachen und mehr Kunden anziehen kann.",
+            "03": "Keine Verpflichtung - nur ein kurzes, freundliches Gespräch, um die beste digitale Menülösung für Ihr Unternehmen zu finden.",
+            "04": "Beginnen Sie noch heute, das Erlebnis Ihres Restaurants mit einer einfachen, modernen und professionellen Speisekarte zu verbessern."
+          }
+        },
+        "trial": {
+          "title": "Starten Sie noch heute Ihre 30-tägige kostenlose Testphase",
+          "bullets": {
+            "01": "Melden Sie sich in nur wenigen Sekunden an - keine Kreditkarte erforderlich.",
+            "02": "Erhalten Sie vollen Zugriff auf unsere digitale Menüplattform und entdecken Sie alle Premiumfunktionen 30 Tage lang.",
+            "03": "Erleben Sie, wie unsere Lösung Ihre Restaurantabläufe optimieren und mehr Kunden anziehen kann.",
+            "04": "Genießen Sie risikofreies Testen - jederzeit kündbar, keine Verpflichtungen.",
+            "05": "Starten Sie noch heute Ihre kostenlose Testphase und sehen Sie, wie einfach es ist, das Erlebnis Ihres Restaurants zu modernisieren."
+          }
+        }
       }
     },
     "faq": {
@@ -504,7 +525,9 @@
     "termsUse": "Lies und akzeptiere unsere Nutzungsbedingungen, um den Chat fortzusetzen.",
     "submit": "Senden",
     "cancel": "Abbrechen",
-    "requireContact": "Bitte gib mindestens eine E-Mail-Adresse oder eine Telefonnummer an."
+    "required": "Dieses Feld ist erforderlich",
+    "invalidEmail": "Geben Sie eine gültige E-Mail-Adresse ein",
+    "invalidPhone": "Geben Sie eine gültige Telefonnummer ein"
   },
   "chatbot": {
     "notUnderstood": "Entschuldigung, ich habe deine Frage nicht verstanden.",

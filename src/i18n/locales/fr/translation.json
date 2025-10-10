@@ -227,6 +227,27 @@
                 "05": "Réduisez vos coûts d’impression en mettant votre menu à jour en temps réel.",
                 "06": "Proposez une solution moderne et sans contact que vos clients apprécieront."
                 }
+            },
+            "forms": {
+                "lead": {
+                    "title": "Demandez dès aujourd’hui votre consultation gratuite",
+                    "bullets": {
+                    "01": "Remplissez le formulaire et notre équipe vous contactera bientôt pour en savoir plus sur votre restaurant et vos besoins.",
+                    "02": "Nous vous montrerons comment notre menu numérique peut simplifier vos opérations et attirer davantage de clients.",
+                    "03": "Aucun engagement — juste une conversation rapide et conviviale pour trouver la meilleure solution de menu numérique pour votre établissement.",
+                    "04": "Commencez à transformer l’expérience de votre restaurant avec un menu simple, moderne et professionnel."
+                    }
+                },
+                "trial": {
+                    "title": "Commencez dès aujourd’hui votre essai gratuit de 30 jours",
+                    "bullets": {
+                    "01": "Inscrivez-vous en quelques secondes — aucune carte de crédit requise.",
+                    "02": "Accédez à notre plateforme de menu numérique et découvrez toutes les fonctionnalités premium pendant 30 jours.",
+                    "03": "Découvrez comment notre solution peut optimiser vos opérations et attirer plus de clients.",
+                    "04": "Profitez d’un essai sans risque — annulez à tout moment, sans engagement.",
+                    "05": "Commencez votre essai gratuit dès aujourd’hui et voyez comme il est facile de moderniser l’expérience de votre restaurant."
+                    }
+                }
             }
         },
         "faq": {
@@ -504,7 +525,9 @@
         "termsUse": "Lisez et acceptez nos conditions d’utilisation pour continuer la conversation.",
         "submit": "Envoyer",
         "cancel": "Annuler",
-        "requireContact": "Veuillez fournir au moins une adresse e-mail ou un numéro de téléphone."
+        "required": "Ce champ est obligatoire",
+        "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+        "invalidPhone": "Veuillez saisir un numéro de téléphone valide"
     },
     "chatbot": {
         "notUnderstood": "Désolé, je n’ai pas compris votre question.",

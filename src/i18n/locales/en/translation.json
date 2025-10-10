@@ -227,6 +227,27 @@
           "05": "Reduce printing costs and update your menu in real time.",
           "06": "Offer a modern, contactless solution that customers love."
         }
+      },
+      "forms": {
+        "lead": {
+          "title": "Request your free consultation today",
+          "bullets": {
+            "01": "Fill out the form and our team will contact you shortly to learn about your restaurant and your needs.",
+            "02": "We’ll show you how our digital menu can simplify your operations and help you attract more customers.",
+            "03": "No commitment — just a quick, friendly conversation to explore the best digital menu solution for your business.",
+            "04": "Start transforming your restaurant experience with an easy, modern, and professional menu."
+          }
+        },
+        "trial": {
+          "title": "Start Your 30-Day Free Trial Today",
+          "bullets": {
+            "01": "Sign up in just a few seconds — no credit card required.",
+            "02": "Get full access to our digital menu platform and explore all premium features for 30 days.",
+            "03": "Experience how our solution can streamline your restaurant operations and attract more customers.",
+            "04": "Enjoy risk-free testing — cancel anytime, no obligations.",
+            "05": "Start your free trial today and see how easy it is to modernize your restaurant experience."
+          }
+        }
       }
     },
     "faq": {
@@ -504,7 +525,9 @@
     "termsUse": "Read and accept our terms of use to continue with the chat.",
     "submit": "Send",
     "cancel": "Cancel",
-    "requireContact": "Please provide at least an email or phone number."
+    "required": "This field is mandatory",
+    "invalidEmail": "Provide a valid email",
+    "invalidPhone": "Provide a valid phone number"
   },
   "chatbot": {
     "notUnderstood": "Sorry, I didn’t understand your question.",

@@ -7,6 +7,9 @@ import useButtonChatActions from '../../hooks/useButtonChatActions';
 // import { useChatActions } from '../../hooks/useChatActions';
 // Import components
 import Button from '../ui/Button';
+// Import forms
+import LeadForm from '../chatbot/forms/LeadForm';
+import TrialForm from '../chatbot/forms/TrialForm';
 // Images and icons
 import { IconCheck } from '../../components/ui/Icons';
 
@@ -101,6 +104,32 @@ const Tabs = ({title, tabs, tabsContent, cssClass, backgroundOverflow}) => {
         )
     }
 
+    // Render form
+    const renderForm = () => {
+        if (activeContent.form === "lead") {
+            return (
+                <>
+                    <LeadForm
+                        onSubmit={(data) => console.log("Lead form submitted", data)}
+                        onCancel={() => console.log("Form cancelled")}
+                        autoFocus={false}
+                    />
+                </>
+            );
+        } else if (activeContent.form === "trial") {
+            return (
+                <>
+                    <TrialForm
+                        onSubmit={(data) => console.log("Trial form submitted", data)}
+                        onCancel={() => console.log("Form cancelled")}
+                        autoFocus={false}
+                    />
+                </>
+            );
+        }
+        return null;
+    };
+
     // Render overflow background
     const renderBackgroundOverflow = () => {
         return (
@@ -119,7 +148,7 @@ const Tabs = ({title, tabs, tabsContent, cssClass, backgroundOverflow}) => {
                     {activeContent && activeContent.bullets && renderBullets()}
                     {activeContent && activeContent.buttons && renderButtons()}
                 </div>
-                {activeContent.image && renderImage()}
+                {activeContent.form ? renderForm() : activeContent.image && renderImage()}
             </div>
         </section>
     )
