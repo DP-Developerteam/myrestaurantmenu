@@ -49,7 +49,7 @@ const Chatbox = () => {
                     initialPrefill={panelInitialPrefill}
                     initialFormToken={panelToken}
                     onActiveFormChange={(formId) => setActiveFormFromPanel(formId)}
-                    autoFocusInput={false}
+                    autoFocus={false}
                 />
             </div>
         </section>
