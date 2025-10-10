@@ -47,7 +47,7 @@ const DEFAULT_OPTIONS = [
 
 
 
-export default function ChatPanel({ onClose, initialForm = null, initialPrefill = {}, openWithOptions = false, initialFormToken = 0, onActiveFormChange = null }) {
+export default function ChatPanel({ onClose, initialForm = null, initialPrefill = {}, openWithOptions = false, initialFormToken = 0, onActiveFormChange = null, autoFocus = true }) {
     // States for translations
     const { t, i18n } = useTranslation();
     const lang = i18n.language || 'en';
@@ -196,14 +196,14 @@ export default function ChatPanel({ onClose, initialForm = null, initialPrefill 
     }
     // Focus input on mount
     useEffect(() => {
-        focusInputCaretEnd();
-    }, []);
+        if (autoFocus) focusInputCaretEnd();
+}, [autoFocus]);
     // Focus to input when bot stops typing and no form is open
     useEffect(() => {
-        if (!isTyping && activeForm === null) {
+        if (autoFocus && !isTyping && activeForm === null) {
             focusInputCaretEnd();
         }
-    }, [isTyping, activeForm]);
+    }, [autoFocus, isTyping, activeForm]);
 
     // HELPERS - Action and queues
     // Side-effect actions that do things
